@@ -1,0 +1,900 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Intro to Data Analytics &mdash; Counter Malign Influence: Strategies, Insights, and Tools 7 March 2025 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/nbsphinx-code-cells.css?v=2aa19091" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=131bf191"></script>
+      <script src="../_static/doctools.js?v=9a2dae69"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@jupyter-widgets/html-manager@^1.0.1/dist/embed-amd.js"></script>
+      <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+      <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Understanding the Problem, Data Identification, and Data Acquisition" href="Lesson4.html" />
+    <link rel="prev" title="UN CIFAL Honolulu Research Director" href="Guest_Speaker1.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Counter Malign Influence: Strategies, Insights, and Tools
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Week 1:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Lesson1.html">Intro to Misinformation, Disinformation, and Malinformation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lesson2.html">Thinking Critically in the Age of MDM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Guest_Speaker1.html">UN CIFAL Honolulu Research Director</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Week 2:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Intro to Data Analytics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lesson4.html">Understanding the Problem, Data Identification, and Data Acquisition</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Week 3:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Lesson5.html">Data Inspection and Preprocessing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lesson6.html">EDA + Visualization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Guest_Speaker2.html">Defense Threat Reduction Agency</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Week 4:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Lesson7.html">Advanced Analysis (Sentiment)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lesson8.html">Technology &amp; Careers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Guest_Speaker3.html">Joint Staff Future Capabilities Division</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">2 Week Challenge:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Challenge.html">Challenge Instructions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Guest_Speaker4.html">USSF Intelligence Directorate, Indo-Pacific</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Guest_Speaker5.html">Career Panel</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Counter Malign Influence: Strategies, Insights, and Tools</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Intro to Data Analytics</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/notebooks/Lesson3.ipynb.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="Intro-to-Data-Analytics">
+<h1>Intro to Data Analytics<a class="headerlink" href="#Intro-to-Data-Analytics" title="Link to this heading"></a></h1>
+<p><img alt="9ce5bc541e6f4283a4f29470d34e6515" src="notebooks/Images/lesson1start.png" /></p>
+<p>📌 Why This Matters</p>
+<p>In <strong>Lesson 2</strong>, we explored how individuals can identify and resist misinformation using <strong>critical thinking, SIFT, and prebunking techniques</strong>. These strategies are essential for evaluating claims and making informed decisions.</p>
+<p>But <strong>misinformation is not just an individual problem—it’s a systemic one.</strong> It spreads rapidly across social media, influences entire communities, and is often designed to manipulate at scale.</p>
+<p>🛠️ The Challenge: Misinformation at Scale</p>
+<ul class="simple">
+<li><p><strong>False information spreads 6x faster</strong> than factual news.</p></li>
+<li><p><strong>AI-generated misinformation</strong> makes it harder to detect deception manually.</p></li>
+<li><p><strong>Coordinated disinformation campaigns</strong> manipulate public discourse with bot networks.</p></li>
+</ul>
+<div class="line-block">
+<div class="line">👤 <strong>Critical thinking can help individuals avoid misinformation</strong>, but what about when:</div>
+<div class="line">✅ There are <strong>millions of posts</strong> spreading false claims?</div>
+<div class="line">✅ Bots and coordinated groups <strong>amplify deception</strong> faster than fact-checkers?</div>
+<div class="line">✅ Misinformation is <strong>tailored to different groups</strong> using sophisticated targeting?</div>
+</div>
+<p>We need <strong>systematic approaches</strong> to <strong>track</strong>, <strong>analyze</strong>, and <strong>mitigate misinformation at scale</strong>.</p>
+<hr class="docutils" />
+<p>📊 The Next Step: Data Analytics for Misinformation Detection</p>
+<p>To move beyond individual fact-checking, we turn to <strong>data analytics</strong>, which allows us to:</p>
+<div class="line-block">
+<div class="line">✔ <strong>Track how false claims spread across platforms.</strong></div>
+<div class="line">✔ <strong>Measure engagement patterns of misinformation vs. fact-checked content.</strong></div>
+<div class="line">✔ <strong>Detect coordinated campaigns (bots, fake accounts).</strong></div>
+<div class="line">✔ <strong>Use AI and Natural Language Processing (NLP) to analyze trends.</strong></div>
+</div>
+<div class="line-block">
+<div class="line">💡 <strong>Real-World Example</strong>:</div>
+<div class="line">A single <strong>fact-checking article</strong> can correct one claim, but using <strong>data analytics</strong>, we can <strong>identify thousands of false claims spreading in real time</strong>.</div>
+</div>
+<hr class="docutils" />
+<p>🚀 Moving Forward: What You’ll Learn in Lesson 3</p>
+<div class="line-block">
+<div class="line">In the next lesson, we will <strong>shift from individual analysis to systematic data-driven detection</strong> by covering:</div>
+<div class="line">✅ <strong>What is Data Analytics?</strong></div>
+<div class="line">✅ <strong>How does data help us study misinformation?</strong></div>
+<div class="line">✅ <strong>Types of data used in misinformation analysis.</strong></div>
+<div class="line">✅ <strong>The first step: Identifying and acquiring misinformation-related data.</strong></div>
+</div>
+<p>By the end of Lesson 3, you’ll see <strong>how researchers use data to uncover misinformation patterns, track false narratives, and measure engagement trends.</strong></p>
+<p>🔹 <strong>Let’s get started with Introduction to Data Analytics!</strong> 🎯</p>
+<hr class="docutils" />
+<p>💭 Reflection Before Moving On</p>
+<div class="line-block">
+<div class="line">Before diving into Lesson 3, take a moment to consider:</div>
+<div class="line">📌 <strong>How can data help us solve the challenges we discussed?</strong></div>
+<div class="line">📌 <strong>Where do you think misinformation research should focus its efforts?</strong></div>
+</div>
+<p>(You can post your thoughts in the discussion thread for Lesson 3.)</p>
+<p><img alt="63ea704bb0be49009a41992ae1fb90d7" src="notebooks/Images/lesson1_1.png" /></p>
+<p><strong>📊 What is Data Analytics?</strong> <strong>Why It Matters</strong> Imagine a <strong>false election fraud claim</strong> circulating across social media, generating <strong>millions of shares within hours</strong>. Who started it? How did it spread? Which demographics were most affected? These are the types of questions <strong>data analytics</strong> can answer.</p>
+<p>💡 <em>With data analytics, researchers and journalists can uncover the origins of false information, analyze its reach, and develop countermeasures to prevent digital manipulation at scale.</em></p>
+<hr class="docutils" />
+<p><strong>🎯 Key Concepts in Data Analytics</strong> Data Analytics is the <strong>systematic process of examining, cleaning, transforming, and interpreting data</strong> to <strong>extract insights</strong> and drive decision-making. It is used in <strong>finance, healthcare, cybersecurity, and, crucially, in the fight against misinformation</strong>.</p>
+<div class="line-block">
+<div class="line"><strong>1️⃣ Data-Driven Decision-Making</strong></div>
+<div class="line">📌 <em>Using data instead of intuition for better decisions.</em></div>
+<div class="line">🔍 <em>Example:</em> Predicting which misinformation narratives are likely to go viral.</div>
+</div>
+<div class="line-block">
+<div class="line"><strong>2️⃣ Patterns and Trends</strong></div>
+<div class="line">📌 <em>Recognizing recurring behaviors in misinformation networks.</em></div>
+<div class="line">🔍 <em>Example:</em> Identifying <strong>viral hoaxes</strong> using engagement metrics.</div>
+</div>
+<div class="line-block">
+<div class="line"><strong>3️⃣ Ethics &amp; Privacy</strong></div>
+<div class="line">📌 <em>Ensuring fairness, compliance, and security in data use.</em></div>
+<div class="line">🔍 <em>Example:</em> Facebook AI’s efforts to <strong>balance misinformation detection with privacy rights</strong>.</div>
+</div>
+<hr class="docutils" />
+<p><strong>🔎 How Data Analytics Combats Misinformation</strong> Misinformation, disinformation, and malinformation (MDM) pose serious risks to <strong>public trust, security, and democracy</strong>. Data analytics helps by <strong>tracking, detecting, and mitigating</strong> these falsehoods.</p>
+<div class="line-block">
+<div class="line"><strong>1️⃣ Tracking the Spread of False Information</strong> ✅ <strong>Social Media Analysis</strong> – Identifies how false narratives spread across platforms.</div>
+<div class="line">✅ <strong>Network Graphs</strong> – Maps how misinformation flows between different users &amp; networks.</div>
+<div class="line">✅ <strong>Virality Metrics</strong> – Flags rapidly spreading misinformation for early intervention.</div>
+</div>
+<p>📌 <em>Example: Twitter’s AI detected over</em> <strong>50,000 bot accounts spreading election misinformation</strong><em>, reducing misinformation circulation by</em> <strong>15%</strong> <em>after interventions.</em></p>
+<hr class="docutils" />
+<div class="line-block">
+<div class="line"><strong>2️⃣ Detecting Automated &amp; Coordinated Campaigns</strong> ✅ <strong>Bot Detection Algorithms</strong> – Recognize automated behavior using timestamps &amp; frequency analysis.</div>
+<div class="line">✅ <strong>Sentiment &amp; NLP Analysis</strong> – Flag content that uses fear-mongering or outrage tactics.</div>
+<div class="line">✅ <strong>Deepfake Detection</strong> – Identify AI-generated false content through pattern recognition.</div>
+</div>
+<p>📌 <em>Example: Using AI-driven sentiment analysis, researchers flagged</em> <strong>fake COVID-19 treatment claims</strong> <em>before they went viral.</em></p>
+<hr class="docutils" />
+<div class="line-block">
+<div class="line"><strong>3️⃣ Evaluating the Impact of False Narratives</strong> ✅ <strong>Engagement Metrics</strong> – Measures which misinformation posts gain the most traction.</div>
+<div class="line">✅ <strong>Audience Analysis</strong> – Identifies which demographics are most susceptible.</div>
+<div class="line">✅ <strong>Comparing Fact-Checked vs. False Content</strong> – Measures how misinformation competes with accurate information.</div>
+</div>
+<p>📌 <em>Example: Studies show that false information spreads</em> <strong>6x faster</strong> <em>than verified news (MIT Sloan, 2021).</em></p>
+<hr class="docutils" />
+<p>🚀 <strong>Next Up:</strong> <em>Different Types of Data Analytics</em></p>
+<p>📊 Types of Data Analytics</p>
+<p>Data analytics is categorized into four key types, each offering a different level of insight. These categories range from understanding past events to predicting and optimizing future outcomes. In the context of misinformation, these analytical techniques <strong>help identify false narratives, understand their spread, anticipate future risks, and develop countermeasures</strong>.</p>
+<p>The Four Types of Data Analytics</p>
+<p>The four main types of data analytics are:</p>
+<div class="line-block">
+<div class="line">1️⃣ <strong>Descriptive Analytics</strong> (<em>What happened?</em>) – Summarizes historical data to identify patterns and trends.</div>
+<div class="line">2️⃣ <strong>Diagnostic Analytics</strong> (<em>Why did it happen?</em>) – Investigates causes behind patterns and anomalies.</div>
+<div class="line">3️⃣ <strong>Predictive Analytics</strong> (<em>What will happen?</em>) – Uses historical data to forecast future trends.</div>
+<div class="line">4️⃣ <strong>Prescriptive Analytics</strong> (<em>How can we make it happen?</em>) – Recommends data-driven actions for optimal decision-making.</div>
+</div>
+<p><img alt="4c7c71f914dc4e2f9c71e9de73d47d13" src="notebooks/Images/typesofdataanalytics.png" /></p>
+<p><strong>How These Analytics Types Work Together</strong></p>
+<ul class="simple">
+<li><p><strong>Descriptive analytics</strong> helps us <strong>understand past trends</strong>, such as tracking misinformation engagement over time.</p></li>
+<li><p><strong>Diagnostic analytics</strong> explains <strong>why misinformation spreads</strong>, revealing key influencers or amplification networks.</p></li>
+<li><p><strong>Predictive analytics</strong> anticipates <strong>which misinformation topics will go viral</strong>, enabling proactive intervention.</p></li>
+<li><p><strong>Prescriptive analytics</strong> recommends <strong>how to counter misinformation effectively</strong>, improving fact-checking and content moderation.</p></li>
+</ul>
+<p>🚀 <em>Next, let’s break down each type and see how they apply to combating misinformation!</em></p>
+<hr class="docutils" />
+<p>🔹 1. Descriptive Analytics – <em>What happened?</em></p>
+<p>Descriptive analytics focuses on summarizing past data to uncover patterns, trends, and engagement metrics. This is the foundation of data analytics and involves aggregating and visualizing data to provide meaningful summaries.</p>
+<p><strong>Techniques Used</strong></p>
+<ul class="simple">
+<li><p>Data aggregation &amp; reporting</p></li>
+<li><p>Histograms, bar charts, and frequency distributions</p></li>
+<li><p>Dashboards and summary statistics</p></li>
+</ul>
+<p>📌 <strong>Example:</strong> A social media dashboard showing <strong>engagement levels of misinformation posts</strong> over time.</p>
+<div class="line-block">
+<div class="line"><strong>MDM-Specific Application</strong></div>
+<div class="line">✔️ <strong>Tracking misinformation spread:</strong> Identifying the most shared misinformation articles or viral conspiracy theories.</div>
+<div class="line">✔️ <strong>Engagement analysis:</strong> Summarizing likes, shares, and comments on misleading content.</div>
+<div class="line">✔️ <strong>Hashtag monitoring:</strong> Determining which hashtags are frequently associated with false narratives.</div>
+</div>
+<div class="line-block">
+<div class="line"><strong>Example: Descriptive Analytics in MDM</strong></div>
+<div class="line"><strong>🔗 Source:</strong> <a class="reference external" href="https://misinforeview.hks.harvard.edu/article/addendum-to-research-note-examining-potential-bias-in-large-scale-censored-data/">Harvard Misinformation Review</a></div>
+</div>
+<p>📊 <em>Figure 1: Percentage of clicks on Facebook for Fake News, Not-Fake News, and Not-News (2017–2018).</em></p>
+<p><img alt="7ca7dead152e49c888972a8bab8e55d3" src="notebooks/Images/descriptive_analytics_example.png" /></p>
+<p>✅ <strong>Why this fits Descriptive Analytics:</strong></p>
+<ul class="simple">
+<li><p>Summarizes historical engagement data on Facebook misinformation.</p></li>
+<li><p>Uses <strong>visual representations (line charts)</strong> to communicate trends.</p></li>
+<li><p>Distinguishes between different categories (<strong>Fake News vs. Not-Fake News vs. Not-News</strong>).</p></li>
+</ul>
+<hr class="docutils" />
+<p>🔹 2. Diagnostic Analytics – <em>Why did it happen?</em></p>
+<p>Diagnostic analytics explores relationships between variables to identify <strong>causes and drivers</strong> of trends in misinformation. It goes beyond what happened to <strong>explain why misinformation spreads</strong>.</p>
+<p><strong>Techniques Used</strong></p>
+<ul class="simple">
+<li><p>Root cause analysis</p></li>
+<li><p>Correlation and regression analysis</p></li>
+<li><p>Time-series comparisons</p></li>
+<li><p>Network analysis</p></li>
+</ul>
+<p>📌 <strong>Example:</strong> Analyzing <strong>why misinformation about vaccines surged</strong> at specific time periods.</p>
+<div class="line-block">
+<div class="line"><strong>MDM-Specific Application</strong></div>
+<div class="line">✔️ <strong>Identifying misinformation drivers:</strong> Analyzing which users, influencers, or networks amplify false narratives.</div>
+<div class="line">✔️ <strong>Detecting misinformation clusters:</strong> Mapping <strong>bot activity and coordinated campaigns</strong>.</div>
+<div class="line">✔️ <strong>Understanding audience behavior:</strong> Investigating <strong>why certain demographics engage more</strong> with specific misinformation topics.</div>
+</div>
+<div class="line-block">
+<div class="line"><strong>Example: Diagnostic Analytics in MDM</strong></div>
+<div class="line"><strong>🔗 Source:</strong> <a class="reference external" href="https://knowablemagazine.org/content/article/society/2021/how-online-misinformation-spreads">Knowable Magazine</a></div>
+</div>
+<p>📊 <em>Figure: Online misinformation spread via interconnected communities</em></p>
+<p><img alt="29482121d5b14a088ca89eafd52b7e8f" src="notebooks/Images/diagnostic_analytics_example.svg" /></p>
+<p>Each dot in this diagram represents an online community hosted on one of six widely used social-media networks. (Vkontakte is a largely Russian network.) Black circles indicate communities that often contain hateful posts; the others are clusters that link to those. The green square near the center is a particular Gab community that emerged in early 2020 to discuss the pandemic, but quickly began to include misinformation and hate. Communities connect to one another with clickable links, and
+while they often form discrete groups within a platform, they can also link to different platforms. Such links can break and reconnect, creating changing pathways through which misinformation can travel. Breaking these links and preventing new ones from forming could be an effective way for society to control the spread of hate and misinformation.</p>
+<p>✅ <strong>Why this fits Diagnostic Analytics:</strong></p>
+<ul class="simple">
+<li><p><strong>Analyzes the structural connections</strong> between misinformation communities.</p></li>
+<li><p><strong>Explains why</strong> misinformation spreads by identifying <strong>high-risk networks</strong> (e.g., bot networks or echo chambers).</p></li>
+<li><p>Suggests <strong>potential interventions</strong>, leading into <strong>Prescriptive Analytics</strong>.</p></li>
+</ul>
+<hr class="docutils" />
+<p>🔹 3. Predictive Analytics – <em>What will happen?</em></p>
+<p>Predictive analytics leverages <strong>historical data, statistical models, and machine learning</strong> to forecast <strong>which misinformation narratives are likely to spread next</strong>.</p>
+<p><strong>Techniques Used</strong></p>
+<ul class="simple">
+<li><p>Machine learning models</p></li>
+<li><p>Time-series forecasting</p></li>
+<li><p>Sentiment analysis</p></li>
+<li><p>Predictive modeling</p></li>
+</ul>
+<p>📌 <strong>Example:</strong> <strong>Predicting which false claims</strong> will gain traction before an election or crisis.</p>
+<div class="line-block">
+<div class="line"><strong>MDM-Specific Application</strong></div>
+<div class="line">✔️ <strong>Forecasting misinformation surges:</strong> Identifying misinformation <strong>trends before they go viral</strong>.</div>
+<div class="line">✔️ <strong>Detecting coordinated campaigns early:</strong> Spotting <strong>anomalous posting patterns</strong>.</div>
+<div class="line">✔️ <strong>Sentiment forecasting:</strong> Predicting <strong>how misinformation narratives will be received</strong> by different audiences.</div>
+</div>
+<div class="line-block">
+<div class="line"><strong>Example: Predictive Analytics in MDM</strong></div>
+<div class="line"><strong>🔗 Source:</strong> <a class="reference external" href="https://www.frontiersin.org/journals/public-health/articles/10.3389/fpubh.2021.788074/full">Frontiers in Public Health</a></div>
+</div>
+<p>📊 <em>Figure 1: Application of machine learning for COVID-19 fake news detection</em></p>
+<p><img alt="d865f19d7a074b6988926179d42acb8b" src="notebooks/Images/predictive_analytics_example.jpg" /></p>
+<p>✅ <strong>Why this fits Predictive Analytics:</strong></p>
+<ul class="simple">
+<li><p>Uses <strong>machine learning</strong> to <strong>detect patterns in false narratives</strong>.</p></li>
+<li><p>Trains models on historical misinformation <strong>to predict future misinformation trends</strong>.</p></li>
+<li><p><strong>Proactively flags misinformation risks</strong> before they spread widely.</p></li>
+</ul>
+<hr class="docutils" />
+<p>🔹 4. Prescriptive Analytics – <em>How can we make it happen?</em></p>
+<p>Prescriptive analytics goes beyond prediction to <strong>recommend the best actions</strong> to combat misinformation. It integrates predictive insights with decision-making frameworks to optimize <strong>fact-checking, content moderation, and public awareness campaigns</strong>.</p>
+<p><strong>Techniques Used</strong></p>
+<ul class="simple">
+<li><p>Optimization algorithms</p></li>
+<li><p>Decision trees &amp; AI recommendations</p></li>
+<li><p>A/B testing &amp; intervention simulations</p></li>
+</ul>
+<p>📌 <strong>Example:</strong> <strong>Suggesting which misinformation countermeasures</strong> will be most effective based on past interventions.</p>
+<div class="line-block">
+<div class="line"><strong>MDM-Specific Application</strong></div>
+<div class="line">✔️ <strong>Developing intervention strategies:</strong> <strong>Using historical data</strong> to optimize fact-checking efforts.</div>
+<div class="line">✔️ <strong>Enhancing content moderation:</strong> AI-powered detection of <strong>harmful misinformation narratives</strong>.</div>
+<div class="line">✔️ <strong>Improving public awareness campaigns:</strong> Designing <strong>targeted debunking strategies</strong>.</div>
+</div>
+<p><strong>📌 Summary: How These Analytics Types Work Together</strong></p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Type</strong></p></th>
+<th class="head"><p><strong>Question Answered</strong></p></th>
+<th class="head"><p><strong>MDM Application</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Descriptive</strong></p></td>
+<td><p><em>What happened?</em></p></td>
+<td><p>Identifies misinformation trends &amp; engagement levels</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Diagnostic</strong></p></td>
+<td><p><em>Why did it happen?</em></p></td>
+<td><p>Analyzes sources, networks, &amp; amplification patterns</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Predictive</strong></p></td>
+<td><p><em>What will happen?</em></p></td>
+<td><p>Forecasts misinformation trends before they spread</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Prescriptive</strong></p></td>
+<td><p><em>How can we make it happen?</em></p></td>
+<td><p>Recommends interventions &amp; countermeasures</p></td>
+</tr>
+</tbody>
+</table>
+<p>By integrating these analytics techniques, <strong>researchers, policymakers, and platforms can develop proactive strategies to combat misinformation before it spreads.</strong></p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[1]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">create_multiple_choice</span><span class="p">(</span>
+    <span class="s2">&quot;Which type of analytics answers the question: &#39;What happened?&#39;&quot;</span><span class="p">,</span>
+    <span class="p">[</span>
+        <span class="s2">&quot;A) Diagnostic Analytics&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;B) Descriptive Analytics&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;C) Predictive Analytics&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;D) Prescriptive Analytics&quot;</span>
+    <span class="p">],</span>
+    <span class="s2">&quot;B) Descriptive Analytics&quot;</span>
+<span class="p">)</span>
+
+<span class="n">create_multiple_choice</span><span class="p">(</span>
+    <span class="s2">&quot;A misinformation researcher wants to understand the key drivers behind the rapid spread of a false narrative. Which type of analytics should they use?&quot;</span><span class="p">,</span>
+    <span class="p">[</span>
+        <span class="s2">&quot;A) Descriptive Analytics&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;B) Diagnostic Analytics&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;C) Predictive Analytics&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;D) Prescriptive Analytics&quot;</span>
+    <span class="p">],</span>
+    <span class="s2">&quot;B) Diagnostic Analytics&quot;</span>
+<span class="p">)</span>
+
+<span class="n">create_multiple_choice</span><span class="p">(</span>
+    <span class="s2">&quot;Which type of analytics helps determine &#39;what will happen next&#39; using historical data and forecasting models?&quot;</span><span class="p">,</span>
+    <span class="p">[</span>
+        <span class="s2">&quot;A) Descriptive Analytics&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;B) Diagnostic Analytics&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;C) Predictive Analytics&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;D) Prescriptive Analytics&quot;</span>
+    <span class="p">],</span>
+    <span class="s2">&quot;C) Predictive Analytics&quot;</span>
+<span class="p">)</span>
+
+<span class="n">create_multiple_choice</span><span class="p">(</span>
+    <span class="s2">&quot;If a social media platform wants to recommend the best intervention strategy to counter misinformation, which type of analytics should they use?&quot;</span><span class="p">,</span>
+    <span class="p">[</span>
+        <span class="s2">&quot;A) Descriptive Analytics&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;B) Diagnostic Analytics&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;C) Predictive Analytics&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;D) Prescriptive Analytics&quot;</span>
+    <span class="p">],</span>
+    <span class="s2">&quot;D) Prescriptive Analytics&quot;</span>
+<span class="p">)</span>
+<br/></pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+<span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
+<span class="ansi-red-intense-fg ansi-bold">NameError</span>                                 Traceback (most recent call last)
+Cell <span class="ansi-green-intense-fg ansi-bold">In[1], line 1</span>
+<span class="ansi-green-intense-fg ansi-bold">----&gt; 1</span> <span class="ansi-yellow-bg">create_multiple_choice</span>(
+<span class="ansi-green-fg">      2</span>     <span style="color: rgb(175,0,0)">&#34;</span><span style="color: rgb(175,0,0)">Which type of analytics answers the question: </span><span style="color: rgb(175,0,0)">&#39;</span><span style="color: rgb(175,0,0)">What happened?</span><span style="color: rgb(175,0,0)">&#39;</span><span style="color: rgb(175,0,0)">&#34;</span>,
+<span class="ansi-green-fg">      3</span>     [
+<span class="ansi-green-fg">      4</span>         <span style="color: rgb(175,0,0)">&#34;</span><span style="color: rgb(175,0,0)">A) Diagnostic Analytics</span><span style="color: rgb(175,0,0)">&#34;</span>,
+<span class="ansi-green-fg">      5</span>         <span style="color: rgb(175,0,0)">&#34;</span><span style="color: rgb(175,0,0)">B) Descriptive Analytics</span><span style="color: rgb(175,0,0)">&#34;</span>,
+<span class="ansi-green-fg">      6</span>         <span style="color: rgb(175,0,0)">&#34;</span><span style="color: rgb(175,0,0)">C) Predictive Analytics</span><span style="color: rgb(175,0,0)">&#34;</span>,
+<span class="ansi-green-fg">      7</span>         <span style="color: rgb(175,0,0)">&#34;</span><span style="color: rgb(175,0,0)">D) Prescriptive Analytics</span><span style="color: rgb(175,0,0)">&#34;</span>
+<span class="ansi-green-fg">      8</span>     ],
+<span class="ansi-green-fg">      9</span>     <span style="color: rgb(175,0,0)">&#34;</span><span style="color: rgb(175,0,0)">B) Descriptive Analytics</span><span style="color: rgb(175,0,0)">&#34;</span>
+<span class="ansi-green-fg">     10</span> )
+<span class="ansi-green-fg">     12</span> create_multiple_choice(
+<span class="ansi-green-fg">     13</span>     <span style="color: rgb(175,0,0)">&#34;</span><span style="color: rgb(175,0,0)">A misinformation researcher wants to understand the key drivers behind the rapid spread of a false narrative. Which type of analytics should they use?</span><span style="color: rgb(175,0,0)">&#34;</span>,
+<span class="ansi-green-fg">     14</span>     [
+<span class="ansi-green-intense-fg ansi-bold">   (...)</span>
+<span class="ansi-green-fg">     20</span>     <span style="color: rgb(175,0,0)">&#34;</span><span style="color: rgb(175,0,0)">B) Diagnostic Analytics</span><span style="color: rgb(175,0,0)">&#34;</span>
+<span class="ansi-green-fg">     21</span> )
+<span class="ansi-green-fg">     23</span> create_multiple_choice(
+<span class="ansi-green-fg">     24</span>     <span style="color: rgb(175,0,0)">&#34;</span><span style="color: rgb(175,0,0)">Which type of analytics helps determine </span><span style="color: rgb(175,0,0)">&#39;</span><span style="color: rgb(175,0,0)">what will happen next</span><span style="color: rgb(175,0,0)">&#39;</span><span style="color: rgb(175,0,0)"> using historical data and forecasting models?</span><span style="color: rgb(175,0,0)">&#34;</span>,
+<span class="ansi-green-fg">     25</span>     [
+<span class="ansi-green-intense-fg ansi-bold">   (...)</span>
+<span class="ansi-green-fg">     31</span>     <span style="color: rgb(175,0,0)">&#34;</span><span style="color: rgb(175,0,0)">C) Predictive Analytics</span><span style="color: rgb(175,0,0)">&#34;</span>
+<span class="ansi-green-fg">     32</span> )
+
+<span class="ansi-red-intense-fg ansi-bold">NameError</span>: name &#39;create_multiple_choice&#39; is not defined
+</pre></div></div>
+</div>
+<p>🚀 <strong>Next Up:</strong> <em>Now that we understand different types of analytics, let’s discuss an equally important question: How do we structure and manage the data we analyze?</em></p>
+<p>🏗️ <strong>From Data Analytics to Data Structure: Why It Matters</strong></p>
+<p>Now that we’ve explored the <strong>different types of data analytics</strong>—descriptive, diagnostic, predictive, and prescriptive—it’s crucial to recognize that <strong>the structure of data significantly impacts how effectively we can analyze MDM.</strong></p>
+<div class="line-block">
+<div class="line">🚀 <strong>Why Does Data Structure Matter?</strong></div>
+<div class="line">🔹 <strong>Different types of data require different analytical approaches.</strong></div>
+<div class="line">    ➡ Predictive models rely on structured, numeric data, while misinformation detection often involves unstructured text and images.</div>
+</div>
+<div class="line-block">
+<div class="line">🔹 <strong>Data storage and processing affect the insights we can extract.</strong></div>
+<div class="line">    ➡ Social media misinformation analysis requires handling a mix of <strong>structured numerical metrics</strong> (likes, shares) and <strong>unstructured text, images, and videos</strong> (posts, comments).</div>
+</div>
+<div class="line-block">
+<div class="line">🔹 <strong>Choosing the right approach for MDM analytics starts with understanding data structure.</strong></div>
+<div class="line">    ➡ Fact-checking databases store <strong>structured claim-verification pairs</strong>, while misinformation trend detection depends on <strong>unstructured social media text analysis</strong>.</div>
+</div>
+<hr class="docutils" />
+<p><img alt="2ed7316a9526403c9904b1f3c3831943" src="notebooks/Images/lesson1strucvunstruc.png" /></p>
+<div class="line-block">
+<div class="line"><strong>🧐 Structured vs. Unstructured Data</strong></div>
+<div class="line">Before diving deeper into misinformation analysis, we must first understand <strong>two fundamental categories of data</strong>:</div>
+</div>
+<div class="line-block">
+<div class="line">📊 <strong>1. Structured Data</strong></div>
+<div class="line"><strong>Definition:</strong> Structured data is <strong>organized, formatted, and machine-readable</strong>, typically stored in <strong>relational databases or spreadsheets</strong>.</div>
+</div>
+<div class="line-block">
+<div class="line"><strong>🔹 Examples of Structured Data in MDM Analysis</strong></div>
+<div class="line">✅ <strong>Social Media Engagement Metrics:</strong></div>
+<div class="line">    ➡ Tables containing <strong>post IDs, users, likes, shares, comments, and timestamps</strong>.</div>
+</div>
+<div class="line-block">
+<div class="line">✅ <strong>Fact-Checking Datasets:</strong></div>
+<div class="line">    ➡ Tabular records mapping <strong>false claims to fact-checking verdicts and sources</strong>.</div>
+</div>
+<div class="line-block">
+<div class="line">✅ <strong>Bot Detection Data:</strong></div>
+<div class="line">    ➡ Structured logs tracking <strong>account activity, timestamps, and interaction frequency</strong>.</div>
+</div>
+<p>📌 <em>Example Table: Social Media Engagement Metrics</em></p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Post ID</p></th>
+<th class="head"><p>User</p></th>
+<th class="head"><p>Likes</p></th>
+<th class="head"><p>Shares</p></th>
+<th class="head"><p>Comments</p></th>
+<th class="head"><p>Timestamp</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>12345</p></td>
+<td><p>seagate48</p></td>
+<td><p>340</p></td>
+<td><p>120</p></td>
+<td><p>56</p></td>
+<td><p>2024-11-01 14:30:00</p></td>
+</tr>
+<tr class="row-odd"><td><p>15</p></td>
+<td><p>swiftie99</p></td>
+<td><p>12,703</p></td>
+<td><p>1,609</p></td>
+<td><p>471</p></td>
+<td><p>2021-07-21 19:23:06</p></td>
+</tr>
+</tbody>
+</table>
+<p>📌 <em>Example Table: Fact-Checking Dataset</em></p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Claim ID</p></th>
+<th class="head"><p>Claim</p></th>
+<th class="head"><p>Verdict</p></th>
+<th class="head"><p>Source</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>101</p></td>
+<td><p>“Vaccines cause autism”</p></td>
+<td><p>False</p></td>
+<td><p>CDC Fact Check</p></td>
+</tr>
+<tr class="row-odd"><td><p>1139</p></td>
+<td><p>“Politician caught on tape planning election rigging”</p></td>
+<td><p>False</p></td>
+<td><p>Politico</p></td>
+</tr>
+</tbody>
+</table>
+<div class="line-block">
+<div class="line">🔍 <strong>Advantages of Structured Data</strong></div>
+<div class="line">✔ <strong>Easier to analyze</strong> – Easily processed using SQL, Pandas, and statistical tools.</div>
+<div class="line">✔ <strong>Machine-readable</strong> – Well-suited for automation and AI-based fact-checking.</div>
+<div class="line">✔ <strong>Highly scalable</strong> – Can be efficiently stored and queried in relational databases.</div>
+</div>
+<hr class="docutils" />
+<div class="line-block">
+<div class="line">📝 <strong>2. Unstructured Data</strong></div>
+<div class="line"><strong>Definition:</strong> Unstructured data <strong>lacks a predefined format</strong>, requiring additional processing to extract meaning.</div>
+</div>
+<div class="line-block">
+<div class="line"><strong>🔹 Examples of Unstructured Data in MDM Analysis</strong></div>
+<div class="line">✅ <strong>Social Media Posts &amp; Comments:</strong></div>
+<div class="line">    ➡ Raw text of tweets, Facebook comments, or Reddit discussions.</div>
+</div>
+<div class="line-block">
+<div class="line">✅ <strong>News Articles &amp; Blogs:</strong></div>
+<div class="line">    ➡ Long-form misinformation narratives with no predefined structure.</div>
+</div>
+<div class="line-block">
+<div class="line">✅ <strong>Multimedia Content (Images, Videos, Audio):</strong></div>
+<div class="line">    ➡ Viral videos, memes, and podcasts spreading false information.</div>
+</div>
+<div class="line-block">
+<div class="line">📌 <em>Example: Unstructured Social Media Post</em></div>
+<div class="line">Tweet: “COVID-19 is a hoax! Don’t trust the government. FakeNews” 📌 <em>Example: Unstructured News Article</em></div>
+<div class="line">Headline: “Breaking: New Study Debunks Vaccine Myths” Article: “Recent research published by XYZ demonstrates…”</div>
+</div>
+<div class="line-block">
+<div class="line">⚠ <strong>Challenges of Unstructured Data</strong></div>
+<div class="line">❌ <strong>Difficult to analyze</strong> – Requires advanced tools like NLP and AI for text/image recognition.</div>
+<div class="line">❌ <strong>High variability</strong> – Misinformation content is inconsistent in structure and format.</div>
+<div class="line">❌ <strong>Harder to store</strong> – Unlike structured tables, unstructured data needs specialized storage solutions.</div>
+</div>
+<hr class="docutils" />
+<p><strong>🔎 Structured vs. Unstructured Data: Key Comparisons</strong></p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Feature</p></th>
+<th class="head"><p>Structured Data</p></th>
+<th class="head"><p>Unstructured Data</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Format</strong></p></td>
+<td><p>Organized (tables, databases)</p></td>
+<td><p>Raw (text, images, videos)</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Storage</strong></p></td>
+<td><p>SQL databases, spreadsheets</p></td>
+<td><p>NoSQL, cloud storage systems</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Ease of Analysis</strong></p></td>
+<td><p>Easy to query and analyze</p></td>
+<td><p>Requires preprocessing and cleaning</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Examples</strong></p></td>
+<td><p>Retweet counts, engagement metrics</p></td>
+<td><p>Tweets, news articles, viral videos</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Analysis Tools</strong></p></td>
+<td><p>SQL, Excel, Pandas</p></td>
+<td><p>NLP, image/video processing tools</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Applications</strong></p></td>
+<td><p>Quantifying misinformation engagement</p></td>
+<td><p>Understanding themes, sentiment, context</p></td>
+</tr>
+</tbody>
+</table>
+<hr class="docutils" />
+<p><strong>📌 Why This Matters for Misinformation Analysis</strong> Understanding the difference between <strong>structured and unstructured data</strong> is crucial for designing effective <strong>MDM detection strategies</strong>.</p>
+<p>📌 <strong>Structured Data</strong> helps researchers quantify <strong>engagement patterns</strong> (e.g., tracking likes and shares on misleading content).</p>
+<p>📌 <strong>Unstructured Data</strong> enables advanced <strong>text, image, and video analysis</strong> to identify <strong>false claims, deepfakes, and coordinated disinformation efforts</strong>.</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">ipywidgets</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">widgets</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">IPython.display</span><span class="w"> </span><span class="kn">import</span> <span class="n">display</span>
+
+ <span class="n">Example</span> <span class="n">DataFrames</span> <span class="k">for</span> <span class="n">structured</span> <span class="n">data</span>
+<span class="n">structured_data_1</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
+    <span class="s2">&quot;Post ID&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">101</span><span class="p">,</span> <span class="mi">102</span><span class="p">,</span> <span class="mi">103</span><span class="p">],</span>
+    <span class="s2">&quot;Likes&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">150</span><span class="p">,</span> <span class="mi">230</span><span class="p">,</span> <span class="mi">120</span><span class="p">],</span>
+    <span class="s2">&quot;Shares&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">25</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">10</span><span class="p">],</span>
+    <span class="s2">&quot;Comments&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+<span class="p">})</span>
+
+<span class="n">structured_data_2</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
+    <span class="s2">&quot;Misinformation Source&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;FakeNewsSite1.com&quot;</span><span class="p">,</span> <span class="s2">&quot;MisleadingBlog.net&quot;</span><span class="p">,</span> <span class="s2">&quot;ConspiracyForum.org&quot;</span><span class="p">],</span>
+    <span class="s2">&quot;Fact-Checking Verdict&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;False&quot;</span><span class="p">,</span> <span class="s2">&quot;Misleading&quot;</span><span class="p">,</span> <span class="s2">&quot;Unverified&quot;</span><span class="p">],</span>
+    <span class="s2">&quot;URL&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;https://factcheck.org/fake1&quot;</span><span class="p">,</span> <span class="s2">&quot;https://factcheck.org/fake2&quot;</span><span class="p">,</span> <span class="s2">&quot;https://factcheck.org/fake3&quot;</span><span class="p">]</span>
+<span class="p">})</span>
+
+ <span class="n">Example</span> <span class="n">Text</span> <span class="k">for</span> <span class="n">Unstructured</span> <span class="n">Data</span>
+<span class="n">unstructured_data_1</span> <span class="o">=</span> <span class="s2">&quot;I saw this post on Facebook saying that 5G causes COVID-19! Can anyone confirm?&quot;</span>
+<span class="n">unstructured_data_2</span> <span class="o">=</span> <span class="s2">&quot;Podcast Episode: &#39;The Real Truth About Vaccines&#39; - 45-minute audio file discussing vaccine conspiracy theories.&quot;</span>
+<span class="n">unstructured_data_3</span> <span class="o">=</span> <span class="s2">&quot;A meme image showing a politician with fake statistics in bold letters.&quot;</span>
+
+ <span class="n">Display</span> <span class="n">first</span> <span class="n">structured</span> <span class="n">data</span> <span class="n">example</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">📊 Example 1: Social Media Engagement Data</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">structured_data_1</span><span class="p">)</span>
+
+<span class="n">create_multiple_choice</span><span class="p">(</span>
+    <span class="s2">&quot;Based on the table above, is this an example of structured or unstructured data?&quot;</span><span class="p">,</span>
+    <span class="p">[</span>
+        <span class="s2">&quot;A) Structured Data&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;B) Unstructured Data&quot;</span>
+    <span class="p">],</span>
+    <span class="s2">&quot;A) Structured Data&quot;</span>
+<span class="p">)</span>
+
+ <span class="n">Display</span> <span class="n">second</span> <span class="n">unstructured</span> <span class="n">data</span> <span class="n">example</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">🎙 Example 2: Podcast Description</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;&quot;</span><span class="si">{</span><span class="n">unstructured_data_2</span><span class="si">}</span><span class="s1">&quot;&#39;</span><span class="p">)</span>
+
+<span class="n">create_multiple_choice</span><span class="p">(</span>
+    <span class="s2">&quot;The podcast episode mentioned above contains misinformation in an audio format. Is this structured or unstructured data?&quot;</span><span class="p">,</span>
+    <span class="p">[</span>
+        <span class="s2">&quot;A) Structured Data&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;B) Unstructured Data&quot;</span>
+    <span class="p">],</span>
+    <span class="s2">&quot;B) Unstructured Data&quot;</span>
+<span class="p">)</span>
+
+ <span class="n">Display</span> <span class="n">third</span> <span class="n">unstructured</span> <span class="n">data</span> <span class="n">example</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">🖼 Example 3: Misinformation Meme</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;&quot;</span><span class="si">{</span><span class="n">unstructured_data_3</span><span class="si">}</span><span class="s1">&quot;&#39;</span><span class="p">)</span>
+
+<span class="n">create_multiple_choice</span><span class="p">(</span>
+    <span class="s2">&quot;A misinformation meme image contains false information but does not follow a structured format. Is this structured or unstructured data?&quot;</span><span class="p">,</span>
+    <span class="p">[</span>
+        <span class="s2">&quot;A) Structured Data&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;B) Unstructured Data&quot;</span>
+    <span class="p">],</span>
+    <span class="s2">&quot;B) Unstructured Data&quot;</span>
+<span class="p">)</span>
+
+ <span class="n">Display</span> <span class="n">second</span> <span class="n">structured</span> <span class="n">data</span> <span class="n">example</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">📊 Example 4: Fact-Checking Dataset</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">structured_data_2</span><span class="p">)</span>
+
+<span class="n">create_multiple_choice</span><span class="p">(</span>
+    <span class="s2">&quot;The table above stores fact-checking results of misinformation sources. Is this structured or unstructured data?&quot;</span><span class="p">,</span>
+    <span class="p">[</span>
+        <span class="s2">&quot;A) Structured Data&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;B) Unstructured Data&quot;</span>
+    <span class="p">],</span>
+    <span class="s2">&quot;A) Structured Data&quot;</span>
+<span class="p">)</span>
+
+ <span class="n">Display</span> <span class="n">first</span> <span class="n">unstructured</span> <span class="n">data</span> <span class="n">example</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">📝 Example 5: Raw Social Media Post</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;&quot;</span><span class="si">{</span><span class="n">unstructured_data_1</span><span class="si">}</span><span class="s1">&quot;&#39;</span><span class="p">)</span>
+
+<span class="n">create_multiple_choice</span><span class="p">(</span>
+    <span class="s2">&quot;The text above is a raw social media post without any predefined format. Is this structured or unstructured data?&quot;</span><span class="p">,</span>
+    <span class="p">[</span>
+        <span class="s2">&quot;A) Structured Data&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;B) Unstructured Data&quot;</span>
+    <span class="p">],</span>
+    <span class="s2">&quot;B) Unstructured Data&quot;</span>
+<span class="p">)</span>
+<br/><br/></pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+<span class="ansi-cyan-intense-fg ansi-bold">  Cell </span><span class="ansi-green-intense-fg ansi-bold">In[2], line 5</span>
+<span class="ansi-yellow-intense-fg ansi-bold">    Example DataFrames for structured data</span>
+<span class="ansi-white-intense-fg ansi-bold">    ^</span>
+<span class="ansi-red-intense-fg ansi-bold">IndentationError</span><span class="ansi-red-intense-fg ansi-bold">:</span> unexpected indent
+
+</pre></div></div>
+</div>
+<p>🚀 <em>Next Up: How do we preprocess and analyze these data types to extract meaningful insights? Let’s explore the data analysis pipeline!</em></p>
+<p><img alt="752655179f724ef7be9de29703dcbdb7" src="notebooks/Images/lesson1_32.png" /></p>
+<p>🔍 <strong>The Data Analysis Process: From Raw Data to Actionable Insights</strong></p>
+<p><strong>📌 Why Is a Structured Process Important?</strong> Data analysis is not just about numbers—it’s about <strong>turning raw data into meaningful insights</strong> that drive decision-making. Without a structured approach, data can be overwhelming, inconsistent, or misleading.</p>
+<div class="line-block">
+<div class="line">When analyzing <strong>MDM</strong>, following a clear process helps ensure:</div>
+<div class="line">✔ <strong>Accuracy</strong> – Reducing bias and errors when processing data.</div>
+<div class="line">✔ <strong>Scalability</strong> – Handling massive datasets efficiently.</div>
+<div class="line">✔ <strong>Reproducibility</strong> – Ensuring transparency in research and interventions.</div>
+<div class="line">✔ <strong>Actionability</strong> – Extracting insights that lead to real-world solutions.</div>
+</div>
+<hr class="docutils" />
+<div class="line-block">
+<div class="line"><strong>🛠️ The Five Stages of Data Analysis</strong></div>
+<div class="line">The data analysis process generally consists of <strong>five key stages</strong>:</div>
+</div>
+<p><strong>1️⃣ Identification: Defining the Problem &amp; Goals</strong> Before collecting or analyzing data, we must first ask:</p>
+<ul class="simple">
+<li><p><strong>What are we trying to uncover?</strong></p></li>
+<li><p><strong>What questions do we need data to answer?</strong></p></li>
+<li><p><strong>What are the biases or limitations in our approach?</strong></p></li>
+</ul>
+<div class="line-block">
+<div class="line">📌 <strong>MDM Example:</strong></div>
+<div class="line">🎭 <em>Researching COVID-19 misinformation, we may ask:</em></div>
+<div class="line">➡ <em>Which false narratives gained the most traction?</em></div>
+<div class="line">➡ <em>What types of users spread the most misinformation?</em></div>
+<div class="line">➡ <em>Did misinformation engagement increase over time?</em></div>
+</div>
+<p><strong>Goal:</strong> Clearly defining the scope ensures <strong>focused and relevant analysis</strong>.</p>
+<hr class="docutils" />
+<div class="line-block">
+<div class="line"><strong>2️⃣ Acquisition: Collecting the Right Data</strong></div>
+<div class="line">Once we know what we need, the next step is <strong>gathering relevant data sources</strong>.</div>
+</div>
+<div class="line-block">
+<div class="line">📌 <strong>Common Data Sources in MDM Analysis:</strong></div>
+<div class="line">✔ <strong>Social Media APIs</strong> – Extracting posts, comments, and engagement metrics.</div>
+<div class="line">✔ <strong>Fact-Checking Databases</strong> – Collecting verified claims from organizations like Snopes or PolitiFact.</div>
+<div class="line">✔ <strong>Web Scraping</strong> – Gathering misinformation from blogs, forums, or disinformation websites.</div>
+<div class="line">✔ <strong>Survey &amp; Experimental Data</strong> – Understanding user susceptibility and belief patterns.</div>
+</div>
+<div class="line-block">
+<div class="line">⚠ <strong>Challenges:</strong></div>
+<div class="line">🔹 Data availability (platform restrictions, API limitations)</div>
+<div class="line">🔹 Privacy concerns and ethical implications</div>
+<div class="line">🔹 Noise in data (irrelevant, duplicate, or biased samples)</div>
+</div>
+<hr class="docutils" />
+<p><strong>3️⃣ Preprocessing: Cleaning &amp; Structuring Data for Analysis</strong> Raw data is often <strong>messy, inconsistent, and incomplete</strong>—especially when dealing with unstructured text or social media data. Preprocessing ensures that data is <strong>clean, reliable, and ready for analysis</strong>.</p>
+<div class="line-block">
+<div class="line">📌 <strong>Key Preprocessing Steps:</strong></div>
+<div class="line">✔ <strong>Handling Missing Data</strong> – Filling in or removing incomplete entries.</div>
+<div class="line">✔ <strong>Deduplication</strong> – Removing duplicate posts, retweets, or bot-generated spam.</div>
+<div class="line">✔ <strong>Text Processing</strong> – Tokenization, stemming, and lemmatization for NLP-based misinformation detection.</div>
+<div class="line">✔ <strong>Feature Engineering</strong> – Creating new variables (e.g., engagement scores, sentiment polarity).</div>
+</div>
+<div class="line-block">
+<div class="line">📌 <strong>Example:</strong></div>
+<div class="line"><em>Before analyzing tweets about misinformation, we must:</em></div>
+</div>
+<ul class="simple">
+<li><p>Convert text to lowercase</p></li>
+<li><p>Remove special characters and stopwords</p></li>
+<li><p>Convert URLs and hashtags into useful features</p></li>
+<li><p>Tokenize words for NLP-based modeling</p></li>
+</ul>
+<p>⚠ <strong>Why It Matters:</strong> Poorly processed data can lead to <strong>misleading insights or biased conclusions</strong>.</p>
+<hr class="docutils" />
+<p><strong>4️⃣ Analysis: Uncovering Trends, Patterns &amp; Anomalies</strong> This is where we apply <strong>statistical, exploratory, and machine learning techniques</strong> to draw insights from data.</p>
+<div class="line-block">
+<div class="line">📌 <strong>Key Analytical Approaches:</strong></div>
+<div class="line">✔ <strong>Exploratory Data Analysis (EDA)</strong> – Visualizing distributions, outliers, and patterns.</div>
+<div class="line">✔ <strong>Descriptive Statistics</strong> – Summarizing engagement trends (e.g., average likes per misinformation post).</div>
+<div class="line">✔ <strong>Network Analysis</strong> – Mapping relationships between misinformation spreaders.</div>
+<div class="line">✔ <strong>Predictive Modeling</strong> – Forecasting which misinformation will go viral.</div>
+<div class="line">✔ <strong>Sentiment &amp; Topic Analysis</strong> – Identifying emotional manipulation tactics.</div>
+</div>
+<div class="line-block">
+<div class="line">📌 <strong>Example:</strong></div>
+<div class="line"><em>Analyzing election misinformation on Facebook, we may:</em></div>
+<div class="line">➡ Compare engagement between fake vs. fact-checked posts</div>
+<div class="line">➡ Identify spikes in misinformation before key political events</div>
+<div class="line">➡ Detect bot activity based on abnormal posting patterns</div>
+</div>
+<hr class="docutils" />
+<div class="line-block">
+<div class="line"><strong>5️⃣ Interpretation: Communicating Insights &amp; Making Decisions</strong> The final step is <strong>transforming findings into real-world impact</strong>. This includes:</div>
+<div class="line">📌 <strong>Reporting</strong> – Creating dashboards, reports, and executive summaries.</div>
+<div class="line">📌 <strong>Policy Implications</strong> – Advising platforms, researchers, or policymakers on misinformation trends.</div>
+<div class="line">📌 <strong>Algorithm Adjustments</strong> – Informing social media companies on content moderation strategies.</div>
+<div class="line">📌 <strong>Public Awareness Campaigns</strong> – Using insights to educate users about misinformation tactics.</div>
+</div>
+<div class="line-block">
+<div class="line">📌 <strong>Example:</strong></div>
+<div class="line">After analyzing COVID-19 misinformation trends, researchers may:</div>
+<div class="line">✔ Recommend <strong>early warning systems</strong> for misinformation spikes.</div>
+<div class="line">✔ Suggest <strong>algorithm tweaks</strong> to reduce misinformation amplification.</div>
+<div class="line">✔ Develop <strong>fact-checking automation</strong> using AI-based models.</div>
+</div>
+<hr class="docutils" />
+<p><strong>📌 Summary: The Data Analysis Workflow for MDM Detection</strong> | <strong>Stage</strong> | <strong>What It Involves</strong> | <strong>MDM Application Example</strong> | |—————–|——————————–|————————————————–| | <strong>1. Identification</strong> | Define research questions &amp; goals | <em>What types of misinformation go viral?</em> | | <strong>2. Acquisition</strong> | Collect data from reliable sources | <em>Extracting tweets, fact-checks, engagement metrics</em> | | <strong>3. Preprocessing</strong> | Clean
+and structure data | <em>Removing spam, tokenizing text for NLP analysis</em> | | <strong>4. Analysis</strong> | Uncover patterns &amp; trends | <em>Detecting bot-driven misinformation campaigns</em> | | <strong>5. Interpretation</strong> | Communicate &amp; apply insights | <em>Developing misinformation counter-strategies</em> |</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">create_fill_in_the_blank</span><span class="p">(</span>
+    <span class="s2">&quot;Before analyzing data, we must ask, &#39;What questions do we need data to answer?&#39; This step is part of the _______ stage of data analysis.&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;identification&quot;</span>
+<span class="p">)</span>
+
+<span class="n">create_fill_in_the_blank</span><span class="p">(</span>
+    <span class="s2">&quot;The last stage of the data analysis workflow, which involves communicating findings and making policy recommendations, is called _______.&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;interpretation&quot;</span>
+<span class="p">)</span>
+
+<span class="n">create_fill_in_the_blank</span><span class="p">(</span>
+    <span class="s2">&quot;The process of gathering relevant data sources, such as social media posts or fact-checking databases, is known as _______.&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;acquisition&quot;</span>
+<span class="p">)</span>
+
+<span class="n">create_fill_in_the_blank</span><span class="p">(</span>
+    <span class="s2">&quot;Techniques such as exploratory data analysis (EDA), network analysis, and sentiment analysis are applied in the _______ stage.&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;analysis&quot;</span>
+<span class="p">)</span>
+
+<span class="n">create_fill_in_the_blank</span><span class="p">(</span>
+    <span class="s2">&quot;Removing duplicate posts, handling missing data, and cleaning text are key steps in the _______ stage of data analysis.&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;preprocessing&quot;</span>
+<span class="p">)</span>
+<br/></pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+<span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
+<span class="ansi-red-intense-fg ansi-bold">NameError</span>                                 Traceback (most recent call last)
+Cell <span class="ansi-green-intense-fg ansi-bold">In[3], line 1</span>
+<span class="ansi-green-intense-fg ansi-bold">----&gt; 1</span> <span class="ansi-yellow-bg">create_fill_in_the_blank</span>(
+<span class="ansi-green-fg">      2</span>     <span style="color: rgb(175,0,0)">&#34;</span><span style="color: rgb(175,0,0)">Before analyzing data, we must ask, </span><span style="color: rgb(175,0,0)">&#39;</span><span style="color: rgb(175,0,0)">What questions do we need data to answer?</span><span style="color: rgb(175,0,0)">&#39;</span><span style="color: rgb(175,0,0)"> This step is part of the _______ stage of data analysis.</span><span style="color: rgb(175,0,0)">&#34;</span>,
+<span class="ansi-green-fg">      3</span>     <span style="color: rgb(175,0,0)">&#34;</span><span style="color: rgb(175,0,0)">identification</span><span style="color: rgb(175,0,0)">&#34;</span>
+<span class="ansi-green-fg">      4</span> )
+<span class="ansi-green-fg">      6</span> create_fill_in_the_blank(
+<span class="ansi-green-fg">      7</span>     <span style="color: rgb(175,0,0)">&#34;</span><span style="color: rgb(175,0,0)">The last stage of the data analysis workflow, which involves communicating findings and making policy recommendations, is called _______.</span><span style="color: rgb(175,0,0)">&#34;</span>,
+<span class="ansi-green-fg">      8</span>     <span style="color: rgb(175,0,0)">&#34;</span><span style="color: rgb(175,0,0)">interpretation</span><span style="color: rgb(175,0,0)">&#34;</span>
+<span class="ansi-green-fg">      9</span> )
+<span class="ansi-green-fg">     11</span> create_fill_in_the_blank(
+<span class="ansi-green-fg">     12</span>     <span style="color: rgb(175,0,0)">&#34;</span><span style="color: rgb(175,0,0)">The process of gathering relevant data sources, such as social media posts or fact-checking databases, is known as _______.</span><span style="color: rgb(175,0,0)">&#34;</span>,
+<span class="ansi-green-fg">     13</span>     <span style="color: rgb(175,0,0)">&#34;</span><span style="color: rgb(175,0,0)">acquisition</span><span style="color: rgb(175,0,0)">&#34;</span>
+<span class="ansi-green-fg">     14</span> )
+
+<span class="ansi-red-intense-fg ansi-bold">NameError</span>: name &#39;create_fill_in_the_blank&#39; is not defined
+</pre></div></div>
+</div>
+<hr class="docutils" />
+<p><strong>🚀 What’s Next?</strong> Understanding this process sets the foundation for <strong>hands-on data analytics</strong>. In upcoming lessons, you’ll:</p>
+<p>📌 Work with <strong>real-world misinformation datasets</strong>.</p>
+<p>📌 Use <strong>Python</strong> for in-depth analysis.</p>
+<p>📌 Develop <strong>data-driven interventions</strong> to combat digital deception.</p>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="Guest_Speaker1.html" class="btn btn-neutral float-left" title="UN CIFAL Honolulu Research Director" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Lesson4.html" class="btn btn-neutral float-right" title="Understanding the Problem, Data Identification, and Data Acquisition" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, Beverly Rice.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

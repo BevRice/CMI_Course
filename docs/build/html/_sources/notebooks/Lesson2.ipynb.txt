@@ -13,7 +13,7 @@
    "id": "a37008bf",
    "metadata": {},
    "source": [
-    "# 🔹 1. Why Misinformation is Persuasive  \n",
+    " 🔹 1. Why Misinformation is Persuasive  \n",
     "\n",
     "📌 Misinformation **exploits** predictable flaws in human reasoning. These include:\n",
     "- **Cognitive Biases** → Mental shortcuts that distort how we interpret information.\n",
@@ -64,7 +64,7 @@
    "id": "55120c77",
    "metadata": {},
    "source": [
-    "# 🔹 2. Common Psychological Traps That Make Us Vulnerable  \n",
+    " 🔹 2. Common Psychological Traps\n",
     "\n",
     "📌 *Why do smart people fall for misinformation?* The answer lies in **predictable cognitive and socio-affective biases** that shape the way we process information. These mental shortcuts—while useful in everyday decision-making—can also make us **susceptible to false beliefs**.  \n",
     "\n",
@@ -139,17 +139,12 @@
    "id": "670ed8ef",
    "metadata": {},
    "source": [
-    "<span style=\"font-size:20px;\">🧠 **Quick Review Question**</span> \n",
-    "Before moving on, test your understanding with the question below!  \n",
-    "\n",
-    "✏️ **Fill in the blank / Multiple Choice:**  \n",
-    "💡 *Think carefully and apply what you've learned. If you’re unsure, review the previous section!*  "
+    "<span style=\"font-size:30px;\">🧠 **Quick Review Questions**</span> "
    ]
   },
   {
-   "cell_type": "code",
-   "execution_count": null,
-   "id": "69ec71a8-4bc2-44d6-8a85-b96ada41d030",
+   "cell_type": "markdown",
+   "id": "4159f23d-6e02-44c7-8176-5f35cb4d5512",
    "metadata": {
     "editable": true,
     "nbsphinx": "thebe",
@@ -158,42 +153,53 @@
     },
     "tags": []
    },
-   "outputs": [],
    "source": [
-    "from utils.questions import create_multiple_choice, create_fill_in_the_blank\n",
+    "1. A strong emotional reaction can override **______** thinking.    \n",
     "\n",
-    "create_fill_in_the_blank(\"A strong emotional reaction can override _______ thinking.\", \"critical\")\n",
+    "---\n",
     "\n",
-    "create_multiple_choice(\n",
-    "    \"Why do emotional triggers make misinformation more persuasive?\", \n",
-    "    [\"A) They force people to think critically\", \n",
-    "     \"B) They make people more likely to question the information\", \n",
-    "     \"C) They cause fast, emotional reactions instead of logical thinking\", \n",
-    "     \"D) They help people better evaluate the credibility of sources\"],\n",
-    "    \"C) They cause fast, emotional reactions instead of logical thinking\",\n",
-    ")\n",
+    "2. **Why do emotional triggers make misinformation more persuasive?**  \n",
+    "   A) They force people to think critically  \n",
+    "   B) They make people more likely to question the information  \n",
+    "   C) They cause fast, emotional reactions instead of logical thinking  \n",
+    "   D) They help people better evaluate the credibility of sources          \n",
     "\n",
-    "create_fill_in_the_blank(\n",
-    "    \"When we seek out and believe information that aligns with our pre-existing beliefs, we are demonstrating _______ bias.\", \n",
-    "    \"confirmation\"\n",
-    ")\n",
+    "---\n",
     "\n",
+    "3. When we seek out and believe information that aligns with our pre-existing beliefs, we are demonstrating **______** bias.    \n",
     "\n",
-    "create_multiple_choice(\n",
-    "    \"Which of the following is an example of the Illusory Truth Effect?\", \n",
-    "    [\"A) Believing a false claim because you’ve seen it repeatedly\", \n",
-    "     \"B) Trusting a source without checking its credibility\", \n",
-    "     \"C) Assuming something is true because a celebrity shared it\", \n",
-    "     \"D) Spreading misinformation to fit a political agenda\"],\n",
-    "    \"A) Believing a false claim because you’ve seen it repeatedly\", \n",
-    ")\n",
-    "\n"
+    "---\n",
+    "\n",
+    "4. **Which of the following is an example of the Illusory Truth Effect?**  \n",
+    "   A) Believing a false claim because you’ve seen it repeatedly  \n",
+    "   B) Trusting a source without checking its credibility  \n",
+    "   C) Assuming something is true because a celebrity shared it  \n",
+    "   D) Spreading misinformation to fit a political agenda  \n",
+    "\n",
+    "---\n",
+    "---\n",
+    "\n",
+    "✅ **Answers:**  \n",
+    "\n",
+    "1. A strong emotional reaction can override **critical** thinking.  \n",
+    "\n",
+    "2. Correct answer → **C) They cause fast, emotional reactions instead of logical thinking**.  \n",
+    "\n",
+    "3. When we seek out and believe information that aligns with our pre-existing beliefs, we are demonstrating **confirmation** bias.  \n",
+    "\n",
+    "4. Correct answer → **A) Believing a false claim because you’ve seen it repeatedly**.  \n"
    ]
   },
   {
    "cell_type": "markdown",
    "id": "a9a4b9ee-40dd-4013-b0bc-48b50dc419ac",
-   "metadata": {},
+   "metadata": {
+    "editable": true,
+    "slideshow": {
+     "slide_type": ""
+    },
+    "tags": []
+   },
    "source": [
     "---\n",
     "![Plandemic](../_static/plandemic.png)"
@@ -344,134 +350,45 @@
     }
    ],
    "source": [
-    "#Import appropriate library\n",
+    "Import appropriate library\n",
     "from IPython.display import YouTubeVideo\n",
     "\n",
-    "# Extract YouTube Video ID from the URL\n",
+    " Extract YouTube Video ID from the URL\n",
     "video_id = \"-7ORAKULel4\"\n",
     "\n",
-    "# Embed the video\n",
+    " Embed the video\n",
     "YouTubeVideo(video_id, width=600, height=450)"
    ]
   },
   {
-   "cell_type": "code",
-   "execution_count": 3,
-   "id": "5b3b0035",
+   "cell_type": "markdown",
+   "id": "8ba635d8-0ddf-4732-a4a6-df15d661f122",
    "metadata": {},
-   "outputs": [
-    {
-     "data": {
-      "application/vnd.jupyter.widget-view+json": {
-       "model_id": "db94b500a0cd446abca93526adc71602",
-       "version_major": 2,
-       "version_minor": 0
-      },
-      "text/plain": [
-       "HTML(value='<b>Multiple Choice:</b> What is one of the main reasons misinformation spreads so quickly on socia…"
-      ]
-     },
-     "metadata": {},
-     "output_type": "display_data"
-    },
-    {
-     "data": {
-      "application/vnd.jupyter.widget-view+json": {
-       "model_id": "3ad50d66b69841ffb318e40257d51c1e",
-       "version_major": 2,
-       "version_minor": 0
-      },
-      "text/plain": [
-       "VBox(children=(RadioButtons(layout=Layout(width='auto'), options=('People actively seek out misinformation', '…"
-      ]
-     },
-     "metadata": {},
-     "output_type": "display_data"
-    },
-    {
-     "data": {
-      "application/vnd.jupyter.widget-view+json": {
-       "model_id": "0fc6474281eb4485b44c578e3e0e457c",
-       "version_major": 2,
-       "version_minor": 0
-      },
-      "text/plain": [
-       "HTML(value='<b>Multiple Choice:</b> According to the video, what role do social media algorithms play in sprea…"
-      ]
-     },
-     "metadata": {},
-     "output_type": "display_data"
-    },
-    {
-     "data": {
-      "application/vnd.jupyter.widget-view+json": {
-       "model_id": "f5b03d82834443399789966b494a95f5",
-       "version_major": 2,
-       "version_minor": 0
-      },
-      "text/plain": [
-       "VBox(children=(RadioButtons(layout=Layout(width='auto'), options=('They prevent misinformation from going vira…"
-      ]
-     },
-     "metadata": {},
-     "output_type": "display_data"
-    },
-    {
-     "data": {
-      "application/vnd.jupyter.widget-view+json": {
-       "model_id": "3239492527f64ebfaace52201410e168",
-       "version_major": 2,
-       "version_minor": 0
-      },
-      "text/plain": [
-       "HTML(value='<b>Multiple Choice:</b> What is a suggested approach to slowing the spread of misinformation?')"
-      ]
-     },
-     "metadata": {},
-     "output_type": "display_data"
-    },
-    {
-     "data": {
-      "application/vnd.jupyter.widget-view+json": {
-       "model_id": "1f8c6645b1734083880f2a352a713327",
-       "version_major": 2,
-       "version_minor": 0
-      },
-      "text/plain": [
-       "VBox(children=(RadioButtons(layout=Layout(width='auto'), options=('Banning all social media discussions on con…"
-      ]
-     },
-     "metadata": {},
-     "output_type": "display_data"
-    }
-   ],
    "source": [
-    "create_multiple_choice(\n",
-    "    \"What is one of the main reasons misinformation spreads so quickly on social media?\",\n",
-    "    [\"People actively seek out misinformation\",\n",
-    "     \"Misinformation is designed to be more engaging than true information\",\n",
-    "     \"Social media companies prioritize fact-checking over engagement\",\n",
-    "     \"Misinformation is usually shared only by bots\"],\n",
-    "    \"Misinformation is designed to be more engaging than true information\"\n",
-    ")\n",
+    "1. **What is one of the main reasons misinformation spreads so quickly on social media?**  \n",
+    "   A) People actively seek out misinformation  \n",
+    "   B) Misinformation is designed to be more engaging than true information  \n",
+    "   C) Social media companies prioritize fact-checking over engagement  \n",
+    "   D) Misinformation is usually shared only by bots  \n",
     "\n",
-    "create_multiple_choice(\n",
-    "    \"According to the video, what role do social media algorithms play in spreading misinformation?\",\n",
-    "    [\"They prevent misinformation from going viral\",\n",
-    "     \"They prioritize engagement, which can amplify falsehoods\",\n",
-    "     \"They flag misinformation immediately before it spreads\",\n",
-    "     \"They promote only fact-checked content\"],\n",
-    "    \"They prioritize engagement, which can amplify falsehoods\",\n",
-    ")\n",
+    "2. **According to the video, what role do social media algorithms play in spreading misinformation?**  \n",
+    "   A) They prevent misinformation from going viral  \n",
+    "   B) They prioritize engagement, which can amplify falsehoods  \n",
+    "   C) They flag misinformation immediately before it spreads  \n",
+    "   D) They promote only fact-checked content  \n",
     "\n",
-    "create_multiple_choice(\n",
-    "    \"What is a suggested approach to slowing the spread of misinformation?\",\n",
-    "    [\"Banning all social media discussions on controversial topics\",\n",
-    "     \"Allowing only news organizations to post on social media\",\n",
-    "     \"Increasing transparency in social media algorithms and promoting fact-checking\",\n",
-    "     \"Encouraging users to report any post they disagree with\"],\n",
-    "    \"Increasing transparency in social media algorithms and promoting fact-checking\",\n",
-    ")\n"
+    "3. **What is a suggested approach to slowing the spread of misinformation?**  \n",
+    "   A) Banning all social media discussions on controversial topics  \n",
+    "   B) Allowing only news organizations to post on social media  \n",
+    "   C) Increasing transparency in social media algorithms and promoting fact-checking  \n",
+    "   D) Encouraging users to report any post they disagree with  \n",
+    "\n",
+    "---\n",
+    "---\n",
+    "✅ **Answers:**  \n",
+    "1. Correct answer → **B) Misinformation is designed to be more engaging than true information**.  \n",
+    "2. Correct answer → **B) They prioritize engagement, which can amplify falsehoods**.  \n",
+    "3. Correct answer → **C) Increasing transparency in social media algorithms and promoting fact-checking**.  \n"
    ]
   },
   {
@@ -479,7 +396,7 @@
    "id": "75419abd",
    "metadata": {},
    "source": [
-    "# 🔹 3. Strengthening Critical Thinking: The Key to MDM Resistance\n",
+    " 🔹 3. Strengthening Critical Thinking: The Key to MDM Resistance\n",
     "\n",
     "📌 **Misinformation is designed to exploit gaps in critical thinking.**\n",
     "\n",
@@ -626,7 +543,7 @@
    "id": "712f0374",
    "metadata": {},
    "source": [
-    "# 🔹 4. Prebunking – How to Inoculate Against Misinformation  \n",
+    " 🔹 4. Prebunking – How to Inoculate Against Misinformation  \n",
     "\n",
     "📌 *Wouldn’t it be great if we could build “mental immunity” against misinformation before encountering it?*  \n",
     "That’s exactly what **prebunking** aims to do—**arming people with the skills to recognize misinformation tactics before they are exposed to them.**  \n",
@@ -690,350 +607,53 @@
    ]
   },
   {
-   "cell_type": "code",
-   "execution_count": 4,
-   "id": "754ab236",
+   "cell_type": "markdown",
+   "id": "aca64aef-bc4f-4137-854b-887db3e33f87",
    "metadata": {},
-   "outputs": [
-    {
-     "data": {
-      "application/vnd.jupyter.widget-view+json": {
-       "model_id": "1afdaa1857de402981f5f2bdfb16e884",
-       "version_major": 2,
-       "version_minor": 0
-      },
-      "text/plain": [
-       "HTML(value='<b>Multiple Choice:</b> What is the main goal of prebunking?')"
-      ]
-     },
-     "metadata": {},
-     "output_type": "display_data"
-    },
-    {
-     "data": {
-      "application/vnd.jupyter.widget-view+json": {
-       "model_id": "a266ee6d481643daae35b544dc292825",
-       "version_major": 2,
-       "version_minor": 0
-      },
-      "text/plain": [
-       "VBox(children=(RadioButtons(layout=Layout(width='auto'), options=('To remove misinformation from the internet …"
-      ]
-     },
-     "metadata": {},
-     "output_type": "display_data"
-    },
-    {
-     "data": {
-      "application/vnd.jupyter.widget-view+json": {
-       "model_id": "083d71bd02cc49279eeb14525b49b730",
-       "version_major": 2,
-       "version_minor": 0
-      },
-      "text/plain": [
-       "HTML(value='<b>Fill in the blank:</b> Prebunking is the proactive approach to misinformation defense, similar …"
-      ]
-     },
-     "metadata": {},
-     "output_type": "display_data"
-    },
-    {
-     "data": {
-      "application/vnd.jupyter.widget-view+json": {
-       "model_id": "1aff823d95eb47df9a3ad995b1173f59",
-       "version_major": 2,
-       "version_minor": 0
-      },
-      "text/plain": [
-       "Text(value='', placeholder='Type your answer here...')"
-      ]
-     },
-     "metadata": {},
-     "output_type": "display_data"
-    },
-    {
-     "data": {
-      "application/vnd.jupyter.widget-view+json": {
-       "model_id": "f0828c2bfca94ac6b939247a943c9785",
-       "version_major": 2,
-       "version_minor": 0
-      },
-      "text/plain": [
-       "VBox(children=(Button(button_style='success', description='Submit', style=ButtonStyle()), Button(button_style=…"
-      ]
-     },
-     "metadata": {},
-     "output_type": "display_data"
-    },
-    {
-     "data": {
-      "application/vnd.jupyter.widget-view+json": {
-       "model_id": "45578272e32f423194dbc59f766cddac",
-       "version_major": 2,
-       "version_minor": 0
-      },
-      "text/plain": [
-       "HTML(value='<b>Multiple Choice:</b> Why is prebunking compared to a vaccine?')"
-      ]
-     },
-     "metadata": {},
-     "output_type": "display_data"
-    },
-    {
-     "data": {
-      "application/vnd.jupyter.widget-view+json": {
-       "model_id": "358305e120f44ba49cd74533a5b7b6a0",
-       "version_major": 2,
-       "version_minor": 0
-      },
-      "text/plain": [
-       "VBox(children=(RadioButtons(layout=Layout(width='auto'), options=('It strengthens resistance by exposing peopl…"
-      ]
-     },
-     "metadata": {},
-     "output_type": "display_data"
-    },
-    {
-     "data": {
-      "application/vnd.jupyter.widget-view+json": {
-       "model_id": "8422bcb74cf042e6be889f3f2882c561",
-       "version_major": 2,
-       "version_minor": 0
-      },
-      "text/plain": [
-       "HTML(value='<b>Fill in the blank:</b> One key strategy in prebunking is ______, which alerts people about comm…"
-      ]
-     },
-     "metadata": {},
-     "output_type": "display_data"
-    },
-    {
-     "data": {
-      "application/vnd.jupyter.widget-view+json": {
-       "model_id": "b5ea13b382634c959b33126fc5cec2fd",
-       "version_major": 2,
-       "version_minor": 0
-      },
-      "text/plain": [
-       "Text(value='', placeholder='Type your answer here...')"
-      ]
-     },
-     "metadata": {},
-     "output_type": "display_data"
-    },
-    {
-     "data": {
-      "application/vnd.jupyter.widget-view+json": {
-       "model_id": "90b0ff0d0c8f48d9bd92722331dadb4b",
-       "version_major": 2,
-       "version_minor": 0
-      },
-      "text/plain": [
-       "VBox(children=(Button(button_style='success', description='Submit', style=ButtonStyle()), Button(button_style=…"
-      ]
-     },
-     "metadata": {},
-     "output_type": "display_data"
-    },
-    {
-     "data": {
-      "application/vnd.jupyter.widget-view+json": {
-       "model_id": "1a2dee8595424c47b2cf8ad4842a335f",
-       "version_major": 2,
-       "version_minor": 0
-      },
-      "text/plain": [
-       "HTML(value='<b>Multiple Choice:</b> Which of the following is NOT a key step in the prebunking process?')"
-      ]
-     },
-     "metadata": {},
-     "output_type": "display_data"
-    },
-    {
-     "data": {
-      "application/vnd.jupyter.widget-view+json": {
-       "model_id": "b0736407a69749418c461460d25767cc",
-       "version_major": 2,
-       "version_minor": 0
-      },
-      "text/plain": [
-       "VBox(children=(RadioButtons(layout=Layout(width='auto'), options=('Forewarning – Alerting people about common …"
-      ]
-     },
-     "metadata": {},
-     "output_type": "display_data"
-    },
-    {
-     "data": {
-      "application/vnd.jupyter.widget-view+json": {
-       "model_id": "3e7cb70af9ae42849e5715e9aeba83ee",
-       "version_major": 2,
-       "version_minor": 0
-      },
-      "text/plain": [
-       "HTML(value='<b>Fill in the blank:</b> One example of manipulation is ______ framing, where facts are twisted t…"
-      ]
-     },
-     "metadata": {},
-     "output_type": "display_data"
-    },
-    {
-     "data": {
-      "application/vnd.jupyter.widget-view+json": {
-       "model_id": "1cee8f301618443fb8c6bb7937ce6d44",
-       "version_major": 2,
-       "version_minor": 0
-      },
-      "text/plain": [
-       "Text(value='', placeholder='Type your answer here...')"
-      ]
-     },
-     "metadata": {},
-     "output_type": "display_data"
-    },
-    {
-     "data": {
-      "application/vnd.jupyter.widget-view+json": {
-       "model_id": "3acb0f2dc22741e0918660fd2c6896e3",
-       "version_major": 2,
-       "version_minor": 0
-      },
-      "text/plain": [
-       "VBox(children=(Button(button_style='success', description='Submit', style=ButtonStyle()), Button(button_style=…"
-      ]
-     },
-     "metadata": {},
-     "output_type": "display_data"
-    },
-    {
-     "data": {
-      "application/vnd.jupyter.widget-view+json": {
-       "model_id": "e7339ebadc1a4d12965cb21bcb4923f2",
-       "version_major": 2,
-       "version_minor": 0
-      },
-      "text/plain": [
-       "HTML(value='<b>Multiple Choice:</b> Which misinformation tactic involves framing issues as only having two ext…"
-      ]
-     },
-     "metadata": {},
-     "output_type": "display_data"
-    },
-    {
-     "data": {
-      "application/vnd.jupyter.widget-view+json": {
-       "model_id": "fdd55ba501b44581bb9cf0aef89dc3ff",
-       "version_major": 2,
-       "version_minor": 0
-      },
-      "text/plain": [
-       "VBox(children=(RadioButtons(layout=Layout(width='auto'), options=('Cherry-Picking Data', 'False Dilemmas', 'Em…"
-      ]
-     },
-     "metadata": {},
-     "output_type": "display_data"
-    },
-    {
-     "data": {
-      "application/vnd.jupyter.widget-view+json": {
-       "model_id": "eeade4b0ac60404088db5adc228bfe4a",
-       "version_major": 2,
-       "version_minor": 0
-      },
-      "text/plain": [
-       "HTML(value='<b>Fill in the blank:</b> A common misinformation tactic called ______ involves using an unqualifi…"
-      ]
-     },
-     "metadata": {},
-     "output_type": "display_data"
-    },
-    {
-     "data": {
-      "application/vnd.jupyter.widget-view+json": {
-       "model_id": "61e280ce40b747e9b0e1175afe84dc7d",
-       "version_major": 2,
-       "version_minor": 0
-      },
-      "text/plain": [
-       "Text(value='', placeholder='Type your answer here...')"
-      ]
-     },
-     "metadata": {},
-     "output_type": "display_data"
-    },
-    {
-     "data": {
-      "application/vnd.jupyter.widget-view+json": {
-       "model_id": "7f0348d2ceef42dbad1dd135b43d0729",
-       "version_major": 2,
-       "version_minor": 0
-      },
-      "text/plain": [
-       "VBox(children=(Button(button_style='success', description='Submit', style=ButtonStyle()), Button(button_style=…"
-      ]
-     },
-     "metadata": {},
-     "output_type": "display_data"
-    }
-   ],
    "source": [
-    "create_multiple_choice(\n",
-    "    \"What is the main goal of prebunking?\",\n",
-    "    [\"To remove misinformation from the internet completely\",\n",
-    "     \"To help people recognize and resist misinformation before they encounter it\",\n",
-    "     \"To fact-check all news articles before they are published\",\n",
-    "     \"To restrict access to online information\"],\n",
-    "    \"To help people recognize and resist misinformation before they encounter it\",\n",
-    ")\n",
+    "1. **What is the main goal of prebunking?**  \n",
+    "   A) To remove misinformation from the internet completely  \n",
+    "   B) To help people recognize and resist misinformation before they encounter it  \n",
+    "   C) To fact-check all news articles before they are published  \n",
+    "   D) To restrict access to online information  \n",
     "\n",
-    "create_fill_in_the_blank(\n",
-    "    \"Prebunking is the proactive approach to misinformation defense, similar to a ______ for the mind.\",\n",
-    "    \"vaccine\"\n",
-    ")\n",
+    "2. Prebunking is the proactive approach to misinformation defense, similar to a **______** for the mind.  \n",
     "\n",
-    "create_multiple_choice(\n",
-    "    \"Why is prebunking compared to a vaccine?\",\n",
-    "    [\"It strengthens resistance by exposing people to weakened versions of misinformation tactics\",\n",
-    "     \"It prevents misinformation from being created\",\n",
-    "     \"It works instantly without any additional effort\",\n",
-    "     \"It only applies to medical misinformation\"],\n",
-    "    \"It strengthens resistance by exposing people to weakened versions of misinformation tactics\",\n",
-    ")\n",
+    "3. **Why is prebunking compared to a vaccine?**  \n",
+    "   A) It strengthens resistance by exposing people to weakened versions of misinformation tactics  \n",
+    "   B) It prevents misinformation from being created  \n",
+    "   C) It works instantly without any additional effort  \n",
+    "   D) It only applies to medical misinformation  \n",
     "\n",
+    "4. One key strategy in prebunking is **______**, which alerts people about common misinformation tactics before they encounter them.  \n",
     "\n",
-    "create_fill_in_the_blank(\n",
-    "    \"One key strategy in prebunking is ______, which alerts people about common misinformation tactics before they encounter them.\",\n",
-    "    \"forewarning\"\n",
-    ")\n",
+    "5. **Which of the following is NOT a key step in the prebunking process?**  \n",
+    "   A) Forewarning – Alerting people about common misinformation tactics  \n",
+    "   B) Pre-Exposure – Showing examples of misinformation before real cases  \n",
+    "   C) Cognitive Resistance – Strengthening critical thinking  \n",
+    "   D) Suppression – Removing all misinformation posts from social media  \n",
     "\n",
-    "create_multiple_choice(\n",
-    "    \"Which of the following is NOT a key step in the prebunking process?\",\n",
-    "    [\"Forewarning – Alerting people about common misinformation tactics\",\n",
-    "     \"Pre-Exposure – Showing examples of misinformation before real cases\",\n",
-    "     \"Cognitive Resistance – Strengthening critical thinking\",\n",
-    "     \"Suppression – Removing all misinformation posts from social media\"],\n",
-    "    \"Suppression – Removing all misinformation posts from social media\"\n",
-    ")\n",
+    "6. One example of manipulation is **______** framing, where facts are twisted to suggest a hidden plot or secret agenda.  \n",
     "\n",
+    "7. **Which misinformation tactic involves framing issues as only having two extreme options?**  \n",
+    "   A) Cherry-Picking Data  \n",
+    "   B) False Dilemmas  \n",
+    "   C) Emotional Manipulation  \n",
+    "   D) Algorithm Bias  \n",
     "\n",
-    "create_fill_in_the_blank(\n",
-    "    \"One example of manipulation is ______ framing, where facts are twisted to suggest a hidden plot or secret agenda.\",\n",
-    "    \"conspiracy\"\n",
-    ")\n",
+    "8. A common misinformation tactic called **______** involves using an unqualified individual to promote false information as an authority.  \n",
     "\n",
-    "create_multiple_choice(\n",
-    "    \"Which misinformation tactic involves framing issues as only having two extreme options?\",\n",
-    "    [\"Cherry-Picking Data\",\n",
-    "     \"False Dilemmas\",\n",
-    "     \"Emotional Manipulation\",\n",
-    "     \"Algorithm Bias\"],\n",
-    "    \"False Dilemmas\",\n",
-    ")\n",
-    "\n",
-    "create_fill_in_the_blank(\n",
-    "    \"A common misinformation tactic called ______ involves using an unqualified individual to promote false information as an authority.\",\n",
-    "    \"fake experts\"\n",
-    ")\n"
+    "---\n",
+    "---\n",
+    "✅ **Answers:**  \n",
+    "1. Correct answer → **B) To help people recognize and resist misinformation before they encounter it**.  \n",
+    "2. Correct answer → **vaccine**.  \n",
+    "3. Correct answer → **A) It strengthens resistance by exposing people to weakened versions of misinformation tactics**.  \n",
+    "4. Correct answer → **forewarning**.  \n",
+    "5. Correct answer → **D) Suppression – Removing all misinformation posts from social media**.  \n",
+    "6. Correct answer → **conspiracy**.  \n",
+    "7. Correct answer → **B) False Dilemmas**.  \n",
+    "8. Correct answer → **fake experts**.  \n"
    ]
   },
   {
@@ -1041,7 +661,7 @@
    "id": "b8e6ec9e",
    "metadata": {},
    "source": [
-    "# 🔹 5. Media Literacy – Strengthening Critical Thinking Against MDM  \n",
+    " 🔹 5. Media Literacy – Strengthening Critical Thinking Against MDM  \n",
     "\n",
     "📌 *If prebunking is about recognizing misinformation tactics, media literacy is about developing lifelong critical thinking skills to navigate today’s complex information landscape.*  \n",
     "\n",
@@ -1062,7 +682,7 @@
     "\n",
     "<span style=\"font-size:25px;\">🔎 **Key Media Literacy Skills**</span>  \n",
     "\n",
-    "### **1️⃣ Lateral Reading vs. Vertical Reading**  \n",
+    " **1️⃣ Lateral Reading vs. Vertical Reading**  \n",
     "- **Lateral Reading** → Checking multiple reputable sources to verify a claim.  \n",
     "- **Vertical Reading** → Examining one source in detail (often unreliable for fact-checking).  \n",
     "\n",
@@ -1129,7 +749,7 @@
    "id": "6404c992",
    "metadata": {},
    "source": [
-    "### **2️⃣ Source Evaluation – The \"SIFT\" Method**  \n",
+    " **2️⃣ Source Evaluation – The \"SIFT\" Method**  \n",
     "**Developed by Mike Caulfield**, SIFT is a simple framework to evaluate online information:  \n",
     "🔹 **S** – Stop: Consider if the source is trustworthy before engaging.  \n",
     "🔹 **I** – Investigate: Research the author, website, or publisher.  \n",
@@ -1152,7 +772,7 @@
    "id": "f8d58e78",
    "metadata": {},
    "source": [
-    "### **3️⃣ Recognizing Media Manipulation Techniques**  \n",
+    " **3️⃣ Recognizing Media Manipulation Techniques**  \n",
     "- **Framing Bias:** How news is structured to push a specific viewpoint.  \n",
     "- **Clickbait & Sensationalism:** Exaggerated or misleading headlines designed for engagement.  \n",
     "- **Deepfakes & Edited Media:** AI-generated content that appears real.  \n",
@@ -1161,7 +781,7 @@
     "\n",
     "---\n",
     "\n",
-    "### **4️⃣ The Socratic Method: Digging Deeper into Claims**  \n",
+    " **4️⃣ The Socratic Method: Digging Deeper into Claims**  \n",
     "The **Socratic questioning technique** is a structured way to challenge assumptions and logic:  \n",
     "🔹 **Clarification** → *What do you mean by that? Can you explain further?*  \n",
     "🔹 **Evidence** → *What proof supports this claim? Where did you find this information?*  \n",
@@ -1179,7 +799,7 @@
     "\n",
     "---\n",
     "\n",
-    "### **5️⃣  Fact-Checking Techniques for Digital Content**  \n",
+    " **5️⃣  Fact-Checking Techniques for Digital Content**  \n",
     "Not all misinformation is text-based. **Images, videos, and audio clips** can be deceptively edited. Here’s how to verify them:  \n",
     "\n",
     "🔹 **Reverse Image Search** → Use Google Images, TinEye, or Yandex to check if an image was taken out of context.  \n",
@@ -1209,366 +829,45 @@
    ]
   },
   {
-   "cell_type": "code",
-   "execution_count": 5,
-   "id": "ea4c8fde",
+   "cell_type": "markdown",
+   "id": "8c5adb98-68be-428c-af32-eab94a44e1bb",
    "metadata": {},
-   "outputs": [
-    {
-     "data": {
-      "application/vnd.jupyter.widget-view+json": {
-       "model_id": "cfcd9ffeb7964fb08560280013f9b059",
-       "version_major": 2,
-       "version_minor": 0
-      },
-      "text/plain": [
-       "HTML(value='<b>Fill in the blank:</b> The ability to access, analyze, evaluate, create, and act using all form…"
-      ]
-     },
-     "metadata": {},
-     "output_type": "display_data"
-    },
-    {
-     "data": {
-      "application/vnd.jupyter.widget-view+json": {
-       "model_id": "b1e5a27862604d4e92757f52483727da",
-       "version_major": 2,
-       "version_minor": 0
-      },
-      "text/plain": [
-       "Text(value='', placeholder='Type your answer here...')"
-      ]
-     },
-     "metadata": {},
-     "output_type": "display_data"
-    },
-    {
-     "data": {
-      "application/vnd.jupyter.widget-view+json": {
-       "model_id": "dcd3c5d36b6a44ddab1ee1f6665c5f90",
-       "version_major": 2,
-       "version_minor": 0
-      },
-      "text/plain": [
-       "VBox(children=(Button(button_style='success', description='Submit', style=ButtonStyle()), Button(button_style=…"
-      ]
-     },
-     "metadata": {},
-     "output_type": "display_data"
-    },
-    {
-     "data": {
-      "application/vnd.jupyter.widget-view+json": {
-       "model_id": "af56a0ffe20f4e289943602d511bbfd6",
-       "version_major": 2,
-       "version_minor": 0
-      },
-      "text/plain": [
-       "HTML(value='<b>Multiple Choice:</b> What is the main limitation of vertical reading?')"
-      ]
-     },
-     "metadata": {},
-     "output_type": "display_data"
-    },
-    {
-     "data": {
-      "application/vnd.jupyter.widget-view+json": {
-       "model_id": "1a26e45bab3c4e2c8eecc52e6ac1e56e",
-       "version_major": 2,
-       "version_minor": 0
-      },
-      "text/plain": [
-       "VBox(children=(RadioButtons(layout=Layout(width='auto'), options=('It requires too much time to fact-check inf…"
-      ]
-     },
-     "metadata": {},
-     "output_type": "display_data"
-    },
-    {
-     "data": {
-      "application/vnd.jupyter.widget-view+json": {
-       "model_id": "9c2cfa59d5464b4fb36364c3e128b5b0",
-       "version_major": 2,
-       "version_minor": 0
-      },
-      "text/plain": [
-       "HTML(value='<b>Fill in the blank:</b> Instead of relying on a single source, _______ reading involves checking…"
-      ]
-     },
-     "metadata": {},
-     "output_type": "display_data"
-    },
-    {
-     "data": {
-      "application/vnd.jupyter.widget-view+json": {
-       "model_id": "2afee438d0f24fe6bb61079b41c5c06a",
-       "version_major": 2,
-       "version_minor": 0
-      },
-      "text/plain": [
-       "Text(value='', placeholder='Type your answer here...')"
-      ]
-     },
-     "metadata": {},
-     "output_type": "display_data"
-    },
-    {
-     "data": {
-      "application/vnd.jupyter.widget-view+json": {
-       "model_id": "061129995a8344288ed61b7c4a424d1e",
-       "version_major": 2,
-       "version_minor": 0
-      },
-      "text/plain": [
-       "VBox(children=(Button(button_style='success', description='Submit', style=ButtonStyle()), Button(button_style=…"
-      ]
-     },
-     "metadata": {},
-     "output_type": "display_data"
-    },
-    {
-     "data": {
-      "application/vnd.jupyter.widget-view+json": {
-       "model_id": "e948f36ec6b341ea90ae30e0917fa772",
-       "version_major": 2,
-       "version_minor": 0
-      },
-      "text/plain": [
-       "HTML(value='<b>Fill in the blank:</b> The best method for fact-checking is _______ reading.')"
-      ]
-     },
-     "metadata": {},
-     "output_type": "display_data"
-    },
-    {
-     "data": {
-      "application/vnd.jupyter.widget-view+json": {
-       "model_id": "dfb27493a7b04c79b431fe238407a1b3",
-       "version_major": 2,
-       "version_minor": 0
-      },
-      "text/plain": [
-       "Text(value='', placeholder='Type your answer here...')"
-      ]
-     },
-     "metadata": {},
-     "output_type": "display_data"
-    },
-    {
-     "data": {
-      "application/vnd.jupyter.widget-view+json": {
-       "model_id": "7be3998ae5294989bd973fa857f1f540",
-       "version_major": 2,
-       "version_minor": 0
-      },
-      "text/plain": [
-       "VBox(children=(Button(button_style='success', description='Submit', style=ButtonStyle()), Button(button_style=…"
-      ]
-     },
-     "metadata": {},
-     "output_type": "display_data"
-    },
-    {
-     "data": {
-      "application/vnd.jupyter.widget-view+json": {
-       "model_id": "2a9ad6325cc44535ac5b4d7ea942845c",
-       "version_major": 2,
-       "version_minor": 0
-      },
-      "text/plain": [
-       "HTML(value='<b>Multiple Choice:</b> Which of the following best describes the SIFT method?')"
-      ]
-     },
-     "metadata": {},
-     "output_type": "display_data"
-    },
-    {
-     "data": {
-      "application/vnd.jupyter.widget-view+json": {
-       "model_id": "b219e85077ed4911baaa57701ed9b794",
-       "version_major": 2,
-       "version_minor": 0
-      },
-      "text/plain": [
-       "VBox(children=(RadioButtons(layout=Layout(width='auto'), options=('A method used to filter social media posts …"
-      ]
-     },
-     "metadata": {},
-     "output_type": "display_data"
-    },
-    {
-     "data": {
-      "application/vnd.jupyter.widget-view+json": {
-       "model_id": "8076d0fb0dab46499eb13376d5fc799a",
-       "version_major": 2,
-       "version_minor": 0
-      },
-      "text/plain": [
-       "HTML(value=\"<b>Fill in the blank:</b> A misleading article claims that 'Vaccines are dangerous,' but checking …"
-      ]
-     },
-     "metadata": {},
-     "output_type": "display_data"
-    },
-    {
-     "data": {
-      "application/vnd.jupyter.widget-view+json": {
-       "model_id": "5b31d012234e4bdc9889fd072c872616",
-       "version_major": 2,
-       "version_minor": 0
-      },
-      "text/plain": [
-       "Text(value='', placeholder='Type your answer here...')"
-      ]
-     },
-     "metadata": {},
-     "output_type": "display_data"
-    },
-    {
-     "data": {
-      "application/vnd.jupyter.widget-view+json": {
-       "model_id": "8c3e0af1d6a94ae98da2e07feaf5f3be",
-       "version_major": 2,
-       "version_minor": 0
-      },
-      "text/plain": [
-       "VBox(children=(Button(button_style='success', description='Submit', style=ButtonStyle()), Button(button_style=…"
-      ]
-     },
-     "metadata": {},
-     "output_type": "display_data"
-    },
-    {
-     "data": {
-      "application/vnd.jupyter.widget-view+json": {
-       "model_id": "6def640405054b0995c44b0a6cd36a4a",
-       "version_major": 2,
-       "version_minor": 0
-      },
-      "text/plain": [
-       "HTML(value=\"<b>Fill in the blank:</b> A false claim that '5G causes COVID-19' could be challenged by the _____…"
-      ]
-     },
-     "metadata": {},
-     "output_type": "display_data"
-    },
-    {
-     "data": {
-      "application/vnd.jupyter.widget-view+json": {
-       "model_id": "6bee4f721b2340bebf3b8a90ddaa429f",
-       "version_major": 2,
-       "version_minor": 0
-      },
-      "text/plain": [
-       "Text(value='', placeholder='Type your answer here...')"
-      ]
-     },
-     "metadata": {},
-     "output_type": "display_data"
-    },
-    {
-     "data": {
-      "application/vnd.jupyter.widget-view+json": {
-       "model_id": "dd33531330b74f16891f53af2f40a250",
-       "version_major": 2,
-       "version_minor": 0
-      },
-      "text/plain": [
-       "VBox(children=(Button(button_style='success', description='Submit', style=ButtonStyle()), Button(button_style=…"
-      ]
-     },
-     "metadata": {},
-     "output_type": "display_data"
-    },
-    {
-     "data": {
-      "application/vnd.jupyter.widget-view+json": {
-       "model_id": "d85a2117a6a746ca94908db542e946e6",
-       "version_major": 2,
-       "version_minor": 0
-      },
-      "text/plain": [
-       "HTML(value='<b>Fill in the blank:</b> The process of verifying whether an image was taken out of context by us…"
-      ]
-     },
-     "metadata": {},
-     "output_type": "display_data"
-    },
-    {
-     "data": {
-      "application/vnd.jupyter.widget-view+json": {
-       "model_id": "a88104c1ade94ef9a4f62c107185ed65",
-       "version_major": 2,
-       "version_minor": 0
-      },
-      "text/plain": [
-       "Text(value='', placeholder='Type your answer here...')"
-      ]
-     },
-     "metadata": {},
-     "output_type": "display_data"
-    },
-    {
-     "data": {
-      "application/vnd.jupyter.widget-view+json": {
-       "model_id": "286fdfb1cb3e462ab9376fd82e5b2338",
-       "version_major": 2,
-       "version_minor": 0
-      },
-      "text/plain": [
-       "VBox(children=(Button(button_style='success', description='Submit', style=ButtonStyle()), Button(button_style=…"
-      ]
-     },
-     "metadata": {},
-     "output_type": "display_data"
-    }
-   ],
    "source": [
-    "create_fill_in_the_blank(\n",
-    "    \"The ability to access, analyze, evaluate, create, and act using all forms of communication is known as _______.\",\n",
-    "    \"media literacy\"\n",
-    ")\n",
+    "1. The ability to access, analyze, evaluate, create, and act using all forms of communication is known as **______**.  \n",
     "\n",
-    "create_multiple_choice(\n",
-    "    \"What is the main limitation of vertical reading?\",\n",
-    "    [\"It requires too much time to fact-check information\",\n",
-    "     \"It focuses only on one source, which may be biased or misleading\",\n",
-    "     \"It is too advanced for most internet users\",\n",
-    "     \"It works better for printed newspapers but not online content\"],\n",
-    "    \"It focuses only on one source, which may be biased or misleading\",\n",
-    ")\n",
+    "2. **What is the main limitation of vertical reading?**  \n",
+    "   A) It requires too much time to fact-check information  \n",
+    "   B) It focuses only on one source, which may be biased or misleading  \n",
+    "   C) It is too advanced for most internet users  \n",
+    "   D) It works better for printed newspapers but not online content  \n",
     "\n",
-    "create_fill_in_the_blank(\n",
-    "    \"Instead of relying on a single source, _______ reading involves checking multiple independent sources to verify a claim.\",\n",
-    "    \"lateral\"\n",
-    ")\n",
+    "3. Instead of relying on a single source, **______** reading involves checking multiple independent sources to verify a claim.  \n",
     "\n",
-    "create_fill_in_the_blank(\"The best method for fact-checking is _______ reading.\", \"lateral\")\n",
+    "4. The best method for fact-checking is **______** reading.  \n",
     "\n",
+    "5. **Which of the following best describes the SIFT method?**  \n",
+    "   A) A method used to filter social media posts based on engagement  \n",
+    "   B) A framework for evaluating online information by stopping, investigating, finding better coverage, and tracing claims  \n",
+    "   C) A strategy for removing misinformation posts automatically  \n",
+    "   D) A government policy to restrict unverified content  \n",
     "\n",
-    "create_multiple_choice(\n",
-    "    \"Which of the following best describes the SIFT method?\",\n",
-    "    [\"A method used to filter social media posts based on engagement\",\n",
-    "     \"A framework for evaluating online information by stopping, investigating, finding better coverage, and tracing claims\",\n",
-    "     \"A strategy for removing misinformation posts automatically\",\n",
-    "     \"A government policy to restrict unverified content\"],\n",
-    "    \"A framework for evaluating online information by stopping, investigating, finding better coverage, and tracing claims\",\n",
-    ")\n",
+    "6. A misleading article claims that *\"Vaccines are dangerous,\"* but checking the claim against medical organizations like the WHO and CDC is an example of which step in the SIFT method? **______**  \n",
     "\n",
-    "create_fill_in_the_blank(\n",
-    "    \"A misleading article claims that 'Vaccines are dangerous,' but checking the claim against medical organizations like the WHO and CDC is an example of which step in the SIFT method?\",\n",
-    "    \"find better coverage\"\n",
-    ")\n",
+    "7. A false claim that *\"5G causes COVID-19\"* could be challenged by the **______** questioning technique, which encourages asking for clarification, evidence, and alternative explanations.  \n",
     "\n",
-    "create_fill_in_the_blank(\n",
-    "    \"A false claim that '5G causes COVID-19' could be challenged by the _______ questioning technique, which encourages asking for clarification, evidence, and alternative explanations.\",\n",
-    "    \"Socratic\"\n",
-    ")\n",
+    "8. The process of verifying whether an image was taken out of context by using Google Images or TinEye is called **______**.  \n",
     "\n",
-    "create_fill_in_the_blank(\n",
-    "    \"The process of verifying whether an image was taken out of context by using Google Images or TinEye is called _______.\",\n",
-    "    \"reverse image search\"\n",
-    ")\n"
+    "---\n",
+    "---\n",
+    "✅ **Answers:**  \n",
+    "1. Correct answer → **media literacy**.  \n",
+    "2. Correct answer → **B) It focuses only on one source, which may be biased or misleading**.  \n",
+    "3. Correct answer → **lateral**.  \n",
+    "4. Correct answer → **lateral**.  \n",
+    "5. Correct answer → **B) A framework for evaluating online information by stopping, investigating, finding better coverage, and tracing claims**.  \n",
+    "6. Correct answer → **find better coverage**.  \n",
+    "7. Correct answer → **Socratic**.  \n",
+    "8. Correct answer → **reverse image search**.  \n"
    ]
   },
   {

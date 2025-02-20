@@ -1,27 +1,96 @@
-.. raw:: html
-
-   <script type="text/javascript">
-       window.addEventListener("load", function() {
-           thebe.bootstrap();
-       });
-   </script>
-
-.. Counter Malign Influence: Strategies, Insights, and Tools documentation master file, created by
-   sphinx-quickstart on Wed Feb 19 19:12:51 2025.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
-
 Counter Malign Influence: Strategies, Insights, and Tools documentation
 =======================================================================
 
-Add your content using ``reStructuredText`` syntax. See the
-`reStructuredText <https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html>`_
-documentation for details.
+Welcome to the **Countering Malign Influence Course**, a hands-on, data-driven course designed to equip you with the skills to analyze and combat misinformation, disinformation, and malinformation.
 
+This course introduces **data analytics using Python**, focusing on real-world applications in detecting and countering malign influence. By the end of this course, you will have practical experience in **data acquisition, cleaning, exploration, visualization, and analysis**, with a strong emphasis on combating misinformation.
+
+---
+
+Course Overview
+===============
+
+This course is structured into **four main weeks of instruction**, followed by a **two-week practical challenge** where you will apply your knowledge to analyze real-world cases.
+
+Each week consists of:
+- **Guided Lessons**: Interactive Jupyter Notebooks with explanations and exercises.
+- **Guest Speaker Sessions**: Experts from academia, government, and industry sharing insights on misinformation.
+- **Assignments & Challenges**: Hands-on exercises and projects.
+
+---
+
+Getting Started
+===============
+
+To get the most out of this course, we recommend the following setup:
+
+1. **Software Requirements**
+   - Install **Anaconda** (Recommended)
+   - Use **Jupyter Notebook** for interactive lessons
+   - A **GitHub account** to access course materials and submit projects
+
+2. **Course Resources**
+   - **Course Repository**: [GitHub Link Here]
+   - **Reading Materials**: Links to essential readings
+   - **Discussion Forum**: [Forum/Slack/Discord Link]
+   - **Office Hours**: Details on Q&A sessions and instructor support
+
+3. **Python Primer (Optional)**
+   - If you are new to Python, complete the **Python Primer** before beginning the course.
+   - Topics covered: variables, lists, loops, functions, and libraries like NumPy, pandas, and matplotlib.
+
+---
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :caption: Week 1:
 
+   notebooks/Lesson1
    notebooks/Lesson2
+   notebooks/Guest_Speaker1
 
+.. toctree::
+   :maxdepth: 2
+   :caption: Week 2:
+
+   notebooks/Lesson3
+   notebooks/Lesson4
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Week 3:
+
+   notebooks/Lesson5
+   notebooks/Lesson6
+   notebooks/Guest_Speaker2
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Week 4:
+
+   notebooks/Lesson7
+   notebooks/Lesson8
+   notebooks/Guest_Speaker3
+
+.. toctree::
+   :maxdepth: 2
+   :caption: 2 Week Challenge:
+
+   notebooks/Challenge
+   notebooks/Guest_Speaker4
+   notebooks/Guest_Speaker5
+
+---
+
+Contact & Support
+=================
+If you need help, feel free to:
+- Open a discussion in the **course forum** [Forum Link]
+- Reach out via email: **[Instructor Email]**
+- Submit GitHub issues for technical problems
+
+We look forward to an exciting learning experience with you!
+
+---
+
+🚀 **Let’s get started!** 🚀

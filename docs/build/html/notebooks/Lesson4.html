@@ -1,0 +1,914 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Understanding the Problem, Data Identification, and Data Acquisition &mdash; Counter Malign Influence: Strategies, Insights, and Tools 7 March 2025 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/nbsphinx-code-cells.css?v=2aa19091" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=131bf191"></script>
+      <script src="../_static/doctools.js?v=9a2dae69"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@jupyter-widgets/html-manager@^1.0.1/dist/embed-amd.js"></script>
+      <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+      <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Data Inspection and Preprocessing" href="Lesson5.html" />
+    <link rel="prev" title="Intro to Data Analytics" href="Lesson3.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Counter Malign Influence: Strategies, Insights, and Tools
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Week 1:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Lesson1.html">Intro to Misinformation, Disinformation, and Malinformation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lesson2.html">Thinking Critically in the Age of MDM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Guest_Speaker1.html">UN CIFAL Honolulu Research Director</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Week 2:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="Lesson3.html">Intro to Data Analytics</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Understanding the Problem, Data Identification, and Data Acquisition</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Week 3:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Lesson5.html">Data Inspection and Preprocessing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lesson6.html">EDA + Visualization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Guest_Speaker2.html">Defense Threat Reduction Agency</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Week 4:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Lesson7.html">Advanced Analysis (Sentiment)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lesson8.html">Technology &amp; Careers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Guest_Speaker3.html">Joint Staff Future Capabilities Division</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">2 Week Challenge:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Challenge.html">Challenge Instructions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Guest_Speaker4.html">USSF Intelligence Directorate, Indo-Pacific</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Guest_Speaker5.html">Career Panel</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Counter Malign Influence: Strategies, Insights, and Tools</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Understanding the Problem, Data Identification, and Data Acquisition</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/notebooks/Lesson4.ipynb.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="Understanding-the-Problem,-Data-Identification,-and-Data-Acquisition">
+<h1>Understanding the Problem, Data Identification, and Data Acquisition<a class="headerlink" href="#Understanding-the-Problem,-Data-Identification,-and-Data-Acquisition" title="Link to this heading"></a></h1>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[1]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">ipywidgets</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">widgets</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">IPython.display</span><span class="w"> </span><span class="kn">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">clear_output</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">normalize_input</span><span class="p">(</span><span class="n">user_input</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Normalize input by converting to lowercase and stripping whitespace.&quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">user_input</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">create_fill_in_the_blank</span><span class="p">(</span><span class="n">question_text</span><span class="p">,</span> <span class="n">correct_answer</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Creates a fill-in-the-blank question with a submit and reset button.</span>
+
+<span class="sd">    Parameters:</span>
+<span class="sd">    - question_text (str): The question to display.</span>
+<span class="sd">    - correct_answer (str): The correct answer (case insensitive).</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">answer</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Text</span><span class="p">(</span><span class="n">placeholder</span><span class="o">=</span><span class="s2">&quot;Type your answer here...&quot;</span><span class="p">)</span>
+    <span class="n">submit_button</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">description</span><span class="o">=</span><span class="s2">&quot;Submit&quot;</span><span class="p">,</span> <span class="n">button_style</span><span class="o">=</span><span class="s2">&quot;success&quot;</span><span class="p">)</span>
+    <span class="n">reset_button</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">description</span><span class="o">=</span><span class="s2">&quot;Reset&quot;</span><span class="p">,</span> <span class="n">button_style</span><span class="o">=</span><span class="s2">&quot;warning&quot;</span><span class="p">)</span>
+    <span class="n">output</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Output</span><span class="p">()</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">check_answer</span><span class="p">(</span><span class="n">_</span><span class="p">):</span>
+        <span class="k">with</span> <span class="n">output</span><span class="p">:</span>
+            <span class="n">output</span><span class="o">.</span><span class="n">clear_output</span><span class="p">()</span>
+            <span class="k">if</span> <span class="n">normalize_input</span><span class="p">(</span><span class="n">answer</span><span class="o">.</span><span class="n">value</span><span class="p">)</span> <span class="o">==</span> <span class="n">normalize_input</span><span class="p">(</span><span class="n">correct_answer</span><span class="p">):</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;✅ Correct! Great job!&quot;</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;❌ Incorrect. Try again! Hint: Think about &#39;</span><span class="si">{</span><span class="n">question_text</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span><span class="si">}</span><span class="s2">&#39;.&quot;</span><span class="p">)</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">reset_question</span><span class="p">(</span><span class="n">_</span><span class="p">):</span>
+        <span class="n">output</span><span class="o">.</span><span class="n">clear_output</span><span class="p">()</span>
+        <span class="n">answer</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+
+    <span class="n">submit_button</span><span class="o">.</span><span class="n">on_click</span><span class="p">(</span><span class="n">check_answer</span><span class="p">)</span>
+    <span class="n">reset_button</span><span class="o">.</span><span class="n">on_click</span><span class="p">(</span><span class="n">reset_question</span><span class="p">)</span>
+
+    <span class="n">display</span><span class="p">(</span><span class="n">widgets</span><span class="o">.</span><span class="n">HTML</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;&lt;b&gt;Fill in the blank:&lt;/b&gt; </span><span class="si">{</span><span class="n">question_text</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">),</span> <span class="n">answer</span><span class="p">,</span>
+            <span class="n">widgets</span><span class="o">.</span><span class="n">VBox</span><span class="p">([</span><span class="n">submit_button</span><span class="p">,</span> <span class="n">reset_button</span><span class="p">,</span> <span class="n">output</span><span class="p">]))</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">create_multiple_choice</span><span class="p">(</span><span class="n">question_text</span><span class="p">,</span> <span class="n">choices</span><span class="p">,</span> <span class="n">correct_answer</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Creates a resettable multiple-choice question with a submit button.</span>
+
+<span class="sd">    Parameters:</span>
+<span class="sd">    - question_text (str): The question to display.</span>
+<span class="sd">    - choices (list): A list of answer choices.</span>
+<span class="sd">    - correct_answer (str): The correct answer (case insensitive).</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">answer</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">RadioButtons</span><span class="p">(</span><span class="n">options</span><span class="o">=</span><span class="n">choices</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+                                  <span class="n">style</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;description_width&#39;</span><span class="p">:</span> <span class="s1">&#39;initial&#39;</span><span class="p">},</span>
+                                  <span class="n">layout</span><span class="o">=</span><span class="n">widgets</span><span class="o">.</span><span class="n">Layout</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="s1">&#39;auto&#39;</span><span class="p">))</span>
+    <span class="n">answer</span><span class="o">.</span><span class="n">value</span><span class="o">=</span><span class="kc">None</span>
+    <span class="n">submit_button</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">description</span><span class="o">=</span><span class="s2">&quot;Submit&quot;</span><span class="p">,</span> <span class="n">button_style</span><span class="o">=</span><span class="s2">&quot;success&quot;</span><span class="p">)</span>
+    <span class="n">reset_button</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">description</span><span class="o">=</span><span class="s2">&quot;Reset&quot;</span><span class="p">,</span> <span class="n">button_style</span><span class="o">=</span><span class="s2">&quot;warning&quot;</span><span class="p">)</span>
+    <span class="n">output</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Output</span><span class="p">()</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">check_answer</span><span class="p">(</span><span class="n">_</span><span class="p">):</span>
+        <span class="k">with</span> <span class="n">output</span><span class="p">:</span>
+            <span class="n">output</span><span class="o">.</span><span class="n">clear_output</span><span class="p">()</span>
+            <span class="k">if</span> <span class="n">normalize_input</span><span class="p">(</span><span class="n">answer</span><span class="o">.</span><span class="n">value</span><span class="p">)</span> <span class="o">==</span> <span class="n">normalize_input</span><span class="p">(</span><span class="n">correct_answer</span><span class="p">):</span>
+                <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;✅ Correct! Well done!&quot;</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;❌ Incorrect. The correct answer is &#39;</span><span class="si">{</span><span class="n">correct_answer</span><span class="si">}</span><span class="s2">&#39;.&quot;</span><span class="p">)</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">reset_question</span><span class="p">(</span><span class="n">_</span><span class="p">):</span>
+        <span class="n">output</span><span class="o">.</span><span class="n">clear_output</span><span class="p">()</span>
+        <span class="n">answer</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="kc">None</span>
+
+    <span class="n">submit_button</span><span class="o">.</span><span class="n">on_click</span><span class="p">(</span><span class="n">check_answer</span><span class="p">)</span>
+    <span class="n">reset_button</span><span class="o">.</span><span class="n">on_click</span><span class="p">(</span><span class="n">reset_question</span><span class="p">)</span>
+
+    <span class="n">display</span><span class="p">(</span><span class="n">widgets</span><span class="o">.</span><span class="n">HTML</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;&lt;b&gt;Multiple Choice:&lt;/b&gt; </span><span class="si">{</span><span class="n">question_text</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">),</span>
+            <span class="n">widgets</span><span class="o">.</span><span class="n">VBox</span><span class="p">([</span><span class="n">answer</span><span class="p">,</span> <span class="n">submit_button</span><span class="p">,</span> <span class="n">reset_button</span><span class="p">,</span> <span class="n">output</span><span class="p">]))</span>
+<br/></pre></div>
+</div>
+</div>
+<p>Understanding the Problem: A Critical First Step</p>
+<p>Before diving into data collection and analysis, it is essential to fully understand the misinformation problem we are investigating. A well-defined problem ensures that our research remains focused, actionable, and impactful.</p>
+<p>Why Is Understanding the Problem Important?</p>
+<p>Misidentifying the problem can lead to wasted resources, misleading conclusions, and ineffective interventions. In misinformation research, failing to define the problem properly can result in:</p>
+<ul class="simple">
+<li><p><strong>Data Overload:</strong> Collecting excessive, unfocused data that is difficult to analyze.</p></li>
+<li><p><strong>Misinterpretation of Findings:</strong> Drawing incorrect conclusions by analyzing data that does not align with the core research question.</p></li>
+<li><p><strong>Ineffective Solutions:</strong> Proposing interventions that do not address the root causes of misinformation.</p></li>
+</ul>
+<p>To mitigate these risks, researchers must take a step back and clarify what they are trying to study before collecting data.</p>
+<p>Key Considerations in Defining the Problem</p>
+<p>When investigating misinformation, consider these critical questions:</p>
+<ul class="simple">
+<li><p><strong>What specific misinformation topic or narrative are we studying?</strong> (e.g., COVID-19 vaccine misinformation, election fraud claims)</p></li>
+<li><p><strong>What are the characteristics of the misinformation we are examining?</strong> (e.g., misleading headlines, fabricated statistics, deepfakes)</p></li>
+<li><p><strong>Who is spreading it?</strong> (e.g., individuals, bot networks, foreign influence campaigns)</p></li>
+<li><p><strong>How is it spreading?</strong> (e.g., social media, traditional news, word-of-mouth)</p></li>
+<li><p><strong>What is its impact?</strong> (e.g., behavioral changes, public health risks, political polarization)</p></li>
+</ul>
+<p>By answering these questions, we refine our understanding and establish a clear research direction.</p>
+<p>Formulating a Research Question</p>
+<p>Once the problem is well understood, the next step is to develop a clear and specific research question. A well-formulated research question ensures that data collection and analysis remain focused and actionable.</p>
+<p>Characteristics of a Strong Research Question</p>
+<p>A good research question should be:</p>
+<ul class="simple">
+<li><p><strong>Specific:</strong> Clearly define the scope and focus of the research.</p></li>
+<li><p><strong>Measurable:</strong> The question should be answerable using quantifiable data.</p></li>
+<li><p><strong>Actionable:</strong> The findings should provide insights that can inform decision-making.</p></li>
+</ul>
+<p>Example Research Questions</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Broad Question</p></th>
+<th class="head"><p>Refined, Data-Driven Question</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>How does misinformation about COVID-19 vaccines spread?</p></td>
+<td><p>How does the engagement (likes, shares) of COVID-19 misinformation tweets differ across geographic regions?</p></td>
+</tr>
+<tr class="row-odd"><td><p>Who spreads false vaccine claims?</p></td>
+<td><p>What is the relationship between a user’s follower count and the likelihood of their tweet being shared?</p></td>
+</tr>
+<tr class="row-even"><td><p>How effective is fact-checking?</p></td>
+<td><p>Do tweets containing COVID-19 fact-checking information receive more or less engagement than misinformation tweets?</p></td>
+</tr>
+<tr class="row-odd"><td><p>Which groups are most affected?</p></td>
+<td><p>Which geographic locations show the highest engagement with COVID-19 misinformation tweets?</p></td>
+</tr>
+</tbody>
+</table>
+<p>By refining broad questions into specific, measurable, and actionable research questions, we create a strong foundation for data collection and analysis.</p>
+<p>🔍 Our Focused Research Question Moving Forward</p>
+<p>We’ve explored the problem and refined our research questions - let’s focus on one specific research question for the upcoming lessons:</p>
+<p>“How does the engagement (likes, shares) of COVID-19 misinformation tweets differ across geographic regions?”</p>
+<p>📌 Why This Question?</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Location-based analysis allows us to compare misinformation engagement trends across different regions.
+Engagement metrics (likes, shares) help us quantify the spread and influence of misinformation.
+Structured and measurable data makes it ideal for visualization and trend analysis.
+</pre></div>
+</div>
+<p>🔹 As we move forward with this lesson, we will walk through data identification, acquisition and analysis steps using this research question as our guiding example. 🚀</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span> <span class="n">Question</span> <span class="mi">1</span><span class="p">:</span> <span class="n">Best</span> <span class="n">Research</span> <span class="n">Question</span> <span class="n">Selection</span>
+<span class="n">create_multiple_choice</span><span class="p">(</span>
+    <span class="s2">&quot;Which of the following is the BEST example of a structured, data-driven research question?&quot;</span><span class="p">,</span>
+    <span class="p">[</span>
+        <span class="s2">&quot;A) Why do people believe COVID-19 vaccine misinformation?&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;B) How does misinformation affect people&#39;s health choices?&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;C) What is the engagement difference between COVID-19 vaccine misinformation tweets and their fact-checked corrections?&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;D) Why are people hesitant to get vaccinated?&quot;</span>
+    <span class="p">],</span>
+    <span class="s2">&quot;C) What is the engagement difference between COVID-19 vaccine misinformation tweets and their fact-checked corrections?&quot;</span>
+<span class="p">)</span>
+
+ <span class="n">Question</span> <span class="mi">2</span><span class="p">:</span> <span class="n">Identifying</span> <span class="n">a</span> <span class="n">Weak</span> <span class="n">Research</span> <span class="n">Question</span>
+<span class="n">create_multiple_choice</span><span class="p">(</span>
+    <span class="s2">&quot;Which of these is a weak research question for misinformation analysis?&quot;</span><span class="p">,</span>
+    <span class="p">[</span>
+        <span class="s2">&quot;A) Which Twitter accounts were most active in spreading COVID-19 vaccine misinformation between March 2020 and March 2022?&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;B) What percentage of misinformation engagement comes from bot accounts vs. real users?&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;C) Why do people share false information?&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;D) How does engagement with misinformation compare to engagement with fact-checks?&quot;</span>
+    <span class="p">],</span>
+    <span class="s2">&quot;C) Why do people share false information?&quot;</span>
+<span class="p">)</span>
+
+ <span class="n">Question</span> <span class="mi">3</span><span class="p">:</span> <span class="n">Selecting</span> <span class="n">the</span> <span class="n">Right</span> <span class="n">Research</span> <span class="n">Question</span> <span class="k">for</span> <span class="n">Bot</span> <span class="n">Detection</span>
+<span class="n">create_multiple_choice</span><span class="p">(</span>
+    <span class="s2">&quot;If you want to study how bots amplify COVID-19 vaccine misinformation, which research question is most appropriate?&quot;</span><span class="p">,</span>
+    <span class="p">[</span>
+        <span class="s2">&quot;A) What are the most common emotional triggers used in vaccine misinformation?&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;B) What percentage of accounts spreading vaccine misinformation on Twitter are bots?&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;C) What are the political beliefs of people who share misinformation?&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;D) How does vaccine misinformation compare between Twitter and Facebook?&quot;</span>
+    <span class="p">],</span>
+    <span class="s2">&quot;B) What percentage of accounts spreading vaccine misinformation on Twitter are bots?&quot;</span>
+<span class="p">)</span>
+
+ <span class="n">Question</span> <span class="mi">4</span><span class="p">:</span> <span class="n">Matching</span> <span class="n">Data</span> <span class="n">Sources</span> <span class="n">to</span> <span class="n">Research</span> <span class="n">Questions</span>
+<span class="n">create_multiple_choice</span><span class="p">(</span>
+    <span class="s2">&quot;Which dataset would BEST help answer the question: &#39;Which narratives gained the most traction in COVID-19 vaccine misinformation?&#39;&quot;</span><span class="p">,</span>
+    <span class="p">[</span>
+        <span class="s2">&quot;A) Kaggle COVID-19 Fake News Dataset&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;B) Twitter API for tweet engagement metrics&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;C) Google Fact Check API&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;D) Botometer API&quot;</span>
+    <span class="p">],</span>
+    <span class="s2">&quot;B) Twitter API for tweet engagement metrics&quot;</span>
+<span class="p">)</span>
+
+ <span class="n">Question</span> <span class="mi">5</span><span class="p">:</span> <span class="n">Refining</span> <span class="n">Research</span> <span class="n">Questions</span>
+<span class="n">create_multiple_choice</span><span class="p">(</span>
+    <span class="s2">&quot;Which of the following broad research questions has been correctly refined into a data-driven research question?&quot;</span><span class="p">,</span>
+    <span class="p">[</span>
+        <span class="s2">&quot;A) Why do people believe misinformation? → How does misinformation affect people&#39;s emotions?&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;B) How does misinformation spread online? → Which Twitter accounts were most active in sharing COVID-19 vaccine misinformation between Mar and Apr?&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;C) Who spreads misinformation? → What makes someone share misinformation?&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;D) How effective is fact-checking? → Why do people ignore fact-checks?&quot;</span>
+    <span class="p">],</span>
+    <span class="s2">&quot;B) How does misinformation spread online? → Which Twitter accounts were most active in sharing COVID-19 vaccine misinformation between Mar and Apr?&quot;</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+<span class="ansi-cyan-intense-fg ansi-bold">  Cell </span><span class="ansi-green-intense-fg ansi-bold">In[2], line 1</span>
+<span class="ansi-yellow-intense-fg ansi-bold">    Question 1: Best Research Question Selection</span>
+<span class="ansi-white-intense-fg ansi-bold">             ^</span>
+<span class="ansi-red-intense-fg ansi-bold">SyntaxError</span><span class="ansi-red-intense-fg ansi-bold">:</span> invalid syntax
+
+</pre></div></div>
+</div>
+<p><img alt="bd4b2104da0744b5914326ad798e9d73" src="notebooks/Images/dataidentification.png" /></p>
+<p>🔹 Data Identification: Finding the Right Data for Analysis</p>
+<p>Once we have defined the problem and formulated a research question, the next step is to determine what data is needed to analyze it effectively. Not all data is equally useful, and selecting the right datasets ensures the validity and reliability of our findings.</p>
+<p>Identifying Key Data Sources</p>
+<p>To analyze misinformation, we need to collect relevant and structured data from sources where misinformation is actively spread and discussed. Common sources include:</p>
+<p>🟢 <strong>Social Media Platforms</strong> (e.g., Twitter, Facebook, TikTok, Reddit)</p>
+<ul class="simple">
+<li><p>Useful for tracking how misinformation spreads and its engagement levels.</p></li>
+<li><p>Data points: post content, user engagement (likes, shares, comments), timestamps, geolocation.</p></li>
+</ul>
+<p>🟢 <strong>News &amp; Fact-Checking Databases</strong> (e.g., PolitiFact, Snopes, FactCheck.org)</p>
+<ul class="simple">
+<li><p>Helps validate misinformation claims and compare false information with factual corrections.</p></li>
+<li><p>Data points: claim description, verification status, publication date, source.</p></li>
+</ul>
+<p>🟢 <strong>Surveys &amp; Polls</strong></p>
+<ul class="simple">
+<li><p>Measures public perception and belief in misinformation.</p></li>
+<li><p>Data points: demographics, misinformation exposure, behavioral impact.</p></li>
+</ul>
+<p>🟢 <strong>Metadata &amp; Network Analysis</strong></p>
+<ul class="simple">
+<li><p>Identifies bot networks and coordinated campaigns.</p></li>
+<li><p>Data points: user connections, retweet patterns, account creation dates.</p></li>
+</ul>
+<p>Example Good Data for Various Topics</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Research Question</p></th>
+<th class="head"><p>Example Good Data Sources</p></th>
+<th class="head"><p>Key Data Points</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>How does misinformation engagement vary by platform?</p></td>
+<td><p>Twitter API, Facebook Graph API, TikTok Data</p></td>
+<td><p>Platform type, engagement metrics (likes, shares), misinformation content</p></td>
+</tr>
+<tr class="row-odd"><td><p>How do coordinated disinformation campaigns operate?</p></td>
+<td><p>Open-source intelligence (OSINT), Botometer, CrowdTangle</p></td>
+<td><p>Network connections, bot detection markers, retweet/share patterns</p></td>
+</tr>
+<tr class="row-even"><td><p>What misinformation narratives about elections are most prevalent?</p></td>
+<td><p>Election Integrity Partnership, MediaCloud, Twitter API</p></td>
+<td><p>Misinformation topic, source credibility, user engagement</p></td>
+</tr>
+<tr class="row-odd"><td><p>What factors contribute to vaccine hesitancy?</p></td>
+<td><p>WHO Vaccine Misinformation Reports, Pew Research Surveys, Facebook Data</p></td>
+<td><p>Misinformation topic, sentiment analysis, user demographics</p></td>
+</tr>
+<tr class="row-even"><td><p>How effective is fact-checking?</p></td>
+<td><p>FactCheck.org, Snopes, PolitiFact</p></td>
+<td><p>Claim description, verification status, engagement metrics</p></td>
+</tr>
+</tbody>
+</table>
+<p>By aligning our data sources with our research question, we ensure that our analysis is evidence-based and well-supported.</p>
+<div class="line-block">
+<div class="line">Based on our research question—</div>
+<div class="line"><strong>“How does the engagement (likes, shares) of COVID-19 misinformation tweets differ across geographic regions?”</strong>—</div>
+<div class="line">we need a dataset that contains:</div>
+</div>
+<p>✅ Misinformation and fact-checked content on COVID 19</p>
+<p>✅ Engagement metrics (likes, shares, retweets, comments, etc.) on different social media platforms</p>
+<p>✅ Temporal data (timestamps for tracking trends over time and identifying peak misinformation periods)</p>
+<p>✅ Geolocation data (country, region, or city-level information to analyze geographic differences)</p>
+<p>✅ User metadata (follower count, account type, potential bot indicators) to assess influence on engagement</p>
+<p>🚀 <strong>Next Up:</strong> How do we collect the right misinformation data? Let’s dive into <strong>Data Acquisition – Where and How Do We Collect Data?</strong></p>
+<p><img alt="cb5f2f1dc154411082300d5e7b3f8d8a" src="notebooks/Images/dataacquisition.png" /></p>
+<p>🔹 Data Acquisition – Where and How Do We Collect Misinformation Data?</p>
+<p>📌 Why This Step Matters</p>
+<p>Now that we’ve <strong>defined what we want to analyze</strong> and <strong>identified the type of data we need</strong>, we need to determine <strong>where to find the data</strong> to answer our research question.</p>
+<p>Effective <strong>data acquisition</strong> ensures we gather <strong>reliable, relevant, and actionable</strong> information while avoiding incomplete or biased datasets.</p>
+<p>In this section, we’ll explore:</p>
+<p>✅ <strong>Primary vs. Secondary Data Sources</strong> – What’s the difference, and when should we use them?</p>
+<p>✅ <strong>Common Misinformation Data Sources</strong> – Where do we get structured and unstructured data?</p>
+<p>✅ <strong>Challenges in Data Collection</strong> – What are the ethical, technical, and accessibility concerns?</p>
+<hr class="docutils" />
+<p>🔍 <strong>1: Primary vs. Secondary Data Sources</strong></p>
+<p>Not all data is collected the same way. We can obtain misinformation-related data from <strong>two main sources</strong>:</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Data Type</strong></p></th>
+<th class="head"><p><strong>Definition</strong></p></th>
+<th class="head"><p><strong>Example for MDM Analysis</strong></p></th>
+<th class="head"><p><strong>Pros</strong></p></th>
+<th class="head"><p><strong>Cons</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Primary Data</strong></p></td>
+<td><p>Data you collect directly through APIs, surveys, experiments, or web scraping.</p></td>
+<td><p>Using <strong>Twitter API</strong> to extract misinformation tweets.</p></td>
+<td><p>✅ Customizable, ✅ More control over accuracy.</p></td>
+<td><p>❌ Requires technical setup, ❌ May have platform
+restrictions.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Secondary Data</strong></p></td>
+<td><p>Data collected by external organizations or researchers and made publicly available.</p></td>
+<td><p>Using <strong>fact-checking databases</strong> like Snopes or Google Fact Check Explorer.</p></td>
+<td><p>✅ Easy access, ✅ Less resource-intensive.</p></td>
+<td><p>❌ May be outdated, ❌ May not fit your exact research
+question.</p></td>
+</tr>
+</tbody>
+</table>
+<hr class="docutils" />
+<p>🛠️ <strong>2: Common MDM Data Sources</strong></p>
+<p>Now, let’s explore some of the best sources for <strong>collecting misinformation-related data</strong>.</p>
+<p><strong>1️⃣ Social Media Data (Primary Data)</strong> 🟢 <strong>Best for:</strong> Analyzing misinformation spread, engagement, bot activity, or amplification tactics.</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Platform</strong></p></th>
+<th class="head"><p><strong>How to Collect Data</strong></p></th>
+<th class="head"><p><strong>Example Use Case</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Twitter</strong></p></td>
+<td><p>API access via Twitter Developer Portal</p></td>
+<td><p>Track how a specific false narrative spreads.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Facebook &amp; Instagram</strong></p></td>
+<td><p>Meta’s CrowdTangle tool (limited availability)</p></td>
+<td><p>Measure engagement on misinformation posts.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Reddit</strong></p></td>
+<td><p>Reddit API or Pushshift API (historical data)</p></td>
+<td><p>Analyze misinformation discussions in niche communities.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>TikTok &amp; YouTube</strong></p></td>
+<td><p>Manual scraping (no public API for full text)</p></td>
+<td><p>Identify influencers amplifying false narratives.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="line-block">
+<div class="line">⚠ <strong>Considerations:</strong></div>
+<div class="line">🔹 Some platforms require <strong>API access approval</strong> (may take time).</div>
+<div class="line">🔹 <strong>Ethical concerns</strong> – Ensure user privacy and compliance with platform policies.</div>
+</div>
+<hr class="docutils" />
+<p><strong>2️⃣ Fact-Checking Databases (Secondary Data)</strong> 🟢 <strong>Best for:</strong> Comparing misinformation claims to verified information.</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Database</strong></p></th>
+<th class="head"><p><strong>How to Access</strong></p></th>
+<th class="head"><p><strong>Example Use Case</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Snopes</strong></p></td>
+<td><p>Website search</p></td>
+<td><p>Compare viral misinformation claims with debunks.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>PolitiFact</strong></p></td>
+<td><p>API or website search</p></td>
+<td><p>Track political misinformation trends.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Google Fact Check Explorer</strong></p></td>
+<td><p>API or web search</p></td>
+<td><p>Aggregate fact-checks across multiple sources.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Poynter IFCN</strong></p></td>
+<td><p>Database search</p></td>
+<td><p>Access global fact-checking organizations’ reports.</p></td>
+</tr>
+</tbody>
+</table>
+<p>📌 <strong>Pro Tip:</strong> Fact-checking databases are <strong>great for validation</strong> but don’t always provide engagement metrics (likes, shares, comments).</p>
+<hr class="docutils" />
+<p><strong>3️⃣ Web Scraping &amp; News Archives (Primary &amp; Secondary)</strong> 🟢 <strong>Best for:</strong> Collecting misinformation from news sites, forums, or blogs.</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Source Type</strong></p></th>
+<th class="head"><p><strong>How to Collect Data</strong></p></th>
+<th class="head"><p><strong>Example Use Case</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>News Sites</strong></p></td>
+<td><p>Web scraping with BeautifulSoup or Selenium</p></td>
+<td><p>Track how misinformation headlines change over time.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Conspiracy Blogs</strong></p></td>
+<td><p>Scraping tools or manual collection</p></td>
+<td><p>Analyze how narratives evolve in alternative media.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Wikipedia Edits</strong></p></td>
+<td><p>Wikipedia API</p></td>
+<td><p>Detect misinformation in article edits.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="line-block">
+<div class="line">⚠ <strong>Considerations:</strong></div>
+<div class="line">🔹 <strong>Ethical risks</strong> – Scraping terms of service violations can lead to blocked access.</div>
+<div class="line">🔹 <strong>Legality</strong> – Some sites prohibit automated scraping—check platform policies.</div>
+</div>
+<hr class="docutils" />
+<p><strong>4️⃣ Surveys &amp; Experimental Data (Primary Data)</strong> 🟢 <strong>Best for:</strong> Measuring public perception, belief trends, and misinformation susceptibility.</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Method</strong></p></th>
+<th class="head"><p><strong>How to Collect Data</strong></p></th>
+<th class="head"><p><strong>Example Use Case</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Online Surveys</strong></p></td>
+<td><p>Google Forms, Qualtrics, or MTurk</p></td>
+<td><p>Measure belief in misinformation narratives.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Controlled Experiments</strong></p></td>
+<td><p>Academic studies or user testing</p></td>
+<td><p>Test misinformation susceptibility before and after fact-checking.</p></td>
+</tr>
+</tbody>
+</table>
+<p>📌 <strong>Pro Tip:</strong> If conducting a survey, ensure <strong>neutral question framing</strong> to avoid biasing responses.</p>
+<hr class="docutils" />
+<p>📝 <strong>3: Common File Types for Storage</strong></p>
+<p>Why File Types Matter When working with data, it is essential to understand different file types, as they determine how data is stored, shared, and processed. Many datasets used in misinformation analysis come in a variety of formats, each with its own advantages and use cases.</p>
+<p>Common Data File Types</p>
+<p><strong>1. CSV (.csv)</strong> – Comma-Separated Values</p>
+<ul class="simple">
+<li><p>A widely used format for structured data.</p></li>
+<li><p>Stores tabular data in plain text with commas separating values.</p></li>
+<li><p>Easy to process with Python using <code class="docutils literal notranslate"><span class="pre">pandas.read_csv()</span></code>.</p></li>
+</ul>
+<p><strong>2. Excel (.xlsx, .xls)</strong> – Microsoft Excel Spreadsheets</p>
+<ul class="simple">
+<li><p>Commonly used for structured data with multiple sheets.</p></li>
+<li><p>Supports formulas, charts, and formatting.</p></li>
+<li><p>Readable in Python using <code class="docutils literal notranslate"><span class="pre">pandas.read_excel()</span></code>.</p></li>
+</ul>
+<p><strong>3. JSON (.json)</strong> – JavaScript Object Notation</p>
+<ul class="simple">
+<li><p>Used for structured data, especially from APIs and web sources.</p></li>
+<li><p>Stores data as key-value pairs, making it flexible.</p></li>
+<li><p>Readable in Python using <code class="docutils literal notranslate"><span class="pre">json.load()</span></code> or <code class="docutils literal notranslate"><span class="pre">pandas.read_json()</span></code>.</p></li>
+</ul>
+<p><strong>4. SQL Databases</strong> – Structured Query Language</p>
+<ul class="simple">
+<li><p>Stores large-scale, relational data efficiently.</p></li>
+<li><p>Often used for handling misinformation datasets from multiple sources.</p></li>
+<li><p>Python’s <code class="docutils literal notranslate"><span class="pre">sqlite3</span></code> or <code class="docutils literal notranslate"><span class="pre">SQLAlchemy</span></code> can query SQL databases.</p></li>
+</ul>
+<p><strong>5. Parquet (.parquet)</strong> – Optimized for Big Data</p>
+<ul class="simple">
+<li><p>Columnar storage format, making it faster for big data processing.</p></li>
+<li><p>Used in large-scale analytics and machine learning pipelines.</p></li>
+<li><p>Readable in Python using <code class="docutils literal notranslate"><span class="pre">pandas.read_parquet()</span></code>.</p></li>
+</ul>
+<p><strong>6. Text Files (.txt)</strong> – Unstructured Text Data</p>
+<ul class="simple">
+<li><p>Common for logs, reports, or raw text analysis.</p></li>
+<li><p>Useful for analyzing misinformation in articles, comments, or tweets.</p></li>
+<li><p>Readable using standard Python file operations (<code class="docutils literal notranslate"><span class="pre">open()</span></code>, <code class="docutils literal notranslate"><span class="pre">read()</span></code>).</p></li>
+</ul>
+<p><strong>Additional Considerations</strong></p>
+<ul class="simple">
+<li><p><strong>APIs &amp; Web Scraped Data:</strong> Often comes in <strong>JSON</strong>, <strong>HTML</strong>, or <strong>CSV</strong> formats.</p></li>
+<li><p><strong>PDFs:</strong> Frequently used for government reports and academic papers, but require tools like <code class="docutils literal notranslate"><span class="pre">PyPDF2</span></code> or <code class="docutils literal notranslate"><span class="pre">pdfplumber</span></code> to extract data.</p></li>
+<li><p><strong>HTML:</strong> Webpage data may need <code class="docutils literal notranslate"><span class="pre">BeautifulSoup</span></code> for parsing.</p></li>
+</ul>
+<p><strong>Key Takeaway</strong> Most file types can be read and processed using Python with the right tools. Understanding these formats is essential for effective data collection and analysis in misinformation research.</p>
+<p>⚠️ Challenges in Data Collection</p>
+<p>When working with misinformation datasets, researchers often face three key challenges:</p>
+<p>1️⃣ Accessibility &amp; API Restrictions</p>
+<p>🔹 Some platforms (e.g., Facebook, Instagram) limit public API access, making direct misinformation collection difficult.</p>
+<p>🔹 Data licensing may prevent certain datasets from being freely used.</p>
+<p>🔹 Some sources require institutional approval (e.g., Twitter’s Academic API).</p>
+<p>🔹 Data availability varies by region—some datasets may be inaccessible in certain countries due to government regulations.</p>
+<p>🔹 API limitations (e.g., rate limits, paywalls) can restrict the volume of data that can be collected in a given timeframe.</p>
+<p>🔹 Solution: ✅ Use alternative data sources (e.g., Reddit API is more open than Facebook).</p>
+<p>✅ Partner with research institutions for data-sharing agreements.</p>
+<p>✅ Apply for academic API access where possible (e.g., Twitter’s Academic Research track).</p>
+<p>✅ Consider ethical web scraping techniques while ensuring compliance with platform terms of service.</p>
+<p>✅ Use open-source datasets compiled by misinformation research initiatives.</p>
+<p>2️⃣ Ethics &amp; Privacy Concerns</p>
+<p>🔹 User privacy – Collecting personally identifiable information (PII) without consent is unethical and, in some cases, illegal (e.g., GDPR, CCPA).</p>
+<p>🔹 Risk of amplification – Sharing misinformation data without context may unintentionally spread false narratives further.</p>
+<p>🔹 Ethical concerns in web scraping – Automated collection of social media data may violate terms of service and risk exposing user data.</p>
+<p>🔹 Misinformation impact – Storing and analyzing sensitive topics (e.g., public health misinformation) requires responsible handling to avoid contributing to harm.</p>
+<p>🔹 Solution: ✅ Anonymize data – Remove personal identifiers before analysis.</p>
+<p>✅ Focus on aggregate insights, not individual user data.</p>
+<p>✅ Clearly document data collection methods to ensure ethical transparency.</p>
+<p>✅ Obtain proper consent if using survey-based misinformation research.</p>
+<p>✅ Apply for Institutional Review Board (IRB) approval when working with human-related misinformation data.</p>
+<p>✅ Store datasets securely and limit access to authorized researchers only.</p>
+<p>3️⃣ Data Noise &amp; Bias</p>
+<p>🔹 Not all data is relevant or high-quality – Social media posts may contain spam, satire, or unrelated content.</p>
+<p>🔹 Algorithmic bias – Platform engagement algorithms may skew which misinformation spreads the most.</p>
+<p>🔹 Selection bias – Certain datasets may overrepresent specific demographics, political affiliations, or geographic regions.</p>
+<p>🔹 Missing context – Misinformation posts may not always be labeled as such, making classification difficult.</p>
+<p>🔹 Fact-checking lag – Real-time misinformation research may struggle with delayed fact-checking verification.</p>
+<p>🔹 Solution: ✅ Preprocess &amp; clean data (we’ll cover this in Lesson 5).</p>
+<p>✅ Cross-check multiple sources to reduce platform bias.</p>
+<p>✅ Use diverse datasets from multiple platforms to improve representativeness.</p>
+<p>✅ Apply machine learning techniques to filter out spam, satire, and irrelevant content.</p>
+<p>✅ Validate misinformation classifications by cross-referencing fact-checking databases.</p>
+<p>✅ Adjust for algorithmic bias by examining platform policies and content curation practices.</p>
+<p>By addressing these challenges, researchers can ensure that misinformation data is collected and analyzed responsibly, leading to more accurate and impactful findings. 🚀</p>
+<hr class="docutils" />
+<p>📋 <strong>4: Assessing Datasets</strong></p>
+<p>After identifying potential data sources, it is crucial to assess their quality, reliability, and limitations before using them for analysis. Not all datasets are created equal, and selecting the wrong data can lead to bias, misinterpretation, or misleading conclusions.</p>
+<p>📊 Dataset Evaluation Rubric</p>
+<p>To ensure a dataset is <strong>suitable for misinformation research</strong>, use the rubric below to <strong>assess its quality, structure, and limitations</strong> before proceeding.</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Evaluation Criteria</strong></p></th>
+<th class="head"><p><strong>Considerations</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Relevance</strong></p></td>
+<td><p>Does the dataset align with my research question?</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Data Type</strong></p></td>
+<td><p>Is the data <strong>structured</strong> (tables, metrics, engagement stats) or <strong>unstructured</strong> (tweets, articles, images, videos)?</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Reliability</strong></p></td>
+<td><p>Is the source credible (<strong>research institute, fact-checking organizations</strong>)?</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Access &amp; Limitations</strong></p></td>
+<td><p>Does the dataset require <strong>API access, institutional approval, or have significant restrictions</strong>?</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Bias &amp; Representativeness</strong></p></td>
+<td><p>Does the dataset reflect a <strong>diverse sample</strong> or is it skewed?</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Quality &amp; Completeness</strong></p></td>
+<td><p>Does the dataset contain <strong>missing values, duplicate data, or errors</strong>?</p></td>
+</tr>
+</tbody>
+</table>
+<hr class="docutils" />
+<p><strong>🔍 Course Dataset: Kaggle COVID-19 Tweet Dataset (Modified)</strong></p>
+<div class="line-block">
+<div class="line">🔗 <a class="reference external" href="https://www.kaggle.com/datasets/kaushiksuresh147/covidvaccine-tweets">Kaggle COVID-19 Tweets</a></div>
+<div class="line">File Type: CSV</div>
+</div>
+<hr class="docutils" />
+<p>📊 <strong>Dataset Evaluation: Kaggle COVID-19 Tweet Dataset (Modified)</strong></p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Evaluation Criteria</strong></p></th>
+<th class="head"><p><strong>Considerations</strong></p></th>
+<th class="head"><p><strong>Assessment</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Relevance</strong></p></td>
+<td><p>Does the dataset align with our research question?</p></td>
+<td><p>✅ High relevance—focuses on COVID-19 misinformation and
+fact-checking engagement.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Data Type</strong></p></td>
+<td><p>Is the data structured (tables, metrics) or unstructured (tweets, images)?</p></td>
+<td><p>🟡 Semi-structured—includes both tweets and metadata
+(engagement, timestamps).</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Reliability</strong></p></td>
+<td><p>Is the source credible (research institutions, fact-checkers)?</p></td>
+<td><p>✅ Based on a widely used Kaggle dataset with verified
+misinformation labels.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Access &amp; Limitations</strong></p></td>
+<td><p>Does the dataset have API restrictions, missing data, or biases?</p></td>
+<td><p>❌ Some missing timestamps, multilingual data challenges.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Bias &amp; Representativeness</strong></p></td>
+<td><p>Does the dataset reflect diverse misinformation patterns?</p></td>
+<td><p>⚠️ Has gaps and distortions.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Quality &amp; Completeness</strong></p></td>
+<td><p>Does the dataset contain errors, duplicates, or missing values?</p></td>
+<td><p>✅ No duplicates, few missing values.</p></td>
+</tr>
+</tbody>
+</table>
+<p>💡 <strong>The original Kaggle dataset is structured and mostly preprocessed, making it ideal for learning, but real-world misinformation data is rarely this clean. We’ve introduced modifications, creating a dataset that better reflects actual challenges in data analysis.</strong></p>
+<div class="line-block">
+<div class="line">The <strong>modified version</strong> includes:</div>
+<div class="line">🔹 <strong>Multilingual tweets</strong> to test language detection and NLP processing.</div>
+<div class="line">🔹 <strong>Altered timestamps</strong> to simulate irregularities in dataset collection.</div>
+<div class="line">🔹 <strong>Randomized engagement metrics</strong> to introduce noise and require filtering.</div>
+<div class="line">🔹 <strong>Additional misinformation labels</strong> with potential misclassifications for accuracy testing.</div>
+</div>
+<p>This dataset will be used in <strong>upcoming lessons</strong> on <strong>exploratory data analysis, data preprocessing, and visualization</strong>.</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">create_multiple_choice</span><span class="p">(</span>
+    <span class="s2">&quot;Given the research question: &#39;How does misinformation about election fraud spread on Twitter?&#39;, which dataset would be the best choice?&quot;</span><span class="p">,</span>
+    <span class="p">[</span>
+        <span class="s2">&quot;A) A survey on voter beliefs regarding election fraud&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;B) Twitter API data containing election-related tweets and engagement metrics&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;C) Fact-checking reports from PolitiFact and Snopes&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;D) A dataset of government election results&quot;</span>
+    <span class="p">],</span>
+    <span class="s2">&quot;B) Twitter API data containing election-related tweets and engagement metrics&quot;</span>
+<span class="p">)</span>
+<span class="n">create_multiple_choice</span><span class="p">(</span>
+    <span class="s2">&quot;Which of the following would likely present a major challenge when trying to collect misinformation-related data from Facebook?&quot;</span><span class="p">,</span>
+    <span class="p">[</span>
+        <span class="s2">&quot;A) API access is restricted, making it difficult to extract large-scale misinformation data&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;B) Facebook provides real-time, open access to all misinformation-related posts&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;C) Facebook data is easy to analyze because all posts are fact-checked&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;D) Facebook requires no ethical considerations when collecting misinformation data&quot;</span>
+    <span class="p">],</span>
+    <span class="s2">&quot;A) API access is restricted, making it difficult to extract large-scale misinformation data&quot;</span>
+<span class="p">)</span>
+<span class="n">create_multiple_choice</span><span class="p">(</span>
+    <span class="s2">&quot;You want to analyze bot accounts spreading misinformation about COVID-19 vaccines. Which dataset would be the most useful?&quot;</span><span class="p">,</span>
+    <span class="p">[</span>
+        <span class="s2">&quot;A) A dataset containing Twitter user metadata, including account age and posting frequency&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;B) A news article summarizing bot activity during the pandemic&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;C) A dataset of verified government health reports&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;D) A dataset of randomized social media posts unrelated to COVID-19&quot;</span>
+    <span class="p">],</span>
+    <span class="s2">&quot;A) A dataset containing Twitter user metadata, including account age and posting frequency&quot;</span>
+<span class="p">)</span>
+<span class="n">create_multiple_choice</span><span class="p">(</span>
+    <span class="s2">&quot;For the research question: &#39;What percentage of misinformation engagement on Twitter comes from bot accounts?&#39;, which data type would be most critical?&quot;</span><span class="p">,</span>
+    <span class="p">[</span>
+        <span class="s2">&quot;A) Survey responses from Twitter users&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;B) Metadata on Twitter accounts, including retweet patterns and bot scores&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;C) A dataset of misinformation posts fact-checked by Snopes&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;D) A historical database of political misinformation&quot;</span>
+    <span class="p">],</span>
+    <span class="s2">&quot;B) Metadata on Twitter accounts, including retweet patterns and bot scores&quot;</span>
+<span class="p">)</span>
+<span class="n">create_multiple_choice</span><span class="p">(</span>
+    <span class="s2">&quot;Which of the following is a key ethical concern when collecting misinformation data?&quot;</span><span class="p">,</span>
+    <span class="p">[</span>
+        <span class="s2">&quot;A) Ensuring the dataset is structured correctly&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;B) Avoiding personally identifiable information (PII) in collected data&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;C) Making sure the dataset contains a mix of factual and false information&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;D) Ensuring the dataset is large enough for meaningful analysis&quot;</span>
+    <span class="p">],</span>
+    <span class="s2">&quot;B) Avoiding personally identifiable information (PII) in collected data&quot;</span>
+<span class="p">)</span>
+
+
+<span class="n">create_fill_in_the_blank</span><span class="p">(</span>
+    <span class="s2">&quot;When collecting misinformation data directly from social media APIs, this is an example of a ____________ (primary or secondary) data source.&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;primary&quot;</span>
+<span class="p">)</span>
+<br/></pre></div>
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<script type="application/vnd.jupyter.widget-view+json">{"version_major": 2, "version_minor": 0, "model_id": "3af706e97d2143539893ae148a6eef7b"}</script></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<script type="application/vnd.jupyter.widget-view+json">{"version_major": 2, "version_minor": 0, "model_id": "813b8d04e70c4e3587fa029075f29ae3"}</script></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<script type="application/vnd.jupyter.widget-view+json">{"version_major": 2, "version_minor": 0, "model_id": "c96d31064fa14ce9bcbfd88c9921a57a"}</script></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<script type="application/vnd.jupyter.widget-view+json">{"version_major": 2, "version_minor": 0, "model_id": "a6edcf4d53c0465b909335f1eddb0967"}</script></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<script type="application/vnd.jupyter.widget-view+json">{"version_major": 2, "version_minor": 0, "model_id": "f47fabc9910b402ba8f4877f1e72b9f9"}</script></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<script type="application/vnd.jupyter.widget-view+json">{"version_major": 2, "version_minor": 0, "model_id": "40ac94fbb9d2433a9bd3ea4f1a48c26a"}</script></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<script type="application/vnd.jupyter.widget-view+json">{"version_major": 2, "version_minor": 0, "model_id": "caf0ffb0933743258326c2aaa947f4a2"}</script></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<script type="application/vnd.jupyter.widget-view+json">{"version_major": 2, "version_minor": 0, "model_id": "af27d87355c4405490f789b81d6ee0c7"}</script></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<script type="application/vnd.jupyter.widget-view+json">{"version_major": 2, "version_minor": 0, "model_id": "05cd2a1aac1342409aa3b5d279d51444"}</script></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<script type="application/vnd.jupyter.widget-view+json">{"version_major": 2, "version_minor": 0, "model_id": "c34dcd045d6e41f19be0006ab514a6db"}</script></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<script type="application/vnd.jupyter.widget-view+json">{"version_major": 2, "version_minor": 0, "model_id": "1ce3f56d269f4fa0bc38b9531fad7e4e"}</script></div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<script type="application/vnd.jupyter.widget-view+json">{"version_major": 2, "version_minor": 0, "model_id": "995cbb0873bf4c44a73f3da079592401"}</script></div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<script type="application/vnd.jupyter.widget-view+json">{"version_major": 2, "version_minor": 0, "model_id": "19d7ee31ce7746e8989ebe9ac256d6e9"}</script></div>
+</div>
+<p>Understanding the Problem, Data Identification, and Data Acquisition for Your Chosen Narrative 📌 Applying What You’ve Learned</p>
+<p>So far, we’ve walked through a structured approach to understanding a problem, data identification, and data acquisition. Now, it’s time to apply these same steps to your own research MDM narrative.</p>
+<p>In Assignment 2, you will:</p>
+<p>✅ Formulate 3-5 structured research questions based on your chosen misinformation narrative.</p>
+<p>✅ Identify relevant data sources that best align with your research questions.</p>
+<p>✅ Critically assess dataset quality, structure, and limitations.</p>
+<p>By completing this assignment, you will be prepared to collect, clean, and analyze misinformation data in upcoming lessons.</p>
+<hr class="docutils" />
+<p>🚀 <strong>Next Lesson: Data Inspection, Preprocessing, and Exploratory Data Analysis (EDA)</strong></p>
+<p>In the next lesson, we will:</p>
+<p>✔ Inspect the dataset structure to understand column types, categorical vs numerical data, and overall format.</p>
+<p>✔ Clean and preprocess our dataset to remove inconsistencies, missing values, and irrelevant data.</p>
+<p>✔ Explore data distributions by analyzing engagement patterns, misinformation prevalence, and geographic trends.</p>
+<p>✔ Visualize key trends using charts, histograms, and heatmaps to identify patterns in misinformation spread.</p>
+<p>✔ Detect outliers and anomalies in engagement metrics to uncover potential bot activity or coordinated disinformation campaigns.</p>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+</div>
+<script type="application/vnd.jupyter.widget-state+json">
+{"state": {"b721b5e65b7a4ef793c4ffe8a693b805": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": null, "border_left": null, "border_right": null, "border_top": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "padding": null, "right": null, "top": null, "visibility": null, "width": "auto"}}, "efa45a90739640cf942b1054757aa0f2": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "StyleView", "description_width": "initial"}}, "169e5dd165a945b28b92d55875a635fe": {"model_name": "RadioButtonsModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "RadioButtonsModel", "_options_labels": ["A) A survey on voter beliefs regarding election fraud", "B) Twitter API data containing election-related tweets and engagement metrics", "C) Fact-checking reports from PolitiFact and Snopes", "D) A dataset of government election results"], "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "2.0.0", "_view_name": "RadioButtonsView", "description": "", "description_allow_html": false, "disabled": false, "index": null, "layout": "IPY_MODEL_b721b5e65b7a4ef793c4ffe8a693b805", "orientation": "vertical", "style": "IPY_MODEL_efa45a90739640cf942b1054757aa0f2", "tabbable": null, "tooltip": null}}, "750b86cc13784b118fefae27d1a589c6": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": null, "border_left": null, "border_right": null, "border_top": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "79ac644ff14c43e39e57574aecc53dc9": {"model_name": "ButtonStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "ButtonStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "StyleView", "button_color": null, "font_family": null, "font_size": null, "font_style": null, "font_variant": null, "font_weight": null, "text_color": null, "text_decoration": null}}, "634909d464c24aeaadc77f9f9a04be08": {"model_name": "ButtonModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "ButtonModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "2.0.0", "_view_name": "ButtonView", "button_style": "success", "description": "Submit", "disabled": false, "icon": "", "layout": "IPY_MODEL_750b86cc13784b118fefae27d1a589c6", "style": "IPY_MODEL_79ac644ff14c43e39e57574aecc53dc9", "tabbable": null, "tooltip": null}}, "aa20243e330c459a8013a2c5e7d62b10": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": null, "border_left": null, "border_right": null, "border_top": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "e53d16b1ad7b49c3a338812927285ec5": {"model_name": "ButtonStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "ButtonStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "StyleView", "button_color": null, "font_family": null, "font_size": null, "font_style": null, "font_variant": null, "font_weight": null, "text_color": null, "text_decoration": null}}, "90ed99f66f3546bca06ca892f1c8ab11": {"model_name": "ButtonModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "ButtonModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "2.0.0", "_view_name": "ButtonView", "button_style": "warning", "description": "Reset", "disabled": false, "icon": "", "layout": "IPY_MODEL_aa20243e330c459a8013a2c5e7d62b10", "style": "IPY_MODEL_e53d16b1ad7b49c3a338812927285ec5", "tabbable": null, "tooltip": null}}, "ae322d8867804f579fb70da864ada834": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": null, "border_left": null, "border_right": null, "border_top": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "36ab8b1b30af461ba25e52c7fb01a8dc": {"model_name": "OutputModel", "model_module": "@jupyter-widgets/output", "model_module_version": "1.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/output", "_model_module_version": "1.0.0", "_model_name": "OutputModel", "_view_count": null, "_view_module": "@jupyter-widgets/output", "_view_module_version": "1.0.0", "_view_name": "OutputView", "layout": "IPY_MODEL_ae322d8867804f579fb70da864ada834", "msg_id": "", "outputs": [], "tabbable": null, "tooltip": null}}, "4582b90a4fab4703a1b6482203254fcc": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": null, "border_left": null, "border_right": null, "border_top": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "2f9de3876da848e8a8ea4e3a9fc9907b": {"model_name": "HTMLStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "HTMLStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "StyleView", "background": null, "description_width": "", "font_size": null, "text_color": null}}, "3af706e97d2143539893ae148a6eef7b": {"model_name": "HTMLModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "HTMLModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "2.0.0", "_view_name": "HTMLView", "description": "", "description_allow_html": false, "layout": "IPY_MODEL_4582b90a4fab4703a1b6482203254fcc", "placeholder": "\u200b", "style": "IPY_MODEL_2f9de3876da848e8a8ea4e3a9fc9907b", "tabbable": null, "tooltip": null, "value": "<b>Multiple Choice:</b> Given the research question: 'How does misinformation about election fraud spread on Twitter?', which dataset would be the best choice?"}}, "ff462bd328314025854efd8be3d290b8": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": null, "border_left": null, "border_right": null, "border_top": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "813b8d04e70c4e3587fa029075f29ae3": {"model_name": "VBoxModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "VBoxModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "2.0.0", "_view_name": "VBoxView", "box_style": "", "children": ["IPY_MODEL_169e5dd165a945b28b92d55875a635fe", "IPY_MODEL_634909d464c24aeaadc77f9f9a04be08", "IPY_MODEL_90ed99f66f3546bca06ca892f1c8ab11", "IPY_MODEL_36ab8b1b30af461ba25e52c7fb01a8dc"], "layout": "IPY_MODEL_ff462bd328314025854efd8be3d290b8", "tabbable": null, "tooltip": null}}, "758fc450d2414624ae28d89e2a6e5182": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": null, "border_left": null, "border_right": null, "border_top": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "padding": null, "right": null, "top": null, "visibility": null, "width": "auto"}}, "0eff9288aeae4939955c955293b286f6": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "StyleView", "description_width": "initial"}}, "723ad0d001654edeaa38005815285002": {"model_name": "RadioButtonsModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "RadioButtonsModel", "_options_labels": ["A) API access is restricted, making it difficult to extract large-scale misinformation data", "B) Facebook provides real-time, open access to all misinformation-related posts", "C) Facebook data is easy to analyze because all posts are fact-checked", "D) Facebook requires no ethical considerations when collecting misinformation data"], "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "2.0.0", "_view_name": "RadioButtonsView", "description": "", "description_allow_html": false, "disabled": false, "index": null, "layout": "IPY_MODEL_758fc450d2414624ae28d89e2a6e5182", "orientation": "vertical", "style": "IPY_MODEL_0eff9288aeae4939955c955293b286f6", "tabbable": null, "tooltip": null}}, "f10fb3d0852c42d88d081e54f34b6217": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": null, "border_left": null, "border_right": null, "border_top": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "97aa30e1e4214443bf53b644e930cfb0": {"model_name": "ButtonStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "ButtonStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "StyleView", "button_color": null, "font_family": null, "font_size": null, "font_style": null, "font_variant": null, "font_weight": null, "text_color": null, "text_decoration": null}}, "886e12c8045140bcb698d5353d982144": {"model_name": "ButtonModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "ButtonModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "2.0.0", "_view_name": "ButtonView", "button_style": "success", "description": "Submit", "disabled": false, "icon": "", "layout": "IPY_MODEL_f10fb3d0852c42d88d081e54f34b6217", "style": "IPY_MODEL_97aa30e1e4214443bf53b644e930cfb0", "tabbable": null, "tooltip": null}}, "e508939f19c141bd9b95d6846c477290": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": null, "border_left": null, "border_right": null, "border_top": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "3cfdc7e4eccc488e9bfe63f7c712f380": {"model_name": "ButtonStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "ButtonStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "StyleView", "button_color": null, "font_family": null, "font_size": null, "font_style": null, "font_variant": null, "font_weight": null, "text_color": null, "text_decoration": null}}, "737956b548ea40fbac5186a9c77d65d4": {"model_name": "ButtonModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "ButtonModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "2.0.0", "_view_name": "ButtonView", "button_style": "warning", "description": "Reset", "disabled": false, "icon": "", "layout": "IPY_MODEL_e508939f19c141bd9b95d6846c477290", "style": "IPY_MODEL_3cfdc7e4eccc488e9bfe63f7c712f380", "tabbable": null, "tooltip": null}}, "778aed73d11b4eb98328ee18e65ed860": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": null, "border_left": null, "border_right": null, "border_top": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "4999336e804b45b79d091594be153682": {"model_name": "OutputModel", "model_module": "@jupyter-widgets/output", "model_module_version": "1.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/output", "_model_module_version": "1.0.0", "_model_name": "OutputModel", "_view_count": null, "_view_module": "@jupyter-widgets/output", "_view_module_version": "1.0.0", "_view_name": "OutputView", "layout": "IPY_MODEL_778aed73d11b4eb98328ee18e65ed860", "msg_id": "", "outputs": [], "tabbable": null, "tooltip": null}}, "ee2d23a5a7594de788f6995a9eb77fae": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": null, "border_left": null, "border_right": null, "border_top": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "60041bd2d3eb408eb5b1bdbefabbaf7c": {"model_name": "HTMLStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "HTMLStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "StyleView", "background": null, "description_width": "", "font_size": null, "text_color": null}}, "c96d31064fa14ce9bcbfd88c9921a57a": {"model_name": "HTMLModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "HTMLModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "2.0.0", "_view_name": "HTMLView", "description": "", "description_allow_html": false, "layout": "IPY_MODEL_ee2d23a5a7594de788f6995a9eb77fae", "placeholder": "\u200b", "style": "IPY_MODEL_60041bd2d3eb408eb5b1bdbefabbaf7c", "tabbable": null, "tooltip": null, "value": "<b>Multiple Choice:</b> Which of the following would likely present a major challenge when trying to collect misinformation-related data from Facebook?"}}, "cc4fa15be24f443180eb3e115b96cdfe": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": null, "border_left": null, "border_right": null, "border_top": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "a6edcf4d53c0465b909335f1eddb0967": {"model_name": "VBoxModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "VBoxModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "2.0.0", "_view_name": "VBoxView", "box_style": "", "children": ["IPY_MODEL_723ad0d001654edeaa38005815285002", "IPY_MODEL_886e12c8045140bcb698d5353d982144", "IPY_MODEL_737956b548ea40fbac5186a9c77d65d4", "IPY_MODEL_4999336e804b45b79d091594be153682"], "layout": "IPY_MODEL_cc4fa15be24f443180eb3e115b96cdfe", "tabbable": null, "tooltip": null}}, "b0e137f0858b41b8b808d0acabac5903": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": null, "border_left": null, "border_right": null, "border_top": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "padding": null, "right": null, "top": null, "visibility": null, "width": "auto"}}, "7c6bc83eb2bd4099b145c8290f44025f": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "StyleView", "description_width": "initial"}}, "b08232804edb45f8b6d1dd258f9e9b0b": {"model_name": "RadioButtonsModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "RadioButtonsModel", "_options_labels": ["A) A dataset containing Twitter user metadata, including account age and posting frequency", "B) A news article summarizing bot activity during the pandemic", "C) A dataset of verified government health reports", "D) A dataset of randomized social media posts unrelated to COVID-19"], "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "2.0.0", "_view_name": "RadioButtonsView", "description": "", "description_allow_html": false, "disabled": false, "index": null, "layout": "IPY_MODEL_b0e137f0858b41b8b808d0acabac5903", "orientation": "vertical", "style": "IPY_MODEL_7c6bc83eb2bd4099b145c8290f44025f", "tabbable": null, "tooltip": null}}, "2e4d4f4470bc4abf9d8fdf15f04e1724": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": null, "border_left": null, "border_right": null, "border_top": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "2c1ee2b9f73a4d82b256faa7e8b81569": {"model_name": "ButtonStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "ButtonStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "StyleView", "button_color": null, "font_family": null, "font_size": null, "font_style": null, "font_variant": null, "font_weight": null, "text_color": null, "text_decoration": null}}, "29e2eeea53154e07a096d2dc777a2fdf": {"model_name": "ButtonModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "ButtonModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "2.0.0", "_view_name": "ButtonView", "button_style": "success", "description": "Submit", "disabled": false, "icon": "", "layout": "IPY_MODEL_2e4d4f4470bc4abf9d8fdf15f04e1724", "style": "IPY_MODEL_2c1ee2b9f73a4d82b256faa7e8b81569", "tabbable": null, "tooltip": null}}, "15c0abc0f53c46d8a6c124fc42a42102": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": null, "border_left": null, "border_right": null, "border_top": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "808b0abef24843f7834ad27d7c436f56": {"model_name": "ButtonStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "ButtonStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "StyleView", "button_color": null, "font_family": null, "font_size": null, "font_style": null, "font_variant": null, "font_weight": null, "text_color": null, "text_decoration": null}}, "8e9efe6619444bdcb70b131e8bacb20b": {"model_name": "ButtonModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "ButtonModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "2.0.0", "_view_name": "ButtonView", "button_style": "warning", "description": "Reset", "disabled": false, "icon": "", "layout": "IPY_MODEL_15c0abc0f53c46d8a6c124fc42a42102", "style": "IPY_MODEL_808b0abef24843f7834ad27d7c436f56", "tabbable": null, "tooltip": null}}, "594c24a684184cb4b913c8503932733b": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": null, "border_left": null, "border_right": null, "border_top": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "af29676c2e164458b4debabcbc46787d": {"model_name": "OutputModel", "model_module": "@jupyter-widgets/output", "model_module_version": "1.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/output", "_model_module_version": "1.0.0", "_model_name": "OutputModel", "_view_count": null, "_view_module": "@jupyter-widgets/output", "_view_module_version": "1.0.0", "_view_name": "OutputView", "layout": "IPY_MODEL_594c24a684184cb4b913c8503932733b", "msg_id": "", "outputs": [], "tabbable": null, "tooltip": null}}, "983018e5068d4bc6859b32e742f687c5": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": null, "border_left": null, "border_right": null, "border_top": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "6c6ca1b8de764ce1abe3bfd95d39022c": {"model_name": "HTMLStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "HTMLStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "StyleView", "background": null, "description_width": "", "font_size": null, "text_color": null}}, "f47fabc9910b402ba8f4877f1e72b9f9": {"model_name": "HTMLModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "HTMLModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "2.0.0", "_view_name": "HTMLView", "description": "", "description_allow_html": false, "layout": "IPY_MODEL_983018e5068d4bc6859b32e742f687c5", "placeholder": "\u200b", "style": "IPY_MODEL_6c6ca1b8de764ce1abe3bfd95d39022c", "tabbable": null, "tooltip": null, "value": "<b>Multiple Choice:</b> You want to analyze bot accounts spreading misinformation about COVID-19 vaccines. Which dataset would be the most useful?"}}, "da22706802b341649fb1c228f9162ec8": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": null, "border_left": null, "border_right": null, "border_top": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "40ac94fbb9d2433a9bd3ea4f1a48c26a": {"model_name": "VBoxModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "VBoxModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "2.0.0", "_view_name": "VBoxView", "box_style": "", "children": ["IPY_MODEL_b08232804edb45f8b6d1dd258f9e9b0b", "IPY_MODEL_29e2eeea53154e07a096d2dc777a2fdf", "IPY_MODEL_8e9efe6619444bdcb70b131e8bacb20b", "IPY_MODEL_af29676c2e164458b4debabcbc46787d"], "layout": "IPY_MODEL_da22706802b341649fb1c228f9162ec8", "tabbable": null, "tooltip": null}}, "8895518700714e81bfe32a99f6079e01": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": null, "border_left": null, "border_right": null, "border_top": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "padding": null, "right": null, "top": null, "visibility": null, "width": "auto"}}, "9b18cc5c3edd4ce5b598801ecd4c5af7": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "StyleView", "description_width": "initial"}}, "52e36c119eb34a0096a1f456fe8757aa": {"model_name": "RadioButtonsModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "RadioButtonsModel", "_options_labels": ["A) Survey responses from Twitter users", "B) Metadata on Twitter accounts, including retweet patterns and bot scores", "C) A dataset of misinformation posts fact-checked by Snopes", "D) A historical database of political misinformation"], "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "2.0.0", "_view_name": "RadioButtonsView", "description": "", "description_allow_html": false, "disabled": false, "index": null, "layout": "IPY_MODEL_8895518700714e81bfe32a99f6079e01", "orientation": "vertical", "style": "IPY_MODEL_9b18cc5c3edd4ce5b598801ecd4c5af7", "tabbable": null, "tooltip": null}}, "7530ef86105d453db57246c524356b2c": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": null, "border_left": null, "border_right": null, "border_top": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "6886e55133644405a2b3b767bb1bb42a": {"model_name": "ButtonStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "ButtonStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "StyleView", "button_color": null, "font_family": null, "font_size": null, "font_style": null, "font_variant": null, "font_weight": null, "text_color": null, "text_decoration": null}}, "21f9939b69dd43949b99231a34a88dbb": {"model_name": "ButtonModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "ButtonModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "2.0.0", "_view_name": "ButtonView", "button_style": "success", "description": "Submit", "disabled": false, "icon": "", "layout": "IPY_MODEL_7530ef86105d453db57246c524356b2c", "style": "IPY_MODEL_6886e55133644405a2b3b767bb1bb42a", "tabbable": null, "tooltip": null}}, "a3cc8a4094cb4052ade098ff5eead5b3": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": null, "border_left": null, "border_right": null, "border_top": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "5514e0cdc29246a3b9e0f6b1b1fbbbb4": {"model_name": "ButtonStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "ButtonStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "StyleView", "button_color": null, "font_family": null, "font_size": null, "font_style": null, "font_variant": null, "font_weight": null, "text_color": null, "text_decoration": null}}, "7ba79f9255704b21a10deb2fc5e22180": {"model_name": "ButtonModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "ButtonModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "2.0.0", "_view_name": "ButtonView", "button_style": "warning", "description": "Reset", "disabled": false, "icon": "", "layout": "IPY_MODEL_a3cc8a4094cb4052ade098ff5eead5b3", "style": "IPY_MODEL_5514e0cdc29246a3b9e0f6b1b1fbbbb4", "tabbable": null, "tooltip": null}}, "781271b9ee724768be636493461b510f": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": null, "border_left": null, "border_right": null, "border_top": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "dcda74c3d9724601a28ec36d8f2d9e0e": {"model_name": "OutputModel", "model_module": "@jupyter-widgets/output", "model_module_version": "1.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/output", "_model_module_version": "1.0.0", "_model_name": "OutputModel", "_view_count": null, "_view_module": "@jupyter-widgets/output", "_view_module_version": "1.0.0", "_view_name": "OutputView", "layout": "IPY_MODEL_781271b9ee724768be636493461b510f", "msg_id": "", "outputs": [], "tabbable": null, "tooltip": null}}, "5ba03a883b0d467180beeb161a6e2c8d": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": null, "border_left": null, "border_right": null, "border_top": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "b25dc947b14f41be8c9fbc1e818d4ac3": {"model_name": "HTMLStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "HTMLStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "StyleView", "background": null, "description_width": "", "font_size": null, "text_color": null}}, "caf0ffb0933743258326c2aaa947f4a2": {"model_name": "HTMLModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "HTMLModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "2.0.0", "_view_name": "HTMLView", "description": "", "description_allow_html": false, "layout": "IPY_MODEL_5ba03a883b0d467180beeb161a6e2c8d", "placeholder": "\u200b", "style": "IPY_MODEL_b25dc947b14f41be8c9fbc1e818d4ac3", "tabbable": null, "tooltip": null, "value": "<b>Multiple Choice:</b> For the research question: 'What percentage of misinformation engagement on Twitter comes from bot accounts?', which data type would be most critical?"}}, "5e54e89feab44ae29bb55796ee16d6cb": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": null, "border_left": null, "border_right": null, "border_top": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "af27d87355c4405490f789b81d6ee0c7": {"model_name": "VBoxModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "VBoxModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "2.0.0", "_view_name": "VBoxView", "box_style": "", "children": ["IPY_MODEL_52e36c119eb34a0096a1f456fe8757aa", "IPY_MODEL_21f9939b69dd43949b99231a34a88dbb", "IPY_MODEL_7ba79f9255704b21a10deb2fc5e22180", "IPY_MODEL_dcda74c3d9724601a28ec36d8f2d9e0e"], "layout": "IPY_MODEL_5e54e89feab44ae29bb55796ee16d6cb", "tabbable": null, "tooltip": null}}, "5cf815b9b8ba4b29ad77fbd52971ec23": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": null, "border_left": null, "border_right": null, "border_top": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "padding": null, "right": null, "top": null, "visibility": null, "width": "auto"}}, "d21984dd6b21433385746061e1c765bd": {"model_name": "DescriptionStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "DescriptionStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "StyleView", "description_width": "initial"}}, "90121a67fdda4cbcb182af15cfc043f2": {"model_name": "RadioButtonsModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "RadioButtonsModel", "_options_labels": ["A) Ensuring the dataset is structured correctly", "B) Avoiding personally identifiable information (PII) in collected data", "C) Making sure the dataset contains a mix of factual and false information", "D) Ensuring the dataset is large enough for meaningful analysis"], "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "2.0.0", "_view_name": "RadioButtonsView", "description": "", "description_allow_html": false, "disabled": false, "index": null, "layout": "IPY_MODEL_5cf815b9b8ba4b29ad77fbd52971ec23", "orientation": "vertical", "style": "IPY_MODEL_d21984dd6b21433385746061e1c765bd", "tabbable": null, "tooltip": null}}, "8375c6f79a1443f5b2ad6a902921c71e": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": null, "border_left": null, "border_right": null, "border_top": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "d696edaaf9b84eb6a155d130f1814ee4": {"model_name": "ButtonStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "ButtonStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "StyleView", "button_color": null, "font_family": null, "font_size": null, "font_style": null, "font_variant": null, "font_weight": null, "text_color": null, "text_decoration": null}}, "0f0cccfc74a742989e17704968d73120": {"model_name": "ButtonModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "ButtonModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "2.0.0", "_view_name": "ButtonView", "button_style": "success", "description": "Submit", "disabled": false, "icon": "", "layout": "IPY_MODEL_8375c6f79a1443f5b2ad6a902921c71e", "style": "IPY_MODEL_d696edaaf9b84eb6a155d130f1814ee4", "tabbable": null, "tooltip": null}}, "f10cbd9d1720480193fa14044a67afe7": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": null, "border_left": null, "border_right": null, "border_top": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "bb06df1216d24ffebe26ca1ddaeda834": {"model_name": "ButtonStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "ButtonStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "StyleView", "button_color": null, "font_family": null, "font_size": null, "font_style": null, "font_variant": null, "font_weight": null, "text_color": null, "text_decoration": null}}, "1c5e9088feeb4aeb9f47e544dc8c5d85": {"model_name": "ButtonModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "ButtonModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "2.0.0", "_view_name": "ButtonView", "button_style": "warning", "description": "Reset", "disabled": false, "icon": "", "layout": "IPY_MODEL_f10cbd9d1720480193fa14044a67afe7", "style": "IPY_MODEL_bb06df1216d24ffebe26ca1ddaeda834", "tabbable": null, "tooltip": null}}, "1a615332facc444484f17ffdbdb02464": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": null, "border_left": null, "border_right": null, "border_top": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "eeae0faef62f4c9ca4658e69a1370c90": {"model_name": "OutputModel", "model_module": "@jupyter-widgets/output", "model_module_version": "1.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/output", "_model_module_version": "1.0.0", "_model_name": "OutputModel", "_view_count": null, "_view_module": "@jupyter-widgets/output", "_view_module_version": "1.0.0", "_view_name": "OutputView", "layout": "IPY_MODEL_1a615332facc444484f17ffdbdb02464", "msg_id": "", "outputs": [], "tabbable": null, "tooltip": null}}, "2fc25d5cbf6d47e190d0ebc30c66977e": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": null, "border_left": null, "border_right": null, "border_top": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "ca31daec548f44cb8e05f3e0881be7e4": {"model_name": "HTMLStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "HTMLStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "StyleView", "background": null, "description_width": "", "font_size": null, "text_color": null}}, "05cd2a1aac1342409aa3b5d279d51444": {"model_name": "HTMLModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "HTMLModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "2.0.0", "_view_name": "HTMLView", "description": "", "description_allow_html": false, "layout": "IPY_MODEL_2fc25d5cbf6d47e190d0ebc30c66977e", "placeholder": "\u200b", "style": "IPY_MODEL_ca31daec548f44cb8e05f3e0881be7e4", "tabbable": null, "tooltip": null, "value": "<b>Multiple Choice:</b> Which of the following is a key ethical concern when collecting misinformation data?"}}, "0da88fd03e4e4191887f5944b9684deb": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": null, "border_left": null, "border_right": null, "border_top": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "c34dcd045d6e41f19be0006ab514a6db": {"model_name": "VBoxModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "VBoxModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "2.0.0", "_view_name": "VBoxView", "box_style": "", "children": ["IPY_MODEL_90121a67fdda4cbcb182af15cfc043f2", "IPY_MODEL_0f0cccfc74a742989e17704968d73120", "IPY_MODEL_1c5e9088feeb4aeb9f47e544dc8c5d85", "IPY_MODEL_eeae0faef62f4c9ca4658e69a1370c90"], "layout": "IPY_MODEL_0da88fd03e4e4191887f5944b9684deb", "tabbable": null, "tooltip": null}}, "b1ef3c892d824416a215dfa9a8b91ee7": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": null, "border_left": null, "border_right": null, "border_top": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "b7efabae4078411d977eecdfc5565704": {"model_name": "TextStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "TextStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "StyleView", "background": null, "description_width": "", "font_size": null, "text_color": null}}, "995cbb0873bf4c44a73f3da079592401": {"model_name": "TextModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "TextModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "2.0.0", "_view_name": "TextView", "continuous_update": true, "description": "", "description_allow_html": false, "disabled": false, "layout": "IPY_MODEL_b1ef3c892d824416a215dfa9a8b91ee7", "placeholder": "Type your answer here...", "style": "IPY_MODEL_b7efabae4078411d977eecdfc5565704", "tabbable": null, "tooltip": null, "value": ""}}, "9ce700df469f414691f1057d3293c1c8": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": null, "border_left": null, "border_right": null, "border_top": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "945a7db1b2c346018383add5c84960db": {"model_name": "ButtonStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "ButtonStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "StyleView", "button_color": null, "font_family": null, "font_size": null, "font_style": null, "font_variant": null, "font_weight": null, "text_color": null, "text_decoration": null}}, "dfb1ed786c3349f9a394befde46ef869": {"model_name": "ButtonModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "ButtonModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "2.0.0", "_view_name": "ButtonView", "button_style": "success", "description": "Submit", "disabled": false, "icon": "", "layout": "IPY_MODEL_9ce700df469f414691f1057d3293c1c8", "style": "IPY_MODEL_945a7db1b2c346018383add5c84960db", "tabbable": null, "tooltip": null}}, "a242467a96c54b3dac6895652906cc5a": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": null, "border_left": null, "border_right": null, "border_top": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "e1f76ddd827e476ba95c2f748eab392e": {"model_name": "ButtonStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "ButtonStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "StyleView", "button_color": null, "font_family": null, "font_size": null, "font_style": null, "font_variant": null, "font_weight": null, "text_color": null, "text_decoration": null}}, "a74ec9732cf048f08cbfb1ff2f2ea856": {"model_name": "ButtonModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "ButtonModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "2.0.0", "_view_name": "ButtonView", "button_style": "warning", "description": "Reset", "disabled": false, "icon": "", "layout": "IPY_MODEL_a242467a96c54b3dac6895652906cc5a", "style": "IPY_MODEL_e1f76ddd827e476ba95c2f748eab392e", "tabbable": null, "tooltip": null}}, "4f41f15757bf4583aa9c893cf8240836": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": null, "border_left": null, "border_right": null, "border_top": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "d7b4af6696cc4d4d9cef33ce719a9821": {"model_name": "OutputModel", "model_module": "@jupyter-widgets/output", "model_module_version": "1.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/output", "_model_module_version": "1.0.0", "_model_name": "OutputModel", "_view_count": null, "_view_module": "@jupyter-widgets/output", "_view_module_version": "1.0.0", "_view_name": "OutputView", "layout": "IPY_MODEL_4f41f15757bf4583aa9c893cf8240836", "msg_id": "", "outputs": [], "tabbable": null, "tooltip": null}}, "facd544fa11744a7aff5eeeb6ed7c475": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": null, "border_left": null, "border_right": null, "border_top": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "92ee9e0eb3fa42ce8b52dae07c916da5": {"model_name": "HTMLStyleModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "HTMLStyleModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "StyleView", "background": null, "description_width": "", "font_size": null, "text_color": null}}, "1ce3f56d269f4fa0bc38b9531fad7e4e": {"model_name": "HTMLModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "HTMLModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "2.0.0", "_view_name": "HTMLView", "description": "", "description_allow_html": false, "layout": "IPY_MODEL_facd544fa11744a7aff5eeeb6ed7c475", "placeholder": "\u200b", "style": "IPY_MODEL_92ee9e0eb3fa42ce8b52dae07c916da5", "tabbable": null, "tooltip": null, "value": "<b>Fill in the blank:</b> When collecting misinformation data directly from social media APIs, this is an example of a ____________ (primary or secondary) data source."}}, "e0921b26820d44e38e1d3e4892031d9a": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "2.0.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "2.0.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "2.0.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border_bottom": null, "border_left": null, "border_right": null, "border_top": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "19d7ee31ce7746e8989ebe9ac256d6e9": {"model_name": "VBoxModel", "model_module": "@jupyter-widgets/controls", "model_module_version": "2.0.0", "state": {"_dom_classes": [], "_model_module": "@jupyter-widgets/controls", "_model_module_version": "2.0.0", "_model_name": "VBoxModel", "_view_count": null, "_view_module": "@jupyter-widgets/controls", "_view_module_version": "2.0.0", "_view_name": "VBoxView", "box_style": "", "children": ["IPY_MODEL_dfb1ed786c3349f9a394befde46ef869", "IPY_MODEL_a74ec9732cf048f08cbfb1ff2f2ea856", "IPY_MODEL_d7b4af6696cc4d4d9cef33ce719a9821"], "layout": "IPY_MODEL_e0921b26820d44e38e1d3e4892031d9a", "tabbable": null, "tooltip": null}}}, "version_major": 2, "version_minor": 0}
+</script></section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="Lesson3.html" class="btn btn-neutral float-left" title="Intro to Data Analytics" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Lesson5.html" class="btn btn-neutral float-right" title="Data Inspection and Preprocessing" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, Beverly Rice.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
