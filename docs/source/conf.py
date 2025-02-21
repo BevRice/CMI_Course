@@ -7,7 +7,7 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 project = 'Counter Malign Influence: Strategies, Insights, and Tools'
-copyright = '2025, Beverly Rice'
+copyright = 'Chaminade University'
 author = 'Beverly Rice'
 release = '7 March 2025'
 

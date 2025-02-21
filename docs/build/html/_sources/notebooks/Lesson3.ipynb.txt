@@ -5,7 +5,7 @@
    "id": "9447c844-adef-416c-8608-735d01e48569",
    "metadata": {},
    "source": [
-    "# Intro to Data Analytics"
+    "# Data and Bias in MDM\n"
    ]
   },
   {

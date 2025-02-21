@@ -5,7 +5,7 @@
    "id": "f18d50cc",
    "metadata": {},
    "source": [
-    "# Understanding the Problem, Data Identification,  and Data Acquisition"
+    "# Data Collection and Ethics"
    ]
   },
   {

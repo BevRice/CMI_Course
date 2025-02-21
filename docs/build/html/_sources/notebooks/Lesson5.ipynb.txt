@@ -5,7 +5,7 @@
    "id": "7bd18c57-6d02-4cfa-a8aa-b51967d8989c",
    "metadata": {},
    "source": [
-    "# Data Inspection and Preprocessing"
+    "# Patterns in MDM"
    ]
   },
   {

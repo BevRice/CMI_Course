@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Data Inspection and Preprocessing &mdash; Counter Malign Influence: Strategies, Insights, and Tools 7 March 2025 documentation</title>
+  <title>Patterns in MDM &mdash; Counter Malign Influence: Strategies, Insights, and Tools 7 March 2025 documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
       <link rel="stylesheet" type="text/css" href="../_static/nbsphinx-code-cells.css?v=2aa19091" />
@@ -24,8 +24,8 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="EDA + Visualization" href="Lesson6.html" />
-    <link rel="prev" title="Understanding the Problem, Data Identification, and Data Acquisition" href="Lesson4.html" /> 
+    <link rel="next" title="Data Visualization and MDM" href="Lesson6.html" />
+    <link rel="prev" title="Data Collection and Ethics" href="Lesson4.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -47,26 +47,32 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption" role="heading"><span class="caption-text">Week 1:</span></p>
+              <p class="caption" role="heading"><span class="caption-text">Preparation:</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="Lesson1.html">Intro to Misinformation, Disinformation, and Malinformation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Lesson2.html">Thinking Critically in the Age of MDM</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Guest_Speaker1.html">UN CIFAL Honolulu Research Director</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Syllabus.html">Syllabus</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ZoomInfo.html">Zoom Info</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">Week 2:</span></p>
+<p class="caption" role="heading"><span class="caption-text">Week 1 Foundations of MDM:</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="Lesson3.html">Intro to Data Analytics</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Lesson4.html">Understanding the Problem, Data Identification, and Data Acquisition</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lesson1.html">📚 What is MDM?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lesson2.html">📚 Thinking Critically against MDM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Guest_Speaker1.html">🎤 Research Director, CIFAL Honolulu</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Assignment1.html">📝 Week 1 Assignment</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">Week 3:</span></p>
+<p class="caption" role="heading"><span class="caption-text">Week 2 Detecting MDM:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Lesson3.html">Data and Bias in MDM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lesson4.html">Data Collection and Ethics</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Week 3 Analyzing MDM:</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Data Inspection and Preprocessing</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Lesson6.html">EDA + Visualization</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Patterns in MDM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lesson6.html">Data Visualization and MDM</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Guest_Speaker2.html">Defense Threat Reduction Agency</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">Week 4:</span></p>
+<p class="caption" role="heading"><span class="caption-text">Week 4 Fighting MDM:</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="Lesson7.html">Advanced Analysis (Sentiment)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lesson7.html">Counter Strategies and Sentiment Analysis</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Lesson8.html">Technology &amp; Careers</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Guest_Speaker3.html">Joint Staff Future Capabilities Division</a></li>
 </ul>
@@ -91,7 +97,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">Data Inspection and Preprocessing</li>
+      <li class="breadcrumb-item active">Patterns in MDM</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../_sources/notebooks/Lesson5.ipynb.txt" rel="nofollow"> View page source</a>
       </li>
@@ -101,9 +107,9 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="Data-Inspection-and-Preprocessing">
-<h1>Data Inspection and Preprocessing<a class="headerlink" href="#Data-Inspection-and-Preprocessing" title="Link to this heading"></a></h1>
-<p><img alt="f07ee5ab753041bd8fca7bd76e20a743" src="notebooks/Images/nowwhat.png" /></p>
+  <section id="Patterns-in-MDM">
+<h1>Patterns in MDM<a class="headerlink" href="#Patterns-in-MDM" title="Link to this heading"></a></h1>
+<p><img alt="f05ac0eec42243c29841e355015a0cdf" src="notebooks/Images/nowwhat.png" /></p>
 <p>Before We Get Into Data Analysis… 📝 Let’s do a quick python primer to ensure we have the foundational knowledge needed.</p>
 <hr class="docutils" />
 <p>What is Python? 🐍</p>
@@ -620,7 +626,7 @@ tailored for specific tasks.</p>
 <hr class="docutils" />
 <p>Key Takeaway 🎯</p>
 <p>Packages abstract away the complexity of programming, making powerful functionality accessible to everyone with just a few lines of code. Without packages, programmers would have to manually write, test, and debug millions of lines of code every time they needed basic functionality.</p>
-<p><img alt="9fb73b845b914a0fbc8b986788377a8d" src="notebooks/Images/datapreprocessing.png" /></p>
+<p><img alt="4630f22e186d4789a3e2f83ca57f7eb3" src="notebooks/Images/datapreprocessing.png" /></p>
 <p><strong>Lesson 5: Data Preprocessing</strong></p>
 <p><strong>Introduction</strong></p>
 <p>📌 Why is Data Preprocessing Critical in Misinformation Analysis?</p>
@@ -708,14 +714,14 @@ tailored for specific tasks.</p>
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="Lesson4.html" class="btn btn-neutral float-left" title="Understanding the Problem, Data Identification, and Data Acquisition" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="Lesson6.html" class="btn btn-neutral float-right" title="EDA + Visualization" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="Lesson4.html" class="btn btn-neutral float-left" title="Data Collection and Ethics" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Lesson6.html" class="btn btn-neutral float-right" title="Data Visualization and MDM" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2025, Beverly Rice.</p>
+    <p>&#169; Copyright Chaminade University.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
