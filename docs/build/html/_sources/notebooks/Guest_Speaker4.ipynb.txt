@@ -11,7 +11,7 @@
     "tags": []
    },
    "source": [
-    "# USSF Intelligence Directorate, Indo-Pacific"
+    "# US Space Forces Indo-Pacific, Intelligence Directorate"
    ]
   },
   {
@@ -25,6 +25,14 @@
     },
     "tags": []
    },
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "42b1097e-7524-4e11-9c28-51d7954b0ba6",
+   "metadata": {},
    "outputs": [],
    "source": []
   }

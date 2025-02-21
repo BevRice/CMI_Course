@@ -25,33 +25,13 @@ Each week consists of:
     - Assignments & Challenges: Hands-on exercises and projects reinforcing critical thinking and analytical skills.
 
 
-Getting Started
-===============
-
-To get the most out of this course, we recommend the following setup:
-
-1. **Software Requirements**
-
-    - Install **Anaconda** (Recommended)
-    - Use **Jupyter Notebook** for interactive lessons
-    - A **GitHub account** to access course materials and submit projects
-
-2. **Course Resources**
-    - **Course Repository**: [GitHub Link Here]
-    - **Reading Materials**: Links to essential readings
-    - **Discussion Forum**: [Forum/Slack/Discord Link]
-    - **Office Hours**: Details on Q&A sessions and instructor support
-
-3. **Python Primer (Optional)**
-    - If you are new to Python, complete the **Python Primer** before beginning the course.
-    - Topics covered: variables, lists, loops, functions, and libraries like NumPy, pandas, and matplotlib.
-
 .. toctree::
    :maxdepth: 2
    :caption: Preparation:
 
    notebooks/Syllabus
    notebooks/ZoomInfo
+   notebooks/GettingStarted
 
 .. toctree::
    :maxdepth: 2
