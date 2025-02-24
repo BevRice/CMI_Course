@@ -8,7 +8,7 @@ Counter Malign Influence
 
 Welcome to the Counter Malign Influence Course!
 
-A hands-on, data-driven course designed to equip you with the skills to analyze and combat misinformation, disinformation, and malinformation (MDM).
+In this course, 'counter malign influence' refers to the strategic detection and mitigation of misinformation, harmful information campaigns—such as disinformation, propaganda, and other manipulative tactics—that can distort public discourse and undermine trust.
 
 This course emphasizes individual, critical thinking, and introduces data analytics using Python, focusing on real-world applications in detecting and countering malign influence. By the end of this course, you will have practical experience in data acquisition, cleaning, exploration, visualization, and analysis, with a strong emphasis on combating misinformation.
 
@@ -44,30 +44,37 @@ Each week consists of:
 
 .. toctree::
    :maxdepth: 2
-   :caption: Week 2 Detecting MDM:
+   :caption: Week 2 Detecting MDM (Available 15 March):
 
    notebooks/Lesson3
+   notebooks/Assignment2
    notebooks/Lesson4
+   notebooks/Assignment3
 
 .. toctree::
    :maxdepth: 2
-   :caption: Week 3 Analyzing MDM:
+   :caption: Week 3 Analyzing MDM (Available 22 March):
 
    notebooks/Lesson5
-   notebooks/Lesson6
    notebooks/Guest_Speaker2
+   notebooks/Exercise1a
+   notebooks/Exercie1b
+   notebooks/Assignment4
+   
 
 .. toctree::
    :maxdepth: 2
-   :caption: Week 4 Fighting MDM:
+   :caption: Week 4 Fighting MDM (Available 29 March):
 
+   notebooks/Lesson6
+   notebooks/Exercise1a
+   notebooks/Assignment5
    notebooks/Lesson7
-   notebooks/Lesson8
    notebooks/Guest_Speaker3
 
 .. toctree::
    :maxdepth: 2
-   :caption: 2 Week Challenge:
+   :caption: 2 Week Challenge (Available 5 April):
 
    notebooks/Challenge
    notebooks/Guest_Speaker4

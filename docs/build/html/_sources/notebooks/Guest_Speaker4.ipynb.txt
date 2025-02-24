@@ -2,7 +2,7 @@
  "cells": [
   {
    "cell_type": "markdown",
-   "id": "3899869e-cf4f-4531-b0fd-f30f9c9b199d",
+   "id": "f005d390-ed79-4e43-b476-6f5ba356fb56",
    "metadata": {
     "editable": true,
     "slideshow": {
@@ -11,13 +11,12 @@
     "tags": []
    },
    "source": [
-    "# US Space Forces Indo-Pacific, Intelligence Directorate"
+    "# 🎤 Joint Staff Future Capabilities Division"
    ]
   },
   {
-   "cell_type": "code",
-   "execution_count": null,
-   "id": "39b47ffa-a633-4a5a-a42a-147cf85180b5",
+   "cell_type": "markdown",
+   "id": "f6879b84-4dab-406b-8129-93504d10ac88",
    "metadata": {
     "editable": true,
     "slideshow": {
@@ -25,16 +24,9 @@
     },
     "tags": []
    },
-   "outputs": [],
-   "source": []
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "id": "42b1097e-7524-4e11-9c28-51d7954b0ba6",
-   "metadata": {},
-   "outputs": [],
-   "source": []
+   "source": [
+    "Available: Saturday, 5 April @ 0800"
+   ]
   }
  ],
  "metadata": {

@@ -107,7 +107,7 @@
    "id": "b006546f-40c9-4134-aeb6-a720d0fd5af8",
    "metadata": {},
    "source": [
-    "## Paper: [Misinformation in and about Science, West et al., 2020](https://www.pnas.org/doi/10.1073/pnas.1912444117)"
+    "## Paper: [Misinformation in and about Science, West et al., 2020](https://github.com/BevRice/CMI_Course/blob/main/docs/source/textbook_and_papers/West_2020_Misinfo_Science.pdf)"
    ]
   },
   {

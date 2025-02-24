@@ -11,13 +11,12 @@
     "tags": []
    },
    "source": [
-    "# Defense Threat Reduction Agency"
+    "# 🎤 Defense Threat Reduction Agency"
    ]
   },
   {
-   "cell_type": "code",
-   "execution_count": null,
-   "id": "333e86c6-f809-4b52-9665-6f2cf308d3a9",
+   "cell_type": "markdown",
+   "id": "fc81942a-851d-4d84-b5cc-73ab5528c1ce",
    "metadata": {
     "editable": true,
     "slideshow": {
@@ -25,8 +24,9 @@
     },
     "tags": []
    },
-   "outputs": [],
-   "source": []
+   "source": [
+    "Available: Saturday, 22 March @ 0800"
+   ]
   }
  ],
  "metadata": {

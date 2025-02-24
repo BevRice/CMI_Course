@@ -11,13 +11,12 @@
     "tags": []
    },
    "source": [
-    "# Data Visualization and MDM"
+    "# 📚 Network and Setiment Analysis"
    ]
   },
   {
-   "cell_type": "code",
-   "execution_count": null,
-   "id": "9138c111-2e6a-40a9-a9b5-d529a820c628",
+   "cell_type": "markdown",
+   "id": "99fb2b8d-9e5c-4e3a-8fc9-ed652c2845fc",
    "metadata": {
     "editable": true,
     "slideshow": {
@@ -25,8 +24,9 @@
     },
     "tags": []
    },
-   "outputs": [],
-   "source": []
+   "source": [
+    "Available: Saturday, 29 March @ 0800"
+   ]
   }
  ],
  "metadata": {
