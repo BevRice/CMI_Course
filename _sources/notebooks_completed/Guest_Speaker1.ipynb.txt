@@ -1,0 +1,143 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "id": "c8a7f941-8f56-449f-831f-43c4b776bd91",
+   "metadata": {
+    "editable": true,
+    "slideshow": {
+     "slide_type": ""
+    },
+    "tags": []
+   },
+   "source": [
+    "# 🎤 Research Director, CIFAL Honolulu"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "bf2adaf7-204b-4ee7-b0d5-5532ba6cbed3",
+   "metadata": {},
+   "source": [
+    "Date: Tuesday, 11 March @ 1pm  \n",
+    "[Zoom Link](https://us06web.zoom.us/j/87850495731?pwd=3AeGx7WNTVA6g0jQww3DJf2tRxOkXU.1)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "baf09743-87cc-48b7-94c5-2bdbf03f722d",
+   "metadata": {},
+   "source": [
+    "![turner](../_static/turner.jpg)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "768303eb-6c74-4e4a-9814-05c01d674b48",
+   "metadata": {
+    "editable": true,
+    "slideshow": {
+     "slide_type": ""
+    },
+    "tags": []
+   },
+   "source": [
+    "## Guest Speaker: Dr. Helen Turner"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "30ec86c7-711a-4658-b39c-af274e177722",
+   "metadata": {},
+   "source": [
+    "Official Biography:\n",
+    "\n",
+    "Dr. Turner is an internationally-regarded researcher in molecular immunology. As well as her position at Chaminade, she holds academic affiliations with the John A. Burns School of Medicine and Department of Microbiology at the University of Hawaii and serves on numerous scientific advisory boards. She collaborates with an extensive network of scientists nation-wide and has trained numerous graduate students for careers as biomedical investigators, science administrators and academics. Previous to her Chaminade appointment, she was an Associate Director of Research at The Queen’s Center for Biomedical Research in Honolulu.\n",
+    "\n",
+    "Current projects in the Turner laboratory focus on mast cell ion channels as novel targets for therapeutic intervention in inflammatory pathologies, and on the molecular mechanisms by which cannabinoid compounds act as modulators of the immune system. Dr Turner’s relatively young laboratory has been strikingly successful at winning grants from private foundations (The Leahi Fund for Pulmonary Research, The Victoria and Bradley Geist Foundation, The Culpeper Biomedical Pilot Initiative, and the Queen Emma Research Foundation), and from Federal sources (National Institute of General Medical Sciences, National Institute of Allergic and Inflammatory Disease, and the Idea Network for Biomedical Research Excellence). In addition to her efforts in seeking funding for her own program, Dr. Turner acts as an invited grant reviewer for the NIH, the British Welcome Trust, and several other funding bodies.\n",
+    "\n",
+    "Training: Dr. Turner trained at the Imperial Cancer Research Fund Laboratories and received her Ph.D. from the University of London in 1998. Following a post-doctoral period at the Beth Israel Medical Center and Harvard Medical School, she assumed her position at Queens in 2000.\n",
+    "\n",
+    "Research: While at Queens, Dr. Turner was head of a team of 10 scientists, whose efforts centered around the biology of mast cells. These immunocytes are central to inflammatory responses and are key players in pathologies such as asthma, eczema and multiple sclerosis.\n",
+    "\n",
+    "Joint Appointment: Non-compensated Professor, Department of Cell and Molecular Biology, John A. Burns School of Medicine, University of Hawaii\n",
+    "Academic Degrees\n",
+    "\n",
+    "Post-doctoral Fellow (1998-2000) – Beth Israel Deaconess Medical Center and Harvard Medical School\n",
+    "Ph.D., Immunology – University of London, U.K.\n",
+    "B.Sc. (Hons), Biochemistry – University of York, U.K.\n",
+    "Selected Publications\n",
+    "\n",
+    "Turner, H., Reif, K., Rivera, J. and Cantrell, D.A. (1995) Regulation of the adapter molecule Grb2 by the FcεRI in the mast cell line RBL2H3. J Biol Chem 270, 9500-9506.\n",
+    "\n",
+    "Osman, N., Lucas S., Turner, H., and Cantrell, D.A. (1995) A comparison of the interaction of Shc and the tyrosine kinase ZAP-70 with the T cell antigen receptor ξ chain tyrosine based activation motif. J.Biol Chem 270, 13981-13986.\n",
+    "\n",
+    "Osman, N., Turner, H., Lucas, S., Reif, K. and Cantrell, D.A. (1996) The protein interactions of the Immunoglobulin receptor family Tyrosine-based Activation Motifs present in the T cell receptor ζ subunits and the CD3 γ, δ and ε chains. Eur J Immunol 26, 1063-1068.\n",
+    "\n",
+    "Turner, H. and Cantrell, D.A. (1997) Distinct Ras effector pathways are involved in FcεRI regulation of the transcriptional activity of Elk-1 and NFAT in mast cells. J Exp Med 185, 43-53.\n",
+    "\n",
+    "Turner, H., Gomez, M., McKenzie, E., Kirchem, A., Lennard, A. and Cantrell, D.A. (1997) Rac-1 regulates nuclear factor of activated T cells (NFAT) C1 nuclear translocation in response to FcεRI stimulation of mast cells. J Exp Med 188, 527-537.\n",
+    "\n",
+    "Turner, H and Kinet JP. (1999) Signaling through FceRI. Nature 402:B24-B30. review.\n",
+    "\n",
+    "Adra, C. N., Donato, J. L., Badovinac, R., Syed, F., Kheraj, R., Cai H., Moran, C., Kolker, M. T., Turner, H., Weremowicz, S., Shirakawa, T., Morton C. C., Schnipper L. E. and Drews, R. (2000) SMARCAD1, a novel human helicase family-defining member associated with genetic instability: cloning, expression, and mapping to 4q22-q23, a band rich in breakpoints and deletion mutants involved in several human diseases. Genomics 69, 162-173\n",
+    "\n",
+    "Nadler, M.N., Matthews, S. A., Turner, H. and Kinet J. P. (2001). Signal transduction by the high affinity IgE receptor. Adv Immunol 76, 325-355. Review.\n",
+    "\n",
+    "Guerrero, AP., Hishinuma, ES., Lee, TG, Bell, CK., Yuen, N., Kurahara, D., Turner, H., Stokes, A. and Andrade NN. (2003). Demographic and Clinical Characteristics of Adolescents with Obsessive-Compulsive Disorder in Hawai’i. Archives of Pediatric and Adolescent Psychiatry. 157: 665-70.\n",
+    "\n",
+    "Turner, H., Fleig, A., Stokes, A., Kinet, JP., and Penner, R. (2003) Intracellular calcium release activity of VR-1 gates a specific intracellular calcium store. Biochemical Journal. 371:341-50 Samson, M-T., Small-Howard, A.L., Shimoda, L.M.N., Stokes, A., and Turner, H. (2003) Differential signaling by the CB1 and CB2 cannabinoid receptors in mast cells. J Immunol. 170(10):4953-62.\n",
+    "Service to the Profession\n",
+    "\n",
+    "- 2003- Chair, Rhodes Scholar Selection Committee for the State of Hawaii.\n",
+    "- 2006- Chair, Scientific Advisory Board, The Tilker Medical Research Foundation.\n",
+    "- 10/2004 Ad hoc reviewer, NIH Study Section, Cellular and Molecular Immunology-A, Washington D.C.\n",
+    "- 2/2005 Ad hoc reviewer, NIH Study Section, Cellular and Molecular Immunology-A, Washington D.C.\n",
+    "- 6/2005 Ad hoc reviewer, NIH Study Section, MOSSD12, Bethesda, MD.\n",
+    "- 6/2006 Ad hoc reviewer, NIH Study Section, Cellular and Molecular Immunology-A, Washington D.C.\n",
+    "- 7/2006 Ad hoc reviewer, NIH Study Section, ZRG IMM-A1, Washington D.C.\n",
+    "- 2005 Guest Editor, Special edition on TRP Channels, Seminars in Cell and Developmental Biology.\n",
+    "- 2005 Grant Reviewer, National Medical Research Council of Singapore.\n",
+    "- 2005, 2006 Grant Reviewer, The Wellcome Trust for Biomedical Sciences.\n",
+    "- 2006- Grant Reviewer, Dutch Cancer Society."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "b006546f-40c9-4134-aeb6-a720d0fd5af8",
+   "metadata": {},
+   "source": [
+    "## Paper: [Misinformation in and about Science, West et al., 2020](https://github.com/BevRice/CMI_Course/blob/main/docs/source/textbook_and_papers/West_2020_Misinfo_Science.pdf)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "64fade88-fc69-4fa1-b2b8-f01a46f5d342",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.13.2"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
