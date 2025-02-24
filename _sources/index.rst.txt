@@ -84,7 +84,7 @@ Each week consists of:
 Contact & Support
 =================
 If you need help, feel free to:
-    - Open a discussion in the **course forum** [Github DIscussions Link]
+    - Open a discussion in our `class forum <https://github.com/BevRice/CMI_Course/discussions>`__
     - Reach out via email: **ricebg@hawaii.edu**
     - Submit GitHub issues for technical problems
 
