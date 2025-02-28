@@ -8,9 +8,9 @@ Counter Malign Influence
 
 Welcome to the Counter Malign Influence Course!
 
-A hands-on, data-driven course designed to equip you with the skills to analyze and combat misinformation, disinformation, and malinformation (MDM).
+In this course, 'counter malign influence' refers to the strategic detection and mitigation of misinformation and harmful information campaigns—such as disinformation, propaganda, and other manipulative tactics—that can distort public discourse and undermine trust.
 
-This course emphasizes individual, critical thinking, and introduces data analytics using Python, focusing on real-world applications in detecting and countering malign influence. By the end of this course, you will have practical experience in data acquisition, cleaning, exploration, visualization, and analysis, with a strong emphasis on combating misinformation.
+This course emphasizes individual, critical thinking, and introduces data analytics using Python, focusing on real-world applications in detecting and countering malign influence. By the end of this course, you will have practical knowledge in data acquisition, cleaning, exploration, visualization, and analysis, with a strong emphasis on combating misinformation.
 
 Course Overview
 
@@ -18,33 +18,12 @@ This course is structured into four weeks of core instruction, followed by a two
 
 Each week consists of:
 
-    - Guided Lessons: Interactive Jupyter Notebooks with explanations and exercises.
+    - Guided Lessons: Jupyter Notebooks with explanations and exercises.
 
     - Guest Speaker Sessions: Experts from academia, government, and industry sharing insights on misinformation.
 
     - Assignments & Challenges: Hands-on exercises and projects reinforcing critical thinking and analytical skills.
 
-
-Getting Started
-===============
-
-To get the most out of this course, we recommend the following setup:
-
-1. **Software Requirements**
-
-    - Install **Anaconda** (Recommended)
-    - Use **Jupyter Notebook** for interactive lessons
-    - A **GitHub account** to access course materials and submit projects
-
-2. **Course Resources**
-    - **Course Repository**: [GitHub Link Here]
-    - **Reading Materials**: Links to essential readings
-    - **Discussion Forum**: [Forum/Slack/Discord Link]
-    - **Office Hours**: Details on Q&A sessions and instructor support
-
-3. **Python Primer (Optional)**
-    - If you are new to Python, complete the **Python Primer** before beginning the course.
-    - Topics covered: variables, lists, loops, functions, and libraries like NumPy, pandas, and matplotlib.
 
 .. toctree::
    :maxdepth: 2
@@ -52,6 +31,7 @@ To get the most out of this course, we recommend the following setup:
 
    notebooks/Syllabus
    notebooks/ZoomInfo
+   notebooks/GettingStarted
 
 .. toctree::
    :maxdepth: 2
@@ -60,33 +40,43 @@ To get the most out of this course, we recommend the following setup:
    notebooks/Lesson1
    notebooks/Lesson2
    notebooks/Guest_Speaker1
+   notebooks/Assignment1
 
 .. toctree::
    :maxdepth: 2
-   :caption: Week 2 Detecting MDM:
+   :caption: Week 2 Detecting MDM (Available 15 March):
 
-   notebooks/Lesson3
-   notebooks/Lesson4
+   notebooks/Lesson3_Week2
+   notebooks/Assignment2_Week2
+   notebooks/Lesson4_Week2
+   notebooks/Assignment3_Week2
 
 .. toctree::
    :maxdepth: 2
-   :caption: Week 3 Analyzing MDM:
+   :caption: Week 3 Analyzing MDM (Available 22 March):
 
-   notebooks/Lesson5
-   notebooks/Lesson6
+   notebooks/Lesson5_Week3
+   notebooks/Lesson6_Week3
+   notebooks/Assignment4
+   notebooks/Lesson7_Week3
    notebooks/Guest_Speaker2
+   notebooks/Assignment5
+   
+   
 
 .. toctree::
    :maxdepth: 2
-   :caption: Week 4 Fighting MDM:
+   :caption: Week 4 Fighting MDM (Available 29 March):
 
-   notebooks/Lesson7
    notebooks/Lesson8
+   notebooks/Lesson9
    notebooks/Guest_Speaker3
+   notebooks/Assignment6
+
 
 .. toctree::
    :maxdepth: 2
-   :caption: 2 Week Challenge:
+   :caption: 2 Week Challenge (Available 5 April):
 
    notebooks/Challenge
    notebooks/Guest_Speaker4
@@ -96,7 +86,7 @@ To get the most out of this course, we recommend the following setup:
 Contact & Support
 =================
 If you need help, feel free to:
-    - Open a discussion in the **course forum** [Github DIscussions Link]
+    - Open a discussion in our `class forum <https://github.com/BevRice/CMI_Course/discussions>`__
     - Reach out via email: **ricebg@hawaii.edu**
     - Submit GitHub issues for technical problems
 

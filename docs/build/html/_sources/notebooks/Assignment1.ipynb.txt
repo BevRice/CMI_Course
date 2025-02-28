@@ -5,7 +5,7 @@
    "id": "6f089351-512a-4605-a489-74f780ef5cfc",
    "metadata": {},
    "source": [
-    "# 📝 Week 1 Assignment"
+    "# 📝 Assignment 1"
    ]
   },
   {
@@ -19,12 +19,12 @@
     "⏳ Estimated Duration: 2-3 Hours  \n",
     "🎯 Due: Friday, 14 March at 11:59pm\n",
     "\n",
-    "**Assignment Overview**\n",
+    "**Assignment Overview:**\n",
     "This assignment is designed to help you explore different MDM narratives and understand their key elements before we dive into data analytics techniques. Your task is to select and analyze two different MDM narratives from different domains (e.g., public health, politics, climate change, national security, etc.).\n",
     "\n",
     "By the end of this assignment, you will have a structured comparison of both narratives, including their origins, amplification tactics, key players, and societal impact.\n",
     "\n",
-    "🚀 Tip: Choose a narrative that genuinely interests you! Later in the course, you will conduct a deep-dive analysis into a single misinformation campaign for your final project. This assignment will help you start thinking about which topic you may want to explore further.  Consider a narrative that impacts the Indo-Pacific or your profession (current or pursuant).\n",
+    "🚀 Tip: Choose narratives that genuinely interests you! Later in the course, you will conduct a deep-dive analysis into a single MDM narrative for your final project. This assignment will help you start thinking about which topic you may want to explore further.  Consider narratives that impact the Indo-Pacific or your profession (current or pursuant).\n",
     "\n",
     "**📌 Instruction**\n",
     "\n",
@@ -94,14 +94,6 @@
     "\n",
     "\n"
    ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "id": "b3e5aa52-4008-4caa-8afd-1ddcad214391",
-   "metadata": {},
-   "outputs": [],
-   "source": []
   }
  ],
  "metadata": {
