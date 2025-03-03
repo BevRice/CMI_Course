@@ -1,0 +1,128 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "id": "6f089351-512a-4605-a489-74f780ef5cfc",
+   "metadata": {},
+   "source": [
+    "# 📝 Assignment 1"
+   ]
+  },
+  {
+   "attachments": {},
+   "cell_type": "markdown",
+   "id": "4a36a6c1-b0fd-4e0b-93bc-966849bd7c4a",
+   "metadata": {},
+   "source": [
+    "## Mapping MDM: Narratives, Spread, and Impact  \n",
+    "\n",
+    "⏳ Estimated Duration: 2-3 Hours  \n",
+    "🎯 Due: Friday, 14 March at 11:59pm\n",
+    "\n",
+    "**Assignment Overview:**\n",
+    "This assignment is designed to help you explore different MDM narratives and understand their key elements before we dive into data analytics techniques. Your task is to select and analyze two different MDM narratives from different domains (e.g., public health, politics, climate change, national security, etc.).\n",
+    "\n",
+    "By the end of this assignment, you will have a structured comparison of both narratives, including their origins, amplification tactics, key players, and societal impact.\n",
+    "\n",
+    "🚀 Tip: Choose narratives that genuinely interests you! Later in the course, you will conduct a deep-dive analysis into a single MDM narrative for your final project. This assignment will help you start thinking about which topic you may want to explore further.  Consider narratives that impact the Indo-Pacific or your profession (current or pursuant).\n",
+    "\n",
+    "**📌 Instruction**\n",
+    "\n",
+    "**Step 1:** Select Two MDM Narratives\n",
+    "Choose two real-world MDM narratives from different domains. \n",
+    "\n",
+    "Examples include:\n",
+    "- Public Health: COVID-19 vaccine misinformation, Plandemic documentary\n",
+    "- Politics: Election fraud claims, deepfake political ads\n",
+    "- Climate Change: Denial of scientific consensus, \"climate lockdown\" hoaxes\n",
+    "- Technology: 5G conspiracy theories, AI replacing human jobs misinformation\n",
+    "- National Security: Foreign influence campaigns, fake war footage\n",
+    "\n",
+    "🔹 Tip: Choose MDM that has measurable impact—meaning it caused real-world consequences such as changes in public opinion, policy decisions, or social behavior.\n",
+    "\n",
+    "**Step 2:** Research & Document the Following Elements\n",
+    "For each of your two selected narratives, research the following:  \n",
+    "\n",
+    "✅ 1. Origin & Source  \n",
+    "- Who started the misinformation? (Government actors, social media influencers, anonymous sources, news outlets, bots?)  \n",
+    "- Was it initially shared intentionally (disinformation) or unknowingly (misinformation)?  \n",
+    "\n",
+    "✅ 2. Methods of Amplification  \n",
+    "- How did the misinformation spread? (Social media, news sites, bot networks, word of mouth, meme culture, etc.)  \n",
+    "- What platforms played a major role? (Facebook, TikTok, Telegram, etc.)  \n",
+    "- Were bots, trolls, or coordinated campaigns involved?  \n",
+    "\n",
+    "✅ 3. Key Messages & Themes  \n",
+    "- What is the core claim of the misinformation?  \n",
+    "- How does it frame the narrative (e.g., fear-mongering, emotional appeals, pseudo-science)?  \n",
+    "- What keywords, hashtags, or slogans were commonly associated with it?  \n",
+    "\n",
+    "✅ 4. Fact-Checking & Public Response  \n",
+    "- Did fact-checking organizations respond? What did they find?  \n",
+    "- How did social media platforms or governments respond (if at all)?  \n",
+    "- Did the misinformation narrative evolve over time?  \n",
+    "\n",
+    "✅ 5. Impact & Consequences  \n",
+    "- What were the real-world consequences? (e.g., vaccine hesitancy, protests, violence, policy changes)  \n",
+    "- Did the misinformation influence public behavior or political outcomes?  \n",
+    "- Were there long-term effects, or did it fade quickly?  \n",
+    "\n",
+    "**Step 3:** Present Your Findings  \n",
+    "Once you’ve researched your two MDM narratives, create a side-by-side comparison in one of the following formats:  \n",
+    "- 📊 Option 1: Table or Chart (Google Docs, Notion, Excel, etc.)  \n",
+    "- 📄 Option 2: Short Written Report (1-2 pages, structured with bullet points)  \n",
+    "- 🎥 Option 3: 5-Minute Video Summary (Can be a screen recording or slideshow presentation)  \n",
+    "\n",
+    "**📢 Submission & Discussion**  \n",
+    "1️⃣ Submit your completed work on [Github Discussions](https://github.com/BevRice/CMI_Course/discussions).  \n",
+    "2️⃣ Engage with at least one peer’s submission—comment with insights or questions.  \n",
+    "\n",
+    "**📌 Evaluation Criteria (10 Points Total)**  \n",
+    "- Depth of Research (4 pts) – Clear and well-supported findings for each narrative  \n",
+    "- Comparative Analysis (3 pts) – Side-by-side evaluation of key differences and similarities  \n",
+    "- Clarity & Presentation (2 pts) – Organized, easy to follow, free of major errors  \n",
+    "- Engagement (1 pt) – Thoughtful response to at least one peer’s submission  \n",
+    "\n",
+    "**💡 Why This Matters**\n",
+    "This assignment sets the stage for the next lessons, where we will break down:  \n",
+    "- ✅ How data analysis techniques help track and counter false narratives  \n",
+    "- ✅ How structured and unstructured data play a role in misinformation detection  \n",
+    "- ✅ How we can use data-driven methods to intervene before misinformation spreads  \n",
+    " \n",
+    "🚀 Remember: Your final project will require a deep analysis of a single MDM campaign. This is your opportunity to explore potential topics that you may want to investigate further!\n",
+    "\n",
+    "\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "6d9ce33b-5cbc-4819-a67a-ddfe23e5216b",
+   "metadata": {},
+   "source": [
+    "[Provide Anonymous Feedback on this Assignment Here](https://forms.gle/4ZRmNr5rmGCAR1Re6)"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.13.2"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
