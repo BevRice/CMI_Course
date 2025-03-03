@@ -196,7 +196,7 @@
     "\n",
     "1. `\"False\"` – This value represents a **__________** data type, commonly used in binary classification tasks.  \n",
     "2. `{\"Twitter\", \"Facebook\", \"YouTube\"}` – This is an example of a **__________**, a collection of unique, unordered elements.  \n",
-    "3. `(\"Breaking News\", \"Health Misinformation\", \"High Concern\")` – This is an example of a **__________**, which stores an ordered but immutable sequence of values.  \n",
+    "3. `(\"Breaking News\", \"Health Misinformation\")` – This is an example of a **__________**, which stores an ordered but immutable sequence of values.  \n",
     "4. `1024` – This number is an example of an **__________**, a numerical type that does not include decimals.  \n",
     "5. `0.85` – This value is an example of a **__________**, which represents a number with decimal precision.  \n",
     "6. `\"This post has been flagged as misinformation.\"` – This is an example of a **__________**, a data type used for storing textual information.  \n",

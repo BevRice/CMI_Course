@@ -23,8 +23,8 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="🎤 Defense Threat Reduction Agency" href="Guest_Speaker2.html" />
-    <link rel="prev" title="🐍 Introduction to Python" href="Lesson6_Week3.html" /> 
+    <link rel="next" title="🎤 Defense Threat Reduction Agency" href="Guest_Speaker2_Week3.html" />
+    <link rel="prev" title="📝 Assignment 4" href="Assignment4_Week3.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -70,6 +70,7 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="Lesson5_Week3.html">📚 EDA and Patterns</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Lesson6_Week3.html">🐍 Introduction to Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Assignment4_Week3.html">📝 Assignment 4</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">📚 MDM EDA Walkthrough</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#🅾️-Loading-Data">🅾️ Loading Data</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#1️⃣-Understanding-Your-Data">1️⃣ Understanding Your Data</a><ul>
@@ -101,24 +102,23 @@
 <li class="toctree-l3"><a class="reference internal" href="#Line-Plot-2">Line Plot 2</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#🎯-Lesson-Summary-&amp;-Key-Takeaways">🎯 <strong>Lesson Summary &amp; Key Takeaways</strong></a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="Guest_Speaker2.html">🎤 Defense Threat Reduction Agency</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Assignment4.html">📝 Assignment 4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Guest_Speaker2_Week3.html">🎤 Defense Threat Reduction Agency</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Assignment5_Week3.html">📝 Assignment 5</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Week 4 Fighting MDM (Available 29 March):</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="Lesson6.html">📚 Network and Setiment Analysis</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Assignment5.html">📝 Assignment 5</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Lesson7.html">📚 Strategic MDM Interventions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Guest_Speaker3.html">🎤 US Space Forces Indo-Pacific, Intelligence Directorate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lesson8.html">📚 NLP and Sentiment Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lesson9.html">📚 Strategic MDM Interventions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Guest_Speaker3_Week4.html">🎤 US Space Forces Indo-Pacific, Intelligence Directorate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Assignment6.html">📝 Assignment 6</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">2 Week Challenge (Available 5 April):</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="Challenge.html">📝 Challenge Instructions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Guest_Speaker4.html">🎤 Joint Staff Future Capabilities Division</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Guest_Speaker5.html">🎤 Career Panel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Guest_Speaker4_Week5.html">🎤 Joint Staff, Future Capabilities Division</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Guest_Speaker5_Week6.html">🎤 Career Panel</a></li>
 </ul>
 
         </div>
@@ -148,20 +148,7 @@
   <section id="📚-MDM-EDA-Walkthrough">
 <h1>📚 MDM EDA Walkthrough<a class="headerlink" href="#📚-MDM-EDA-Walkthrough" title="Link to this heading"></a></h1>
 <p>Welcome to <strong>Lesson 7</strong>! This is where we transition from discussing MDM conceptually to actively analyzing real-world misinformation data using Python.</p>
-<p>In this lesson, we will conduct an <strong>exploratory data analysis (EDA)</strong> to uncover trends in misinformation engagement on social media. Our focus will be on answering the following research question:</p>
-<blockquote>
-<div><p><strong>“How does the engagement (likes, shares) of COVID-19 misinformation tweets differ across geographic regions?”</strong></p>
-</div></blockquote>
-<p>To achieve this, we will work with a modified version of this <a class="reference external" href="https://www.kaggle.com/datasets/kaushiksuresh147/covidvaccine-tweets">Kaggle dataset</a> containing COVID-19 tweets.</p>
-<hr class="docutils" />
-<p>🔍 <strong>Why This Research Question?</strong></p>
-<p>Understanding the spread of misinformation is critical in countering malign influence. By analyzing engagement metrics (likes and shares) across different regions, we can:</p>
-<div class="line-block">
-<div class="line">✅ <strong>Compare misinformation trends</strong> geographically to identify regions with higher or lower engagement.</div>
-<div class="line">✅ <strong>Quantify misinformation influence</strong> using structured, measurable data.</div>
-<div class="line">✅ <strong>Enhance data-driven decision-making</strong> by identifying potential misinformation hotspots.</div>
-</div>
-<p>Along the way, we will <strong>think critically</strong> about the assumptions we make, the limitations of our data, and how different preprocessing choices might impact our results.</p>
+<p>In this lesson, we will conduct an <strong>exploratory data analysis (EDA)</strong> to uncover trends in misinformation engagement on social media.</p>
 <hr class="docutils" />
 <p>🗂️ What’s in Our Dataset?</p>
 <p>To simulate real-world challenges in misinformation research, our dataset has been modified to include:</p>
@@ -180,7 +167,6 @@
 <li><p>🔍 <strong>Examine dataset structure</strong> – What information do we have? What’s missing?</p></li>
 <li><p>📊 <strong>Explore summary statistics and trends</strong> – How is misinformation engagement distributed?</p></li>
 <li><p>🧹 <strong>Discuss data cleaning considerations</strong> – How do preprocessing choices impact analysis?</p></li>
-<li><p>📉 <strong>Evaluate regional misinformation patterns</strong> – What geographic trends emerge from engagement data?</p></li>
 </ul>
 <p>This is not just about running code—it’s about <strong>thinking critically about our data and analysis choices</strong>.</p>
 <hr class="docutils" />
@@ -2063,10 +2049,7 @@ categorize as <code class="docutils literal notranslate"><span class="pre">&quot
 <li><p>Future analysis could focus on <strong>annotating peaks with real-world events</strong> to better understand misinformation drivers.</p></li>
 </ul>
 <hr class="docutils" />
-</section>
-</section>
-<section id="🎯-Lesson-Summary-&amp;-Key-Takeaways">
-<h2>🎯 <strong>Lesson Summary &amp; Key Takeaways</strong><a class="headerlink" href="#🎯-Lesson-Summary-&-Key-Takeaways" title="Link to this heading"></a></h2>
+<p>🎯 <strong>Lesson Summary &amp; Key Takeaways</strong></p>
 <p>In this lesson, we walked through the <strong>critical thinking process</strong> behind exploratory data analysis (EDA) and applied it to <strong>misinformation engagement metrics</strong>.</p>
 <div class="line-block">
 <div class="line"><strong>🔍 What We Covered:</strong></div>
@@ -2087,13 +2070,14 @@ categorize as <code class="docutils literal notranslate"><span class="pre">&quot
 <p>🔎 <strong>Let’s move forward!</strong></p>
 </section>
 </section>
+</section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="Lesson6_Week3.html" class="btn btn-neutral float-left" title="🐍 Introduction to Python" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="Guest_Speaker2.html" class="btn btn-neutral float-right" title="🎤 Defense Threat Reduction Agency" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="Assignment4_Week3.html" class="btn btn-neutral float-left" title="📝 Assignment 4" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Guest_Speaker2_Week3.html" class="btn btn-neutral float-right" title="🎤 Defense Threat Reduction Agency" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

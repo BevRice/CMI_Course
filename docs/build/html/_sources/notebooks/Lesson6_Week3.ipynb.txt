@@ -65,7 +65,43 @@
     "![data_types](../_static/data_types.jpg)  \n",
     "[Source & Optional Reading: geeksforgeeks](https://www.geeksforgeeks.org/python-data-types/)  \n",
     "*Refer to Lesson 3 Introduction to Data for a review of these types*\n",
+    "\n",
     "---"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "e57ca15b-9a0a-4ac7-abfe-97feb4db4247",
+   "metadata": {},
+   "source": [
+    "**<span style=\"font-size:30px;\">🧠 Quick Review Questions</span>**\n",
+    "\n",
+    "**Identify the Data Type**  \n",
+    "\n",
+    "1. `\"True\"` – This value represents a **__________** data type, commonly used in binary classification tasks.  \n",
+    "2. `{\"Instagram\", \"Reddit\", \"YouTube\"}` – This is an example of a **__________**, a collection of unique, unordered elements.  \n",
+    "3. `(\"Fake News\", \"Health Data\")` – This is an example of a **__________**, which stores an ordered but immutable sequence of values.  \n",
+    "4. `14` – This number is an example of an **__________**, a numerical type that does not include decimals.  \n",
+    "5. `0.19` – This value is an example of a **__________**, which represents a number with decimal precision.  \n",
+    "6. `\"This post has been flagged as disinformation.\"` – This is an example of a **__________**, a data type used for storing textual information.  \n",
+    "7. `{\"source\": \"Politico\", \"accuracy\": 90}` – This is an example of a **__________**, a structure that maps keys to values for efficient lookup.  \n",
+    "8. `[True, True, False, False]` – This collection of values is an example of a **__________**, an ordered list of elements.  \n",
+    "9. `2025-01-22 11:33:11` – This value represents a **__________**, which is useful for tracking the timing of misinformation posts.  \n",
+    "\n",
+    "---\n",
+    "---\n",
+    "✅ **Answers:**\n",
+    "\n",
+    "1. **Boolean**\n",
+    "2. **Set**\n",
+    "3. **Tuple**\n",
+    "4. **Integer**\n",
+    "5. **Float**\n",
+    "6. **String**\n",
+    "7. **Dictionary**\n",
+    "8. **List**\n",
+    "9. **Timestamp (Datetime)**\n",
+    "\n"
    ]
   },
   {
@@ -82,7 +118,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 25,
+   "execution_count": 2,
    "id": "a963dd6f-e9de-47c7-81d2-bf00bc3fe26c",
    "metadata": {},
    "outputs": [],
@@ -96,7 +132,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 26,
+   "execution_count": 3,
    "id": "9b025402-338f-4722-bc42-e8c04ac4d0bb",
    "metadata": {},
    "outputs": [
@@ -115,7 +151,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 27,
+   "execution_count": 4,
    "id": "414e1a3f-f846-4a9c-815b-51721e0b2aac",
    "metadata": {},
    "outputs": [
@@ -134,7 +170,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 28,
+   "execution_count": 5,
    "id": "3838731d-0f19-46c3-8aa4-d02da247fe11",
    "metadata": {},
    "outputs": [
@@ -144,7 +180,7 @@
        "int"
       ]
      },
-     "execution_count": 28,
+     "execution_count": 5,
      "metadata": {},
      "output_type": "execute_result"
     }
@@ -156,7 +192,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 29,
+   "execution_count": 6,
    "id": "3c44891c-9c08-40fb-a781-204809910759",
    "metadata": {},
    "outputs": [
@@ -166,7 +202,7 @@
        "bool"
       ]
      },
-     "execution_count": 29,
+     "execution_count": 6,
      "metadata": {},
      "output_type": "execute_result"
     }

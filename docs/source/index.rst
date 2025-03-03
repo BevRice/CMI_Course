@@ -57,10 +57,10 @@ Each week consists of:
 
    notebooks/Lesson5_Week3
    notebooks/Lesson6_Week3
-   notebooks/Assignment4
+   notebooks/Assignment4_Week3
    notebooks/Lesson7_Week3
-   notebooks/Guest_Speaker2
-   notebooks/Assignment5
+   notebooks/Guest_Speaker2_Week3
+   notebooks/Assignment5_Week3
    
    
 
@@ -70,17 +70,17 @@ Each week consists of:
 
    notebooks/Lesson8
    notebooks/Lesson9
-   notebooks/Guest_Speaker3
+   notebooks/Guest_Speaker3_Week4
    notebooks/Assignment6
 
 
 .. toctree::
    :maxdepth: 2
-   :caption: 2 Week Challenge (Available 5 April):
+   :caption: Weeks 5 & 6 (Available 5 April):
 
    notebooks/Challenge
-   notebooks/Guest_Speaker4
-   notebooks/Guest_Speaker5
+   notebooks/Guest_Speaker4_Week5
+   notebooks/Guest_Speaker5_Week6
 
 
 Contact & Support
