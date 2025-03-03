@@ -55,6 +55,7 @@
     "\n",
     "📢 **Course Introduction & Networking** → [Introduce Yourself Here](https://github.com/BevRice/CMI_Course/discussions/1)  \n",
     "❓ **Q&A and Support** → [Ask Questions Here](https://github.com/BevRice/CMI_Course/discussions/2)   \n",
+    "❓ **Is This MDM?** → [Share current, real-world examples of MDM](https://github.com/BevRice/CMI_Course/discussions/6)  \n",
     "📑 **Assignment Submissions** → [Submit Assignments Here](https://github.com/BevRice/CMI_Course/discussions) \n",
     "\n",
     "---\n",
@@ -70,14 +71,6 @@
     "\n",
     "If you have any questions, post them in the **Q&A Discussion Forum** or reach out to the course team. Looking forward to a great learning experience together! 🚀  \n"
    ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "id": "a8885753-254f-4470-b381-4d8113906e2c",
-   "metadata": {},
-   "outputs": [],
-   "source": []
   }
  ],
  "metadata": {

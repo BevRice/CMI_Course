@@ -5,7 +5,7 @@
    "id": "6f089351-512a-4605-a489-74f780ef5cfc",
    "metadata": {},
    "source": [
-    "# 📝 Week 1 Assignment"
+    "# 📝 Assignment 1"
    ]
   },
   {
@@ -19,7 +19,7 @@
     "⏳ Estimated Duration: 2-3 Hours  \n",
     "🎯 Due: Friday, 14 March at 11:59pm\n",
     "\n",
-    "**Assignment Overview**\n",
+    "**Assignment Overview:**\n",
     "This assignment is designed to help you explore different MDM narratives and understand their key elements before we dive into data analytics techniques. Your task is to select and analyze two different MDM narratives from different domains (e.g., public health, politics, climate change, national security, etc.).\n",
     "\n",
     "By the end of this assignment, you will have a structured comparison of both narratives, including their origins, amplification tactics, key players, and societal impact.\n",
@@ -96,12 +96,12 @@
    ]
   },
   {
-   "cell_type": "code",
-   "execution_count": null,
-   "id": "b3e5aa52-4008-4caa-8afd-1ddcad214391",
+   "cell_type": "markdown",
+   "id": "6d9ce33b-5cbc-4819-a67a-ddfe23e5216b",
    "metadata": {},
-   "outputs": [],
-   "source": []
+   "source": [
+    "[Provide Anonymous Feedback on this Assignment Here](https://forms.gle/4ZRmNr5rmGCAR1Re6)"
+   ]
   }
  ],
  "metadata": {

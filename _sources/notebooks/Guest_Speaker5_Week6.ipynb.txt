@@ -1,0 +1,96 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "id": "4329560c-dd0c-4d2a-a194-ac8373e22ed3",
+   "metadata": {
+    "editable": true,
+    "slideshow": {
+     "slide_type": ""
+    },
+    "tags": []
+   },
+   "source": [
+    "# 🎤 Career Panel"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "b44f215d-f653-4962-8dec-57a4a57a5aca",
+   "metadata": {},
+   "source": [
+    "Date: Tuesday, 15 April @ 1pm  \n",
+    "[Zoom Link](https://us06web.zoom.us/j/87850495731?pwd=3AeGx7WNTVA6g0jQww3DJf2tRxOkXU.1)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "427d10ad-fb3e-4dee-943f-4f2bb5d121c8",
+   "metadata": {},
+   "source": [
+    "![torelli](../_static/torelli.jpg)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "641c059c-5dac-448b-9c75-fc4682640371",
+   "metadata": {},
+   "source": [
+    "[Col Andrew Torelli (ret) - Director at General Dynamics Information Technology](https://www.linkedin.com/in/andytorelli/) "
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "61a86de4-908a-446a-976c-77410d2909d3",
+   "metadata": {},
+   "source": [
+    "![jaysha](../_static/jaysha.jpg)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "27c94a44-0068-4ffd-8169-3b70eaae150e",
+   "metadata": {},
+   "source": [
+    "[Jaysha Camacho - System Development Engineer II at AWS | Data Scientist at Heart](https://www.linkedin.com/in/jaysha-camacho/)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "690441b7-0114-49a0-ac09-e338fd50295e",
+   "metadata": {},
+   "source": [
+    "![starlena](../_static/starlena.jpg)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "b23cd971-6241-4276-8470-dcfc4a3210a2",
+   "metadata": {},
+   "source": [
+    "[Star-Lena Estock - Data Scientist | Senior Manager | Inclusion & Diversity Champion | Accenture Federal Services](https://www.linkedin.com/in/sestock/)"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.13.2"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
