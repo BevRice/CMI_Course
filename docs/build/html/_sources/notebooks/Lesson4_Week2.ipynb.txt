@@ -432,6 +432,14 @@
     "\n",
     "🚀 **Next Up:** Now that we know how to find and evaluate credible data, we’ll move into **Lesson 5: Hands-on Data Exploration & Cleaning in Python**.\n"
    ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "a6b0040c-ffbe-4498-a618-49b40918217b",
+   "metadata": {},
+   "source": [
+    "[Provide Anonymous Feedback on this Lesson Here](https://forms.gle/4ZRmNr5rmGCAR1Re6)"
+   ]
   }
  ],
  "metadata": {

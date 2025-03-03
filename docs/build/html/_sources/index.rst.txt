@@ -76,7 +76,7 @@ Each week consists of:
 
 .. toctree::
    :maxdepth: 2
-   :caption: 2 Week Challenge (Available 5 April):
+   :caption: Weeks 5 & 6 (Available 5 April):
 
    notebooks/Challenge
    notebooks/Guest_Speaker4_Week5
