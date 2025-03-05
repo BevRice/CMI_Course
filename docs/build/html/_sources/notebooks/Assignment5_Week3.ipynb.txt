@@ -933,7 +933,7 @@
    "metadata": {},
    "source": [
     "---\n",
-    "Once complete, please submit by saving your ipynb file to the [Assignment 5 GitHub Discussion](https://github.com/BevRice/CMI_Course/discussions/9)\n",
+    "Once complete, please submit by saving your ipynb file to the [Assignment 5 Student Submissions Folder](https://github.com/BevRice/CMI_Course/tree/main/Student_Submissions/Assignment_5)\n",
     "\n",
     "From Google Colab\n",
     "- 1. Click File\n",

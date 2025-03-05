@@ -431,7 +431,7 @@
    "source": [
     "Imposter content imitates legitimate sources or individuals to spread false information.\n",
     "\n",
-    "In the image on the right, the Denver Guardian, which sounds like a credible news outlet but is, in fact, a fabricated source, published this article about an FBI agent involved in the investigation of Hillary Clinton's email links.  Some notes about the Denver Guardian include\n",
+    "In the image on the right, the Denver Guardian, which sounds like a credible news outlet but is, in fact, a fabricated source, published this article about an FBI agent involved in the investigation of Hillary Clinton's email leaks.  Some notes about the Denver Guardian include\n",
     "\n",
     "- The domain was first registered in July 2016, just a few months before the election.  \n",
     "- The only story published was a fake murder-suicide involving an FBI agent tied to Hillary Clinton’s emails.  \n",
