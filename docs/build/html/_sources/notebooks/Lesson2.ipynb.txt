@@ -247,13 +247,13 @@
     "\n",
     "1. A strong emotional reaction can override **critical** thinking.  \n",
     "\n",
-    "2. **C) They cause fast, emotional reactions instead of logical thinking**.  \n",
+    "2. C) They cause fast, emotional reactions instead of logical thinking.  \n",
     "\n",
     "3. When we seek out and believe information that aligns with our pre-existing beliefs, we are demonstrating **confirmation** bias.  \n",
     "\n",
-    "4. **A) Believing a false claim because you’ve seen it repeatedly**.\n",
+    "4. A) Believing a false claim because you’ve seen it repeatedly.\n",
     "\n",
-    "5. **B) Emotional reactions override critical thinking, making people react before verifying.**\n",
+    "5. B) Emotional reactions override critical thinking, making people react before verifying.\n",
     "  \n"
    ]
   },
@@ -453,9 +453,9 @@
     "---\n",
     "---\n",
     "✅ **Answers:**  \n",
-    "1. **B) Misinformation is designed to be more engaging than true information**.  \n",
-    "2. **B) They prioritize engagement, which can amplify falsehoods**.  \n",
-    "3. **C) Increasing transparency in social media algorithms and promoting fact-checking**.  \n"
+    "1. B) Misinformation is designed to be more engaging than true information.  \n",
+    "2. B) They prioritize engagement, which can amplify falsehoods.  \n",
+    "3. C) Increasing transparency in social media algorithms and promoting fact-checking.  \n"
    ]
   },
   {
@@ -755,14 +755,14 @@
     "---\n",
     "---\n",
     "✅ **Answers:**  \n",
-    "1. **B) To help people recognize and resist misinformation before they encounter it**.  \n",
-    "2. **vaccine**.  \n",
-    "3. **A) It strengthens resistance by exposing people to weakened versions of misinformation tactics**.  \n",
-    "4. **forewarning**.  \n",
-    "5. **D) Suppression – Removing all misinformation posts from social media**.  \n",
-    "6. **conspiracy theories**.  \n",
-    "7. **B) False Dilemmas**.  \n",
-    "8. **fake experts**.  \n"
+    "1. B) To help people recognize and resist misinformation before they encounter it.  \n",
+    "2. vaccine.  \n",
+    "3. A) It strengthens resistance by exposing people to weakened versions of misinformation tactics.  \n",
+    "4. forewarning.  \n",
+    "5. D) Suppression – Removing all misinformation posts from social media.  \n",
+    "6. conspiracy theories.  \n",
+    "7. B) False Dilemmas.  \n",
+    "8. fake experts.  \n"
    ]
   },
   {
@@ -969,14 +969,14 @@
     "---\n",
     "---\n",
     "✅ **Answers:**  \n",
-    "1.  **B) It focuses only on one source, which may be biased or misleading**. Correct answer → **media literacy**.  \n",
-    "2. **media literacy**. \n",
-    "3. **lateral**.  \n",
-    "4. **lateral**.  \n",
-    "5. **B) A framework for evaluating online information by stopping, investigating, finding better coverage, and tracing claims**.  \n",
-    "6. **find better coverage**.  \n",
-    "7. **Socratic**.  \n",
-    "8. **reverse image search**.  \n"
+    "1.  B) It focuses only on one source, which may be biased or misleading. \n",
+    "2. media literacy. \n",
+    "3. lateral.  \n",
+    "4. lateral.  \n",
+    "5. B) A framework for evaluating online information by stopping, investigating, finding better coverage, and tracing claims.  \n",
+    "6. find better coverage.  \n",
+    "7. Socratic.  \n",
+    "8. reverse image search.  \n"
    ]
   },
   {
