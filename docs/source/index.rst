@@ -46,21 +46,21 @@ Each week consists of:
    :maxdepth: 2
    :caption: Week 2 Detecting MDM (Available 15 March):
 
-   notebooks/Lesson3_Week2
-   notebooks/Assignment2_Week2
-   notebooks/Lesson4_Week2
-   notebooks/Assignment3_Week2
+   notebooks/Lesson3
+   notebooks/Assignment2
+   notebooks/Lesson4
+   notebooks/Assignment3
 
 .. toctree::
    :maxdepth: 2
    :caption: Week 3 Analyzing MDM (Available 22 March):
 
-   notebooks/Lesson5_Week3
-   notebooks/Lesson6_Week3
-   notebooks/Assignment4_Week3
-   notebooks/Lesson7_Week3
-   notebooks/Guest_Speaker2_Week3
-   notebooks/Assignment5_Week3
+   notebooks/Lesson5
+   notebooks/Lesson6
+   notebooks/Assignment4
+   notebooks/Lesson7
+   notebooks/Guest_Speaker2
+   notebooks/Assignment5
    
    
 
@@ -70,13 +70,13 @@ Each week consists of:
 
    notebooks/Lesson8
    notebooks/Lesson9
-   notebooks/Guest_Speaker3_Week4
+   notebooks/Guest_Speaker3
    notebooks/Assignment6
 
 
 .. toctree::
    :maxdepth: 2
-   :caption: Weeks 5 & 6 (Available 5 April):
+   :caption: Weeks 5 & 6:
 
    notebooks/Challenge
    notebooks/Guest_Speaker4_Week5
