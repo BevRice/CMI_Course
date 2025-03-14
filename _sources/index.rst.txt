@@ -44,12 +44,12 @@ Each week consists of:
 
 .. toctree::
    :maxdepth: 2
-   :caption: Week 2 Detecting MDM (Available 15 March):
+   :caption: Week 2 Detecting MDM:
 
-   notebooks/Lesson3
-   notebooks/Assignment2
-   notebooks/Lesson4
-   notebooks/Assignment3
+   notebooks/Lesson3_Week2
+   notebooks/Assignment2_Week2
+   notebooks/Lesson4_Week2
+   notebooks/Assignment3_Week2
 
 .. toctree::
    :maxdepth: 2
@@ -79,8 +79,8 @@ Each week consists of:
    :caption: Weeks 5 & 6:
 
    notebooks/Challenge
-   notebooks/Guest_Speaker4_Week5
-   notebooks/Guest_Speaker5_Week6
+   notebooks/Guest_Speaker4
+   notebooks/Guest_Speaker5
 
 
 Contact & Support
