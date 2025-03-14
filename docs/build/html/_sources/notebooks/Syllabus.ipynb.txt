@@ -18,6 +18,8 @@
     "**Course Description**\n",
     "This course is designed to equip students with the skills to analyze and combat misinformation, disinformation, and malinformation (MDM) using data analytics and critical thinking. By the end of this course, students will gain hands-on experience in data acquisition, cleaning, exploration, visualization, and analysis with a strong focus on real-world applications.\n",
     "\n",
+    "This course is intended for part-time participation and is structured to be flexible for those balancing additional commitments, such as school, work, or other responsibilities. While it provides a rigorous foundation in misinformation analysis, the workload is designed to be manageable alongside other obligations, ensuring that students can engage meaningfully without requiring a full-time commitment.\n",
+    "\n",
     "**Course Schedule**\n",
     "\n",
     "Weeks 1-4: Core Learning\n",
@@ -73,6 +75,14 @@
     "- NSF INCLUDES Alliance HRD-2217242\n",
     "- Pacific Intelligence Innovation Initiative"
    ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "9d4e758f-171b-4d15-abb5-07ef604ef9ac",
+   "metadata": {},
+   "outputs": [],
+   "source": []
   }
  ],
  "metadata": {
