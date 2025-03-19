@@ -16,16 +16,27 @@
   },
   {
    "cell_type": "markdown",
-   "id": "fc81942a-851d-4d84-b5cc-73ab5528c1ce",
-   "metadata": {
-    "editable": true,
-    "slideshow": {
-     "slide_type": ""
-    },
-    "tags": []
-   },
+   "id": "ed8b98e3-3477-4ff5-822e-0f9596f3edc9",
+   "metadata": {},
    "source": [
-    "Available: Saturday, 22 March @ 0800"
+    "Date: Tuesday, 25 March @ 1pm  \n",
+    "[Zoom Link](https://us06web.zoom.us/j/87850495731?pwd=3AeGx7WNTVA6g0jQww3DJf2tRxOkXU.1)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "d602957f-2c0d-487c-8d65-688642319b69",
+   "metadata": {},
+   "source": [
+    "![sgarlata2](../_static/Sgarlata_Bio.png)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "bc8dc142-e9b3-4713-84b6-73e04677344f",
+   "metadata": {},
+   "source": [
+    "Optional Reading: [GAO Foreign Disinformation: Defining and Detecting Threats](https://github.com/BevRice/CMI_Course/blob/main/docs/source/textbook_and_papers/Foreign%20Disinformation_GAO.pdf)"
    ]
   }
  ],
