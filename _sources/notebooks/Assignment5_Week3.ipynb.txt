@@ -1,0 +1,1072 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "id": "f391d88b-bc40-4380-bfac-249445c7f733",
+   "metadata": {},
+   "source": [
+    "# 📝 Assignment 5"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "5965582e-b21c-4927-839e-e3f2319ba06b",
+   "metadata": {},
+   "source": [
+    "[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/BevRice/CMI_Course/blob/main/docs/source/notebooks/Assignment5_Week3.ipynb)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "6fc7e588-3639-4dfb-9799-1c6b578bb1aa",
+   "metadata": {},
+   "source": [
+    "## EDA Exercises in Python\n",
+    "\n",
+    "⏳ Estimated Duration: 2 Hours  \n",
+    "🎯 Due: Friday, 28 March at 11:59pm"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "35dc869f-2d4a-407d-b8db-05c0a5dc293b",
+   "metadata": {},
+   "source": [
+    "📌 **Assignment Overview**\n",
+    "In this assignment, you will conduct an Exploratory Data Analysis (EDA) on the YouTube Trending Videos in the US dataset found [here](https://www.kaggle.com/datasets/rsrishav/youtube-trending-video-dataset?select=US_youtube_trending_data.csv).\n",
+    "\n",
+    "The dataset contains engagement metrics such as views, likes, dislikes, and comment counts across multiple countries.\n",
+    "\n",
+    "Your goal is to analyze trends, detect anomalies, and gain insights into what makes a video trend.\n",
+    "\n",
+    "**Hint:** Pull up Lesson 7 side by side with this assignment in google colab and run the appropriate code from the lesson\n",
+    "\n",
+    "*Questions in italics are mental notes and are not graded in this assignment*"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "e06956e3-9aa1-4562-a2b1-67d5775d292f",
+   "metadata": {},
+   "source": [
+    "### Load Data"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "d80b3092-3c80-4883-9de9-f9b5f6e04438",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Import the pandas library\n",
+    "# Enter code here"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "bd3a1293-a870-498e-957a-db9d3eb0ca24",
+   "metadata": {},
+   "source": [
+    "**Question 1: What file type is this data?**  \n",
+    "US_youtube_trending_data.csv"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "58e69f4d-cd7d-4a1d-bac6-e1df47411c34",
+   "metadata": {},
+   "source": [
+    "Double click and enter answer here"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "e897dd7c-90d4-4a5e-8edb-24e0e282f87e",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'\\nyoutube_df = pd.read_csv(\"https://raw.githubusercontent.com/BevRice/CMI_Course/refs/heads/main/docs/source/data/US_youtube_trending_data_sample.csv\")\\n'"
+      ]
+     },
+     "execution_count": 1,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "# Load dataset; remove all triple quotes\n",
+    "\n",
+    "'''\n",
+    "youtube_df = pd.read_csv(\"https://raw.githubusercontent.com/BevRice/CMI_Course/refs/heads/main/docs/source/data/US_youtube_trending_data_sample.csv\")\n",
+    "'''"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "07afdfcf-d433-4c5b-9a86-425bb6a49adf",
+   "metadata": {},
+   "source": [
+    "### Understand Your Data\n",
+    "\n",
+    "*Mental Note: The first step of EDA is understanding the dataset structure.  What functions or methods should be run to do this?*"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "c83617d5-d288-47cf-ad04-0fa3e7faa8f1",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Display basic information about the dataset\n",
+    "# Enter code here"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "9f9cf527-5845-4160-90fe-368a96870a02",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Display the first 5 rows of data\n",
+    "# Enter code here"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "dac65138-1747-49a6-a8ee-627ff543ad57",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Display 5 sample rows  youtby running -> youtube_df.sample(5)\n",
+    "# Enter code here"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "5b28046f-8bf5-425a-af05-6d48f166d60f",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Display basic statistics of the numerical columns\n",
+    "# Enter code here"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "bbc81501-978d-4060-a57f-6f75d947f0f9",
+   "metadata": {},
+   "source": [
+    "*Mental Note: Look at the mean, median, and standard deviation.  Are there any surprising outliers or trends?*"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "98674ad2-8389-41e2-a354-019dfc4e88ca",
+   "metadata": {},
+   "source": [
+    "**Question 2: What are some key observations so far?**"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "d541cd33-4dd7-4761-b4a2-bfce1e014580",
+   "metadata": {},
+   "source": [
+    "Double click and enter answer here"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "d6b48486-1ca3-4c10-bf01-b41bab8500bb",
+   "metadata": {},
+   "source": [
+    "### Dealing with Duplicates\n",
+    "\n",
+    "In real-world datasets, duplicate entries can introduce bias in analysis. To check for exact duplicate rows, use the duplicated() method.\n",
+    "Run the following code to count the number of duplicate rows in the dataset:"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "181460f0-6f91-42e5-8a63-84613d004a26",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'\\nduplicate_rows = youtube_df[youtube_df.duplicated()]\\nprint(f\"Total exact duplicate rows: {duplicate_rows.shape[0]}\")\\n'"
+      ]
+     },
+     "execution_count": 2,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "# Check for completely identical rows; remove triple quotes\n",
+    "'''\n",
+    "duplicate_rows = youtube_df[youtube_df.duplicated()]\n",
+    "print(f\"Total exact duplicate rows: {duplicate_rows.shape[0]}\")\n",
+    "'''"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "191cd9c7-4697-40dc-9027-776e63537111",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Drop identical rows by running -> youtube_df = youtube_df.drop_duplicates()\n",
+    "# Enter code here"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "ca45327f-6bea-4b46-b928-8e612ffc4b48",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Verify the new shape; remove triple quotes\n",
+    "'''\n",
+    "print(f\"New dataset size after removing duplicates: {youtube_df.shape}\")\n",
+    "'''"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "d77df3b7-c2c9-4b66-bedb-09a323e0cbf9",
+   "metadata": {},
+   "source": [
+    "After checking for exact duplicate rows, the next step is to determine if certain videos appear multiple times in the dataset.\n",
+    "\n",
+    "📌 **Why does this matter?**\n",
+    "\n",
+    "- Some videos may trend on multiple days, meaning they are not exact duplicates but still appear more than once.\n",
+    "- Understanding how often videos trend can provide insights into content virality and platform engagement trends.\n",
+    "\n",
+    "**Task**: Identifying Videos That Appeared Multiple Times\n",
+    "\n",
+    "Now, let's check how many times each video ID appears in the dataset. This will help us find videos that repeatedly trended over time.\n",
+    "\n",
+    "💡 Run the following code to count occurrences of each video_id:"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "f359a785-c81f-47ae-9f4e-ad6ccb0e4697",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Count occurrences of each video_id; remove triple quotes\n",
+    "'''\n",
+    "duplicate_videos = youtube_df[\"video_id\"].value_counts()\n",
+    "\n",
+    "# Display videos that trended multiple times\n",
+    "multiple_trending_videos = duplicate_videos[duplicate_videos > 1]\n",
+    "print(f\"Total videos that appeared more than once: {len(multiple_trending_videos)}\")\n",
+    "multiple_trending_videos.head(10)  # Show top repeated videos\n",
+    "'''"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "11648b61-1876-48b7-a653-4f3625b54a41",
+   "metadata": {},
+   "source": [
+    "**Question 3: Why might there be duplicate video entries in the dataset?**"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "d9a09d93-fbda-4354-a2f0-c23c2cf6a9b6",
+   "metadata": {},
+   "source": [
+    "Double click and enter answer here"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "485ad66a-fbcb-4e71-a534-f735b622e1fd",
+   "metadata": {},
+   "source": [
+    "Depending on our analysis goals, we may choose to:\n",
+    "- 1. Keep only the first entry of each video to analyze the time it takes for a video to trend after publishing and to examine its initial engagement metrics.\n",
+    "- 2. Use the latest entry of each video to assess the most up-to-date engagement statistics and understand how a video performed over time."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "86535577-6c87-4fd4-9df0-734379fb323b",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# We will proceed with Option 1: Keeping only the first entry of each video\n",
+    "# This allows us to analyze the time between publishing and trending, along with initial engagement metrics.\n",
+    "# Remove triple quotes\n",
+    "\n",
+    "# Sort by trending date and keep only the first instance of each video\n",
+    "'''\n",
+    "youtube_df = youtube_df.sort_values(\"trending_date\").drop_duplicates(subset=\"video_id\", keep=\"first\")\n",
+    "'''"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "b510a601-5d64-43a8-aac1-591faa902671",
+   "metadata": {},
+   "source": [
+    "### Handle Missing Values"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "c33a9e9c-a5cc-4e57-88d0-f0a0c3234a1c",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Count the number of null values in each column by running -> youtube_df.isnull().sum()\n",
+    "# Enter code here"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "dbb2a987-4e7e-431e-85cf-2915be18a586",
+   "metadata": {},
+   "source": [
+    "**Question 4: What are some options for handling the missing data?**"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "6732784b-d97b-46cb-be88-e045f3c948e5",
+   "metadata": {},
+   "source": [
+    "Double click and enter answer here"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "62fcfecc-26aa-46eb-a2b0-60f007c0e619",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Fill the missing values\n",
+    "# Enter code here"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "08aecfcd-3e38-4f5e-a3a9-8005c4defb38",
+   "metadata": {},
+   "source": [
+    "### Standardize Values"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "f4e981ae-9872-441e-9af2-fabe1ad45a9c",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Convert trending_date to datetime format, removing 'Z' and parsing correctly\n",
+    "# Remove triple quotes\n",
+    "'''\n",
+    "youtube_df[\"trending_date\"] = pd.to_datetime(youtube_df[\"trending_date\"].str.replace(\"Z\", \"\"), format=\"%Y-%m-%dT%H:%M:%S\")\n",
+    "'''"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "cfdcdcfe-559d-4757-8c01-0901d72c0805",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Convert publishedAt to datetime format, removing 'Z' and parsing correctly\n",
+    "# Enter code here"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "3060ca8e-0b49-4328-bcd7-d812448802e4",
+   "metadata": {},
+   "source": [
+    "### Explore Distributions"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "f1e6296f-9ba5-468a-a256-7c3731c62198",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Import matplotlib and seaborn by running this code\n",
+    "import matplotlib.pyplot as plt\n",
+    "import seaborn as sns"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "2af7471d-20ed-4b12-85c0-114c49170dcf",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Plot histograms for numerical columns\n",
+    "# Enter code here"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "5b5987cd-57fa-42be-b1bf-fbc7378bcab6",
+   "metadata": {},
+   "source": [
+    "*Mental Note: Does the data follow normal distributions?  Are there extreme outlier?  If so, what could explain these?*"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "a90dca50-0591-49bd-8204-672e86fdc0e7",
+   "metadata": {},
+   "source": [
+    "**Question 5: What are some key observations from the histograms?**"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "e58344c2-e3b8-4629-ac0a-07b96db29804",
+   "metadata": {},
+   "source": [
+    "Double click and enter answer here"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "282c6f51-9ddf-4d3e-8401-ee7d54e5b5f4",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Print list of column names by running -> youtube_df.columns\n",
+    "# Enter code here"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "eb898b4f-9aa6-4a30-9cbd-36fbfa24b277",
+   "metadata": {},
+   "source": [
+    "### Explore Engagement Metrics"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "965348ee-c18e-40b0-b09e-37a779c6b857",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Plot boxplots of engagement metrics (view_count, likes, what else???)\n",
+    "# Enter code here"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "606219e2-df25-4440-8de8-1934e7bbf879",
+   "metadata": {},
+   "source": [
+    "**Question 6: What are some key observations from the boxplots?**"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "f6c8315f-523f-4095-809b-5a99037bc518",
+   "metadata": {},
+   "source": [
+    "Double click and enter answer here"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "dfefdb4a-afac-497b-a8c5-37cc9407f1a6",
+   "metadata": {
+    "scrolled": true
+   },
+   "outputs": [],
+   "source": [
+    "# Find videos with the highest engagement likes by running this code; remove triple quotes\n",
+    "'''\n",
+    "top_videos = youtube_df.sort_values(by=\"likes\", ascending=False).head(10)\n",
+    "top_videos\n",
+    "'''"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "dd709316-e4bc-49f1-9e4f-0c61293ceae5",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Display specific columns of top 10 videos by likes by running this code\n",
+    "# Remove triple quotes\n",
+    "'''\n",
+    "top_videos[[\"title\", \"channelTitle\", \"likes\", \"view_count\", \"comment_count\"]]\n",
+    "'''"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "ef359948-a9bd-4e9d-a4e9-53d45b2f9761",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Adjust the following code to find videos with the highest comments\n",
+    "# top_videos = youtube_df.sort_values(by=\"likes\", ascending=False).head(10)\n",
+    "# top_videos\n",
+    "# Enter code here"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "9d0d057e-5293-4782-9d39-f1edb099917e",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Adjust the code above to find videos with the highest views\n",
+    "# Enter code here"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "9262440e-3238-4c5b-b204-7e15e29592d8",
+   "metadata": {},
+   "source": [
+    "### Feature Engineering"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "73b1b5a7-5418-45bf-b041-07f3ac1c7231",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Create new columns for year, month, day of the week, and hour of trending_date\n",
+    "# Enter code here"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "1183b31a-029b-49b5-a1a1-fc9f9e83220b",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Verify your new columns are a part of the dataset by printing the column names"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "ccb174c2-8039-4831-b3b2-f540c7ef5077",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Convert trending_date to datetime format, removing 'Z' and parsing correctly\n",
+    "# Remvoe triple quotes\n",
+    "'''\n",
+    "youtube_df[\"trending_date\"] = pd.to_datetime(youtube_df[\"trending_date\"].str.replace(\"Z\", \"\"), format=\"%Y-%m-%dT%H:%M:%S\")\n",
+    "\n",
+    "# Convert trending_date to datetime format, removing 'Z' and parsing correctly\n",
+    "youtube_df[\"publishedAt\"] = pd.to_datetime(youtube_df[\"publishedAt\"].str.replace(\"Z\", \"\"), format=\"%Y-%m-%dT%H:%M:%S\")\n",
+    "'''"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "c36415f9-3768-406c-bfc5-336ad96d442d",
+   "metadata": {},
+   "source": [
+    "Now that we have converted the trending_date and publishedAt columns into proper datetime format, we can use them to gain deeper insights into how long it takes for a video to trend after being published.\n",
+    "\n",
+    "📌 Why is this important?\n",
+    "- Not all videos immediately trend after being uploaded.\n",
+    "- Some videos go viral quickly, while others take days or weeks to gain traction.\n",
+    "- Understanding the time-to-trend can help us analyze patterns in content virality and the impact of the YouTube algorithm.\n",
+    "\n",
+    "**Next Step: Calculating Time to Trend**\n",
+    "\n",
+    "We will create a new column, time_to_trend, which calculates the difference between when a video was published and when it first appeared in the trending list.\n",
+    "\n",
+    "💡 Run the following code to compute this:"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "b2ba9d18-fc03-42a1-8f91-50dab7cea3ef",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Create a new column for time between publish and trending\n",
+    "# Remove triple quotes\n",
+    "'''\n",
+    "youtube_df['time_to_trend'] = youtube_df['trending_date'] - youtube_df['publishedAt']\n",
+    "'''"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "516d3f86-f67e-4ac5-a29a-3ee66642cec2",
+   "metadata": {},
+   "source": [
+    "Now that we've calculated time_to_trend, which represents the difference between when a video was published and when it trended, we need to make this value more interpretable.\n",
+    "\n",
+    "📌 Why Convert to Days and Hours?\n",
+    "- The raw time difference is currently stored as a Timedelta object, which is useful for calculations but not intuitive for quick analysis.\n",
+    "- Converting this into days and hours allows us to:\n",
+    "- Compare how long different videos take to trend.\n",
+    "- Analyze trends at a daily or hourly level.\n",
+    "- Identify patterns, such as whether certain categories or video types tend to trend faster.\n",
+    "\n",
+    "**Next Step: Extracting Days and Hours from Time Difference**\n",
+    "\n",
+    "We will now convert time_to_trend into total days and hours using the total_seconds() function, which allows us to break down the difference into meaningful time units.\n",
+    "\n",
+    "💡 Run the following code:"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "90336e31-91e2-4129-a27f-4044e9db7a45",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Remove triple quotes\n",
+    "'''\n",
+    "# Calculate total time difference in days, including partial days\n",
+    "youtube_df[\"days_to_trend\"] = youtube_df[\"time_to_trend\"].dt.total_seconds() / 86400  # Convert seconds to days\n",
+    "\n",
+    "# Calculate total time difference in hours\n",
+    "youtube_df[\"hours_to_trend\"] = youtube_df[\"time_to_trend\"].dt.total_seconds() / 3600  # Convert seconds to hours\n",
+    "\n",
+    "# Display results\n",
+    "youtube_df[[\"video_id\", \"time_to_trend\", \"days_to_trend\", \"hours_to_trend\"]].head()\n",
+    "'''"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "df689400-9537-443b-997f-1824bf5bee0e",
+   "metadata": {},
+   "source": [
+    "**Question 8: What is the average time-to-trend in days and hours?**"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "5e8bd5b9-e08e-4fa9-a8d8-e11cbf4ed630",
+   "metadata": {},
+   "source": [
+    "Double click and enter answer here"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "8dd421c5-2ce7-4cf7-8064-770a3aac44d6",
+   "metadata": {},
+   "source": [
+    "---\n",
+    "\n",
+    "Now that we’ve calculated days and hours to trend, we can move beyond raw numbers and use visualizations to uncover trends and patterns in the data.\n",
+    "\n",
+    "📌 Why Use Visualizations?\n",
+    "- Tables and raw numbers only tell part of the story—graphs help reveal patterns at a glance.\n",
+    "- By plotting the distribution and trends of days_to_trend, we can answer key questions about how videos gain popularity.\n",
+    "\n",
+    "**Next Steps: Visualizing Time-to-Trend and Trending Patterns**\n",
+    "\n",
+    "We’ll now create basic visualizations to explore:  \n",
+    "✅ When videos tend to trend (time of day, day of week, seasonality)  \n",
+    "✅ The distribution of time-to-trend and whether there are outliers  \n",
+    "✅ If there are patterns in how long it takes for videos to trend\n",
+    "Basic Visualizations\n",
+    "\n",
+    "Now, let’s try to answer the following questions using visualizations:\n",
+    "\n",
+    "1️⃣ Which days see the most trending videos?  \n",
+    "Hint: Try extracting the day of the week from trending_date and plot a bar chart."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "ff0655a5-4ecc-478f-8fa5-374065da95c2",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Enter code here"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "5d9225e6-1650-4537-881a-95a8c709e013",
+   "metadata": {},
+   "source": [
+    "2️⃣ Which time of day sees the most trending videos?  \n",
+    "Hint: Extract hour of the day and create a histogram to show when videos trend most often."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "aa7f7a46-6634-468c-a7f4-b143f41698bc",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Enter code here"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "d006ee86-e0e1-4258-9df9-7ad4875d099e",
+   "metadata": {},
+   "source": [
+    "3️⃣ Do more videos typically trend over the summer months?  \n",
+    "Hint: Analyze seasonality by plotting trends across months."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "5971f4c2-d737-4f27-9d2e-7995ade37e57",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Enter code here"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "7ab52f78-718b-4b14-a02d-ac9a175b3593",
+   "metadata": {},
+   "source": [
+    "4️⃣ Is there a significant number of outliers in trending videos?  \n",
+    "Hint: A box plot of days_to_trend will help us identify extreme values."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "11a087ce-e622-4887-9f40-6bbd0411594c",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Enter code here"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "d8a0e92e-e743-4778-bfd0-c37ea5cd3d52",
+   "metadata": {},
+   "source": [
+    "5️⃣ How long does it typically take for a video to trend after being published? \n",
+    "\n",
+    "Hint: Create a histogram of days_to_trend to visualize the distribution."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "cff066c9-8210-4172-a5c0-6a0546569331",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Enter code here"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "8eed52ad-9c65-4e14-9780-44ca25f890e5",
+   "metadata": {},
+   "source": [
+    "### Filtering Dataframes\n",
+    "\n",
+    "In real-world data analysis, filtering is an essential technique that allows us to focus on specific subsets of data that are most relevant to our investigation. Rather than analyzing the entire dataset at once—which can be overwhelming and filled with irrelevant information—we can narrow our focus to extract meaningful insights.\n",
+    "\n",
+    "📌 Why Filter a DataFrame?  \n",
+    "- To analyze specific trends (e.g., identifying disinformation-related content).\n",
+    "- To remove irrelevant data that may skew our analysis.\n",
+    "- To explore targeted questions, such as which types of videos include certain keywords in their tags.\n",
+    "\n",
+    "Filtering on the **tags** Column\n",
+    "\n",
+    "In this case, we are particularly interested in the disinformation tag in trending YouTube videos. Since YouTube creators add tags to describe their videos, we can use this column to identify videos that explicitly mention \"disinformation.\"\n",
+    "\n",
+    "By filtering the dataset based on whether the tags contain the word \"disinformation,\" we can:  \n",
+    "✅ Identify how many trending videos discuss disinformation.  \n",
+    "✅ Determine which video categories or creators frequently use this term.  \n",
+    "✅ Compare engagement metrics (views, likes, comments) between disinformation-related videos and other trending content.\n",
+    "\n",
+    "Now, let’s apply this filtering technique to extract all videos that include **\"disinformation\"**"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "8340554f-9360-40e6-b5d9-6f5cac8512a3",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Remove triple quotes\n",
+    "'''\n",
+    "# The code below filters rows based on if the string \"disinformation\" is in the \"tag\" column\n",
+    "disinfo = youtube_df[youtube_df['tags'].str.contains('disinformation', case=False)]\n",
+    "disinfo\n",
+    "'''"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "af566fd1-dcba-4e07-b7fb-2d564c278f0c",
+   "metadata": {},
+   "source": [
+    "*Mental Note: How many videos match this filer?  Do they have higher or lower engagement (views, likes, comments) compared to other videos?*"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "91e9ac07-d089-4f16-ab9e-d1b6215a3569",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Modify the code above to filter rows based on any tag of interest\n",
+    "# Save the dataframe as tag_1\n",
+    "# Enter code here"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "0ae32aa6-d081-4912-84ca-6991ed4d69d0",
+   "metadata": {},
+   "source": [
+    "### Aggregating data\n",
+    "Now that we’ve learned how to filter the dataset to focus on specific topics, the next step is to aggregate the data to uncover broader patterns.\n",
+    "\n",
+    "📌 Why Aggregate Data?  \n",
+    "While filtering allows us to zoom in on specific videos, aggregation helps us summarize trends across multiple entries.\n",
+    "\n",
+    "**Aggregation allows us to answer questions like:**  \n",
+    "    ✅ Which channels post the most videos on a given topic?  \n",
+    "    ✅ Are certain content creators or networks consistently producing trending content with specific tags?  \n",
+    "    ✅ How does the frequency of a topic vary across different creators?\n",
+    "\n",
+    "📌 Why Group by channelId?\n",
+    "- By grouping the dataset by channelId, we can analyze how many unique videos each channel has posted with a given tag.\n",
+    "- This helps identify which channels contribute the most content related to a specific topic, such as political content or misinformation.\n",
+    "\n",
+    "**Next Step: Aggregating Video Counts for Specific Tags**\n",
+    "\n",
+    "To demonstrate this, we’ll filter videos that contain the tag \"Trump\", and then identify which channels post the most videos with this tag.\n",
+    "\n",
+    "💡 Run the following code:"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "db018fa1-0943-4f0e-a9cf-36187dd525bc",
+   "metadata": {
+    "scrolled": true
+   },
+   "outputs": [],
+   "source": [
+    "#Remove triple quotes\n",
+    "'''\n",
+    "tag_1 = youtube_df[youtube_df['tags'].str.contains('trump', case=False)]\n",
+    "tag_1\n",
+    "'''"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "cd5bfb31-1a7d-44b6-b211-50f19f0c5d36",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#Remove triple quotes\n",
+    "'''\n",
+    "#Identify if specific channels post more videos with this tag than others\n",
+    "tag_1.groupby('channelId')['video_id'].nunique().sort_values().tail(20)\n",
+    "'''"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "8c47fc96-9aa9-47da-a514-db833cb758b2",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Try the above code grouping by ChannelTitle\n",
+    "# Enter code here"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "3957ea81-ede6-452a-954b-7c3e8fc0d003",
+   "metadata": {},
+   "source": [
+    "*Mental Note: Which channels frequently post videos with this tag?  Are the most active channelgs news-based, political, or entertainment focused?* "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "5c054553-13b5-4163-a2c2-55ec059cbd5a",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Try other data aggregations and visualizations\n",
+    "# Enter code here"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "01ba9ecd-f7c0-44fd-b266-3e387d60af13",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Enter code here"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "8ccabe20-0055-48f9-beb0-c05804a7fb44",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Enter code here"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "a2b78c98-5560-4cbd-ad21-3e9c5e5aa1c5",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Enter code here"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "9ac19200-71f6-4109-87fc-a2dde73913f7",
+   "metadata": {},
+   "source": [
+    "---\n",
+    "\n",
+    "🧠 In 2–3 sentences, summarize one trend or anomaly you found. What might explain it? How would you investigate further?"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "1b88a8e9-58bc-4f43-bfad-feccac8df320",
+   "metadata": {},
+   "source": [
+    "Double Click and Enter Answer Here"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "a96e3671-87e4-4dfd-b6c9-f25c3f0cced4",
+   "metadata": {},
+   "source": [
+    "---\n",
+    "Once complete, please submit by saving your ipynb file to the [Assignment 5 Student Submissions Folder](https://github.com/BevRice/CMI_Course/tree/main/Student_Submissions/Assignment_5)\n",
+    "\n",
+    "From Google Colab\n",
+    "- 1. Click File\n",
+    "- 2. Click Download\n",
+    "- 3. Select Download .ipynb\n",
+    "- 4. Upload onto GitHub Discussions by 11:59pm, Fri 28 Mar"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "431d383c-4d4c-460e-b6e9-243ebc1ab695",
+   "metadata": {},
+   "source": [
+    "---"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "1d208a59-416f-41c4-b0c5-57b3f01c6b5a",
+   "metadata": {},
+   "source": [
+    "Grading Criteria (20 Points Total)\n",
+    "\n",
+    "- ✅ Code Completeness (5 pts) → Attempts all coding exercises\n",
+    "- ✅ Code Accuracy (2 pts) -> No errors in executions\n",
+    "- ✅ Interpretation of Results (8 pts) → Thoughtful answers to questions 1-8\n",
+    "- ✅ Summary of at leasnt one trend or anomaly found (5 pts) → "
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "a7c9e0cc-d0e4-409a-b53f-b62e7619ef98",
+   "metadata": {},
+   "source": [
+    "[Provide Anonymous Feedback on this Assignment Here](https://forms.gle/4ZRmNr5rmGCAR1Re6)"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.13.2"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}

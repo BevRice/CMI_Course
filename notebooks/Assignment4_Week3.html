@@ -1,0 +1,672 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>📝 Assignment 4 &mdash; Counter Malign Influence: Strategies, Insights, and Tools 7 March 2025 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/nbsphinx-code-cells.css?v=2aa19091" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=131bf191"></script>
+      <script src="../_static/doctools.js?v=9a2dae69"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+      <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+      <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="📚 MDM EDA Walkthrough" href="Lesson7_Week3.html" />
+    <link rel="prev" title="🐍 Introduction to Python" href="Lesson6_Week3.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Counter Malign Influence: Strategies, Insights, and Tools
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Preparation:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Syllabus.html">Syllabus</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ZoomInfo.html">Zoom Info</a></li>
+<li class="toctree-l1"><a class="reference internal" href="GettingStarted.html">Getting Started</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Week 1 Foundations of MDM:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Lesson1.html">📚 What is MDM?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lesson2.html">📚 Thinking Critically against MDM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Guest_Speaker1.html">🎤 Research Director, CIFAL Honolulu</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Assignment1.html">📝 Assignment 1</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Week 2 Detecting MDM:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Lesson3_Week2.html">📚 Data Foundations in MDM Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Assignment2_Week2.html">📝 Assignment 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lesson4_Week2.html">📚 Defining the Research Question &amp; Identifying Credible Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Assignment3_Week2.html">📝 Assignment 3</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Week 3 Analyzing MDM:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="Lesson5_Week3.html">📚 EDA and Patterns</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lesson6_Week3.html">🐍 Introduction to Python</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">📝 Assignment 4</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#Introductory-Exercises-in-Python">Introductory Exercises in Python</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#🔹-Getting-Started-with-Google-Colab">🔹 Getting Started with Google Colab</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#Python-Basics">Python Basics</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#📌-Exercise-1:-Working-with-Variables">📌 Exercise 1: Working with Variables</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#📌-Exercise-2:-Working-with-Variables">📌 Exercise 2: Working with Variables</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Question-1:-Is-what-was-printed-above-structured-or-unstructured-data?">Question 1: Is what was printed above structured or unstructured data?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#📌-Exercise-3:-Importing-libraries">📌 Exercise 3: Importing libraries</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#📌-Exercise-4:-Basic-numpy">📌 Exercise 4: Basic numpy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#📌-Exercise-5:-Basic-pandas">📌 Exercise 5: Basic pandas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Question-2:-Is-what-was-printed-above-structured-or-unstructured-data?">Question 2: Is what was printed above structured or unstructured data?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#📌-Exercise-6:-Lists-and-Loops">📌 Exercise 6: Lists and Loops</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Lesson7_Week3.html">📚 MDM EDA Walkthrough</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Guest_Speaker2.html">🎤 Defense Threat Reduction Agency</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Assignment5_Week3.html">📝 Assignment 5</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Week 4 Fighting MDM (Available 29 March):</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Lesson8.html">📚 NLP and Sentiment Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lesson9.html">📚 Strategic MDM Interventions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Guest_Speaker3.html">🎤 US Space Forces Indo-Pacific, Intelligence Directorate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Assignment6.html">📝 Assignment 6</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Weeks 5 &amp; 6:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Challenge.html">📝 Challenge Instructions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Guest_Speaker4.html">🎤 Joint Staff, Future Capabilities Division</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Guest_Speaker5.html">🎤 Career Panel</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Counter Malign Influence: Strategies, Insights, and Tools</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">📝 Assignment 4</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/notebooks/Assignment4_Week3.ipynb.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="📝-Assignment-4">
+<h1>📝 Assignment 4<a class="headerlink" href="#📝-Assignment-4" title="Link to this heading"></a></h1>
+<section id="Introductory-Exercises-in-Python">
+<h2>Introductory Exercises in Python<a class="headerlink" href="#Introductory-Exercises-in-Python" title="Link to this heading"></a></h2>
+<div class="line-block">
+<div class="line">⏳ Estimated Duration: 1 Hour</div>
+<div class="line">🎯 Due: Friday, 28 March at 11:59pm</div>
+</div>
+<p><a class="reference external" href="https://colab.research.google.com/github/BevRice/CMI_Course/blob/main/docs/source/notebooks/Assignment4_Week3.ipynb"><img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg" /></a></p>
+<section id="🔹-Getting-Started-with-Google-Colab">
+<h3>🔹 Getting Started with Google Colab<a class="headerlink" href="#🔹-Getting-Started-with-Google-Colab" title="Link to this heading"></a></h3>
+<p>For this lesson, we will be using <strong>Google Colab</strong>, a free, cloud-based Jupyter Notebook environment that allows us to write and execute Python code <strong>without needing to install anything</strong> on our own computers.</p>
+<div class="line-block">
+<div class="line">🔹 <strong>Why Google Colab?</strong></div>
+<div class="line">✔ <strong>No Installation Required</strong> – Runs in your web browser, no need to install Python, libraries, or Jupyter Notebook.</div>
+<div class="line">✔ <strong>Pre-Installed Libraries</strong> – Most of the common data analysis libraries (<code class="docutils literal notranslate"><span class="pre">NumPy</span></code>, <code class="docutils literal notranslate"><span class="pre">pandas</span></code>, <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code>, <code class="docutils literal notranslate"><span class="pre">seaborn</span></code>, <code class="docutils literal notranslate"><span class="pre">statsmodels</span></code>) are already included.</div>
+<div class="line">✔ <strong>Cloud-Based &amp; Auto-Saving</strong> – Your work is stored in Google Drive, so you can access it from anywhere.</div>
+<div class="line">✔ <strong>Free GPU Access</strong> – Useful for advanced machine learning, though not necessary for this course.</div>
+</div>
+<div class="line-block">
+<div class="line">🔹 <strong>How to Open Google Colab</strong></div>
+<div class="line">1️⃣ <strong>Go to</strong> <a class="reference external" href="https://colab.research.google.com/">colab.research.google.com</a></div>
+<div class="line">2️⃣ <strong>Sign in</strong> with your Google account</div>
+<div class="line">3️⃣ <strong>Click</strong> Open in Colab above</div>
+</div>
+<hr class="docutils" />
+<div class="line-block">
+<div class="line">💻 <strong>What If I Want to Run Python Locally?</strong></div>
+<div class="line">If you’re interested in running Python on your own computer instead of using Google Colab, you can install <strong>Anaconda</strong>, which includes Python and Jupyter Notebook.</div>
+</div>
+<p>🔹 <strong>Anaconda Benefits:</strong></p>
+<ul class="simple">
+<li><p>Comes with everything you need for data analysis.</p></li>
+<li><p>Lets you work offline and manage different project environments.</p></li>
+<li><p>Supports additional tools like R and Julia if you’re interested in expanding your coding skills.</p></li>
+</ul>
+<p>If you’d like guidance on <strong>installing and setting up Anaconda</strong>, I’m happy to walk through it with you during <strong>office hours</strong>! 😊</p>
+</section>
+</section>
+<section id="Python-Basics">
+<h2>Python Basics<a class="headerlink" href="#Python-Basics" title="Link to this heading"></a></h2>
+<p>Lets practice the basics covered in Lesson 6 before we apply what we’ve learned to MDM data which we’ll do in Lesson 7 and Assignment 5.</p>
+<hr class="docutils" />
+<section id="📌-Exercise-1:-Working-with-Variables">
+<h3>📌 Exercise 1: Working with Variables<a class="headerlink" href="#📌-Exercise-1:-Working-with-Variables" title="Link to this heading"></a></h3>
+<ol class="arabic simple">
+<li><p>Create three variables: category, age, and engagement_rate</p></li>
+<li><p>Assign a string, integer, and float to the variables respectively</p></li>
+<li><p>Print each of the variables</p></li>
+<li><p>Check and print the data types of each variable</p></li>
+</ol>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[1]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Create the variables</span>
+<span class="c1"># Enter code here</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Print your variables</span>
+<span class="c1"># Enter code here</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Print the data types of your variables</span>
+<span class="c1"># Enter code here</span>
+</pre></div>
+</div>
+</div>
+</section>
+<hr class="docutils" />
+<section id="📌-Exercise-2:-Working-with-Variables">
+<h3>📌 Exercise 2: Working with Variables<a class="headerlink" href="#📌-Exercise-2:-Working-with-Variables" title="Link to this heading"></a></h3>
+<ol class="arabic simple">
+<li><p>Change the value stored in category to a complex data type</p></li>
+<li><p>Print the variable</p></li>
+<li><p>Check and print the new data type of category</p></li>
+</ol>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Change the value stored in category to a complex data type</span>
+<span class="c1"># Enter code here</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Print your variable</span>
+<span class="c1"># Enter code here</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[6]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Print your the data type of your variable</span>
+<span class="c1"># Enter code here</span>
+</pre></div>
+</div>
+</div>
+<hr class="docutils" />
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[7]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Run this cell</span>
+<span class="n">rickroll</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;Never gonna give you up</span>
+<span class="s2">Never gonna let you down</span>
+<span class="s2">Never gonna run around and desert you</span>
+<span class="s2">Never gonna make you cry</span>
+<span class="s2">Never gonna say goodbye</span>
+<span class="s2">Never gonna tell a lie and hurt you&quot;&quot;&quot;</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">rickroll</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Never gonna give you up
+Never gonna let you down
+Never gonna run around and desert you
+Never gonna make you cry
+Never gonna say goodbye
+Never gonna tell a lie and hurt you
+</pre></div></div>
+</div>
+</section>
+<section id="Question-1:-Is-what-was-printed-above-structured-or-unstructured-data?">
+<h3>Question 1: Is what was printed above structured or unstructured data?<a class="headerlink" href="#Question-1:-Is-what-was-printed-above-structured-or-unstructured-data?" title="Link to this heading"></a></h3>
+<p>Double click and enter answer here</p>
+</section>
+<hr class="docutils" />
+<section id="📌-Exercise-3:-Importing-libraries">
+<h3>📌 Exercise 3: Importing libraries<a class="headerlink" href="#📌-Exercise-3:-Importing-libraries" title="Link to this heading"></a></h3>
+<ol class="arabic simple">
+<li><p>Import the pandas and numpy libraries</p></li>
+<li><p>Check the version of each library by running the following:</p>
+<ul class="simple">
+<li><p>print(pd.__version__)</p></li>
+<li><p>print(np.__version__)</p></li>
+</ul>
+</li>
+</ol>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[8]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Import pandas and numpy</span>
+<span class="c1"># Enter code here</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Check pandas version</span>
+<span class="c1"># Enter code here</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[10]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Check numpy version</span>
+<span class="c1"># Enter code here</span>
+</pre></div>
+</div>
+</div>
+<hr class="docutils" />
+</section>
+<section id="📌-Exercise-4:-Basic-numpy">
+<h3>📌 Exercise 4: Basic numpy<a class="headerlink" href="#📌-Exercise-4:-Basic-numpy" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><ol class="arabic simple">
+<li><p>Create a numpy array with 5 integers and call it ages -&gt; ages = np.array([33,45,18…])</p></li>
+</ol>
+</li>
+<li><ol class="arabic simple" start="2">
+<li><p>Create a numpy array with 5 floats and call it engagement_rate</p></li>
+</ol>
+</li>
+<li><ol class="arabic simple" start="3">
+<li><p>Create a numpy array with 5 strings and call it users</p></li>
+</ol>
+</li>
+<li><ol class="arabic simple" start="4">
+<li><p>Print all 3 arrays</p></li>
+</ol>
+</li>
+</ul>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[11]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Create ages</span>
+<span class="c1"># Enter code here</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[12]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Create engagement_rate</span>
+<span class="c1"># Enter code here</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[13]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Create users</span>
+<span class="c1"># Enter code here</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[14]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Print arrays</span>
+<span class="c1"># Enter code here</span>
+</pre></div>
+</div>
+</div>
+<ul class="simple">
+<li><ol class="arabic simple" start="5">
+<li><p>Get the third value of your users array -&gt; users[2]</p></li>
+</ol>
+</li>
+<li><ol class="arabic simple" start="6">
+<li><p>Calculate sum of your ages array -&gt; np.sum(ages)</p></li>
+</ol>
+</li>
+<li><ol class="arabic simple" start="7">
+<li><p>Calculate mean of your engagement_rate array -&gt; np.mean(engagement_rate)</p></li>
+</ol>
+</li>
+</ul>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[15]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Get 3rd value of users array</span>
+<span class="c1"># Numpy starts at 0 so the third value would be #2</span>
+<span class="c1"># Enter code here</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[16]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Calculate the sum of your ages array</span>
+<span class="c1"># Enter code here</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[17]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Calculate the mean of your engagement_array array</span>
+<span class="c1"># Enter code here</span>
+</pre></div>
+</div>
+</div>
+<ul class="simple">
+<li><ol class="arabic simple" start="8">
+<li><p>Change the first value of your users array to your first name -&gt; users[0] = your name here</p></li>
+</ol>
+</li>
+<li><ol class="arabic simple" start="9">
+<li><p>Change the last value of ages to 50</p></li>
+</ol>
+</li>
+</ul>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[18]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Change the first value of users to your name</span>
+<span class="c1"># Enter code here</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[19]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Change the last value of ages to 50</span>
+<span class="c1"># Enter code here</span>
+</pre></div>
+</div>
+</div>
+</section>
+<hr class="docutils" />
+<section id="📌-Exercise-5:-Basic-pandas">
+<h3>📌 Exercise 5: Basic pandas<a class="headerlink" href="#📌-Exercise-5:-Basic-pandas" title="Link to this heading"></a></h3>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[20]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Create a DataFrame of your numpy arrays by running this code; remove all triple quotes first</span>
+
+<span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">df = pd.DataFrame({</span>
+<span class="sd">    &quot;Name&quot;: users,</span>
+<span class="sd">    &quot;Age&quot;: ages,</span>
+<span class="sd">    &quot;Engagement&quot;: engagement_rates</span>
+<span class="sd">})</span>
+
+<span class="sd">print(df)</span>
+
+<span class="sd">&#39;&#39;&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[20]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+&#39;\ndf = pd.DataFrame({\n    &#34;Name&#34;: users,\n    &#34;Age&#34;: ages,\n    &#34;Engagement&#34;: engagement_rates\n})\n\nprint(df)\n\n&#39;
+</pre></div></div>
+</div>
+</section>
+<section id="Question-2:-Is-what-was-printed-above-structured-or-unstructured-data?">
+<h3>Question 2: Is what was printed above structured or unstructured data?<a class="headerlink" href="#Question-2:-Is-what-was-printed-above-structured-or-unstructured-data?" title="Link to this heading"></a></h3>
+<p>Double click and enter answer here</p>
+<p>1️⃣ Compute Summary Statistics using pandas</p>
+<ul class="simple">
+<li><ol class="arabic simple">
+<li><p>Use pandas to calculate the mean of df[‘Age’] by running -&gt; df[‘Age’].mean()</p></li>
+</ol>
+</li>
+<li><ol class="arabic simple" start="2">
+<li><p>Calculate the mean of engagement_rates in the dataset</p></li>
+</ol>
+</li>
+<li><ol class="arabic simple" start="3">
+<li><p>Calculate the median of engagement_rates in the dataset</p></li>
+</ol>
+</li>
+<li><ol class="arabic simple" start="4">
+<li><p>Calculate the mode of the engagement_rates in the dataset (this returns a series)</p></li>
+</ol>
+</li>
+<li><ol class="arabic simple" start="5">
+<li><p>Extract the first mode by running -&gt; df[‘Engagement’].mode()[0]</p></li>
+</ol>
+</li>
+</ul>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[21]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Get the mean (average) of Age</span>
+<span class="c1"># Enter code here</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[22]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Get the mean of Engagement</span>
+<span class="c1"># Enter code here</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[23]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Get the median of Engagement</span>
+<span class="c1"># Enter code here</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[24]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Get the mode of Engagement (may return multiple values)</span>
+<span class="c1"># Enter code here</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[25]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Get the mode first of Followers</span>
+<span class="c1"># Enter code here</span>
+</pre></div>
+</div>
+</div>
+</section>
+<section id="📌-Exercise-6:-Lists-and-Loops">
+<h3>📌 Exercise 6: Lists and Loops<a class="headerlink" href="#📌-Exercise-6:-Lists-and-Loops" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><ol class="arabic simple">
+<li><p>Create a list of 10 media types</p></li>
+</ol>
+</li>
+<li><ol class="arabic simple" start="2">
+<li><p>Print your list</p></li>
+</ol>
+</li>
+<li><ol class="arabic simple" start="3">
+<li><p>Print each media individually using a loop for media in your_list_name: print(media)</p></li>
+</ol>
+</li>
+</ul>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[26]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Create list of media types</span>
+<span class="c1"># Enter code here</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[27]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Print your list of media types</span>
+<span class="c1"># Enter code here</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[28]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Print each media type individually</span>
+<span class="c1"># Enter code here</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[29]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Print each of the user names in your dataframe</span>
+<span class="c1"># by replacing your_list_name with the pandas</span>
+<span class="c1"># column -&gt; df[&#39;Name&#39;]</span>
+<span class="c1"># replace &quot;media&quot; with term of your choice</span>
+
+<span class="c1"># Enter code here</span>
+</pre></div>
+</div>
+</div>
+<p>Once complete, please submit by saving your ipynb file to the <a class="reference external" href="https://github.com/BevRice/CMI_Course/tree/main/Student_Submissions/Assignment_4">Assignment 4 Student Submissions Folder</a></p>
+<p>From Google Colab</p>
+<ul class="simple">
+<li><ol class="arabic simple">
+<li><p>Click File</p></li>
+</ol>
+</li>
+<li><ol class="arabic simple" start="2">
+<li><p>Click Download</p></li>
+</ol>
+</li>
+<li><ol class="arabic simple" start="3">
+<li><p>Select Download .ipynb</p></li>
+</ol>
+</li>
+<li><ol class="arabic simple" start="4">
+<li><p>Upload to the folder by 11:59pm, Fri 28 Mar</p></li>
+</ol>
+</li>
+</ul>
+<p>Grading Criteria (10 Points Total)</p>
+<ul class="simple">
+<li><p>✅ Code Completeness (5 pts) → Attempts all coding exercises</p></li>
+<li><p>✅ Code Accuracy (3 pts) -&gt; No errors in executions</p></li>
+<li><p>✅ Interpretation of Results (2 pts) → Thoughtful answers to questions 1-2</p></li>
+</ul>
+<p><a class="reference external" href="https://forms.gle/4ZRmNr5rmGCAR1Re6">Provide Anonymous Feedback on this Assignment Here</a></p>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="Lesson6_Week3.html" class="btn btn-neutral float-left" title="🐍 Introduction to Python" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Lesson7_Week3.html" class="btn btn-neutral float-right" title="📚 MDM EDA Walkthrough" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright Chaminade University.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

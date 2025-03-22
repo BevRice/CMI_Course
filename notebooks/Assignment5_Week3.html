@@ -1,0 +1,932 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>📝 Assignment 5 &mdash; Counter Malign Influence: Strategies, Insights, and Tools 7 March 2025 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/nbsphinx-code-cells.css?v=2aa19091" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=131bf191"></script>
+      <script src="../_static/doctools.js?v=9a2dae69"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+      <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+      <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="📚 NLP and Sentiment Analysis" href="Lesson8.html" />
+    <link rel="prev" title="🎤 Defense Threat Reduction Agency" href="Guest_Speaker2.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Counter Malign Influence: Strategies, Insights, and Tools
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Preparation:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Syllabus.html">Syllabus</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ZoomInfo.html">Zoom Info</a></li>
+<li class="toctree-l1"><a class="reference internal" href="GettingStarted.html">Getting Started</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Week 1 Foundations of MDM:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Lesson1.html">📚 What is MDM?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lesson2.html">📚 Thinking Critically against MDM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Guest_Speaker1.html">🎤 Research Director, CIFAL Honolulu</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Assignment1.html">📝 Assignment 1</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Week 2 Detecting MDM:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Lesson3_Week2.html">📚 Data Foundations in MDM Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Assignment2_Week2.html">📝 Assignment 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lesson4_Week2.html">📚 Defining the Research Question &amp; Identifying Credible Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Assignment3_Week2.html">📝 Assignment 3</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Week 3 Analyzing MDM:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="Lesson5_Week3.html">📚 EDA and Patterns</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lesson6_Week3.html">🐍 Introduction to Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Assignment4_Week3.html">📝 Assignment 4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lesson7_Week3.html">📚 MDM EDA Walkthrough</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Guest_Speaker2.html">🎤 Defense Threat Reduction Agency</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">📝 Assignment 5</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#EDA-Exercises-in-Python">EDA Exercises in Python</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#Load-Data">Load Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Understand-Your-Data">Understand Your Data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Dealing-with-Duplicates">Dealing with Duplicates</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Handle-Missing-Values">Handle Missing Values</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Standardize-Values">Standardize Values</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Explore-Distributions">Explore Distributions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Explore-Engagement-Metrics">Explore Engagement Metrics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Feature-Engineering">Feature Engineering</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Filtering-Dataframes">Filtering Dataframes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Aggregating-data">Aggregating data</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Week 4 Fighting MDM (Available 29 March):</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Lesson8.html">📚 NLP and Sentiment Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lesson9.html">📚 Strategic MDM Interventions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Guest_Speaker3.html">🎤 US Space Forces Indo-Pacific, Intelligence Directorate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Assignment6.html">📝 Assignment 6</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Weeks 5 &amp; 6:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Challenge.html">📝 Challenge Instructions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Guest_Speaker4.html">🎤 Joint Staff, Future Capabilities Division</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Guest_Speaker5.html">🎤 Career Panel</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Counter Malign Influence: Strategies, Insights, and Tools</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">📝 Assignment 5</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/notebooks/Assignment5_Week3.ipynb.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="📝-Assignment-5">
+<h1>📝 Assignment 5<a class="headerlink" href="#📝-Assignment-5" title="Link to this heading"></a></h1>
+<p><a class="reference external" href="https://colab.research.google.com/github/BevRice/CMI_Course/blob/main/docs/source/notebooks/Assignment5_Week3.ipynb"><img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg" /></a></p>
+<section id="EDA-Exercises-in-Python">
+<h2>EDA Exercises in Python<a class="headerlink" href="#EDA-Exercises-in-Python" title="Link to this heading"></a></h2>
+<div class="line-block">
+<div class="line">⏳ Estimated Duration: 2 Hours</div>
+<div class="line">🎯 Due: Friday, 28 March at 11:59pm</div>
+</div>
+<p>📌 <strong>Assignment Overview</strong> In this assignment, you will conduct an Exploratory Data Analysis (EDA) on the YouTube Trending Videos in the US dataset found <a class="reference external" href="https://www.kaggle.com/datasets/rsrishav/youtube-trending-video-dataset?select=US_youtube_trending_data.csv">here</a>.</p>
+<p>The dataset contains engagement metrics such as views, likes, dislikes, and comment counts across multiple countries.</p>
+<p>Your goal is to analyze trends, detect anomalies, and gain insights into what makes a video trend.</p>
+<p><strong>Hint:</strong> Pull up Lesson 7 side by side with this assignment in google colab and run the appropriate code from the lesson</p>
+<p><em>Questions in italics are mental notes and are not graded in this assignment</em></p>
+<section id="Load-Data">
+<h3>Load Data<a class="headerlink" href="#Load-Data" title="Link to this heading"></a></h3>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[1]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Import the pandas library</span>
+<span class="c1"># Enter code here</span>
+</pre></div>
+</div>
+</div>
+<div class="line-block">
+<div class="line"><strong>Question 1: What file type is this data?</strong></div>
+<div class="line">US_youtube_trending_data.csv</div>
+</div>
+<p>Double click and enter answer here</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Load dataset; remove all triple quotes</span>
+
+<span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">youtube_df = pd.read_csv(&quot;https://raw.githubusercontent.com/BevRice/CMI_Course/refs/heads/main/docs/source/data/US_youtube_trending_data_sample.csv&quot;)</span>
+<span class="sd">&#39;&#39;&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+&#39;\nyoutube_df = pd.read_csv(&#34;https://raw.githubusercontent.com/BevRice/CMI_Course/refs/heads/main/docs/source/data/US_youtube_trending_data_sample.csv&#34;)\n&#39;
+</pre></div></div>
+</div>
+</section>
+<section id="Understand-Your-Data">
+<h3>Understand Your Data<a class="headerlink" href="#Understand-Your-Data" title="Link to this heading"></a></h3>
+<p><em>Mental Note: The first step of EDA is understanding the dataset structure. What functions or methods should be run to do this?</em></p>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Display basic information about the dataset</span>
+<span class="c1"># Enter code here</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Display the first 5 rows of data</span>
+<span class="c1"># Enter code here</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Display 5 sample rows  youtby running -&gt; youtube_df.sample(5)</span>
+<span class="c1"># Enter code here</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[6]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Display basic statistics of the numerical columns</span>
+<span class="c1"># Enter code here</span>
+</pre></div>
+</div>
+</div>
+<p><em>Mental Note: Look at the mean, median, and standard deviation. Are there any surprising outliers or trends?</em></p>
+<p><strong>Question 2: What are some key observations so far?</strong></p>
+<p>Double click and enter answer here</p>
+</section>
+<section id="Dealing-with-Duplicates">
+<h3>Dealing with Duplicates<a class="headerlink" href="#Dealing-with-Duplicates" title="Link to this heading"></a></h3>
+<p>In real-world datasets, duplicate entries can introduce bias in analysis. To check for exact duplicate rows, use the duplicated() method. Run the following code to count the number of duplicate rows in the dataset:</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[7]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Check for completely identical rows; remove triple quotes</span>
+<span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">duplicate_rows = youtube_df[youtube_df.duplicated()]</span>
+<span class="sd">print(f&quot;Total exact duplicate rows: {duplicate_rows.shape[0]}&quot;)</span>
+<span class="sd">&#39;&#39;&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[7]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+&#39;\nduplicate_rows = youtube_df[youtube_df.duplicated()]\nprint(f&#34;Total exact duplicate rows: {duplicate_rows.shape[0]}&#34;)\n&#39;
+</pre></div></div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[8]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Drop identical rows by running -&gt; youtube_df = youtube_df.drop_duplicates()</span>
+<span class="c1"># Enter code here</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Verify the new shape; remove triple quotes</span>
+<span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">print(f&quot;New dataset size after removing duplicates: {youtube_df.shape}&quot;)</span>
+<span class="sd">&#39;&#39;&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+&#39;\nprint(f&#34;New dataset size after removing duplicates: {youtube_df.shape}&#34;)\n&#39;
+</pre></div></div>
+</div>
+<p>After checking for exact duplicate rows, the next step is to determine if certain videos appear multiple times in the dataset.</p>
+<p>📌 <strong>Why does this matter?</strong></p>
+<ul class="simple">
+<li><p>Some videos may trend on multiple days, meaning they are not exact duplicates but still appear more than once.</p></li>
+<li><p>Understanding how often videos trend can provide insights into content virality and platform engagement trends.</p></li>
+</ul>
+<p><strong>Task</strong>: Identifying Videos That Appeared Multiple Times</p>
+<p>Now, let’s check how many times each video ID appears in the dataset. This will help us find videos that repeatedly trended over time.</p>
+<p>💡 Run the following code to count occurrences of each video_id:</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[10]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Count occurrences of each video_id; remove triple quotes</span>
+<span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">duplicate_videos = youtube_df[&quot;video_id&quot;].value_counts()</span>
+
+<span class="sd"># Display videos that trended multiple times</span>
+<span class="sd">multiple_trending_videos = duplicate_videos[duplicate_videos &gt; 1]</span>
+<span class="sd">print(f&quot;Total videos that appeared more than once: {len(multiple_trending_videos)}&quot;)</span>
+<span class="sd">multiple_trending_videos.head(10)  # Show top repeated videos</span>
+<span class="sd">&#39;&#39;&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[10]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+&#39;\nduplicate_videos = youtube_df[&#34;video_id&#34;].value_counts()\n\n# Display videos that trended multiple times\nmultiple_trending_videos = duplicate_videos[duplicate_videos &gt; 1]\nprint(f&#34;Total videos that appeared more than once: {len(multiple_trending_videos)}&#34;)\nmultiple_trending_videos.head(10)  # Show top repeated videos\n&#39;
+</pre></div></div>
+</div>
+<p><strong>Question 3: Why might there be duplicate video entries in the dataset?</strong></p>
+<p>Double click and enter answer here</p>
+<p>Depending on our analysis goals, we may choose to:</p>
+<ul class="simple">
+<li><ol class="arabic simple">
+<li><p>Keep only the first entry of each video to analyze the time it takes for a video to trend after publishing and to examine its initial engagement metrics.</p></li>
+</ol>
+</li>
+<li><ol class="arabic simple" start="2">
+<li><p>Use the latest entry of each video to assess the most up-to-date engagement statistics and understand how a video performed over time.</p></li>
+</ol>
+</li>
+</ul>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[11]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># We will proceed with Option 1: Keeping only the first entry of each video</span>
+<span class="c1"># This allows us to analyze the time between publishing and trending, along with initial engagement metrics.</span>
+<span class="c1"># Remove triple quotes</span>
+
+<span class="c1"># Sort by trending date and keep only the first instance of each video</span>
+<span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">youtube_df = youtube_df.sort_values(&quot;trending_date&quot;).drop_duplicates(subset=&quot;video_id&quot;, keep=&quot;first&quot;)</span>
+<span class="sd">&#39;&#39;&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[11]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+&#39;\nyoutube_df = youtube_df.sort_values(&#34;trending_date&#34;).drop_duplicates(subset=&#34;video_id&#34;, keep=&#34;first&#34;)\n&#39;
+</pre></div></div>
+</div>
+</section>
+<section id="Handle-Missing-Values">
+<h3>Handle Missing Values<a class="headerlink" href="#Handle-Missing-Values" title="Link to this heading"></a></h3>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[12]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Count the number of null values in each column by running -&gt; youtube_df.isnull().sum()</span>
+<span class="c1"># Enter code here</span>
+</pre></div>
+</div>
+</div>
+<p><strong>Question 4: What are some options for handling the missing data?</strong></p>
+<p>Double click and enter answer here</p>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[13]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Fill the missing values</span>
+<span class="c1"># Enter code here</span>
+</pre></div>
+</div>
+</div>
+</section>
+<section id="Standardize-Values">
+<h3>Standardize Values<a class="headerlink" href="#Standardize-Values" title="Link to this heading"></a></h3>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[14]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Convert trending_date to datetime format, removing &#39;Z&#39; and parsing correctly</span>
+<span class="c1"># Remove triple quotes</span>
+<span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">youtube_df[&quot;trending_date&quot;] = pd.to_datetime(youtube_df[&quot;trending_date&quot;].str.replace(&quot;Z&quot;, &quot;&quot;), format=&quot;%Y-%m-%dT%H:%M:%S&quot;)</span>
+<span class="sd">&#39;&#39;&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[14]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+&#39;\nyoutube_df[&#34;trending_date&#34;] = pd.to_datetime(youtube_df[&#34;trending_date&#34;].str.replace(&#34;Z&#34;, &#34;&#34;), format=&#34;%Y-%m-%dT%H:%M:%S&#34;)\n&#39;
+</pre></div></div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[15]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Convert publishedAt to datetime format, removing &#39;Z&#39; and parsing correctly</span>
+<span class="c1"># Enter code here</span>
+</pre></div>
+</div>
+</div>
+</section>
+<section id="Explore-Distributions">
+<h3>Explore Distributions<a class="headerlink" href="#Explore-Distributions" title="Link to this heading"></a></h3>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[16]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Import matplotlib and seaborn by running this code</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">seaborn</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sns</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[17]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Plot histograms for numerical columns</span>
+<span class="c1"># Enter code here</span>
+</pre></div>
+</div>
+</div>
+<p><em>Mental Note: Does the data follow normal distributions? Are there extreme outlier? If so, what could explain these?</em></p>
+<p><strong>Question 5: What are some key observations from the histograms?</strong></p>
+<p>Double click and enter answer here</p>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[18]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Print list of column names by running -&gt; youtube_df.columns</span>
+<span class="c1"># Enter code here</span>
+</pre></div>
+</div>
+</div>
+</section>
+<section id="Explore-Engagement-Metrics">
+<h3>Explore Engagement Metrics<a class="headerlink" href="#Explore-Engagement-Metrics" title="Link to this heading"></a></h3>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[19]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Plot boxplots of engagement metrics (view_count, likes, what else???)</span>
+<span class="c1"># Enter code here</span>
+</pre></div>
+</div>
+</div>
+<p><strong>Question 6: What are some key observations from the boxplots?</strong></p>
+<p>Double click and enter answer here</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[20]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Find videos with the highest engagement likes by running this code; remove triple quotes</span>
+<span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">top_videos = youtube_df.sort_values(by=&quot;likes&quot;, ascending=False).head(10)</span>
+<span class="sd">top_videos</span>
+<span class="sd">&#39;&#39;&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[20]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+&#39;\ntop_videos = youtube_df.sort_values(by=&#34;likes&#34;, ascending=False).head(10)\ntop_videos\n&#39;
+</pre></div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[21]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Display specific columns of top 10 videos by likes by running this code</span>
+<span class="c1"># Remove triple quotes</span>
+<span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">top_videos[[&quot;title&quot;, &quot;channelTitle&quot;, &quot;likes&quot;, &quot;view_count&quot;, &quot;comment_count&quot;]]</span>
+<span class="sd">&#39;&#39;&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[21]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+&#39;\ntop_videos[[&#34;title&#34;, &#34;channelTitle&#34;, &#34;likes&#34;, &#34;view_count&#34;, &#34;comment_count&#34;]]\n&#39;
+</pre></div></div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[22]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Adjust the following code to find videos with the highest comments</span>
+<span class="c1"># top_videos = youtube_df.sort_values(by=&quot;likes&quot;, ascending=False).head(10)</span>
+<span class="c1"># top_videos</span>
+<span class="c1"># Enter code here</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[23]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Adjust the code above to find videos with the highest views</span>
+<span class="c1"># Enter code here</span>
+</pre></div>
+</div>
+</div>
+</section>
+<section id="Feature-Engineering">
+<h3>Feature Engineering<a class="headerlink" href="#Feature-Engineering" title="Link to this heading"></a></h3>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[24]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Create new columns for year, month, day of the week, and hour of trending_date</span>
+<span class="c1"># Enter code here</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[25]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Verify your new columns are a part of the dataset by printing the column names</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[26]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Convert trending_date to datetime format, removing &#39;Z&#39; and parsing correctly</span>
+<span class="c1"># Remvoe triple quotes</span>
+<span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">youtube_df[&quot;trending_date&quot;] = pd.to_datetime(youtube_df[&quot;trending_date&quot;].str.replace(&quot;Z&quot;, &quot;&quot;), format=&quot;%Y-%m-%dT%H:%M:%S&quot;)</span>
+
+<span class="sd"># Convert trending_date to datetime format, removing &#39;Z&#39; and parsing correctly</span>
+<span class="sd">youtube_df[&quot;publishedAt&quot;] = pd.to_datetime(youtube_df[&quot;publishedAt&quot;].str.replace(&quot;Z&quot;, &quot;&quot;), format=&quot;%Y-%m-%dT%H:%M:%S&quot;)</span>
+<span class="sd">&#39;&#39;&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[26]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+&#39;\nyoutube_df[&#34;trending_date&#34;] = pd.to_datetime(youtube_df[&#34;trending_date&#34;].str.replace(&#34;Z&#34;, &#34;&#34;), format=&#34;%Y-%m-%dT%H:%M:%S&#34;)\n\n# Convert trending_date to datetime format, removing \&#39;Z\&#39; and parsing correctly\nyoutube_df[&#34;publishedAt&#34;] = pd.to_datetime(youtube_df[&#34;publishedAt&#34;].str.replace(&#34;Z&#34;, &#34;&#34;), format=&#34;%Y-%m-%dT%H:%M:%S&#34;)\n&#39;
+</pre></div></div>
+</div>
+<p>Now that we have converted the trending_date and publishedAt columns into proper datetime format, we can use them to gain deeper insights into how long it takes for a video to trend after being published.</p>
+<p>📌 Why is this important?</p>
+<ul class="simple">
+<li><p>Not all videos immediately trend after being uploaded.</p></li>
+<li><p>Some videos go viral quickly, while others take days or weeks to gain traction.</p></li>
+<li><p>Understanding the time-to-trend can help us analyze patterns in content virality and the impact of the YouTube algorithm.</p></li>
+</ul>
+<p><strong>Next Step: Calculating Time to Trend</strong></p>
+<p>We will create a new column, time_to_trend, which calculates the difference between when a video was published and when it first appeared in the trending list.</p>
+<p>💡 Run the following code to compute this:</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[27]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Create a new column for time between publish and trending</span>
+<span class="c1"># Remove triple quotes</span>
+<span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">youtube_df[&#39;time_to_trend&#39;] = youtube_df[&#39;trending_date&#39;] - youtube_df[&#39;publishedAt&#39;]</span>
+<span class="sd">&#39;&#39;&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[27]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+&#34;\nyoutube_df[&#39;time_to_trend&#39;] = youtube_df[&#39;trending_date&#39;] - youtube_df[&#39;publishedAt&#39;]\n&#34;
+</pre></div></div>
+</div>
+<p>Now that we’ve calculated time_to_trend, which represents the difference between when a video was published and when it trended, we need to make this value more interpretable.</p>
+<p>📌 Why Convert to Days and Hours?</p>
+<ul class="simple">
+<li><p>The raw time difference is currently stored as a Timedelta object, which is useful for calculations but not intuitive for quick analysis.</p></li>
+<li><p>Converting this into days and hours allows us to:</p></li>
+<li><p>Compare how long different videos take to trend.</p></li>
+<li><p>Analyze trends at a daily or hourly level.</p></li>
+<li><p>Identify patterns, such as whether certain categories or video types tend to trend faster.</p></li>
+</ul>
+<p><strong>Next Step: Extracting Days and Hours from Time Difference</strong></p>
+<p>We will now convert time_to_trend into total days and hours using the total_seconds() function, which allows us to break down the difference into meaningful time units.</p>
+<p>💡 Run the following code:</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[28]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Remove triple quotes</span>
+<span class="sd">&#39;&#39;&#39;</span>
+<span class="sd"># Calculate total time difference in days, including partial days</span>
+<span class="sd">youtube_df[&quot;days_to_trend&quot;] = youtube_df[&quot;time_to_trend&quot;].dt.total_seconds() / 86400  # Convert seconds to days</span>
+
+<span class="sd"># Calculate total time difference in hours</span>
+<span class="sd">youtube_df[&quot;hours_to_trend&quot;] = youtube_df[&quot;time_to_trend&quot;].dt.total_seconds() / 3600  # Convert seconds to hours</span>
+
+<span class="sd"># Display results</span>
+<span class="sd">youtube_df[[&quot;video_id&quot;, &quot;time_to_trend&quot;, &quot;days_to_trend&quot;, &quot;hours_to_trend&quot;]].head()</span>
+<span class="sd">&#39;&#39;&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[28]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+&#39;\n# Calculate total time difference in days, including partial days\nyoutube_df[&#34;days_to_trend&#34;] = youtube_df[&#34;time_to_trend&#34;].dt.total_seconds() / 86400  # Convert seconds to days\n\n# Calculate total time difference in hours\nyoutube_df[&#34;hours_to_trend&#34;] = youtube_df[&#34;time_to_trend&#34;].dt.total_seconds() / 3600  # Convert seconds to hours\n\n# Display results\nyoutube_df[[&#34;video_id&#34;, &#34;time_to_trend&#34;, &#34;days_to_trend&#34;, &#34;hours_to_trend&#34;]].head()\n&#39;
+</pre></div></div>
+</div>
+<p><strong>Question 8: What is the average time-to-trend in days and hours?</strong></p>
+<p>Double click and enter answer here</p>
+<hr class="docutils" />
+<p>Now that we’ve calculated days and hours to trend, we can move beyond raw numbers and use visualizations to uncover trends and patterns in the data.</p>
+<p>📌 Why Use Visualizations?</p>
+<ul class="simple">
+<li><p>Tables and raw numbers only tell part of the story—graphs help reveal patterns at a glance.</p></li>
+<li><p>By plotting the distribution and trends of days_to_trend, we can answer key questions about how videos gain popularity.</p></li>
+</ul>
+<p><strong>Next Steps: Visualizing Time-to-Trend and Trending Patterns</strong></p>
+<div class="line-block">
+<div class="line">We’ll now create basic visualizations to explore:</div>
+<div class="line">✅ When videos tend to trend (time of day, day of week, seasonality)</div>
+<div class="line">✅ The distribution of time-to-trend and whether there are outliers</div>
+<div class="line">✅ If there are patterns in how long it takes for videos to trend Basic Visualizations</div>
+</div>
+<p>Now, let’s try to answer the following questions using visualizations:</p>
+<div class="line-block">
+<div class="line">1️⃣ Which days see the most trending videos?</div>
+<div class="line">Hint: Try extracting the day of the week from trending_date and plot a bar chart.</div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[29]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Enter code here</span>
+</pre></div>
+</div>
+</div>
+<div class="line-block">
+<div class="line">2️⃣ Which time of day sees the most trending videos?</div>
+<div class="line">Hint: Extract hour of the day and create a histogram to show when videos trend most often.</div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[30]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Enter code here</span>
+</pre></div>
+</div>
+</div>
+<div class="line-block">
+<div class="line">3️⃣ Do more videos typically trend over the summer months?</div>
+<div class="line">Hint: Analyze seasonality by plotting trends across months.</div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[31]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Enter code here</span>
+</pre></div>
+</div>
+</div>
+<div class="line-block">
+<div class="line">4️⃣ Is there a significant number of outliers in trending videos?</div>
+<div class="line">Hint: A box plot of days_to_trend will help us identify extreme values.</div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[32]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Enter code here</span>
+</pre></div>
+</div>
+</div>
+<p>5️⃣ How long does it typically take for a video to trend after being published?</p>
+<p>Hint: Create a histogram of days_to_trend to visualize the distribution.</p>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[33]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Enter code here</span>
+</pre></div>
+</div>
+</div>
+</section>
+<section id="Filtering-Dataframes">
+<h3>Filtering Dataframes<a class="headerlink" href="#Filtering-Dataframes" title="Link to this heading"></a></h3>
+<p>In real-world data analysis, filtering is an essential technique that allows us to focus on specific subsets of data that are most relevant to our investigation. Rather than analyzing the entire dataset at once—which can be overwhelming and filled with irrelevant information—we can narrow our focus to extract meaningful insights.</p>
+<p>📌 Why Filter a DataFrame?</p>
+<ul class="simple">
+<li><p>To analyze specific trends (e.g., identifying disinformation-related content).</p></li>
+<li><p>To remove irrelevant data that may skew our analysis.</p></li>
+<li><p>To explore targeted questions, such as which types of videos include certain keywords in their tags.</p></li>
+</ul>
+<p>Filtering on the <strong>tags</strong> Column</p>
+<p>In this case, we are particularly interested in the disinformation tag in trending YouTube videos. Since YouTube creators add tags to describe their videos, we can use this column to identify videos that explicitly mention “disinformation.”</p>
+<div class="line-block">
+<div class="line">By filtering the dataset based on whether the tags contain the word “disinformation,” we can:</div>
+<div class="line">✅ Identify how many trending videos discuss disinformation.</div>
+<div class="line">✅ Determine which video categories or creators frequently use this term.</div>
+<div class="line">✅ Compare engagement metrics (views, likes, comments) between disinformation-related videos and other trending content.</div>
+</div>
+<p>Now, let’s apply this filtering technique to extract all videos that include <strong>“disinformation”</strong></p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[34]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Remove triple quotes</span>
+<span class="sd">&#39;&#39;&#39;</span>
+<span class="sd"># The code below filters rows based on if the string &quot;disinformation&quot; is in the &quot;tag&quot; column</span>
+<span class="sd">disinfo = youtube_df[youtube_df[&#39;tags&#39;].str.contains(&#39;disinformation&#39;, case=False)]</span>
+<span class="sd">disinfo</span>
+<span class="sd">&#39;&#39;&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[34]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+&#39;\n# The code below filters rows based on if the string &#34;disinformation&#34; is in the &#34;tag&#34; column\ndisinfo = youtube_df[youtube_df[\&#39;tags\&#39;].str.contains(\&#39;disinformation\&#39;, case=False)]\ndisinfo\n&#39;
+</pre></div></div>
+</div>
+<p><em>Mental Note: How many videos match this filer? Do they have higher or lower engagement (views, likes, comments) compared to other videos?</em></p>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[35]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Modify the code above to filter rows based on any tag of interest</span>
+<span class="c1"># Save the dataframe as tag_1</span>
+<span class="c1"># Enter code here</span>
+</pre></div>
+</div>
+</div>
+</section>
+<section id="Aggregating-data">
+<h3>Aggregating data<a class="headerlink" href="#Aggregating-data" title="Link to this heading"></a></h3>
+<p>Now that we’ve learned how to filter the dataset to focus on specific topics, the next step is to aggregate the data to uncover broader patterns.</p>
+<div class="line-block">
+<div class="line">📌 Why Aggregate Data?</div>
+<div class="line">While filtering allows us to zoom in on specific videos, aggregation helps us summarize trends across multiple entries.</div>
+</div>
+<div class="line-block">
+<div class="line"><strong>Aggregation allows us to answer questions like:</strong></div>
+<div class="line">✅ Which channels post the most videos on a given topic?</div>
+<div class="line">✅ Are certain content creators or networks consistently producing trending content with specific tags?</div>
+<div class="line">✅ How does the frequency of a topic vary across different creators?</div>
+</div>
+<p>📌 Why Group by channelId?</p>
+<ul class="simple">
+<li><p>By grouping the dataset by channelId, we can analyze how many unique videos each channel has posted with a given tag.</p></li>
+<li><p>This helps identify which channels contribute the most content related to a specific topic, such as political content or misinformation.</p></li>
+</ul>
+<p><strong>Next Step: Aggregating Video Counts for Specific Tags</strong></p>
+<p>To demonstrate this, we’ll filter videos that contain the tag “Trump”, and then identify which channels post the most videos with this tag.</p>
+<p>💡 Run the following code:</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[36]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Remove triple quotes</span>
+<span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">tag_1 = youtube_df[youtube_df[&#39;tags&#39;].str.contains(&#39;trump&#39;, case=False)]</span>
+<span class="sd">tag_1</span>
+<span class="sd">&#39;&#39;&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[36]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+&#34;\ntag_1 = youtube_df[youtube_df[&#39;tags&#39;].str.contains(&#39;trump&#39;, case=False)]\ntag_1\n&#34;
+</pre></div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[37]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Remove triple quotes</span>
+<span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">#Identify if specific channels post more videos with this tag than others</span>
+<span class="sd">tag_1.groupby(&#39;channelId&#39;)[&#39;video_id&#39;].nunique().sort_values().tail(20)</span>
+<span class="sd">&#39;&#39;&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[37]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+&#34;\n#Identify if specific channels post more videos with this tag than others\ntag_1.groupby(&#39;channelId&#39;)[&#39;video_id&#39;].nunique().sort_values().tail(20)\n&#34;
+</pre></div></div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[38]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Try the above code grouping by ChannelTitle</span>
+<span class="c1"># Enter code here</span>
+</pre></div>
+</div>
+</div>
+<p><em>Mental Note: Which channels frequently post videos with this tag? Are the most active channelgs news-based, political, or entertainment focused?</em></p>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[39]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Try other data aggregations and visualizations</span>
+<span class="c1"># Enter code here</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[40]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Enter code here</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[41]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Enter code here</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[42]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Enter code here</span>
+</pre></div>
+</div>
+</div>
+<hr class="docutils" />
+<p>🧠 In 2–3 sentences, summarize one trend or anomaly you found. What might explain it? How would you investigate further?</p>
+<p>Double Click and Enter Answer Here</p>
+<hr class="docutils" />
+<p>Once complete, please submit by saving your ipynb file to the <a class="reference external" href="https://github.com/BevRice/CMI_Course/tree/main/Student_Submissions/Assignment_5">Assignment 5 Student Submissions Folder</a></p>
+<p>From Google Colab</p>
+<ul class="simple">
+<li><ol class="arabic simple">
+<li><p>Click File</p></li>
+</ol>
+</li>
+<li><ol class="arabic simple" start="2">
+<li><p>Click Download</p></li>
+</ol>
+</li>
+<li><ol class="arabic simple" start="3">
+<li><p>Select Download .ipynb</p></li>
+</ol>
+</li>
+<li><ol class="arabic simple" start="4">
+<li><p>Upload onto GitHub Discussions by 11:59pm, Fri 28 Mar</p></li>
+</ol>
+</li>
+</ul>
+<hr class="docutils" />
+<p>Grading Criteria (20 Points Total)</p>
+<ul class="simple">
+<li><p>✅ Code Completeness (5 pts) → Attempts all coding exercises</p></li>
+<li><p>✅ Code Accuracy (2 pts) -&gt; No errors in executions</p></li>
+<li><p>✅ Interpretation of Results (8 pts) → Thoughtful answers to questions 1-8</p></li>
+<li><p>✅ Summary of at leasnt one trend or anomaly found (5 pts) →</p></li>
+</ul>
+<p><a class="reference external" href="https://forms.gle/4ZRmNr5rmGCAR1Re6">Provide Anonymous Feedback on this Assignment Here</a></p>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="Guest_Speaker2.html" class="btn btn-neutral float-left" title="🎤 Defense Threat Reduction Agency" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Lesson8.html" class="btn btn-neutral float-right" title="📚 NLP and Sentiment Analysis" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright Chaminade University.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
