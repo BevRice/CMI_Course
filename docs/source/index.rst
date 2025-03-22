@@ -53,16 +53,15 @@ Each week consists of:
 
 .. toctree::
    :maxdepth: 2
-   :caption: Week 3 Analyzing MDM (Available 22 March):
+   :caption: Week 3 Analyzing MDM:
 
-   notebooks/Lesson5
-   notebooks/Lesson6
-   notebooks/Assignment4
-   notebooks/Lesson7
+   notebooks/Lesson5_Week3
+   notebooks/Lesson6_Week3
+   notebooks/Assignment4_Week3
+   notebooks/Lesson7_Week3
    notebooks/Guest_Speaker2
-   notebooks/Assignment5
-   
-   
+   notebooks/Assignment5_Week3
+
 
 .. toctree::
    :maxdepth: 2

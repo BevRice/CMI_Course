@@ -1,0 +1,2114 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>📚 MDM EDA Walkthrough &mdash; Counter Malign Influence: Strategies, Insights, and Tools 7 March 2025 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/nbsphinx-code-cells.css?v=2aa19091" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=131bf191"></script>
+      <script src="../_static/doctools.js?v=9a2dae69"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+      <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+      <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="🎤 Defense Threat Reduction Agency" href="Guest_Speaker2.html" />
+    <link rel="prev" title="📝 Assignment 4" href="Assignment4_Week3.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Counter Malign Influence: Strategies, Insights, and Tools
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Preparation:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Syllabus.html">Syllabus</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ZoomInfo.html">Zoom Info</a></li>
+<li class="toctree-l1"><a class="reference internal" href="GettingStarted.html">Getting Started</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Week 1 Foundations of MDM:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Lesson1.html">📚 What is MDM?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lesson2.html">📚 Thinking Critically against MDM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Guest_Speaker1.html">🎤 Research Director, CIFAL Honolulu</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Assignment1.html">📝 Assignment 1</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Week 2 Detecting MDM:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Lesson3_Week2.html">📚 Data Foundations in MDM Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Assignment2_Week2.html">📝 Assignment 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lesson4_Week2.html">📚 Defining the Research Question &amp; Identifying Credible Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Assignment3_Week2.html">📝 Assignment 3</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Week 3 Analyzing MDM:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="Lesson5_Week3.html">📚 EDA and Patterns</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lesson6_Week3.html">🐍 Introduction to Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Assignment4_Week3.html">📝 Assignment 4</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">📚 MDM EDA Walkthrough</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#🅾️-Loading-Data">🅾️ Loading Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#1️⃣-Understanding-Your-Data">1️⃣ Understanding Your Data</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#Display-basic-information-about-the-dataset"><strong>Display basic information about the dataset</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Display-the-first-5-rows-of-data"><strong>Display the first 5 rows of data</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Display-basic-statistics-of-the-numerical-columns:-likes,-shares,-comments,-and-followers"><strong>Display basic statistics of the numerical columns: likes, shares, comments, and followers</strong></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#2️⃣-Handling-Missing-Values">2️⃣ Handling Missing Values</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#1️⃣-Keeping-Null-Values-in-``likes``,-``shares``,-and-``comments``"><strong>1️⃣ Keeping Null Values in ``likes``, ``shares``, and ``comments``</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#2️⃣-Filling-Missing-Values-in-``language``-with-``'Unknown'``"><strong>2️⃣ Filling Missing Values in ``language`` with ``’Unknown’``</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#3️⃣-Filling-Missing-Values-in-location-with-'Unspecified'">3️⃣ <strong>Filling Missing Values in location with ‘Unspecified’</strong></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#3️⃣-Exploring-Distributions">3️⃣ Exploring Distributions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#4️⃣-Handling-Outliers">4️⃣ Handling Outliers</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#Visualizing-Outliers">Visualizing Outliers</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#5️⃣-Standardizing-Data-Types">5️⃣ Standardizing Data Types</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#6️⃣-Feature-Engineering">6️⃣ Feature Engineering</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#7️⃣-Basic-Visualizations">7️⃣ Basic Visualizations</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#Bar-Plots">Bar Plots</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Pie-Chart">Pie Chart</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Histogram">Histogram</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Boxplot">Boxplot</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Scatter-Plot">Scatter Plot</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Line-Plot">Line Plot</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Line-Plot-2">Line Plot 2</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Guest_Speaker2.html">🎤 Defense Threat Reduction Agency</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Assignment5_Week3.html">📝 Assignment 5</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Week 4 Fighting MDM (Available 29 March):</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Lesson8.html">📚 NLP and Sentiment Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lesson9.html">📚 Strategic MDM Interventions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Guest_Speaker3.html">🎤 US Space Forces Indo-Pacific, Intelligence Directorate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Assignment6.html">📝 Assignment 6</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Weeks 5 &amp; 6:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Challenge.html">📝 Challenge Instructions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Guest_Speaker4.html">🎤 Joint Staff, Future Capabilities Division</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Guest_Speaker5.html">🎤 Career Panel</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Counter Malign Influence: Strategies, Insights, and Tools</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">📚 MDM EDA Walkthrough</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/notebooks/Lesson7_Week3.ipynb.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="📚-MDM-EDA-Walkthrough">
+<h1>📚 MDM EDA Walkthrough<a class="headerlink" href="#📚-MDM-EDA-Walkthrough" title="Link to this heading"></a></h1>
+<p>Welcome to <strong>Lesson 7</strong>! This is where we transition from discussing MDM conceptually to actively analyzing real-world misinformation data using Python.</p>
+<p>In this lesson, we will conduct an <strong>exploratory data analysis (EDA)</strong> to uncover trends in misinformation engagement on social media.</p>
+<hr class="docutils" />
+<p>🗂️ What’s in Our Dataset?</p>
+<p>To simulate real-world challenges in misinformation research, our dataset has been modified to include:</p>
+<div class="line-block">
+<div class="line">🔹 <strong>Multilingual Tweets</strong> – Introduces the need for language detection and processing.</div>
+<div class="line">🔹 <strong>Altered Timestamps</strong> – Simulates irregularities in data collection, requiring preprocessing.</div>
+<div class="line">🔹 <strong>Randomized Engagement Metrics</strong> – Introduces noise, requiring filtering and normalization.</div>
+<div class="line">🔹 <strong>Obfuscated User IDs and Tweets</strong></div>
+<div class="line">🔹 <strong>Fake Labels</strong></div>
+</div>
+<p>Each of these modifications will prompt us to ask <strong>key questions about data reliability, preprocessing strategies, and analysis validity.</strong></p>
+<hr class="docutils" />
+<p>🛠️ What Will We Do in This Lesson?</p>
+<p>This walkthrough is designed to guide you through the <strong>decision-making process of EDA</strong>, with a focus on real-world application. We will:</p>
+<ul class="simple">
+<li><p>🔍 <strong>Examine dataset structure</strong> – What information do we have? What’s missing?</p></li>
+<li><p>📊 <strong>Explore summary statistics and trends</strong> – How is misinformation engagement distributed?</p></li>
+<li><p>🧹 <strong>Discuss data cleaning considerations</strong> – How do preprocessing choices impact analysis?</p></li>
+</ul>
+<p>This is not just about running code—it’s about <strong>thinking critically about our data and analysis choices</strong>.</p>
+<hr class="docutils" />
+<p>🚀 Preparing for the Next Step</p>
+<p>This lesson is application-focused, guiding you through the <strong>questions and reasoning behind misinformation data analysis</strong>.</p>
+<p>💡 <strong>In Assignments 4 &amp; 5, you will apply these concepts through hands-on coding.</strong></p>
+<p>Let’s dive in!</p>
+<hr class="docutils" />
+<section id="🅾️-Loading-Data">
+<h2>🅾️ Loading Data<a class="headerlink" href="#🅾️-Loading-Data" title="Link to this heading"></a></h2>
+<p><img alt="loading" src="../_images/loading.png" /></p>
+<p>Before diving into visualization, we first <strong>inspect the dataset</strong> to understand its shape, column types, and general properties.</p>
+<p>To explore these properties, we’ll use pandas. Let’s start by loading a dataset and inspecting its structure.</p>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[1]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Import the pandas library</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+</pre></div>
+</div>
+</div>
+<ul class="simple">
+<li><p><strong>What it does</strong>: This line imports the pandas library, a powerful tool for handling and analyzing structured data (tables, CSVs, Excel files, etc.).</p></li>
+</ul>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Load dataset using pandas function read_csv</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;https://raw.githubusercontent.com/BevRice/CMI_Course/refs/heads/main/docs/source/data/data.csv&quot;</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;|&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<ul class="simple">
+<li><p><strong>What this line does</strong>: Loads a dataset named data.csv from the data folder, which is one directory up (../) from my notebook’s current location (e.g., source/notebooks). Uses the read_csv() function from pandas to open the file and convert it into a DataFrame (a table-like structure for data analysis). sep=’|’ specifies that the data is separated by pipes (|) instead of commas (,), which is useful for files that don’t use the standard CSV format. Saves the dataframe in the variable “df”</p></li>
+</ul>
+<p>📌 <strong>What If the File Type is Different?</strong></p>
+<div class="line-block">
+<div class="line">1️⃣ <strong>Comma-Separated CSV</strong> (Default) -&gt; df = pd.read_csv(“../data/data.csv”) # No need for sep=’,’</div>
+<div class="line">- If the dataset uses commas as delimiters (which is the default for CSV files), there is no need to specify a separator. Simply loading the file will work as expected.</div>
+</div>
+<div class="line-block">
+<div class="line">2️⃣ <strong>Tab-Separated Values</strong> (TSV) -&gt; df = pd.read_csv(“../data/data.tsv”, sep=’<span class="math">\t'</span>)</div>
+<div class="line">- If the dataset is tab-separated, such as files with <code class="docutils literal notranslate"><span class="pre">.tsv</span></code> or <code class="docutils literal notranslate"><span class="pre">.txt</span></code> extensions, specifying the tab (<code class="docutils literal notranslate"><span class="pre">\t</span></code>) as a separator is necessary to correctly parse the data.</div>
+</div>
+<div class="line-block">
+<div class="line">3️⃣ <strong>Excel File</strong> (.xlsx) -&gt; df = pd.read_excel(“../data/data.xlsx”, sheet_name=”Sheet1”)</div>
+<div class="line">- For Excel files, a different function is required to read the data properly. Additionally, if the file contains multiple sheets, the specific sheet name must be provided to ensure the correct data is loaded.</div>
+</div>
+<div class="line-block">
+<div class="line">4️⃣ <strong>JSON File</strong> -&gt; df = pd.read_json(“../data/data.json”)</div>
+<div class="line">- JSON files, commonly used in web data and APIs, can be loaded directly without needing to specify separators. The data is typically structured as key-value pairs, making it suitable for hierarchical or nested datasets.</div>
+</div>
+<div class="line-block">
+<div class="line">5️⃣ <strong>Parquet File</strong> (Efficient for Large Datasets) -&gt; df = pd.read_parquet(“../data/data.parquet”)</div>
+<div class="line">- Parquet is an efficient file format optimized for large-scale data storage and retrieval. It is particularly useful for big data processing because it supports columnar storage, which speeds up queries and reduces memory usage.</div>
+</div>
+<div class="line-block">
+<div class="line"><img alt="understand" src="../_images/understanding_data.png" /></div>
+<div class="line"><a class="reference external" href="https://www.mercurymediatechnology.com/en/blog/5-tips-to-help-you-understand-your-data/">Image Source: Mercury Media Technology</a></div>
+</div>
+</section>
+<section id="1️⃣-Understanding-Your-Data">
+<h2>1️⃣ Understanding Your Data<a class="headerlink" href="#1️⃣-Understanding-Your-Data" title="Link to this heading"></a></h2>
+<p>Before diving into visualization, we first <strong>inspect the dataset</strong> to understand its shape, column types, and general properties.</p>
+<section id="Display-basic-information-about-the-dataset">
+<h3><strong>Display basic information about the dataset</strong><a class="headerlink" href="#Display-basic-information-about-the-dataset" title="Link to this heading"></a></h3>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+RangeIndex: 31498 entries, 0 to 31497
+Data columns (total 10 columns):
+ #   Column     Non-Null Count  Dtype
+---  ------     --------------  -----
+ 0   user_id    31498 non-null  object
+ 1   tweet_id   31498 non-null  object
+ 2   likes      15000 non-null  float64
+ 3   shares     15000 non-null  float64
+ 4   comments   15000 non-null  float64
+ 5   followers  31496 non-null  float64
+ 6   timestamp  31496 non-null  object
+ 7   language   15000 non-null  object
+ 8   location   27941 non-null  object
+ 9   label      31498 non-null  object
+dtypes: float64(4), object(6)
+memory usage: 2.4+ MB
+</pre></div></div>
+</div>
+<ul>
+<li><p><strong>What this line does</strong>**: provides a concise summary of a dataframe including:</p>
+<ol class="arabic">
+<li><p>total number of entries (or rows of data)</p></li>
+<li><p>number of columns</p></li>
+<li><p>column names</p></li>
+<li><p>number of non-null (non-missing) values in each column</p></li>
+<li><p>data types of each column</p></li>
+<li><p class="rubric" id="approximate-memory-usage-of-the-dataframe">approximate memory usage of the dataframe</p>
+</li>
+</ol>
+</li>
+<li><p><strong>What can we tell about the data from this</strong>:</p>
+<ol class="arabic simple">
+<li><p>There are 31498 rows of twitter data here with the following 10 column names: user_id, tweet_id, likes, shares, comments, followers, timestamp, language, location, and label</p></li>
+<li><p>There are missing values in most columns and approximately half of entries are missing likes, shares, comments, and language</p></li>
+<li><p>Likes, shares, comments, and followers are all numerical (float)</p></li>
+<li><p>Timestamp column is currently stored as the data type “object” and may need to be converted to datetime for time-based analysis</p></li>
+</ol>
+</li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="Display-the-first-5-rows-of-data">
+<h3><strong>Display the first 5 rows of data</strong><a class="headerlink" href="#Display-the-first-5-rows-of-data" title="Link to this heading"></a></h3>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
+</pre></div>
+</div>
+<div class="output_area rendered_html docutils container">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>user_id</th>
+      <th>tweet_id</th>
+      <th>likes</th>
+      <th>shares</th>
+      <th>comments</th>
+      <th>followers</th>
+      <th>timestamp</th>
+      <th>language</th>
+      <th>location</th>
+      <th>label</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>user_id_1</td>
+      <td>tweet_id_1</td>
+      <td>435.0</td>
+      <td>80.0</td>
+      <td>26.0</td>
+      <td>2793.0</td>
+      <td>2021/08/25 15:56:00</td>
+      <td>English</td>
+      <td>London, UK</td>
+      <td>Fake</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>user_id_2</td>
+      <td>tweet_id_2</td>
+      <td>453.0</td>
+      <td>111.0</td>
+      <td>89.0</td>
+      <td>2524.0</td>
+      <td>2022/07/10 14:43:31</td>
+      <td>English</td>
+      <td>Johannesburg, South Africa</td>
+      <td>Fake</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>user_id_3</td>
+      <td>tweet_id_3</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>6380.0</td>
+      <td>2021-07-17 21:13:46</td>
+      <td>NaN</td>
+      <td>Melbourne, Australia</td>
+      <td>Fake</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>user_id_4</td>
+      <td>tweet_id_4</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>399.0</td>
+      <td>2021-01-21 22:53:25</td>
+      <td>NaN</td>
+      <td>Does it matter?</td>
+      <td>Fake</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>user_id_5</td>
+      <td>tweet_id_2</td>
+      <td>108.0</td>
+      <td>88.0</td>
+      <td>41.0</td>
+      <td>362.0</td>
+      <td>2021-11-09 10:50:00</td>
+      <td>English</td>
+      <td>New York, USA</td>
+      <td>Fake</td>
+    </tr>
+  </tbody>
+</table>
+</div></div>
+</div>
+<p>🔍 <strong>Key Observations from ``df.head()``</strong></p>
+<p>After displaying the first few rows of the dataset, we can make several key observations regarding the data structure, potential issues, and areas for further analysis.</p>
+<hr class="docutils" />
+<p>1️⃣ <strong>Missing Values Present</strong></p>
+<ul class="simple">
+<li><p>Some rows have missing values (<code class="docutils literal notranslate"><span class="pre">NaN</span></code>), particularly in the <code class="docutils literal notranslate"><span class="pre">likes</span></code>, <code class="docutils literal notranslate"><span class="pre">shares</span></code>, <code class="docutils literal notranslate"><span class="pre">comments</span></code>, and <code class="docutils literal notranslate"><span class="pre">language</span></code> columns.</p></li>
+<li><p>This suggests that <strong>some tweets do not have engagement metrics recorded</strong>, possibly due to data collection inconsistencies or missing records.</p></li>
+<li><p>The <code class="docutils literal notranslate"><span class="pre">language</span></code> column also contains missing values, meaning <strong>some tweets may lack detected language data</strong>.</p></li>
+</ul>
+<p>✅ <strong>Optional Next Steps:</strong> Investigate why these values are missing and determine whether to fill them with default values, impute them, or remove those rows.</p>
+<hr class="docutils" />
+<p>2️⃣ <strong>Timestamp Data Needs Conversion</strong></p>
+<ul class="simple">
+<li><p>The <code class="docutils literal notranslate"><span class="pre">timestamp</span></code> column contains <strong>date and time information</strong> in various formats.</p>
+<ul>
+<li><p>Some timestamps are <strong>YYYY/MM/DD HH:MM:SS</strong> format, while others have <strong>YYYY-MM-DD HH:MM:SS</strong>.</p></li>
+</ul>
+</li>
+<li><p>This data should be <strong>converted to ``datetime`` format</strong> for accurate time-based analysis.</p></li>
+</ul>
+<p>✅ <strong>Optional Next Steps:</strong> Standardize the timestamp format and analyze trends over time (e.g., <strong>peak misinformation periods</strong>).</p>
+<hr class="docutils" />
+<p>3️⃣ <strong>Location Data is Inconsistent</strong></p>
+<ul class="simple">
+<li><p>The <code class="docutils literal notranslate"><span class="pre">location</span></code> column contains <strong>both specific places and vague responses</strong>:</p>
+<ul>
+<li><p><strong>“London, UK”</strong>, <strong>“Johannesburg, South Africa”</strong>, and <strong>“Melbourne, Australia”</strong> are <strong>valid geographic locations</strong>.</p></li>
+<li><p><strong>“Does it matter?”</strong> is <strong>not a valid location</strong> and may require filtering or categorization.</p></li>
+</ul>
+</li>
+</ul>
+<p>✅ <strong>Optional Next Steps:</strong> Clean the <code class="docutils literal notranslate"><span class="pre">location</span></code> column by:</p>
+<ul class="simple">
+<li><p>Standardizing formats (e.g., separating country and city).</p></li>
+<li><p>Handling vague responses or missing values appropriately.</p></li>
+</ul>
+<hr class="docutils" />
+<p>4️⃣ <strong>Varying Engagement Metrics</strong></p>
+<ul class="simple">
+<li><p>Some tweets have high engagement (<code class="docutils literal notranslate"><span class="pre">likes</span></code>, <code class="docutils literal notranslate"><span class="pre">shares</span></code>, <code class="docutils literal notranslate"><span class="pre">comments</span></code>), while others have <strong>missing engagement data</strong>.</p></li>
+<li><p>Example:</p>
+<ul>
+<li><p>The tweet from <strong>user_id 2</strong> has <strong>453 likes, 111 shares, and 89 comments</strong> (high engagement).</p></li>
+<li><p>The tweet from <strong>user_id 3</strong> has <strong>NaN for likes, shares, and comments</strong> (missing engagement).</p></li>
+</ul>
+</li>
+<li><p>Tweets with <strong>controversial content</strong> may receive higher engagement.</p></li>
+</ul>
+<p>✅ <strong>Optional Next Steps:</strong> Perform <strong>statistical analysis on engagement levels</strong> and whether misinformation tweets tend to receive more interactions.</p>
+<hr class="docutils" />
+<p>5️⃣ <strong>Differences in Followers Count</strong></p>
+<ul class="simple">
+<li><p>The <code class="docutils literal notranslate"><span class="pre">followers</span></code> column shows varying audience sizes:</p>
+<ul>
+<li><p><strong>user_id 3</strong> has <strong>6,380 followers</strong>.</p></li>
+<li><p><strong>user_id 4</strong> has <strong>only 399 followers</strong>.</p></li>
+</ul>
+</li>
+<li><p>The <strong>follower count might influence engagement</strong>—tweets from users with more followers might have more interactions.</p></li>
+</ul>
+<p>✅ <strong>Optional Next Steps:</strong> Investigate the relationship between <strong>follower count and tweet engagement</strong> to see if higher follower numbers correlate with more likes, shares, or comments.</p>
+<hr class="docutils" />
+<p>🚀 <strong>Summary of Key Findings &amp; Recommended Actions</strong></p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Issue</strong></p></th>
+<th class="head"><p><strong>Observation</strong></p></th>
+<th class="head"><p><strong>Recommended Action</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Missing Values</strong></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">likes</span></code>, <code class="docutils literal notranslate"><span class="pre">shares</span></code>, <code class="docutils literal notranslate"><span class="pre">comments</span></code>, <code class="docutils literal notranslate"><span class="pre">language</span></code> columns have <code class="docutils literal notranslate"><span class="pre">NaN</span></code> values.</p></td>
+<td><p>Handle missing data via imputation or removal.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Timestamp Formatting</strong></p></td>
+<td><p>Different timestamp formats are present.</p></td>
+<td><p>Convert to <strong>datetime format</strong> for time-based analysis.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Inconsistent Locations</strong></p></td>
+<td><p>Some entries contain <strong>valid locations</strong>, while others are vague.</p></td>
+<td><p>Standardize and clean the <code class="docutils literal notranslate"><span class="pre">location</span></code> column.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Engagement Disparity</strong></p></td>
+<td><p>Some tweets have <strong>high likes, shares, and comments</strong>, while others have <strong>none</strong>.</p></td>
+<td><p>Analyze <strong>misinformation virality</strong> trends.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Followers Count Variance</strong></p></td>
+<td><p>Users have <strong>different audience sizes</strong>, influencing tweet visibility.</p></td>
+<td><p>Investigate <strong>correlation between followers and engagement</strong>.</p></td>
+</tr>
+</tbody>
+</table>
+<hr class="docutils" />
+</section>
+<section id="Display-basic-statistics-of-the-numerical-columns:-likes,-shares,-comments,-and-followers">
+<h3><strong>Display basic statistics of the numerical columns: likes, shares, comments, and followers</strong><a class="headerlink" href="#Display-basic-statistics-of-the-numerical-columns:-likes,-shares,-comments,-and-followers" title="Link to this heading"></a></h3>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
+</pre></div>
+</div>
+<div class="output_area rendered_html docutils container">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>likes</th>
+      <th>shares</th>
+      <th>comments</th>
+      <th>followers</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>15000.000000</td>
+      <td>15000.000000</td>
+      <td>15000.000000</td>
+      <td>3.149600e+04</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>285.178533</td>
+      <td>169.210067</td>
+      <td>57.194467</td>
+      <td>3.034292e+04</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>500.855891</td>
+      <td>269.370529</td>
+      <td>101.647370</td>
+      <td>4.629674e+05</td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000e+00</td>
+    </tr>
+    <tr>
+      <th>25%</th>
+      <td>124.000000</td>
+      <td>76.000000</td>
+      <td>25.000000</td>
+      <td>3.760000e+02</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>251.000000</td>
+      <td>151.000000</td>
+      <td>50.000000</td>
+      <td>1.662000e+03</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>381.000000</td>
+      <td>227.000000</td>
+      <td>76.000000</td>
+      <td>3.555000e+03</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>9932.000000</td>
+      <td>4982.000000</td>
+      <td>1986.000000</td>
+      <td>1.636969e+07</td>
+    </tr>
+  </tbody>
+</table>
+</div></div>
+</div>
+<p>🔍 <strong>Key Observations from ``df.describe()``</strong></p>
+<p><strong>1️⃣ General Observations</strong></p>
+<ul class="simple">
+<li><p>The dataset contains <strong>15,000 non-null values</strong> for <code class="docutils literal notranslate"><span class="pre">likes</span></code>, <code class="docutils literal notranslate"><span class="pre">shares</span></code>, and <code class="docutils literal notranslate"><span class="pre">comments</span></code>, meaning that <strong>approximately 16,498 tweets are missing engagement data</strong> (since the dataset has 31,498 rows).</p></li>
+<li><p>The <code class="docutils literal notranslate"><span class="pre">followers</span></code> column has <strong>31,496 non-null values</strong>, indicating that only <strong>two entries are missing follower data</strong> (which is minimal).</p></li>
+</ul>
+<hr class="docutils" />
+<p><strong>2️⃣ Engagement Metrics (``likes``, ``shares``, ``comments``)</strong></p>
+<p>These columns represent how much interaction each tweet received. The statistics show <strong>high variability in engagement</strong>:</p>
+<ul class="simple">
+<li><p><strong>Mean (Average Engagement)</strong></p>
+<ul>
+<li><p><strong>Likes:</strong> <code class="docutils literal notranslate"><span class="pre">285.18</span></code></p></li>
+<li><p><strong>Shares:</strong> <code class="docutils literal notranslate"><span class="pre">169.21</span></code></p></li>
+<li><p><strong>Comments:</strong> <code class="docutils literal notranslate"><span class="pre">57.19</span></code></p></li>
+<li><p>These averages suggest <strong>most tweets receive moderate engagement</strong>, but extreme outliers may be inflating these numbers.</p></li>
+</ul>
+</li>
+<li><p><strong>Standard Deviation (Spread of Engagement)</strong></p>
+<ul>
+<li><p><strong>Likes:</strong> <code class="docutils literal notranslate"><span class="pre">500.85</span></code></p></li>
+<li><p><strong>Shares:</strong> <code class="docutils literal notranslate"><span class="pre">269.37</span></code></p></li>
+<li><p><strong>Comments:</strong> <code class="docutils literal notranslate"><span class="pre">101.65</span></code></p></li>
+<li><p>High standard deviations suggest <strong>a large range of engagement levels</strong>, with some tweets being highly popular and others receiving little attention.</p></li>
+</ul>
+</li>
+<li><p><strong>Minimum &amp; Quartiles</strong></p>
+<ul>
+<li><p><strong>Min values = 0</strong> for all engagement metrics, meaning <strong>some tweets had no likes, shares, or comments</strong>.</p></li>
+<li><p><strong>25th percentile (Q1) values</strong>:</p>
+<ul>
+<li><p><strong>Likes ≤ 124</strong>, <strong>Shares ≤ 76</strong>, <strong>Comments ≤ 25</strong></p></li>
+<li><p>At least 25% of tweets have <strong>low engagement</strong>.</p></li>
+</ul>
+</li>
+<li><p><strong>75th percentile (Q3) values</strong>:</p>
+<ul>
+<li><p><strong>Likes ≤ 381</strong>, <strong>Shares ≤ 227</strong>, <strong>Comments ≤ 76</strong></p></li>
+<li><p>Even among the top 25% of tweets, engagement remains moderate.</p></li>
+</ul>
+</li>
+<li><p><strong>Max values are disproportionately high</strong>:</p>
+<ul>
+<li><p><strong>9,932 likes</strong>, <strong>4,982 shares</strong>, <strong>1,986 comments</strong></p></li>
+<li><p>Suggests the presence of <strong>viral tweets with extreme engagement</strong>.</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>✅ <strong>Optional Next Steps:</strong></p>
+<ul class="simple">
+<li><p>Investigate <strong>engagement distribution</strong> (e.g., histogram, boxplot) to confirm if engagement is <strong>skewed</strong>.</p></li>
+<li><p>Analyze whether <strong>misinformation tweets receive higher engagement</strong> than factual ones.</p></li>
+<li><p>Consider <strong>log-transforming engagement metrics</strong> to handle extreme values.</p></li>
+</ul>
+<hr class="docutils" />
+<p><strong>3️⃣ Followers (``followers``)</strong></p>
+<ul class="simple">
+<li><p><strong>Mean followers:</strong> <code class="docutils literal notranslate"><span class="pre">30,342</span></code>, suggesting <strong>high audience sizes on average</strong>, but likely skewed by large accounts.</p></li>
+<li><p><strong>Standard deviation:</strong> <code class="docutils literal notranslate"><span class="pre">462,967</span></code>, which is <strong>extremely high</strong>, indicating a <strong>massive variation</strong> in follower counts.</p></li>
+<li><p><strong>Min &amp; Quartiles</strong></p>
+<ul>
+<li><p><strong>Min value = 0</strong>, meaning some users <strong>have no followers</strong> (likely bot accounts or inactive users).</p></li>
+<li><p><strong>25th percentile (Q1) = 376 followers</strong>, meaning 25% of users have <strong>fewer than 376 followers</strong>.</p></li>
+<li><p><strong>50th percentile (Median) = 1,662 followers</strong>, showing that <strong>half of the users have under 1,662 followers</strong>.</p></li>
+<li><p><strong>75th percentile (Q3) = 3,555 followers</strong>, meaning even the top 25% of users have <strong>moderate followings</strong>.</p></li>
+<li><p><strong>Max value = 16,369,690 followers</strong>, indicating the presence of <strong>high-profile users or organizations</strong>.</p></li>
+</ul>
+</li>
+</ul>
+<p>✅ <strong>Optional Next Steps:</strong></p>
+<ul class="simple">
+<li><p><strong>Log-transform follower counts</strong> for better analysis due to extreme outliers.</p></li>
+<li><p>Compare <strong>follower count vs. engagement</strong> to see if larger accounts receive more interactions.</p></li>
+<li><p>Detect <strong>bot-like behavior</strong>, especially accounts with <strong>0 followers but high engagement</strong>.</p></li>
+</ul>
+<hr class="docutils" />
+<p>🚀 <strong>Summary of Key Findings &amp; Next Steps</strong></p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Metric</strong></p></th>
+<th class="head"><p><strong>Observation</strong></p></th>
+<th class="head"><p><strong>Recommended Action</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Missing Engagement Data</strong></p></td>
+<td><p>16,498 tweets lack engagement values.</p></td>
+<td><p>Handle missing values (fill with 0 or impute).</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>High Variability in Engagement</strong></p></td>
+<td><p>Some tweets have <strong>viral reach</strong>, others have <strong>zero interactions</strong>.</p></td>
+<td><p>Analyze outliers and engagement distribution.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Extreme Outliers in Followers</strong></p></td>
+<td><p>A few users have <strong>millions of followers</strong>, while many have <strong>low audience sizes</strong>.</p></td>
+<td><p>Log-transform follower counts for better scaling.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Skewed Engagement Distribution</strong></p></td>
+<td><p>Most tweets have <strong>low likes/shares/comments</strong>, but a few have <strong>huge spikes</strong>.</p></td>
+<td><p>Use <strong>boxplots/histograms</strong> to visualize engagement spread.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Followers vs. Engagement</strong></p></td>
+<td><p>Some accounts with <strong>low followers still receive high engagement</strong>.</p></td>
+<td><p>Explore bot detection or misinformation amplification trends.</p></td>
+</tr>
+</tbody>
+</table>
+<hr class="docutils" />
+<p>Now that we have a data <strong>snapshot (``df.info()``)</strong>, examined the dataset’s <strong>structure (``df.head()``)</strong> and <strong>statistical properties (``df.describe()``)</strong>, we can begin <strong>data preprocessing</strong>. This includes:</p>
+<div class="line-block">
+<div class="line">✅ Handling <strong>missing values</strong> in engagement metrics.</div>
+<div class="line">✅ Standardizing <strong>timestamp formats</strong> and preparing categorical data.</div>
+<div class="line">✅ Standardizing <strong>locations</strong>. ✅ Investigating <strong>outliers</strong> and deciding whether to filter them.</div>
+</div>
+<p>🚀 <strong>Let’s move on to cleaning and preparing our data!</strong></p>
+<hr class="docutils" />
+<p><img alt="missing" src="../_images/missing_data.png" /></p>
+</section>
+</section>
+<section id="2️⃣-Handling-Missing-Values">
+<h2>2️⃣ Handling Missing Values<a class="headerlink" href="#2️⃣-Handling-Missing-Values" title="Link to this heading"></a></h2>
+<p>🔍 <strong>Identifying Missing Data</strong> From our previous <code class="docutils literal notranslate"><span class="pre">df.info()</span></code> analysis, we found missing values in multiple columns:</p>
+<ul class="simple">
+<li><p><strong>``likes``, ``shares``, ``comments``</strong> (missing for about half the dataset).</p></li>
+<li><p><strong>``language``</strong> (missing for a significant number of tweets).</p></li>
+<li><p><strong>``location``</strong> (some vague or missing entries).</p></li>
+</ul>
+<div class="line-block">
+<div class="line">✅ <strong>Strategies for Handling Missing Data</strong></div>
+<div class="line">| <strong>Column</strong> | <strong>Missing Data Issue</strong> | <strong>Recommended Solution</strong> | |———–|—————–|——————| | <code class="docutils literal notranslate"><span class="pre">likes</span></code>, <code class="docutils literal notranslate"><span class="pre">shares</span></code>, <code class="docutils literal notranslate"><span class="pre">comments</span></code> | Some tweets have no engagement data. | Leave as null or Fill missing values with <code class="docutils literal notranslate"><span class="pre">0</span></code> (assuming no engagement). | | <code class="docutils literal notranslate"><span class="pre">language</span></code> | Some tweets lack language detection. | Use text-based language detection or mark as <code class="docutils literal notranslate"><span class="pre">&quot;Unknown&quot;</span></code>. | | <code class="docutils literal notranslate"><span class="pre">location</span></code> | Some users did not provide locations. | Mark as <code class="docutils literal notranslate"><span class="pre">&quot;Unknown&quot;</span></code> or
+categorize as <code class="docutils literal notranslate"><span class="pre">&quot;Unspecified&quot;</span></code>. |</div>
+</div>
+<hr class="docutils" />
+<p>🔍 <strong>Handling Missing Values in Our Data</strong></p>
+<p>Handling missing values is an essential part of data preprocessing. Instead of removing missing data entirely, we must decide the best strategy for each column based on its significance and the nature of the data.</p>
+<hr class="docutils" />
+<section id="1️⃣-Keeping-Null-Values-in-``likes``,-``shares``,-and-``comments``">
+<h3><strong>1️⃣ Keeping Null Values in ``likes``, ``shares``, and ``comments``</strong><a class="headerlink" href="#1️⃣-Keeping-Null-Values-in-``likes``,-``shares``,-and-``comments``" title="Link to this heading"></a></h3>
+<div class="line-block">
+<div class="line">✅ <strong>Why Leave These Values as Null?</strong></div>
+<div class="line">Instead of filling missing engagement values with <code class="docutils literal notranslate"><span class="pre">0</span></code>, we will <strong>leave them as ``NaN``</strong> (null). This approach is beneficial for the following reasons:</div>
+</div>
+<ul class="simple">
+<li><p><strong>Preserves the distinction between missing data and true zero engagement:</strong></p>
+<ul>
+<li><p>A <code class="docutils literal notranslate"><span class="pre">0</span></code> could indicate a tweet received no interactions.</p></li>
+<li><p>A <code class="docutils literal notranslate"><span class="pre">NaN</span></code> might mean the engagement data was not collected or is unavailable.</p></li>
+</ul>
+</li>
+<li><p><strong>Prevents misleading statistical summaries:</strong></p>
+<ul>
+<li><p>Filling missing values with <code class="docutils literal notranslate"><span class="pre">0</span></code> could artificially <strong>lower the mean engagement rates</strong> and skew distribution analysis.</p></li>
+</ul>
+</li>
+<li><p><strong>Allows for advanced imputation strategies later:</strong></p>
+<ul>
+<li><p>If needed, we can estimate missing values based on engagement trends rather than assuming <code class="docutils literal notranslate"><span class="pre">0</span></code>.</p></li>
+</ul>
+</li>
+</ul>
+<p>✅ <strong>Action Taken:</strong> Leave <code class="docutils literal notranslate"><span class="pre">likes</span></code>, <code class="docutils literal notranslate"><span class="pre">shares</span></code>, and <code class="docutils literal notranslate"><span class="pre">comments</span></code> as they are (<code class="docutils literal notranslate"><span class="pre">NaN</span></code>).</p>
+</section>
+<hr class="docutils" />
+<section id="2️⃣-Filling-Missing-Values-in-``language``-with-``'Unknown'``">
+<h3><strong>2️⃣ Filling Missing Values in ``language`` with ``’Unknown’``</strong><a class="headerlink" href="#2️⃣-Filling-Missing-Values-in-``language``-with-``'Unknown'``" title="Link to this heading"></a></h3>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[6]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;language&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;language&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="s1">&#39;Unknown&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<ul class="simple">
+<li><p>This line of code replaces all missing values (NaN) in the language column with ‘Unknown’.</p></li>
+</ul>
+<p>✅ Why is this a good approach?</p>
+<ul class="simple">
+<li><p>Prevents dropping useful rows: If we removed rows with missing languages, we might lose valuable engagement and content data.</p></li>
+<li><p>Maintains categorical consistency: Instead of having null values, which may cause issues in categorical analysis, we explicitly mark unknown entries.</p></li>
+<li><p>Helps during filtering and analysis: Analysts can easily filter for “Unknown” languages and decide how to handle them later.</p></li>
+</ul>
+<p>✅ <strong>Action Taken</strong>: Replace missing values in language with ‘Unknown’.</p>
+</section>
+<section id="3️⃣-Filling-Missing-Values-in-location-with-'Unspecified'">
+<h3>3️⃣ <strong>Filling Missing Values in location with ‘Unspecified’</strong><a class="headerlink" href="#3️⃣-Filling-Missing-Values-in-location-with-'Unspecified'" title="Link to this heading"></a></h3>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[7]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;location&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;location&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="s1">&#39;Unspecified&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<ul class="simple">
+<li><p>This line replaces all NaN values in the location column with ‘Unspecified’.</p></li>
+</ul>
+<p>✅ Why is this a good approach?</p>
+<ul class="simple">
+<li><p>Retains valuable tweet data: Removing rows with missing locations would result in unnecessary data loss.</p></li>
+<li><p>Standardizes missing location data: Instead of leaving blank values, “Unspecified” makes it clear that the location is unknown.</p></li>
+<li><p>Useful for geographical analysis: Analysts can easily group “Unspecified” locations separately from real locations.</p></li>
+</ul>
+<p>✅ <strong>Action Taken</strong>: Replace missing values in location with ‘Unspecified’.</p>
+</section>
+</section>
+<section id="3️⃣-Exploring-Distributions">
+<h2>3️⃣ Exploring Distributions<a class="headerlink" href="#3️⃣-Exploring-Distributions" title="Link to this heading"></a></h2>
+<p>Understanding the spread of numerical data helps us detect skewness, outliers, and potential transformations needed.</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[8]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Import required libraries</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">seaborn</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sns</span>
+
+<span class="c1"># Plot histograms for numerical columns</span>
+<span class="n">df</span><span class="p">[[</span><span class="s1">&#39;likes&#39;</span><span class="p">,</span> <span class="s1">&#39;shares&#39;</span><span class="p">,</span> <span class="s1">&#39;comments&#39;</span><span class="p">,</span> <span class="s1">&#39;followers&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">8</span><span class="p">),</span> <span class="n">bins</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_Lesson7_Week3_26_0.png" src="../_images/notebooks_Lesson7_Week3_26_0.png" />
+</div>
+</div>
+<p>X-axis: The value of the variable (e.g., number of likes, shares, etc.)</p>
+<p>Y-axis: Frequency (i.e., how many posts/users fall into each bin/range)</p>
+<p>🔍 <strong>Key Observations:</strong></p>
+<ul class="simple">
+<li><p>1️⃣ Highly Skewed Distributions</p>
+<ul>
+<li><p>All four variables appear highly right-skewed, meaning most values are concentrated at the lower end of the scale with a few extreme outliers.</p></li>
+<li><p>This is common in social media data where a small percentage of posts get very high engagement while most receive little to no interaction.</p></li>
+</ul>
+</li>
+<li><p>2️⃣ Likes, Shares, and Comments Are Heavily Clustered at Low Values</p>
+<ul>
+<li><p>The vast majority of tweets have very few likes, shares, and comments.</p></li>
+<li><p>There are some extreme values (outliers) that are likely from viral tweets.</p></li>
+<li><p>The long right tail suggests that log transformation may be useful for better visualization.</p></li>
+</ul>
+</li>
+<li><p>3️⃣ Followers Distribution Shows a Similar Trend</p>
+<ul>
+<li><p>Most users have very few followers, but a few accounts have millions of followers.</p></li>
+<li><p>This aligns with the power law distribution of social media, where a small number of influencers dominate engagement.</p></li>
+</ul>
+</li>
+</ul>
+<p>📌 <strong>Next Steps: How to Handle These Distributions?</strong></p>
+<p>✅ Consider Log Transformation: Applying log(1 + x) to likes, shares, comments, and followers can reduce skewness and make patterns more interpretable.</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Import required libraries</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+
+<span class="c1">#Log transform the 4 numeric variables in the dataset</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;likes_log&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">log1p</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;likes&#39;</span><span class="p">])</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;shares_log&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">log1p</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;shares&#39;</span><span class="p">])</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;comments_log&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">log1p</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;comments&#39;</span><span class="p">])</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;followers_log&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">log1p</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;followers&#39;</span><span class="p">])</span>
+
+<span class="c1"># Plot histograms for log transformed columns</span>
+<span class="n">df</span><span class="p">[[</span><span class="s1">&#39;likes_log&#39;</span><span class="p">,</span> <span class="s1">&#39;shares_log&#39;</span><span class="p">,</span> <span class="s1">&#39;comments_log&#39;</span><span class="p">,</span> <span class="s1">&#39;followers_log&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">8</span><span class="p">),</span> <span class="n">bins</span><span class="o">=</span><span class="mi">50</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_Lesson7_Week3_29_0.png" src="../_images/notebooks_Lesson7_Week3_29_0.png" />
+</div>
+</div>
+<p><strong>Key Improvements in Distribution</strong></p>
+<p>✅ Reduced Skewness</p>
+<ul class="simple">
+<li><p>The original histograms showed extreme right skewness (high concentration at low values with a long right tail).</p></li>
+<li><p>After log transformation, the data appears more balanced, helping make statistical analyses and visualizations more meaningful.</p></li>
+</ul>
+<p>✅ More Normal-Like Shape</p>
+<ul class="simple">
+<li><p>The transformed variables now resemble a bell-shaped or Gaussian-like distribution, particularly for followers_log.</p></li>
+<li><p>This improves the effectiveness of correlation analysis, regression modeling, and clustering techniques.</p></li>
+</ul>
+<p>✅ Better Comparability Between Small &amp; Large Values</p>
+<ul class="simple">
+<li><p>In the raw data, tweets with few likes were barely visible compared to viral tweets.</p></li>
+<li><p>Log transformation compresses extreme values, allowing for better visual contrast between lower- and higher-engagement tweets.</p></li>
+</ul>
+<p><strong>Observations on Specific Variables</strong></p>
+<ul class="simple">
+<li><p>likes_log, shares_log, and comments_log still somewhat skewed but much more interpretable than before. The peak around log(6) (~400 likes/shares/comments in raw scale) suggests a common engagement level for many tweets.</p></li>
+<li><p>followers_log now appears more symmetrical, resembling a normal distribution. This transformation is especially useful, given that some users have millions of followers while most have fewer than 10,000.</p></li>
+</ul>
+<p>📌 <strong>Next Steps: How to Use This Transformed Data?</strong></p>
+<p>This is just for your knowledge and is considered intermediate level analysis so we won’t dive too deeply into this.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>✅ Use log-transformed features in correlation and regression analysis
+
+✅ Apply standardization (z-scores) for modeling
+
+✅ Explore Engagement Patterns by User Type
+
+✅ Feature Engineering Considerations:
+    - Should we create an engagement_score using a weighted combination of likes_log, shares_log, and comments_log?
+    - Should we segment users into low-, mid-, and high-follower groups based on followers_log?
+</pre></div>
+</div>
+</section>
+<section id="4️⃣-Handling-Outliers">
+<h2>4️⃣ Handling Outliers<a class="headerlink" href="#4️⃣-Handling-Outliers" title="Link to this heading"></a></h2>
+<div class="line-block">
+<div class="line">🔍 <strong>Identifying Outliers</strong></div>
+<div class="line">From our <code class="docutils literal notranslate"><span class="pre">df.describe()</span></code> results:</div>
+</div>
+<ul class="simple">
+<li><p><strong>``likes``, ``shares``, ``comments``</strong> – The <strong>maximum values</strong> are much higher than the <strong>75th percentile</strong>, indicating possible viral tweets or outliers.</p></li>
+<li><p><strong>``followers``</strong> – The <strong>maximum value (16M followers)</strong> is an extreme outlier compared to the <strong>median (1,662 followers)</strong>.</p></li>
+</ul>
+<hr class="docutils" />
+<section id="Visualizing-Outliers">
+<h3>Visualizing Outliers<a class="headerlink" href="#Visualizing-Outliers" title="Link to this heading"></a></h3>
+<p>With our <strong>log-transformed numerical variables</strong>, we will use <strong>boxplots</strong> to <strong>visualize outliers</strong> and detect extreme values in <code class="docutils literal notranslate"><span class="pre">likes</span></code>, <code class="docutils literal notranslate"><span class="pre">shares</span></code>, <code class="docutils literal notranslate"><span class="pre">comments</span></code>, and <code class="docutils literal notranslate"><span class="pre">followers</span></code>.</p>
+<p>🔍 <strong>Recap Lesson 6 Why Use Boxplots?</strong></p>
+<ul class="simple">
+<li><p><strong>Boxplots help detect outliers</strong> by showing the <strong>interquartile range (IQR)</strong> and marking values that lie <strong>far beyond the whiskers</strong>.</p></li>
+<li><p><strong>They provide a quick comparison</strong> of engagement distributions across different features.</p></li>
+<li><p><strong>Outliers may indicate viral content</strong> or influential users, so understanding their impact is crucial.</p></li>
+</ul>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[10]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">seaborn</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sns</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+
+<span class="c1"># Define numeric columns to visualize</span>
+<span class="n">engagement_metrics</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;likes_log&#39;</span><span class="p">,</span> <span class="s1">&#39;shares_log&#39;</span><span class="p">,</span> <span class="s1">&#39;comments_log&#39;</span><span class="p">,</span> <span class="s1">&#39;followers_log&#39;</span><span class="p">]</span>
+
+<span class="c1"># Create boxplots</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="n">engagement_metrics</span><span class="p">])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Boxplots of Log-Transformed Engagement Metrics&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<br/></pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_Lesson7_Week3_33_0.png" src="../_images/notebooks_Lesson7_Week3_33_0.png" />
+</div>
+</div>
+<hr class="docutils" />
+<p>✅ <strong>Strategies for Handling Outliers</strong></p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Column</strong></p></th>
+<th class="head"><p><strong>Outlier Issue</strong></p></th>
+<th class="head"><p><strong>Recommended Solution</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">likes</span></code>, <code class="docutils literal notranslate"><span class="pre">shares</span></code>, <code class="docutils literal notranslate"><span class="pre">comments</span></code></p></td>
+<td><p>Viral tweets skew engagement distribution.</p></td>
+<td><p><strong>Leave as is</strong> (high engagement indicates influencers).</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">followers</span></code></p></td>
+<td><p>Large accounts distort analysis.</p></td>
+<td><p><strong>Leave as is</strong> (reflects real-world social influence).</p></td>
+</tr>
+</tbody>
+</table>
+<p>✅ <strong>Why We Are Keeping Outliers</strong> Instead of removing or modifying extreme values, we will <strong>leave them as they are</strong> because:</p>
+<ul class="simple">
+<li><p><strong>Influencers and viral tweets drive engagement</strong> – High values in <code class="docutils literal notranslate"><span class="pre">likes</span></code>, <code class="docutils literal notranslate"><span class="pre">shares</span></code>, and <code class="docutils literal notranslate"><span class="pre">comments</span></code> represent <strong>organic trends in social media activity</strong>.</p></li>
+<li><p><strong>Large follower counts reflect real-world dynamics</strong> – Social media has accounts with millions of followers, and excluding them would misrepresent the data.</p></li>
+<li><p><strong>Log transformations or capping could distort insights</strong> – Instead of suppressing outliers, we should analyze how they impact engagement patterns.</p></li>
+</ul>
+<p>❌ <strong>When Keeping Outliers Might Not Be the Best Option</strong></p>
+<p>In some cases, <strong>keeping extreme outliers could negatively impact the analysis</strong>:</p>
+<p>1️⃣ <strong>If Outliers Are the Result of Data Collection Errors</strong></p>
+<ul class="simple">
+<li><p>Example: If a dataset mistakenly records <strong>1 billion followers</strong> for an average user, it would <strong>distort statistical summaries</strong>.</p></li>
+<li><p><strong>Better Approach:</strong> Identify data entry errors and either correct or remove them.</p></li>
+</ul>
+<p>2️⃣ <strong>If Outliers Skew Statistical Models</strong></p>
+<ul class="simple">
+<li><p>Example: If performing <strong>linear regression</strong> on engagement vs. followers, <strong>a few extreme influencer accounts could dominate the model</strong>, leading to misleading predictions.</p></li>
+<li><p><strong>Better Approach:</strong> Apply <strong>log transformation</strong> to make the distribution more normal.</p></li>
+</ul>
+<p>3️⃣ <strong>If We Are Analyzing Typical User Behavior</strong></p>
+<ul class="simple">
+<li><p>Example: If we want insights into <strong>the average user’s engagement</strong>, keeping influencers in the dataset could lead to <strong>incorrect generalizations</strong>.</p></li>
+<li><p><strong>Better Approach:</strong> <strong>Winsorization</strong> (capping extreme values) or filtering out top 1% influencers.</p></li>
+</ul>
+<hr class="docutils" />
+</section>
+</section>
+<section id="5️⃣-Standardizing-Data-Types">
+<h2>5️⃣ Standardizing Data Types<a class="headerlink" href="#5️⃣-Standardizing-Data-Types" title="Link to this heading"></a></h2>
+<p>🔍 <strong>Issues with Data Types</strong></p>
+<ul class="simple">
+<li><p><strong>``timestamp``</strong> is stored as an <strong>object</strong> instead of a <code class="docutils literal notranslate"><span class="pre">datetime</span></code> format.</p></li>
+<li><p><strong>``followers``</strong> is stored as <code class="docutils literal notranslate"><span class="pre">float64</span></code> but could be optimized.</p></li>
+</ul>
+<div class="line-block">
+<div class="line">✅ <strong>Standardization Steps</strong></div>
+<div class="line">| <strong>Column</strong> | <strong>Current Issue</strong> | <strong>Recommended Fix</strong> | |———–|—————–|——————| | <code class="docutils literal notranslate"><span class="pre">timestamp</span></code> | Stored as a string. | Convert to <code class="docutils literal notranslate"><span class="pre">datetime</span></code> format. | | <code class="docutils literal notranslate"><span class="pre">followers</span></code> | Stored as <code class="docutils literal notranslate"><span class="pre">float64</span></code>. | Convert to <code class="docutils literal notranslate"><span class="pre">int64</span></code> (if no decimal values exist). |</div>
+</div>
+<hr class="docutils" />
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[11]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[11]:
+</pre></div>
+</div>
+<div class="output_area rendered_html docutils container">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>user_id</th>
+      <th>tweet_id</th>
+      <th>likes</th>
+      <th>shares</th>
+      <th>comments</th>
+      <th>followers</th>
+      <th>timestamp</th>
+      <th>language</th>
+      <th>location</th>
+      <th>label</th>
+      <th>likes_log</th>
+      <th>shares_log</th>
+      <th>comments_log</th>
+      <th>followers_log</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>user_id_1</td>
+      <td>tweet_id_1</td>
+      <td>435.0</td>
+      <td>80.0</td>
+      <td>26.0</td>
+      <td>2793.0</td>
+      <td>2021/08/25 15:56:00</td>
+      <td>English</td>
+      <td>London, UK</td>
+      <td>Fake</td>
+      <td>6.077642</td>
+      <td>4.394449</td>
+      <td>3.295837</td>
+      <td>7.935230</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>user_id_2</td>
+      <td>tweet_id_2</td>
+      <td>453.0</td>
+      <td>111.0</td>
+      <td>89.0</td>
+      <td>2524.0</td>
+      <td>2022/07/10 14:43:31</td>
+      <td>English</td>
+      <td>Johannesburg, South Africa</td>
+      <td>Fake</td>
+      <td>6.118097</td>
+      <td>4.718499</td>
+      <td>4.499810</td>
+      <td>7.833996</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>user_id_3</td>
+      <td>tweet_id_3</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>6380.0</td>
+      <td>2021-07-17 21:13:46</td>
+      <td>Unknown</td>
+      <td>Melbourne, Australia</td>
+      <td>Fake</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>8.761080</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>user_id_4</td>
+      <td>tweet_id_4</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>399.0</td>
+      <td>2021-01-21 22:53:25</td>
+      <td>Unknown</td>
+      <td>Does it matter?</td>
+      <td>Fake</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>5.991465</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>user_id_5</td>
+      <td>tweet_id_2</td>
+      <td>108.0</td>
+      <td>88.0</td>
+      <td>41.0</td>
+      <td>362.0</td>
+      <td>2021-11-09 10:50:00</td>
+      <td>English</td>
+      <td>New York, USA</td>
+      <td>Fake</td>
+      <td>4.691348</td>
+      <td>4.488636</td>
+      <td>3.737670</td>
+      <td>5.894403</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>31493</th>
+      <td>user_id_14427</td>
+      <td>tweet_id_16511</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1011.0</td>
+      <td>2021-08-02 23:05:43</td>
+      <td>Unknown</td>
+      <td>Florida</td>
+      <td>Fake</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>6.919684</td>
+    </tr>
+    <tr>
+      <th>31494</th>
+      <td>user_id_1723</td>
+      <td>tweet_id_2</td>
+      <td>86.0</td>
+      <td>22.0</td>
+      <td>15.0</td>
+      <td>4237.0</td>
+      <td>2020-01-22 05:30:00</td>
+      <td>English</td>
+      <td>Paris, France</td>
+      <td>Fake</td>
+      <td>4.465908</td>
+      <td>3.135494</td>
+      <td>2.772589</td>
+      <td>8.351847</td>
+    </tr>
+    <tr>
+      <th>31495</th>
+      <td>user_id_100</td>
+      <td>tweet_id_2</td>
+      <td>259.0</td>
+      <td>297.0</td>
+      <td>48.0</td>
+      <td>2593.0</td>
+      <td>2020-10-07 19:57:00</td>
+      <td>English</td>
+      <td>Sydney, Australia</td>
+      <td>Fake</td>
+      <td>5.560682</td>
+      <td>5.697093</td>
+      <td>3.891820</td>
+      <td>7.860956</td>
+    </tr>
+    <tr>
+      <th>31496</th>
+      <td>user_id_14428</td>
+      <td>tweet_id_16512</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>107.0</td>
+      <td>2021-02-01 21:11:40</td>
+      <td>Unknown</td>
+      <td>seattle</td>
+      <td>Fake</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>4.682131</td>
+    </tr>
+    <tr>
+      <th>31497</th>
+      <td>user_id_14429</td>
+      <td>tweet_id_16513</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1673.0</td>
+      <td>2021-01-13 15:52:38</td>
+      <td>Unknown</td>
+      <td>The Bend, IN</td>
+      <td>Fake</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>7.422971</td>
+    </tr>
+  </tbody>
+</table>
+<p>31498 rows × 14 columns</p>
+</div></div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[12]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Standardize separators by replacing &#39;/&#39; with &#39;-&#39;</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;timestamp&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;timestamp&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;/&quot;</span><span class="p">,</span> <span class="s2">&quot;-&quot;</span><span class="p">,</span> <span class="n">regex</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+<span class="c1"># Convert to datetime format</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;timestamp&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;timestamp&#39;</span><span class="p">],</span> <span class="n">errors</span><span class="o">=</span><span class="s1">&#39;coerce&#39;</span><span class="p">,</span> <span class="nb">format</span><span class="o">=</span><span class="s2">&quot;%Y-%m-</span><span class="si">%d</span><span class="s2"> %H:%M:%S&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<p>🔍 <strong>Explanation of the Code</strong></p>
+<ul class="simple">
+<li><p>pd.to_datetime(df[‘timestamp’]) Converts the timestamp column from an object (string) to a datetime format (datetime64[ns]).</p></li>
+<li><p>errors=’coerce’ If a value in timestamp is invalid (e.g., not a real date), it is replaced with NaT (Not a Time, pandas’ equivalent of NaN for datetime).</p></li>
+</ul>
+<hr class="docutils" />
+<p>Now that we’ve standardized our <strong>timestamp</strong> column to a proper datetime format, I’d like to introduce <strong>feature engineering</strong>.</p>
+<p>📌 <strong>Why is this important?</strong></p>
+<ul class="simple">
+<li><p>Raw datetime values <strong>provide limited insight on their own</strong>.</p></li>
+<li><p>By extracting meaningful components (e.g., <strong>hour of the day, day of the week, or month</strong>), we can uncover <strong>patterns in engagement</strong>.</p></li>
+<li><p>This is a perfect example of <strong>feature engineering</strong>—transforming raw data into more useful variables!</p></li>
+</ul>
+<p>Since time-based transformations are some of the most <strong>common and valuable</strong> feature engineering techniques, this is a great moment to introduce the concept.</p>
+</section>
+<hr class="docutils" />
+<section id="6️⃣-Feature-Engineering">
+<h2>6️⃣ Feature Engineering<a class="headerlink" href="#6️⃣-Feature-Engineering" title="Link to this heading"></a></h2>
+<div class="line-block">
+<div class="line">✅ <strong>Definition</strong></div>
+<div class="line"><strong>Feature engineering</strong> is the process of <strong>creating new variables (features) or modifying existing ones</strong> to improve the quality of data for analysis or modeling. The goal is to <strong>extract meaningful information from raw data</strong> that better represents underlying patterns.</div>
+</div>
+<p>✅ <strong>Why is Feature Engineering Important?</strong></p>
+<ul class="simple">
+<li><p><strong>Enhances predictive power</strong> – Well-designed features help machine learning models make better predictions.</p></li>
+<li><p><strong>Simplifies patterns in data</strong> – By transforming or aggregating variables, we can reveal trends that might not be obvious.</p></li>
+<li><p><strong>Reduces noise and improves interpretability</strong> – Some raw data may be <strong>too complex or too detailed</strong>, making it harder to analyze.</p></li>
+</ul>
+<hr class="docutils" />
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Feature Engineering Task</strong></p></th>
+<th class="head"><p><strong>Example in Our Dataset</strong></p></th>
+<th class="head"><p><strong>Why It’s Useful</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Extracting time-based features</strong></p></td>
+<td><p>Splitting <code class="docutils literal notranslate"><span class="pre">timestamp</span></code> into <code class="docutils literal notranslate"><span class="pre">hour</span></code> and <code class="docutils literal notranslate"><span class="pre">day_of_week</span></code></p></td>
+<td><p>Allows us to analyze engagement patterns by time.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Creating interaction features</strong></p></td>
+<td><p>Combining <code class="docutils literal notranslate"><span class="pre">likes</span></code>, <code class="docutils literal notranslate"><span class="pre">shares</span></code>, and <code class="docutils literal notranslate"><span class="pre">comments</span></code> into an <code class="docutils literal notranslate"><span class="pre">engagement_score</span></code></p></td>
+<td><p>Gives a single metric to assess overall tweet performance.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Transforming skewed data</strong></p></td>
+<td><p>Applying a log transformation to <code class="docutils literal notranslate"><span class="pre">followers</span></code></p></td>
+<td><p>Helps normalize extreme differences between small and large accounts.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Grouping categorical values</strong></p></td>
+<td><p>Reducing rare <code class="docutils literal notranslate"><span class="pre">location</span></code> entries into <code class="docutils literal notranslate"><span class="pre">&quot;Other&quot;</span></code></p></td>
+<td><p>Improves generalizability and avoids overfitting.</p></td>
+</tr>
+</tbody>
+</table>
+<p>💡 <strong>Feature engineering is an iterative process</strong> – we don’t always know which features will be most useful at the start. Instead, we use <strong>EDA to identify opportunities for feature creation</strong>, ensuring that each transformation adds value.</p>
+<hr class="docutils" />
+<ul class="simple">
+<li><p>We will <strong>not treat feature engineering as a separate step</strong> but instead <strong>integrate it naturally into EDA</strong>.</p></li>
+<li><p>As we uncover insights (e.g., engagement varies by time of day), we will introduce new <strong>feature transformations</strong> to improve our dataset.</p></li>
+<li><p>This <strong>mirrors real-world data analysis workflows</strong>, where feature engineering is informed by exploratory findings.</p></li>
+</ul>
+<hr class="docutils" />
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[13]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Extract useful time-based features</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;year&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;timestamp&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">year</span>  <span class="c1"># Extract year</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;month&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;timestamp&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">month</span>  <span class="c1"># Extract month</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;day_of_week&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;timestamp&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">dayofweek</span>  <span class="c1"># 0 = Monday, 6 = Sunday</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;hour&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;timestamp&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">hour</span>  <span class="c1"># Extract hour of the day</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;is_weekend&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;day_of_week&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="mi">1</span> <span class="k">if</span> <span class="n">x</span> <span class="o">&gt;=</span> <span class="mi">5</span> <span class="k">else</span> <span class="mi">0</span><span class="p">)</span>  <span class="c1"># 1 = weekend, 0 = weekday</span>
+
+<span class="c1"># Display the first few rows to check new features</span>
+<span class="n">df</span><span class="p">[[</span><span class="s1">&#39;timestamp&#39;</span><span class="p">,</span> <span class="s1">&#39;year&#39;</span><span class="p">,</span> <span class="s1">&#39;month&#39;</span><span class="p">,</span> <span class="s1">&#39;day_of_week&#39;</span><span class="p">,</span> <span class="s1">&#39;hour&#39;</span><span class="p">,</span> <span class="s1">&#39;is_weekend&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[13]:
+</pre></div>
+</div>
+<div class="output_area rendered_html docutils container">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>timestamp</th>
+      <th>year</th>
+      <th>month</th>
+      <th>day_of_week</th>
+      <th>hour</th>
+      <th>is_weekend</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>2021-08-25 15:56:00</td>
+      <td>2021.0</td>
+      <td>8.0</td>
+      <td>2.0</td>
+      <td>15.0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2022-07-10 14:43:31</td>
+      <td>2022.0</td>
+      <td>7.0</td>
+      <td>6.0</td>
+      <td>14.0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2021-07-17 21:13:46</td>
+      <td>2021.0</td>
+      <td>7.0</td>
+      <td>5.0</td>
+      <td>21.0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>2021-01-21 22:53:25</td>
+      <td>2021.0</td>
+      <td>1.0</td>
+      <td>3.0</td>
+      <td>22.0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>2021-11-09 10:50:00</td>
+      <td>2021.0</td>
+      <td>11.0</td>
+      <td>1.0</td>
+      <td>10.0</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+</div></div>
+</div>
+<p>🔍 <strong>Breakdown of Extracted Features:</strong></p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Feature</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Why It’s Useful</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>``year``</strong></p></td>
+<td><p>Extracts the year (e.g., 2020, 2021)</p></td>
+<td><p>Helps analyze trends over time.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>``month``</strong></p></td>
+<td><p>Extracts the month (1-12)</p></td>
+<td><p>Identifies seasonal patterns in misinformation spread.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>``day_of_week``</strong></p></td>
+<td><p>Extracts the day (0=Monday, 6=Sunday)</p></td>
+<td><p>Reveals which days see more misinformation engagement.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>``hour``</strong></p></td>
+<td><p>Extracts the hour (0-23)</p></td>
+<td><p>Helps determine peak engagement hours.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>``is_weekend``</strong></p></td>
+<td><p>Encodes weekends as <code class="docutils literal notranslate"><span class="pre">1</span></code>, weekdays as <code class="docutils literal notranslate"><span class="pre">0</span></code></p></td>
+<td><p>Useful for comparing engagement between weekends and weekdays.</p></td>
+</tr>
+</tbody>
+</table>
+<hr class="docutils" />
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[14]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Map day_of_week to actual day names</span>
+<span class="n">day_mapping</span> <span class="o">=</span> <span class="p">{</span><span class="mi">0</span><span class="p">:</span> <span class="s2">&quot;Monday&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">:</span> <span class="s2">&quot;Tuesday&quot;</span><span class="p">,</span> <span class="mi">2</span><span class="p">:</span> <span class="s2">&quot;Wednesday&quot;</span><span class="p">,</span> <span class="mi">3</span><span class="p">:</span> <span class="s2">&quot;Thursday&quot;</span><span class="p">,</span> <span class="mi">4</span><span class="p">:</span> <span class="s2">&quot;Friday&quot;</span><span class="p">,</span> <span class="mi">5</span><span class="p">:</span> <span class="s2">&quot;Saturday&quot;</span><span class="p">,</span> <span class="mi">6</span><span class="p">:</span> <span class="s2">&quot;Sunday&quot;</span><span class="p">}</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;day_name&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;day_of_week&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">day_mapping</span><span class="p">)</span>
+
+<span class="c1"># Categorize hours into time of day bins</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">categorize_hour</span><span class="p">(</span><span class="n">hour</span><span class="p">):</span>
+    <span class="k">if</span> <span class="mi">5</span> <span class="o">&lt;=</span> <span class="n">hour</span> <span class="o">&lt;</span> <span class="mi">12</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s2">&quot;Morning&quot;</span>
+    <span class="k">elif</span> <span class="mi">12</span> <span class="o">&lt;=</span> <span class="n">hour</span> <span class="o">&lt;</span> <span class="mi">17</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s2">&quot;Afternoon&quot;</span>
+    <span class="k">elif</span> <span class="mi">17</span> <span class="o">&lt;=</span> <span class="n">hour</span> <span class="o">&lt;</span> <span class="mi">21</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s2">&quot;Evening&quot;</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s2">&quot;Night&quot;</span>
+
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;time_of_day&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;hour&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">categorize_hour</span><span class="p">)</span>
+<span class="n">df</span><span class="p">[[</span><span class="s1">&#39;timestamp&#39;</span><span class="p">,</span> <span class="s1">&#39;day_of_week&#39;</span><span class="p">,</span> <span class="s1">&#39;day_name&#39;</span><span class="p">,</span> <span class="s1">&#39;hour&#39;</span><span class="p">,</span> <span class="s1">&#39;time_of_day&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[14]:
+</pre></div>
+</div>
+<div class="output_area rendered_html docutils container">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>timestamp</th>
+      <th>day_of_week</th>
+      <th>day_name</th>
+      <th>hour</th>
+      <th>time_of_day</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>2021-08-25 15:56:00</td>
+      <td>2.0</td>
+      <td>Wednesday</td>
+      <td>15.0</td>
+      <td>Afternoon</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2022-07-10 14:43:31</td>
+      <td>6.0</td>
+      <td>Sunday</td>
+      <td>14.0</td>
+      <td>Afternoon</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2021-07-17 21:13:46</td>
+      <td>5.0</td>
+      <td>Saturday</td>
+      <td>21.0</td>
+      <td>Night</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>2021-01-21 22:53:25</td>
+      <td>3.0</td>
+      <td>Thursday</td>
+      <td>22.0</td>
+      <td>Night</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>2021-11-09 10:50:00</td>
+      <td>1.0</td>
+      <td>Tuesday</td>
+      <td>10.0</td>
+      <td>Morning</td>
+    </tr>
+  </tbody>
+</table>
+</div></div>
+</div>
+<p>🚀 <strong>Next Steps</strong></p>
+<p>Now that we’ve extracted time-based features, we can:</p>
+<div class="line-block">
+<div class="line">1️⃣ <strong>Visualize engagement patterns</strong> – Identify when misinformation spreads the most (by hour, day, or month).</div>
+<div class="line">2️⃣ <strong>Compare engagement by time of day</strong> – Are people more likely to interact with misinformation in the morning or at night?</div>
+<div class="line">3️⃣ <strong>Analyze misinformation trends over time</strong> – Do spikes in engagement align with real-world events?</div>
+<div class="line">4️⃣ <strong>Use these features in predictive modeling</strong> – Incorporate <code class="docutils literal notranslate"><span class="pre">day_of_week</span></code>, <code class="docutils literal notranslate"><span class="pre">hour</span></code>, and <code class="docutils literal notranslate"><span class="pre">time_of_day</span></code> into ML models to detect misinformation trends.</div>
+</div>
+<hr class="docutils" />
+</section>
+<section id="7️⃣-Basic-Visualizations">
+<h2>7️⃣ Basic Visualizations<a class="headerlink" href="#7️⃣-Basic-Visualizations" title="Link to this heading"></a></h2>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[15]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Print column list of my dataset</span>
+<span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[15]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+[&#39;user_id&#39;,
+ &#39;tweet_id&#39;,
+ &#39;likes&#39;,
+ &#39;shares&#39;,
+ &#39;comments&#39;,
+ &#39;followers&#39;,
+ &#39;timestamp&#39;,
+ &#39;language&#39;,
+ &#39;location&#39;,
+ &#39;label&#39;,
+ &#39;likes_log&#39;,
+ &#39;shares_log&#39;,
+ &#39;comments_log&#39;,
+ &#39;followers_log&#39;,
+ &#39;year&#39;,
+ &#39;month&#39;,
+ &#39;day_of_week&#39;,
+ &#39;hour&#39;,
+ &#39;is_weekend&#39;,
+ &#39;day_name&#39;,
+ &#39;time_of_day&#39;]
+</pre></div></div>
+</div>
+<section id="Bar-Plots">
+<h3>Bar Plots<a class="headerlink" href="#Bar-Plots" title="Link to this heading"></a></h3>
+<div class="line-block">
+<div class="line">❓ <strong>Key Question:</strong> <strong>Do misinformation tweets follow a weekly pattern?</strong></div>
+<div class="line">Are certain days more prone to misinformation spread, or is engagement consistent throughout the week?</div>
+</div>
+<hr class="docutils" />
+<div class="line-block">
+<div class="line">📌 Why This Matters:</div>
+<div class="line">✅ <strong>Understanding tweet frequency by day</strong> helps identify <strong>high-risk days</strong> for misinformation.</div>
+<div class="line">✅ <strong>Social media habits vary</strong> – More activity on certain days (e.g., workdays vs. weekends).</div>
+<div class="line">✅ If misinformation tweets peak on specific days, <strong>fact-checking efforts</strong> can be better timed.</div>
+</div>
+<hr class="docutils" />
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[16]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Count tweets per day of the week</span>
+<span class="n">day_counts</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;day_name&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">reindex</span><span class="p">([</span><span class="s2">&quot;Monday&quot;</span><span class="p">,</span> <span class="s2">&quot;Tuesday&quot;</span><span class="p">,</span> <span class="s2">&quot;Wednesday&quot;</span><span class="p">,</span> <span class="s2">&quot;Thursday&quot;</span><span class="p">,</span> <span class="s2">&quot;Friday&quot;</span><span class="p">,</span> <span class="s2">&quot;Saturday&quot;</span><span class="p">,</span> <span class="s2">&quot;Sunday&quot;</span><span class="p">])</span>
+
+<span class="c1"># Plot bar chart</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">barplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">day_counts</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">day_counts</span><span class="o">.</span><span class="n">values</span><span class="p">)</span>
+
+<span class="c1"># Labeling</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Number of Tweets by Day of the Week&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Day of the Week&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Number of Tweets&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<br/></pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_Lesson7_Week3_47_0.png" src="../_images/notebooks_Lesson7_Week3_47_0.png" />
+</div>
+</div>
+<p>This bar chart shows the <strong>number of tweets per day</strong>, helping us understand when misinformation tweets are most frequent.</p>
+<p>🔍 <strong>Key Insights:</strong></p>
+<div class="line-block">
+<div class="line">✅ <strong>Which days see the most misinformation?</strong> – Are certain days more prone to misinformation spread?</div>
+<div class="line">✅ <strong>Weekend vs. Weekday Trends</strong> – Are misinformation tweets more frequent on weekends?</div>
+</div>
+<p>🔍 <strong>Analysis: What Does This Show?</strong></p>
+<div class="line-block">
+<div class="line">✅ Higher tweet volume on weekdays – Tweets are more frequent from Monday to Friday, peaking mid-week.</div>
+<div class="line">✅ Lower engagement on weekends – Saturday and Sunday see a noticeable drop in tweets.</div>
+<div class="line">✅ Potential reasons for these trends:</div>
+</div>
+<ul>
+<li><p>Workdays might encourage more online discussions.</p></li>
+<li><p>Weekends could reflect less misinformation production or moderation gaps.</p></li>
+<li><p class="rubric" id="certain-misinformation-topics-e-g-politics-health-may-trend-more-on-weekdays">Certain misinformation topics (e.g., politics, health) may trend more on weekdays.</p>
+</li>
+</ul>
+</section>
+<section id="Pie-Chart">
+<h3>Pie Chart<a class="headerlink" href="#Pie-Chart" title="Link to this heading"></a></h3>
+<div class="line-block">
+<div class="line">❓ <strong>Key Question:</strong></div>
+<div class="line"><strong>Do misinformation tweets follow a time-of-day pattern?</strong></div>
+<div class="line">Are certain periods (morning, afternoon, evening, night) more prone to misinformation activity?</div>
+</div>
+<hr class="docutils" />
+<div class="line-block">
+<div class="line">📌 <strong>Why This Matters:</strong></div>
+<div class="line">✅ <strong>Understanding when misinformation is most active</strong> helps identify <strong>high-risk periods</strong>.</div>
+<div class="line">✅ <strong>Social media engagement varies throughout the day</strong> – Different times may see different types of users.</div>
+<div class="line">✅ If misinformation peaks at certain hours, <strong>fact-checking and moderation efforts</strong> can be optimized.</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[17]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Count occurrences of each time of day</span>
+<span class="n">time_counts</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;time_of_day&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+
+<span class="c1"># Create pie chart</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">7</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">pie</span><span class="p">(</span><span class="n">time_counts</span><span class="p">,</span> <span class="n">labels</span><span class="o">=</span><span class="n">time_counts</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">autopct</span><span class="o">=</span><span class="s1">&#39;</span><span class="si">%1.1f%%</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">colors</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;#3498db&#39;</span><span class="p">,</span> <span class="s1">&#39;#2ecc71&#39;</span><span class="p">,</span> <span class="s1">&#39;#e74c3c&#39;</span><span class="p">,</span> <span class="s1">&#39;#f39c12&#39;</span><span class="p">])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Tweet Distribution by Time of Day&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_Lesson7_Week3_50_0.png" src="../_images/notebooks_Lesson7_Week3_50_0.png" />
+</div>
+</div>
+<p>This pie chart shows the <strong>distribution of tweets across different times of the day</strong>, helping us determine when misinformation is most active.</p>
+<p>🔍 <strong>Key Insights:</strong></p>
+<div class="line-block">
+<div class="line">✅ <strong>Which time period sees the most tweets?</strong> – Are misinformation tweets more frequent at night or during work hours?</div>
+<div class="line">✅ <strong>Do patterns align with social media habits?</strong> – Does misinformation spread more when people are commuting, working, or relaxing?</div>
+</div>
+<p>🔍 <strong>Analysis: What Does This Show?</strong></p>
+<div class="line-block">
+<div class="line">✅ <strong>Night has the highest tweet volume (30.8%)</strong> – This suggests that misinformation may spread more during <strong>late hours</strong>, possibly when fewer moderators are active.</div>
+<div class="line">✅ <strong>Morning and Afternoon tweets are also significant (26.4% &amp; 24.3%)</strong> – These periods align with <strong>peak social media usage</strong> during work breaks.</div>
+<div class="line">✅ <strong>Evening has the lowest tweet share (18.5%)</strong> – This could indicate reduced social media activity or a shift toward <strong>consuming rather than sharing content</strong>.</div>
+</div>
+<p><strong>Potential Explanations:</strong></p>
+<ul class="simple">
+<li><p>Nighttime misinformation surges may be due to <strong>reduced content moderation</strong> or <strong>global audiences in different time zones</strong>.</p></li>
+<li><p>Misinformation in the morning and afternoon may reflect <strong>news cycles and trending topics</strong>.</p></li>
+<li><p>Different types of misinformation (political, health-related) may peak at different times.</p></li>
+</ul>
+<hr class="docutils" />
+</section>
+<section id="Histogram">
+<h3>Histogram<a class="headerlink" href="#Histogram" title="Link to this heading"></a></h3>
+<div class="line-block">
+<div class="line">❓ <strong>Key Question:</strong></div>
+<div class="line"><strong>Do misinformation tweets show seasonal trends?</strong></div>
+<div class="line">Are misinformation tweets more frequent in specific months, or is tweet activity evenly distributed throughout the year?</div>
+</div>
+<hr class="docutils" />
+<div class="line-block">
+<div class="line">📌 <strong>Why This Matters:</strong></div>
+<div class="line">✅ <strong>Detecting seasonal patterns</strong> – Do misinformation tweets increase during elections, health crises, or other global events?</div>
+<div class="line">✅ <strong>Understanding user behavior</strong> – Do social media users post more misinformation during certain times of the year?</div>
+<div class="line">✅ <strong>Anticipating misinformation surges</strong> – Identifying patterns can help prepare countermeasures for high-activity periods.</div>
+</div>
+<hr class="docutils" />
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[18]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">seaborn</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sns</span>
+
+<span class="c1"># Set seaborn style</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">set_theme</span><span class="p">(</span><span class="n">style</span><span class="o">=</span><span class="s2">&quot;whitegrid&quot;</span><span class="p">)</span>
+
+<span class="c1"># Plot histogram of tweets by month</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">histplot</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;month&#39;</span><span class="p">],</span> <span class="n">bins</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span> <span class="n">discrete</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">kde</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;#3498db&#39;</span><span class="p">)</span>
+
+<span class="c1"># Labeling</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Tweet Distribution by Month&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Month&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Number of Tweets&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="n">ticks</span><span class="o">=</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">13</span><span class="p">),</span> <span class="n">labels</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Jan&#39;</span><span class="p">,</span> <span class="s1">&#39;Feb&#39;</span><span class="p">,</span> <span class="s1">&#39;Mar&#39;</span><span class="p">,</span> <span class="s1">&#39;Apr&#39;</span><span class="p">,</span> <span class="s1">&#39;May&#39;</span><span class="p">,</span> <span class="s1">&#39;Jun&#39;</span><span class="p">,</span> <span class="s1">&#39;Jul&#39;</span><span class="p">,</span> <span class="s1">&#39;Aug&#39;</span><span class="p">,</span> <span class="s1">&#39;Sep&#39;</span><span class="p">,</span> <span class="s1">&#39;Oct&#39;</span><span class="p">,</span> <span class="s1">&#39;Nov&#39;</span><span class="p">,</span> <span class="s1">&#39;Dec&#39;</span><span class="p">])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<br/></pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_Lesson7_Week3_53_0.png" src="../_images/notebooks_Lesson7_Week3_53_0.png" />
+</div>
+</div>
+<p>This histogram visualizes the <strong>distribution of tweets by month</strong>, helping us identify trends in misinformation spread over the year.</p>
+<p>🔍 <strong>Key Insights:</strong></p>
+<div class="line-block">
+<div class="line">✅ <strong>Are misinformation tweets evenly distributed across months?</strong> – Or do they cluster at specific times of the year?</div>
+<div class="line">✅ <strong>Are there months with noticeable spikes?</strong> – Do misinformation tweets increase due to major events or seasonal factors?</div>
+<div class="line">✅ <strong>Are there months with lower misinformation activity?</strong> – Does misinformation dip during certain periods?</div>
+</div>
+<p>🔍 <strong>Analysis: What Does This Show?</strong></p>
+<div class="line-block">
+<div class="line">✅ <strong>High tweet volume in January and February</strong> – Possible connection to <strong>New Year events, political developments, or global discussions</strong>.</div>
+<div class="line">✅ <strong>Low misinformation activity in June and September</strong> – Could indicate periods of reduced misinformation spread or lower engagement.</div>
+<div class="line">✅ <strong>Fluctuations throughout the year</strong> – Suggests that misinformation surges <strong>are event-driven rather than constant</strong>.</div>
+</div>
+<p><strong>Potential Explanations:</strong></p>
+<ul class="simple">
+<li><p>Political events, elections, or crises might trigger <strong>misinformation spikes</strong> in specific months.</p></li>
+<li><p>Some misinformation campaigns could be <strong>seasonal</strong> (e.g., health-related misinformation in flu season).</p></li>
+<li><p>Variations in tweet volume might also reflect <strong>changes in platform moderation or fact-checking efforts</strong>.</p></li>
+</ul>
+<hr class="docutils" />
+</section>
+<section id="Boxplot">
+<h3>Boxplot<a class="headerlink" href="#Boxplot" title="Link to this heading"></a></h3>
+<div class="line-block">
+<div class="line">❓ <strong>Key Question:</strong></div>
+<div class="line"><strong>How are likes distributed across misinformation tweets?</strong></div>
+<div class="line">Are there extreme variations in engagement, and do outliers suggest viral tweets?</div>
+</div>
+<hr class="docutils" />
+<div class="line-block">
+<div class="line">📌 <strong>Why This Matters:</strong></div>
+<div class="line">✅ <strong>Identifies engagement distribution</strong> – Are most tweets getting similar engagement, or is there high variability?</div>
+<div class="line">✅ <strong>Detects outliers (viral tweets)</strong> – Do a few tweets receive disproportionately high likes?</div>
+<div class="line">✅ <strong>Helps decide on data transformations</strong> – If data is skewed, should we apply a log transformation for better analysis?</div>
+</div>
+<hr class="docutils" />
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[19]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Set seaborn style</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">set_theme</span><span class="p">(</span><span class="n">style</span><span class="o">=</span><span class="s2">&quot;whitegrid&quot;</span><span class="p">)</span>
+
+<span class="c1"># Create boxplot</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;likes&#39;</span><span class="p">],</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;#3498db&#39;</span><span class="p">)</span>
+
+<span class="c1"># Labeling</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Boxplot of Likes&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Number of Likes&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<br/></pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_Lesson7_Week3_56_0.png" src="../_images/notebooks_Lesson7_Week3_56_0.png" />
+</div>
+</div>
+<p>This boxplot visualizes the <strong>distribution of likes on misinformation tweets</strong>, highlighting the central tendency, spread, and presence of extreme values.</p>
+<p>🔍 <strong>Key Insights:</strong></p>
+<div class="line-block">
+<div class="line">✅ <strong>Is engagement concentrated around a certain range?</strong> – Or does it vary significantly across tweets?</div>
+<div class="line">✅ <strong>Are there many outliers?</strong> – The presence of extreme values (far beyond the box) suggests some tweets go viral.</div>
+<div class="line">✅ <strong>How does the median compare to the spread?</strong> – If the median is very low compared to the upper whisker, likes may be highly skewed.</div>
+</div>
+<p>🔍 <strong>Analysis: What Does This Show?</strong></p>
+<div class="line-block">
+<div class="line">✅ <strong>Most tweets receive very few likes</strong> – The central box is compressed toward <strong>lower engagement values</strong>.</div>
+<div class="line">✅ <strong>Significant outliers (viral tweets)</strong> – Many individual points far from the whiskers indicate that <strong>a few tweets received massive engagement</strong>.</div>
+<div class="line">✅ <strong>Highly skewed distribution</strong> – Most tweets have <strong>low engagement</strong>, but a <strong>small percentage go viral</strong>, leading to an uneven spread.</div>
+</div>
+<p><strong>Potential Explanations:</strong></p>
+<ul class="simple">
+<li><p>Misinformation might have <strong>low baseline engagement</strong> but <strong>occasional viral tweets</strong> amplify its reach.</p></li>
+<li><p>Engagement could depend on <strong>influencers or amplification efforts</strong> (e.g., bots, coordinated sharing).</p></li>
+<li><p>A log transformation might help <strong>normalize the distribution</strong> for better statistical analysis.</p></li>
+</ul>
+<hr class="docutils" />
+</section>
+<section id="Scatter-Plot">
+<h3>Scatter Plot<a class="headerlink" href="#Scatter-Plot" title="Link to this heading"></a></h3>
+<div class="line-block">
+<div class="line">❓ <strong>Key Question:</strong></div>
+<div class="line"><strong>Is there a correlation between likes and shares on misinformation tweets?</strong></div>
+<div class="line">Do tweets with more likes also receive more shares, or is the relationship weak?</div>
+</div>
+<hr class="docutils" />
+<div class="line-block">
+<div class="line">📌 <strong>Why This Matters:</strong></div>
+<div class="line">✅ <strong>Understanding engagement behavior</strong> – Do users who like misinformation tweets also share them?</div>
+<div class="line">✅ <strong>Detecting viral content patterns</strong> – Are high-like tweets more likely to be widely shared?</div>
+<div class="line">✅ <strong>Identifying amplification strategies</strong> – Are misinformation tweets pushed by coordinated efforts, or is sharing organic?</div>
+</div>
+<hr class="docutils" />
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[20]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Set seaborn style</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">set_theme</span><span class="p">(</span><span class="n">style</span><span class="o">=</span><span class="s2">&quot;whitegrid&quot;</span><span class="p">)</span>
+
+<span class="c1"># Create scatter plot</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">scatterplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;likes&#39;</span><span class="p">],</span> <span class="n">y</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;shares&#39;</span><span class="p">],</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;#3498db&#39;</span><span class="p">)</span>
+
+<span class="c1"># Labeling</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Scatter Plot of Likes vs. Shares&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Number of Likes&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Number of Shares&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<br/></pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_Lesson7_Week3_59_0.png" src="../_images/notebooks_Lesson7_Week3_59_0.png" />
+</div>
+</div>
+<p>This scatter plot visualizes the <strong>relationship between likes and shares on misinformation tweets</strong>, helping us assess whether high engagement in one metric predicts high engagement in the other.</p>
+<p>🔍 <strong>Key Insights:</strong></p>
+<div class="line-block">
+<div class="line">✅ <strong>Is there a positive correlation?</strong> – Do tweets with more likes tend to have more shares?</div>
+<div class="line">✅ <strong>Are there separate engagement clusters?</strong> – Are some tweets heavily liked but rarely shared, or vice versa?</div>
+<div class="line">✅ <strong>Are outliers (viral tweets) present?</strong> – Do some tweets have extreme values in either direction?</div>
+</div>
+<p>🔍 <strong>Analysis: What Does This Show?</strong></p>
+<div class="line-block">
+<div class="line">✅ <strong>Most tweets have low engagement</strong> – A dense cluster in the bottom-left suggests that <strong>many tweets get very few likes and shares</strong>.</div>
+<div class="line">✅ <strong>Some tweets achieve high engagement</strong> – A smaller subset of tweets shows <strong>both high likes and high shares</strong>, likely indicating <strong>viral content</strong>.</div>
+<div class="line">✅ <strong>Correlation appears weak but present</strong> – While more likes <strong>generally</strong> lead to more shares, the relationship is <strong>not perfectly linear</strong>, suggesting that some tweets get <strong>liked a lot but not widely shared</strong>.</div>
+</div>
+<p><strong>Potential Explanations:</strong></p>
+<ul class="simple">
+<li><p>Some misinformation tweets may encourage <strong>engagement through likes but not sharing</strong>, limiting their spread.</p></li>
+<li><p>Virality may depend on <strong>other factors</strong> (e.g., influencer amplification, trending topics, algorithmic boosts).</p></li>
+<li><p>Further analysis could explore <strong>engagement rate per follower</strong> or <strong>time-based engagement trends</strong>.</p></li>
+</ul>
+<hr class="docutils" />
+</section>
+<section id="Line-Plot">
+<h3>Line Plot<a class="headerlink" href="#Line-Plot" title="Link to this heading"></a></h3>
+<div class="line-block">
+<div class="line">❓ <strong>Key Question:</strong></div>
+<div class="line"><strong>When do misinformation tweets receive the most engagement?</strong></div>
+<div class="line">Are there specific hours of the day when likes, shares, and comments peak?</div>
+</div>
+<hr class="docutils" />
+<div class="line-block">
+<div class="line">📌 <strong>Why This Matters:</strong></div>
+<div class="line">✅ <strong>Identifies peak engagement hours</strong> – Knowing when users interact most with misinformation can help develop countermeasures.</div>
+<div class="line">✅ <strong>Analyzes user behavior</strong> – Understanding whether engagement is higher during work hours, evenings, or late nights can provide insights into audience activity.</div>
+<div class="line">✅ <strong>Optimizes content moderation strategies</strong> – Platforms can allocate fact-checking resources more efficiently during peak misinformation engagement times.</div>
+</div>
+<hr class="docutils" />
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[21]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Average engagement per hour of the day</span>
+<span class="n">hourly_engagement</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;hour&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">agg</span><span class="p">({</span><span class="s1">&#39;likes&#39;</span><span class="p">:</span> <span class="s1">&#39;mean&#39;</span><span class="p">,</span> <span class="s1">&#39;shares&#39;</span><span class="p">:</span> <span class="s1">&#39;mean&#39;</span><span class="p">,</span> <span class="s1">&#39;comments&#39;</span><span class="p">:</span> <span class="s1">&#39;mean&#39;</span><span class="p">})</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+
+<span class="c1"># Plot</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">lineplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">hourly_engagement</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;hour&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;likes&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Likes&#39;</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;o&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;blue&#39;</span><span class="p">)</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">lineplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">hourly_engagement</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;hour&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;shares&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Shares&#39;</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;o&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;green&#39;</span><span class="p">)</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">lineplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">hourly_engagement</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;hour&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;comments&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Comments&#39;</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;o&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Average Engagement by Hour of Day&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Hour of the Day&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Average Engagement&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">24</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_Lesson7_Week3_62_0.png" src="../_images/notebooks_Lesson7_Week3_62_0.png" />
+</div>
+</div>
+<p>This line plot visualizes the <strong>average engagement (likes, shares, comments) for misinformation tweets at different hours of the day</strong>, helping us detect high-risk periods.</p>
+<p>🔍 <strong>Key Insights:</strong></p>
+<div class="line-block">
+<div class="line">✅ <strong>When does engagement peak?</strong> – Are likes, shares, and comments more common in the morning, afternoon, or late night?</div>
+<div class="line">✅ <strong>Are different engagement types following the same trend?</strong> – Do likes, shares, and comments increase simultaneously, or do they behave differently?</div>
+<div class="line">✅ <strong>Are there off-peak hours?</strong> – Do certain hours consistently show lower engagement?</div>
+</div>
+<p>🔍 <strong>Analysis: What Does This Show?</strong></p>
+<div class="line-block">
+<div class="line">✅ <strong>Likes peak in the late night (around 23:00)</strong> – This suggests that misinformation tweets <strong>may receive the most passive engagement (likes) during late hours</strong>.</div>
+<div class="line">✅ <strong>Shares and comments are more stable</strong> – Unlike likes, shares and comments follow a <strong>flatter trend</strong> throughout the day, but with some fluctuations.</div>
+<div class="line">✅ <strong>Engagement dips occur during mid-morning and early afternoon</strong> – Lower interaction between <strong>10:00 and 14:00</strong> may indicate reduced activity during working hours.</div>
+</div>
+<p><strong>Potential Explanations:</strong></p>
+<ul class="simple">
+<li><p><strong>Late-night engagement surges</strong> could be due to <strong>users scrolling before bedtime</strong>, when <strong>critical thinking might be lower</strong>.</p></li>
+<li><p><strong>Shares and comments may not correlate perfectly with likes</strong>, suggesting different engagement motivations.</p></li>
+<li><p><strong>Moderation and fact-checking efforts may need to be reinforced in the late evening</strong>, when misinformation engagement appears highest.</p></li>
+</ul>
+<hr class="docutils" />
+</section>
+<section id="Line-Plot-2">
+<h3>Line Plot 2<a class="headerlink" href="#Line-Plot-2" title="Link to this heading"></a></h3>
+<div class="line-block">
+<div class="line">❓ <strong>Key Question:</strong></div>
+<div class="line"><strong>How has engagement with misinformation tweets changed over time?</strong></div>
+<div class="line">Are there noticeable spikes in likes, shares, and comments that correlate with real-world events?</div>
+</div>
+<hr class="docutils" />
+<div class="line-block">
+<div class="line">📌 <strong>Why This Matters:</strong></div>
+<div class="line">✅ <strong>Identifies trends in misinformation engagement</strong> – Do engagement levels rise and fall cyclically or remain steady?</div>
+<div class="line">✅ <strong>Detects viral misinformation events</strong> – Large spikes may indicate misinformation surges tied to major news or political events.</div>
+<div class="line">✅ <strong>Informs counter-misinformation efforts</strong> – Understanding engagement trends helps allocate resources for content moderation and fact-checking.</div>
+</div>
+<hr class="docutils" />
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[22]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Convert timestamp to datetime if not already done</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;timestamp&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;timestamp&#39;</span><span class="p">],</span> <span class="n">errors</span><span class="o">=</span><span class="s1">&#39;coerce&#39;</span><span class="p">)</span>
+
+<span class="c1"># Aggregate engagement by day</span>
+<span class="n">time_engagement</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;timestamp&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">date</span><span class="p">)</span><span class="o">.</span><span class="n">agg</span><span class="p">({</span><span class="s1">&#39;likes&#39;</span><span class="p">:</span> <span class="s1">&#39;sum&#39;</span><span class="p">,</span> <span class="s1">&#39;shares&#39;</span><span class="p">:</span> <span class="s1">&#39;sum&#39;</span><span class="p">,</span> <span class="s1">&#39;comments&#39;</span><span class="p">:</span> <span class="s1">&#39;sum&#39;</span><span class="p">})</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+
+<span class="c1"># Plot engagement over time</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">time_engagement</span><span class="p">[</span><span class="s1">&#39;timestamp&#39;</span><span class="p">],</span> <span class="n">time_engagement</span><span class="p">[</span><span class="s1">&#39;likes&#39;</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Likes&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;blue&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">time_engagement</span><span class="p">[</span><span class="s1">&#39;timestamp&#39;</span><span class="p">],</span> <span class="n">time_engagement</span><span class="p">[</span><span class="s1">&#39;shares&#39;</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Shares&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;green&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">time_engagement</span><span class="p">[</span><span class="s1">&#39;timestamp&#39;</span><span class="p">],</span> <span class="n">time_engagement</span><span class="p">[</span><span class="s1">&#39;comments&#39;</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Comments&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Engagement Trends Over Time&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Date&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Total Engagement&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="n">rotation</span><span class="o">=</span><span class="mi">45</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<br/></pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_Lesson7_Week3_65_0.png" src="../_images/notebooks_Lesson7_Week3_65_0.png" />
+</div>
+</div>
+<p>This line plot visualizes <strong>the total engagement (likes, shares, and comments) on misinformation tweets over time</strong>, helping us identify significant peaks and long-term patterns.</p>
+<p>🔍 <strong>Key Insights:</strong></p>
+<div class="line-block">
+<div class="line">✅ <strong>Are engagement levels stable or fluctuating?</strong> – Do likes, shares, and comments follow a consistent trend, or do they vary significantly?</div>
+<div class="line">✅ <strong>Do all engagement types behave similarly?</strong> – Are spikes in likes always accompanied by spikes in shares and comments, or do they follow different patterns?</div>
+<div class="line">✅ <strong>Are there distinct peaks?</strong> – Do certain dates show extreme engagement levels, indicating potential misinformation events?</div>
+</div>
+<p>🔍 <strong>Analysis: What Does This Show?</strong></p>
+<div class="line-block">
+<div class="line">✅ <strong>Frequent spikes in engagement</strong> – The presence of many sharp peaks suggests that <strong>misinformation engagement is event-driven rather than steady</strong>.</div>
+<div class="line">✅ <strong>Likes dominate engagement trends</strong> – Blue (likes) consistently reaches the highest levels, suggesting that users are <strong>more likely to like misinformation than share or comment on it</strong>.</div>
+<div class="line">✅ <strong>Some extreme outliers</strong> – Occasional <strong>major spikes</strong> in engagement may correlate with <strong>specific misinformation campaigns, trending topics, or political events</strong>.</div>
+</div>
+<p><strong>Potential Explanations:</strong></p>
+<ul class="simple">
+<li><p>Peaks may coincide with <strong>pandemic misinformation waves, elections, or geopolitical crises</strong> that drive engagement.</p></li>
+<li><p>Likes are <strong>easier than shares/comments</strong>, leading to more passive engagement rather than active amplification.</p></li>
+<li><p>Future analysis could focus on <strong>annotating peaks with real-world events</strong> to better understand misinformation drivers.</p></li>
+</ul>
+<hr class="docutils" />
+<p>🎯 <strong>Lesson Summary &amp; Key Takeaways</strong></p>
+<p>In this lesson, we walked through a <strong>critical thinking process</strong> behind exploratory data analysis (EDA) and applied it to <strong>misinformation engagement metrics</strong>.</p>
+<div class="line-block">
+<div class="line"><strong>🔍 What We Covered:</strong></div>
+<div class="line">✅ <strong>Understanding Our Data</strong> – Examining dataset structure, data types, and missing values.</div>
+<div class="line">✅ <strong>Feature Engineering</strong> – Extracting meaningful insights from timestamps.</div>
+<div class="line">✅ <strong>Visualizing Trends</strong> – Exploring misinformation engagement patterns over time.</div>
+<div class="line">✅ <strong>Detecting Relationships</strong> – Identifying correlations between likes, shares, and comments.</div>
+</div>
+<p><strong>💡 Key Reflections:</strong></p>
+<ul class="simple">
+<li><p><strong>What patterns did we uncover?</strong> Did engagement vary by time, or were there consistent trends?</p></li>
+<li><p><strong>What surprised you?</strong> Did the data reveal anything unexpected about misinformation spread?</p></li>
+<li><p><strong>What should we analyze further?</strong> Are there additional variables that could impact engagement?</p></li>
+</ul>
+<hr class="docutils" />
+<div class="line-block">
+<div class="line"><strong>🚀 Next Steps: Your Assignment</strong></div>
+<div class="line">Now that you’ve seen an example EDA walkthrough, it’s time for you to <strong>apply these concepts</strong> to another dataset.</div>
+</div>
+<hr class="docutils" />
+<p>🔄 A Note on Flexibility in Data Analysis</p>
+<p>The approach we took in this lesson is just one way to explore and interpret misinformation engagement data. It’s meant to provide a framework for thinking critically, not a fixed formula. In reality, data analysis involves navigating a huge number of possible paths, and the choices you make—what to visualize, how to preprocess, which questions to ask—will always depend on your goals, data quality, and context. Treat this walkthrough as a guide, not a blueprint. It would be a gross
+oversimplification to say this is all there is to data analytics—it’s a dynamic, creative, and often iterative process.</p>
+<p><a class="reference external" href="https://forms.gle/4ZRmNr5rmGCAR1Re6">Provide Anonymous Feedback on this Lesson Here</a></p>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="Assignment4_Week3.html" class="btn btn-neutral float-left" title="📝 Assignment 4" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Guest_Speaker2.html" class="btn btn-neutral float-right" title="🎤 Defense Threat Reduction Agency" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright Chaminade University.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
