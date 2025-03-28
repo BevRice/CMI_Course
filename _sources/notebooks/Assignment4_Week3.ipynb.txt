@@ -583,9 +583,9 @@
     "1. Accept the invitation to be a contributer to the repository.  You should have received an email at the address linked to your github account.  You can also accept the invitation by logging into github, clicking the notifications icon, and viewing the invitation from there.\n",
     "\n",
     "2. From Google Colab\n",
-    "- a. Click File\n",
-    "- b. Click Download\n",
-    "- c. Select Download .ipynb\n",
+    "    - a. Click File\n",
+    "    - b. Click Download\n",
+    "    - c. Select Download .ipynb\n",
     "\n",
     "3. Go to the submissions folder and click \"Add File\" then \"Upload File\"\n",
     "\n",
@@ -595,7 +595,7 @@
     "\n",
     "Please upload to the folder by 11:59pm, Fri 28 Mar\n",
     "\n",
-    "If you can't finish the assignment in a single session, you can save the file locally and reopen the file in github by going to File -> Upload Notebook -> Upload -> Browse -> Select your file"
+    "If you can't finish the assignment in a single session, you can save the file locally and reopen the file in Google Colab by going to File -> Upload Notebook -> Upload -> Browse -> Select your file"
    ]
   },
   {
