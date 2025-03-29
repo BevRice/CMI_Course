@@ -1,0 +1,1757 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>(Optional) NLP Python Walkthrough &mdash; Counter Malign Influence: Strategies, Insights, and Tools 7 March 2025 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/nbsphinx-code-cells.css?v=2aa19091" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=131bf191"></script>
+      <script src="../_static/doctools.js?v=9a2dae69"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+      <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+      <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="📚 Strategic MDM Interventions" href="Lesson9_Week4.html" />
+    <link rel="prev" title="📚 NLP and Sentiment Analysis" href="Lesson8_Week4.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Counter Malign Influence: Strategies, Insights, and Tools
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Preparation:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Syllabus.html">Syllabus</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ZoomInfo.html">Zoom Info</a></li>
+<li class="toctree-l1"><a class="reference internal" href="GettingStarted.html">Getting Started</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Week 1 Foundations of MDM:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Lesson1.html">📚 What is MDM?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lesson2.html">📚 Thinking Critically against MDM</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Guest_Speaker1.html">🎤 Research Director, CIFAL Honolulu</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Assignment1.html">📝 Assignment 1</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Week 2 Detecting MDM:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Lesson3_Week2.html">📚 Data Foundations in MDM Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Assignment2_Week2.html">📝 Assignment 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lesson4_Week2.html">📚 Defining the Research Question &amp; Identifying Credible Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Assignment3_Week2.html">📝 Assignment 3</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Week 3 Analyzing MDM:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Lesson5_Week3.html">📚 EDA and Patterns</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lesson6_Week3.html">🐍 Introduction to Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Assignment4_Week3.html">📝 Assignment 4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lesson7_Week3.html">📚 MDM EDA Walkthrough</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Guest_Speaker2.html">🎤 Defense Threat Reduction Agency</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Assignment5_Week3.html">📝 Assignment 5</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Week 4 Fighting MDM (Available 29 March):</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="Lesson8_Week4.html">📚 NLP and Sentiment Analysis</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">(Optional) NLP Python Walkthrough</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#0.-Setup-&amp;-Imports">0. Setup &amp; Imports</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#1.-Load-and-Preview-the-Dataset">1. Load and Preview the Dataset</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#Dataset-Overview-(df.info())">Dataset Overview (<code class="docutils literal notranslate"><span class="pre">df.info()</span></code>)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#Summary-Statistics-(df.describe())">Summary Statistics (<code class="docutils literal notranslate"><span class="pre">df.describe()</span></code>)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id"><code class="docutils literal notranslate"><span class="pre">id</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#favorite_count-(likes)"><code class="docutils literal notranslate"><span class="pre">favorite_count</span></code> (likes)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#retweet_count"><code class="docutils literal notranslate"><span class="pre">retweet_count</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#Takeaways">Takeaways</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#2.-Text-Preprocessing">2. Text Preprocessing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#3.-Word-Frequency-Distribution">3. Word Frequency Distribution</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#Interpreting-the-Top-20-Most-Common-Words">Interpreting the Top 20 Most Common Words</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#Observations:">Observations:</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#Interpretation:">Interpretation:</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#4.-Word-Cloud">4. Word Cloud</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#🔍-Key-Takeaways:">🔍 Key Takeaways:</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#5.-Basic-Sentiment-Analysis">5. Basic Sentiment Analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#Wrapping-Up:-Optional-NLP-Insights">Wrapping Up: Optional NLP Insights</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#💡-Want-to-Go-Deeper?">💡 Want to Go Deeper?</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Lesson9_Week4.html">📚 Strategic MDM Interventions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Guest_Speaker3_Week4.html">🎤 US Space Forces Indo-Pacific, Intelligence Directorate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Assignment6_Week4.html">📝 Assignment 6</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Weeks 5 &amp; 6:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Challenge.html">📝 Challenge Instructions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Guest_Speaker4.html">🎤 Joint Staff, Future Capabilities Division</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Guest_Speaker5.html">🎤 Career Panel</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Counter Malign Influence: Strategies, Insights, and Tools</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">(Optional) NLP Python Walkthrough</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/notebooks/Lesson8b_Week4.ipynb.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="(Optional)-NLP-Python-Walkthrough">
+<h1>(Optional) NLP Python Walkthrough<a class="headerlink" href="#(Optional)-NLP-Python-Walkthrough" title="Link to this heading"></a></h1>
+<p>Welcome to this <strong>optional NLP-focused lesson</strong>! Here, we shift from analyzing structured datasets to working with <strong>text data</strong> — the kind of unstructured information often found in misinformation and disinformation campaigns.</p>
+<p>We’ll use a <strong>COVID-19 Twitter dataset</strong> collected between April and August 2020, a critical time during the pandemic when the spread of misinformation surged online. Tweets from this period offer a unique window into how language, emotion, and repetition shape narratives during a global crisis.</p>
+<p>If you’re curious about how Python is used to <strong>analyze, clean, and extract meaning from large collections of text</strong>, this lesson is for you. You’ll learn simple methods to process tweets, remove noise, identify patterns, and explore basic sentiment — all essential techniques in <strong>Natural Language Processing (NLP)</strong>.</p>
+<p>🔗 <strong>Dataset Source (modified)</strong>: <a class="reference external" href="https://www.kaggle.com/datasets/arunavakrchakraborty/covid19-twitter-dataset/data">COVID-19 Twitter Dataset (April–August 2020)</a></p>
+<hr class="docutils" />
+<section id="0.-Setup-&amp;-Imports">
+<h2>0. Setup &amp; Imports<a class="headerlink" href="#0.-Setup-&-Imports" title="Link to this heading"></a></h2>
+<p>Before we begin, let’s load the essential libraries for working with and analyzing text data in Python. These tools will help us clean, tokenize, visualize, and extract meaning from the tweets.</p>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[1]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># pandas is a powerful library for working with tabular (structured) data</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+
+<span class="c1"># matplotlib lets us create visualizations like bar plots and histograms</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+
+<span class="c1"># Install the wordcloud package (one-time install)</span>
+<span class="c1">#!pip install wordcloud</span>
+
+<span class="c1"># WordCloud helps us generate word cloud images from text data</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">wordcloud</span><span class="w"> </span><span class="kn">import</span> <span class="n">WordCloud</span>
+
+<span class="c1"># Install NLTK, a core library for Natural Language Processing</span>
+<span class="c1">#!pip install nltk</span>
+
+<span class="c1"># Import modules for text processing</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">nltk</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">nltk.corpus</span><span class="w"> </span><span class="kn">import</span> <span class="n">stopwords</span> <span class="c1"># List of common words to ignore (e.g., &quot;and&quot;, &quot;the&quot;, &quot;is&quot;)</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">nltk.tokenize</span><span class="w"> </span><span class="kn">import</span> <span class="n">word_tokenize</span> <span class="c1"># Breaks sentences into individual words</span>
+
+<span class="c1"># string is a built-in Python module for working with punctuation</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">string</span>
+
+<span class="c1"># re is Python’s regular expression module — useful for advanced text cleaning (e.g., removing punctuation, special characters, patterns)</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">re</span>
+
+<span class="c1">#nltk.download(&#39;punkt_tab&#39;) # Tokenizer for breaking text into words</span>
+<span class="c1">#nltk.download(&#39;stopwords&#39;) # List of stopwords in multiple languages</span>
+</pre></div>
+</div>
+</div>
+</section>
+<section id="1.-Load-and-Preview-the-Dataset">
+<h2>1. Load and Preview the Dataset<a class="headerlink" href="#1.-Load-and-Preview-the-Dataset" title="Link to this heading"></a></h2>
+<p>Let’s read in the dataset and take a look at the text content we’ll be working with.</p>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Loads the dataset from a CSV file into a pandas DataFrame (a table-like structure)</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;https://raw.githubusercontent.com/BevRice/CMI_Course/refs/heads/main/docs/source/data/2020_Apr_CMI_Course.csv&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Gives a quick overview of the dataset&#39;s structure:</span>
+<span class="c1"># - number of rows and columns</span>
+<span class="c1"># - column names</span>
+<span class="c1"># - data types</span>
+<span class="c1"># - number of non-missing values</span>
+
+<span class="n">df</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+RangeIndex: 71951 entries, 0 to 71950
+Data columns (total 11 columns):
+ #   Column           Non-Null Count  Dtype
+---  ------           --------------  -----
+ 0   id               71950 non-null  float64
+ 1   created_at       71950 non-null  object
+ 2   source           71938 non-null  object
+ 3   original_text    71950 non-null  object
+ 4   lang             71950 non-null  object
+ 5   favorite_count   71950 non-null  float64
+ 6   retweet_count    71950 non-null  float64
+ 7   original_author  71950 non-null  object
+ 8   hashtags         14205 non-null  object
+ 9   user_mentions    53709 non-null  object
+ 10  place            52640 non-null  object
+dtypes: float64(3), object(8)
+memory usage: 6.0+ MB
+</pre></div></div>
+</div>
+<section id="Dataset-Overview-(df.info())">
+<h3>Dataset Overview (<code class="docutils literal notranslate"><span class="pre">df.info()</span></code>)<a class="headerlink" href="#Dataset-Overview-(df.info())" title="Link to this heading"></a></h3>
+<p>The dataset contains <strong>71,951 tweets</strong> with <strong>11 columns</strong>, each representing metadata about the tweets. Here’s a quick summary of what <code class="docutils literal notranslate"><span class="pre">df.info()</span></code> tells us:</p>
+<ul class="simple">
+<li><p><strong>Row count</strong>: We have 71,951 entries (rows), indexed from 0 to 71,950.</p></li>
+<li><p><strong>Data types</strong>:</p>
+<ul>
+<li><p>Most columns are stored as <code class="docutils literal notranslate"><span class="pre">object</span></code> (typically strings or mixed types).</p></li>
+<li><p>Three columns (<code class="docutils literal notranslate"><span class="pre">id</span></code>, <code class="docutils literal notranslate"><span class="pre">favorite_count</span></code>, <code class="docutils literal notranslate"><span class="pre">retweet_count</span></code>) are numeric (<code class="docutils literal notranslate"><span class="pre">float64</span></code>).</p></li>
+</ul>
+</li>
+<li><p><strong>Missing values</strong>:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">hashtags</span></code>, <code class="docutils literal notranslate"><span class="pre">user_mentions</span></code>, and <code class="docutils literal notranslate"><span class="pre">place</span></code> have a significant number of missing values — this is common in Twitter data where not every tweet includes a hashtag, mention, or location.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">source</span></code> and <code class="docutils literal notranslate"><span class="pre">id</span></code> have a very small number of missing values (likely ignorable or fixable).</p></li>
+</ul>
+</li>
+<li><p><strong>Text content</strong>:</p>
+<ul>
+<li><p>The main tweet content is in the <code class="docutils literal notranslate"><span class="pre">original_text</span></code> column, which we’ll focus on for NLP tasks.</p></li>
+</ul>
+</li>
+<li><p><strong>Engagement metrics</strong>:</p>
+<ul>
+<li><p>We have <code class="docutils literal notranslate"><span class="pre">favorite_count</span></code> (likes) and <code class="docutils literal notranslate"><span class="pre">retweet_count</span></code>, which will help us understand how sentiment or wording may relate to tweet visibility.</p></li>
+</ul>
+</li>
+</ul>
+<p>Understanding the structure and completeness of the dataset helps us plan our cleaning and analysis steps — especially which columns to focus on and which to treat with caution due to missing data.</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Generates summary statistics for numeric columns (e.g., likes, retweets if present)</span>
+<span class="c1"># Includes count, mean, min, max, etc.</span>
+
+<span class="n">df</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
+</pre></div>
+</div>
+<div class="output_area rendered_html docutils container">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>id</th>
+      <th>favorite_count</th>
+      <th>retweet_count</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>7.195000e+04</td>
+      <td>71950.000000</td>
+      <td>71950.000000</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>1.260083e+18</td>
+      <td>0.211022</td>
+      <td>1960.392648</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>5.398419e+15</td>
+      <td>5.981731</td>
+      <td>10304.309143</td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>1.250000e+18</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>25%</th>
+      <td>1.260000e+18</td>
+      <td>0.000000</td>
+      <td>1.000000</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>1.260000e+18</td>
+      <td>0.000000</td>
+      <td>17.000000</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>1.260000e+18</td>
+      <td>0.000000</td>
+      <td>304.000000</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>1.270000e+18</td>
+      <td>1166.000000</td>
+      <td>399220.000000</td>
+    </tr>
+  </tbody>
+</table>
+</div></div>
+</div>
+</section>
+<section id="Summary-Statistics-(df.describe())">
+<h3>Summary Statistics (<code class="docutils literal notranslate"><span class="pre">df.describe()</span></code>)<a class="headerlink" href="#Summary-Statistics-(df.describe())" title="Link to this heading"></a></h3>
+<p>This table shows basic statistics for the dataset’s <strong>numeric columns</strong> — helpful for understanding the distribution of tweet engagement and structure:</p>
+<section id="id">
+<h4><code class="docutils literal notranslate"><span class="pre">id</span></code><a class="headerlink" href="#id" title="Link to this heading"></a></h4>
+<ul class="simple">
+<li><p>These are large numeric identifiers for each tweet (likely encoded as <code class="docutils literal notranslate"><span class="pre">float64</span></code> here).</p></li>
+<li><p>The range is very tight, indicating that most tweets were collected from a similar time period.</p></li>
+<li><p>We typically won’t analyze this column, but it’s useful as a unique identifier.</p></li>
+</ul>
+</section>
+<section id="favorite_count-(likes)">
+<h4><code class="docutils literal notranslate"><span class="pre">favorite_count</span></code> (likes)<a class="headerlink" href="#favorite_count-(likes)" title="Link to this heading"></a></h4>
+<ul class="simple">
+<li><p><strong>Mean (avg)</strong>: ~0.21 likes per tweet — this is very low.</p></li>
+<li><p><strong>Median (50%)</strong>: 0.0 — most tweets weren’t liked at all.</p></li>
+<li><p><strong>Max</strong>: 1,166 likes on a single tweet.</p></li>
+<li><p>The distribution is <strong>heavily skewed</strong>, with a few popular tweets receiving most of the engagement.</p></li>
+</ul>
+</section>
+<section id="retweet_count">
+<h4><code class="docutils literal notranslate"><span class="pre">retweet_count</span></code><a class="headerlink" href="#retweet_count" title="Link to this heading"></a></h4>
+<ul class="simple">
+<li><p><strong>Mean</strong>: ~1,960 retweets per tweet — seems high, but:</p></li>
+<li><p><strong>Median (50%)</strong>: only 17 — again suggesting a <strong>long tail</strong> where a few viral tweets account for most of the retweets.</p></li>
+<li><p><strong>Max</strong>: one tweet received nearly <strong>400,000 retweets</strong> — likely a standout viral message.</p></li>
+</ul>
+</section>
+<section id="Takeaways">
+<h4>Takeaways<a class="headerlink" href="#Takeaways" title="Link to this heading"></a></h4>
+<ul class="simple">
+<li><p>Most tweets had <strong>low engagement</strong>, which is typical in large social media datasets.</p></li>
+<li><p>A few tweets had <strong>extremely high reach</strong>, which can dramatically influence averages.</p></li>
+<li><p>This distribution (lots of low values, a few very high ones) is a common trait in social media data — and important to remember when analyzing or visualizing trends.</p></li>
+</ul>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Randomly shows 5 rows from the dataset</span>
+<span class="c1"># Helpful to get a feel for what the actual tweets look like</span>
+
+<span class="n">df</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
+</pre></div>
+</div>
+<div class="output_area rendered_html docutils container">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>id</th>
+      <th>created_at</th>
+      <th>source</th>
+      <th>original_text</th>
+      <th>lang</th>
+      <th>favorite_count</th>
+      <th>retweet_count</th>
+      <th>original_author</th>
+      <th>hashtags</th>
+      <th>user_mentions</th>
+      <th>place</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>52729</th>
+      <td>1.260000e+18</td>
+      <td>2020-05-24</td>
+      <td>&lt;a href="https://mobile.twitter.com" rel="nofo...</td>
+      <td>RT @7NewsSydney: Brazil has now been named the...</td>
+      <td>en</td>
+      <td>0.0</td>
+      <td>2.0</td>
+      <td>hyperboleon</td>
+      <td>NaN</td>
+      <td>7NewsSydney</td>
+      <td>ship4</td>
+    </tr>
+    <tr>
+      <th>70684</th>
+      <td>1.250000e+18</td>
+      <td>2020-04-26</td>
+      <td>&lt;a href="http://twitter.com/#!/download/ipad" ...</td>
+      <td>RT @RayLong: As Chicago pollen season ramps up...</td>
+      <td>en</td>
+      <td>0.0</td>
+      <td>1238.0</td>
+      <td>votebarnett</td>
+      <td>NaN</td>
+      <td>RayLong</td>
+      <td>Bloomington, IL</td>
+    </tr>
+    <tr>
+      <th>20204</th>
+      <td>1.260000e+18</td>
+      <td>2020-05-23</td>
+      <td>&lt;a href="http://twitter.com/download/iphone" r...</td>
+      <td>@ThisWasMash @CNN What has Covid-19 got to do ...</td>
+      <td>en</td>
+      <td>0.0</td>
+      <td>29.0</td>
+      <td>longmast</td>
+      <td>NaN</td>
+      <td>ThisWasMash, CNN</td>
+      <td>Melbourne, Victoria</td>
+    </tr>
+    <tr>
+      <th>66143</th>
+      <td>1.270000e+18</td>
+      <td>2020-06-12</td>
+      <td>&lt;a href="https://dlvrit.com/" rel="nofollow"&gt;d...</td>
+      <td>RT @MauraSirianni: Georgia experiences nearly ...</td>
+      <td>en</td>
+      <td>0.0</td>
+      <td>5.0</td>
+      <td>11AliveNews</td>
+      <td>Coronavirus</td>
+      <td>MauraSirianni</td>
+      <td>Atlanta</td>
+    </tr>
+    <tr>
+      <th>43015</th>
+      <td>1.260000e+18</td>
+      <td>2020-04-30</td>
+      <td>&lt;a href="http://www.socialnewsdesk.com" rel="n...</td>
+      <td>During the height of the Great Recession, Colo...</td>
+      <td>en</td>
+      <td>0.0</td>
+      <td>8.0</td>
+      <td>KRDONewsRadio</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Colorado Springs, CO</td>
+    </tr>
+  </tbody>
+</table>
+</div></div>
+</div>
+<p>We will specifically be working with the <em>original_text</em> column</p>
+<p>Before we start cleaning the tweets, let’s take a look at the raw text. By default, long strings may get truncated in pandas, so we’ll update the display settings to show the full content of each tweet.</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[6]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Ensure full tweet text is displayed (no truncation)</span>
+<span class="n">pd</span><span class="o">.</span><span class="n">set_option</span><span class="p">(</span><span class="s1">&#39;display.max_colwidth&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+
+<span class="c1"># Preview the first 10 tweets from the &#39;original_text&#39; column</span>
+<span class="n">df</span><span class="p">[[</span><span class="s1">&#39;original_text&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[6]:
+</pre></div>
+</div>
+<div class="output_area rendered_html docutils container">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>original_text</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>RT @MasiTweets: Yesterday we held our event and thanks to Dr. Dean Allen it was a success! Head over to our blog&amp;gt;&amp;gt; https://t.co/2wjDVxjT0V…</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>RT @NEJM: In this audio interview, the editors are joined by Michele Evans, MD, of the National Institutes of Health to discuss a new study…</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>. @davidtrnr1 Frankie’s missed out on GCSE’s thanks to Covid-19 but fortunately got the leavers sweatshirt 😝 https://t.co/IznsrUmbj6</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>RT @KoochieKinte: LADIES: Would you rather test positive for covid-19 and be put on a ventilator, but you SURVIVE, or test positive for a p…</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>#CoronaVirusSA, think COVID-19, wash your hands, keep your distance &amp;amp; contact 021 928 4102 (Western Cape) if sympto… https://t.co/hvEUVqzuhd</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>RT @IamShaistaLodhi: Foot Shake greeting with @fahadmustafa26 on #JeetoPakistanLeague courtesy Covid 19 #JeetoPakistan #ShaistaLodhi #Fahad…</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>RT @Bud_Doggin: Where is William Barr and the DOJ??? @realDonaldTrump \n\nAs of Saturday, the state which has recorded 104 COVID-19 deaths ou…</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>RT @BJP4Karnataka: Among the top cities in India, Namma Bengaluru has managed the #COVID__19 pandemic more effectively.\n\nA BIG THANKS to CM…</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>RT @Documentedny: More than 50 migrant workers at a large produce farm in NJ tested positive for COVID-19\n\nVia @njspotlight\n\nhttps://t.co/V…</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>RT @Ian56789: UK's Chief Scientific Advisor Patrick Vallance confirms the death statistics for #Covid19 are being manipulated to increase t…</td>
+    </tr>
+  </tbody>
+</table>
+</div></div>
+</div>
+</section>
+</section>
+</section>
+<hr class="docutils" />
+<section id="2.-Text-Preprocessing">
+<h2>2. Text Preprocessing<a class="headerlink" href="#2.-Text-Preprocessing" title="Link to this heading"></a></h2>
+<p>Before we analyze the tweets, we need to clean the text. This includes:</p>
+<ul class="simple">
+<li><p>Lowercasing</p></li>
+<li><p>Removing punctuation</p></li>
+<li><p>Removing stopwords (e.g., “the”, “and”, “is”)</p></li>
+<li><p>Tokenizing into individual words</p></li>
+</ul>
+<p>To keep the original tweets intact, we’ll create a separate column called <code class="docutils literal notranslate"><span class="pre">clean_text</span></code> that we’ll use for preprocessing. This way, we can always compare the cleaned version to the original if needed.</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[7]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Create a copy of the original text for cleaning</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;clean_text&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;original_text&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+
+<span class="c1"># Display both the original and clean versions side by side</span>
+<span class="c1"># At this point, they should be identical since no cleaning has been applied yet</span>
+<span class="n">df</span><span class="p">[[</span><span class="s1">&#39;original_text&#39;</span><span class="p">,</span> <span class="s1">&#39;clean_text&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[7]:
+</pre></div>
+</div>
+<div class="output_area rendered_html docutils container">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>original_text</th>
+      <th>clean_text</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>RT @MasiTweets: Yesterday we held our event and thanks to Dr. Dean Allen it was a success! Head over to our blog&amp;gt;&amp;gt; https://t.co/2wjDVxjT0V…</td>
+      <td>RT @MasiTweets: Yesterday we held our event and thanks to Dr. Dean Allen it was a success! Head over to our blog&amp;gt;&amp;gt; https://t.co/2wjDVxjT0V…</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>RT @NEJM: In this audio interview, the editors are joined by Michele Evans, MD, of the National Institutes of Health to discuss a new study…</td>
+      <td>RT @NEJM: In this audio interview, the editors are joined by Michele Evans, MD, of the National Institutes of Health to discuss a new study…</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>. @davidtrnr1 Frankie’s missed out on GCSE’s thanks to Covid-19 but fortunately got the leavers sweatshirt 😝 https://t.co/IznsrUmbj6</td>
+      <td>. @davidtrnr1 Frankie’s missed out on GCSE’s thanks to Covid-19 but fortunately got the leavers sweatshirt 😝 https://t.co/IznsrUmbj6</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>RT @KoochieKinte: LADIES: Would you rather test positive for covid-19 and be put on a ventilator, but you SURVIVE, or test positive for a p…</td>
+      <td>RT @KoochieKinte: LADIES: Would you rather test positive for covid-19 and be put on a ventilator, but you SURVIVE, or test positive for a p…</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>#CoronaVirusSA, think COVID-19, wash your hands, keep your distance &amp;amp; contact 021 928 4102 (Western Cape) if sympto… https://t.co/hvEUVqzuhd</td>
+      <td>#CoronaVirusSA, think COVID-19, wash your hands, keep your distance &amp;amp; contact 021 928 4102 (Western Cape) if sympto… https://t.co/hvEUVqzuhd</td>
+    </tr>
+  </tbody>
+</table>
+</div></div>
+</div>
+<p>The first step in cleaning our text is to standardize capitalization. By converting everything to lowercase, we make sure that words like “COVID”, “Covid”, and “covid” are treated the same during analysis.</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[8]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Convert all text in the &#39;clean_text&#39; column to lowercase</span>
+<span class="c1"># This helps standardize the text (e.g., &quot;Covid&quot; and &quot;covid&quot; will be treated the same)</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;clean_text&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;clean_text&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+
+<span class="c1"># Display the original and lowercased versions side by side</span>
+<span class="n">df</span><span class="p">[[</span><span class="s1">&#39;original_text&#39;</span><span class="p">,</span> <span class="s1">&#39;clean_text&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[8]:
+</pre></div>
+</div>
+<div class="output_area rendered_html docutils container">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>original_text</th>
+      <th>clean_text</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>RT @MasiTweets: Yesterday we held our event and thanks to Dr. Dean Allen it was a success! Head over to our blog&amp;gt;&amp;gt; https://t.co/2wjDVxjT0V…</td>
+      <td>rt @masitweets: yesterday we held our event and thanks to dr. dean allen it was a success! head over to our blog&amp;gt;&amp;gt; https://t.co/2wjdvxjt0v…</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>RT @NEJM: In this audio interview, the editors are joined by Michele Evans, MD, of the National Institutes of Health to discuss a new study…</td>
+      <td>rt @nejm: in this audio interview, the editors are joined by michele evans, md, of the national institutes of health to discuss a new study…</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>. @davidtrnr1 Frankie’s missed out on GCSE’s thanks to Covid-19 but fortunately got the leavers sweatshirt 😝 https://t.co/IznsrUmbj6</td>
+      <td>. @davidtrnr1 frankie’s missed out on gcse’s thanks to covid-19 but fortunately got the leavers sweatshirt 😝 https://t.co/iznsrumbj6</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>RT @KoochieKinte: LADIES: Would you rather test positive for covid-19 and be put on a ventilator, but you SURVIVE, or test positive for a p…</td>
+      <td>rt @koochiekinte: ladies: would you rather test positive for covid-19 and be put on a ventilator, but you survive, or test positive for a p…</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>#CoronaVirusSA, think COVID-19, wash your hands, keep your distance &amp;amp; contact 021 928 4102 (Western Cape) if sympto… https://t.co/hvEUVqzuhd</td>
+      <td>#coronavirussa, think covid-19, wash your hands, keep your distance &amp;amp; contact 021 928 4102 (western cape) if sympto… https://t.co/hveuvqzuhd</td>
+    </tr>
+  </tbody>
+</table>
+</div></div>
+</div>
+<p>Next, we’ll remove punctuation from the tweets. This helps simplify the text and avoids treating words like “virus” and “virus!” as different tokens. We define a function using Python’s <code class="docutils literal notranslate"><span class="pre">string.punctuation</span></code>, then apply it to the <code class="docutils literal notranslate"><span class="pre">clean_text</span></code> column.</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Define a function to remove punctuation from text</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">remove_punctuation</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
+    <span class="c1"># Keep only letters, numbers, and spaces</span>
+    <span class="k">return</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;[^\w\s]&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">text</span><span class="p">)</span>
+
+
+<span class="c1"># Apply the function to clean punctuation from tweets</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;clean_text&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;clean_text&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">str</span><span class="p">)</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">remove_punctuation</span><span class="p">)</span>
+
+<span class="c1"># Compare the original and punctuation-free text</span>
+<span class="n">df</span><span class="p">[[</span><span class="s1">&#39;original_text&#39;</span><span class="p">,</span> <span class="s1">&#39;clean_text&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
+</pre></div>
+</div>
+<div class="output_area rendered_html docutils container">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>original_text</th>
+      <th>clean_text</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>RT @MasiTweets: Yesterday we held our event and thanks to Dr. Dean Allen it was a success! Head over to our blog&amp;gt;&amp;gt; https://t.co/2wjDVxjT0V…</td>
+      <td>rt masitweets yesterday we held our event and thanks to dr dean allen it was a success head over to our bloggtgt httpstco2wjdvxjt0v</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>RT @NEJM: In this audio interview, the editors are joined by Michele Evans, MD, of the National Institutes of Health to discuss a new study…</td>
+      <td>rt nejm in this audio interview the editors are joined by michele evans md of the national institutes of health to discuss a new study</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>. @davidtrnr1 Frankie’s missed out on GCSE’s thanks to Covid-19 but fortunately got the leavers sweatshirt 😝 https://t.co/IznsrUmbj6</td>
+      <td>davidtrnr1 frankies missed out on gcses thanks to covid19 but fortunately got the leavers sweatshirt  httpstcoiznsrumbj6</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>RT @KoochieKinte: LADIES: Would you rather test positive for covid-19 and be put on a ventilator, but you SURVIVE, or test positive for a p…</td>
+      <td>rt koochiekinte ladies would you rather test positive for covid19 and be put on a ventilator but you survive or test positive for a p</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>#CoronaVirusSA, think COVID-19, wash your hands, keep your distance &amp;amp; contact 021 928 4102 (Western Cape) if sympto… https://t.co/hvEUVqzuhd</td>
+      <td>coronavirussa think covid19 wash your hands keep your distance amp contact 021 928 4102 western cape if sympto httpstcohveuvqzuhd</td>
+    </tr>
+  </tbody>
+</table>
+</div></div>
+</div>
+<p>Stopwords are common words (like “the”, “is”, “in”) that usually don’t add meaningful information in text analysis.</p>
+<p>By removing them, we can focus on the keywords that actually carry useful content.</p>
+<p>Here, we tokenize each tweet, filter out the stopwords, and then rejoin the cleaned words into a single string.</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[10]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Load the list of English stopwords (common words like &quot;the&quot;, &quot;is&quot;, &quot;and&quot;)</span>
+<span class="n">stop_words</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">stopwords</span><span class="o">.</span><span class="n">words</span><span class="p">(</span><span class="s1">&#39;english&#39;</span><span class="p">))</span>
+
+<span class="c1"># Define a function to remove stopwords from text</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">remove_stopwords</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
+    <span class="n">tokens</span> <span class="o">=</span> <span class="n">word_tokenize</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>  <span class="c1"># Break text into individual words (tokens)</span>
+    <span class="n">filtered</span> <span class="o">=</span> <span class="p">[</span><span class="n">word</span> <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">tokens</span> <span class="k">if</span> <span class="n">word</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">stop_words</span><span class="p">]</span>
+    <span class="k">return</span> <span class="s1">&#39; &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">filtered</span><span class="p">)</span>  <span class="c1"># Rejoin tokens into a cleaned string</span>
+
+<span class="c1"># Apply the stopword removal function to the &#39;clean_text&#39; column</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;clean_text&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;clean_text&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">str</span><span class="p">)</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">remove_stopwords</span><span class="p">)</span>
+
+<span class="c1"># Compare the original and cleaned (stopword-free) text</span>
+<span class="n">df</span><span class="p">[[</span><span class="s1">&#39;original_text&#39;</span><span class="p">,</span> <span class="s1">&#39;clean_text&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[10]:
+</pre></div>
+</div>
+<div class="output_area rendered_html docutils container">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>original_text</th>
+      <th>clean_text</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>RT @MasiTweets: Yesterday we held our event and thanks to Dr. Dean Allen it was a success! Head over to our blog&amp;gt;&amp;gt; https://t.co/2wjDVxjT0V…</td>
+      <td>rt masitweets yesterday held event thanks dr dean allen success head bloggtgt httpstco2wjdvxjt0v</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>RT @NEJM: In this audio interview, the editors are joined by Michele Evans, MD, of the National Institutes of Health to discuss a new study…</td>
+      <td>rt nejm audio interview editors joined michele evans md national institutes health discuss new study</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>. @davidtrnr1 Frankie’s missed out on GCSE’s thanks to Covid-19 but fortunately got the leavers sweatshirt 😝 https://t.co/IznsrUmbj6</td>
+      <td>davidtrnr1 frankies missed gcses thanks covid19 fortunately got leavers sweatshirt httpstcoiznsrumbj6</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>RT @KoochieKinte: LADIES: Would you rather test positive for covid-19 and be put on a ventilator, but you SURVIVE, or test positive for a p…</td>
+      <td>rt koochiekinte ladies would rather test positive covid19 put ventilator survive test positive p</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>#CoronaVirusSA, think COVID-19, wash your hands, keep your distance &amp;amp; contact 021 928 4102 (Western Cape) if sympto… https://t.co/hvEUVqzuhd</td>
+      <td>coronavirussa think covid19 wash hands keep distance amp contact 021 928 4102 western cape sympto httpstcohveuvqzuhd</td>
+    </tr>
+  </tbody>
+</table>
+</div></div>
+</div>
+<p>Tokenization is the process of splitting text into individual words (called “tokens”).</p>
+<p>This is a foundational step in NLP that allows us to analyze word frequency, build word clouds, and perform sentiment analysis.</p>
+<p>Here, we tokenize the cleaned text and store the result in a new column.</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[11]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Tokenize the cleaned text into individual words (tokens)</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;tokens&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;clean_text&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">str</span><span class="p">)</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">word_tokenize</span><span class="p">)</span>
+
+<span class="c1"># View the original, cleaned, and tokenized versions side by side</span>
+<span class="n">df</span><span class="p">[[</span><span class="s1">&#39;original_text&#39;</span><span class="p">,</span> <span class="s1">&#39;clean_text&#39;</span><span class="p">,</span> <span class="s1">&#39;tokens&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[11]:
+</pre></div>
+</div>
+<div class="output_area rendered_html docutils container">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>original_text</th>
+      <th>clean_text</th>
+      <th>tokens</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>RT @MasiTweets: Yesterday we held our event and thanks to Dr. Dean Allen it was a success! Head over to our blog&amp;gt;&amp;gt; https://t.co/2wjDVxjT0V…</td>
+      <td>rt masitweets yesterday held event thanks dr dean allen success head bloggtgt httpstco2wjdvxjt0v</td>
+      <td>[rt, masitweets, yesterday, held, event, thanks, dr, dean, allen, success, head, bloggtgt, httpstco2wjdvxjt0v]</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>RT @NEJM: In this audio interview, the editors are joined by Michele Evans, MD, of the National Institutes of Health to discuss a new study…</td>
+      <td>rt nejm audio interview editors joined michele evans md national institutes health discuss new study</td>
+      <td>[rt, nejm, audio, interview, editors, joined, michele, evans, md, national, institutes, health, discuss, new, study]</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>. @davidtrnr1 Frankie’s missed out on GCSE’s thanks to Covid-19 but fortunately got the leavers sweatshirt 😝 https://t.co/IznsrUmbj6</td>
+      <td>davidtrnr1 frankies missed gcses thanks covid19 fortunately got leavers sweatshirt httpstcoiznsrumbj6</td>
+      <td>[davidtrnr1, frankies, missed, gcses, thanks, covid19, fortunately, got, leavers, sweatshirt, httpstcoiznsrumbj6]</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>RT @KoochieKinte: LADIES: Would you rather test positive for covid-19 and be put on a ventilator, but you SURVIVE, or test positive for a p…</td>
+      <td>rt koochiekinte ladies would rather test positive covid19 put ventilator survive test positive p</td>
+      <td>[rt, koochiekinte, ladies, would, rather, test, positive, covid19, put, ventilator, survive, test, positive, p]</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>#CoronaVirusSA, think COVID-19, wash your hands, keep your distance &amp;amp; contact 021 928 4102 (Western Cape) if sympto… https://t.co/hvEUVqzuhd</td>
+      <td>coronavirussa think covid19 wash hands keep distance amp contact 021 928 4102 western cape sympto httpstcohveuvqzuhd</td>
+      <td>[coronavirussa, think, covid19, wash, hands, keep, distance, amp, contact, 021, 928, 4102, western, cape, sympto, httpstcohveuvqzuhd]</td>
+    </tr>
+  </tbody>
+</table>
+</div></div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[12]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Remove extra whitespace (spaces, tabs, line breaks)</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;clean_text&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;clean_text&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;\s+&#39;</span><span class="p">,</span> <span class="s1">&#39; &#39;</span><span class="p">,</span> <span class="n">regex</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</section>
+<hr class="docutils" />
+<section id="3.-Word-Frequency-Distribution">
+<h2>3. Word Frequency Distribution<a class="headerlink" href="#3.-Word-Frequency-Distribution" title="Link to this heading"></a></h2>
+<p>Now that we’ve cleaned and tokenized the tweets, let’s analyze which words appear most frequently in the dataset.</p>
+<p>This step gives us a quick sense of the dominant topics, phrases, or themes — a common practice in exploratory NLP.</p>
+<p>We use Python’s <code class="docutils literal notranslate"><span class="pre">Counter</span></code> to count how often each word appears across all tweets. Then we select the top 20 and visualize them using a bar chart. This gives us an at-a-glance view of which words dominate the conversation during this time period.</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[13]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">collections</span><span class="w"> </span><span class="kn">import</span> <span class="n">Counter</span>
+
+<span class="c1"># Flatten the list of all tokens across all tweets into a single list of words</span>
+<span class="n">all_words</span> <span class="o">=</span> <span class="p">[</span><span class="n">word</span> <span class="k">for</span> <span class="n">tokens</span> <span class="ow">in</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;tokens&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">tokens</span><span class="p">]</span>
+
+<span class="c1"># Count how often each word appears using Python&#39;s built-in Counter</span>
+<span class="n">word_freq</span> <span class="o">=</span> <span class="n">Counter</span><span class="p">(</span><span class="n">all_words</span><span class="p">)</span>
+
+<span class="c1"># Get the 20 most common words and their frequencies</span>
+<span class="n">common_words</span> <span class="o">=</span> <span class="n">word_freq</span><span class="o">.</span><span class="n">most_common</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>
+
+<span class="c1"># Prepare data for plotting</span>
+<span class="n">words</span><span class="p">,</span> <span class="n">counts</span> <span class="o">=</span> <span class="nb">zip</span><span class="p">(</span><span class="o">*</span><span class="n">common_words</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">words</span><span class="p">,</span> <span class="n">counts</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="n">rotation</span><span class="o">=</span><span class="mi">45</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s1">&#39;right&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Top 20 Most Common Words&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Frequency&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_Lesson8b_Week4_25_0.png" src="../_images/notebooks_Lesson8b_Week4_25_0.png" />
+</div>
+</div>
+<section id="Interpreting-the-Top-20-Most-Common-Words">
+<h3>Interpreting the Top 20 Most Common Words<a class="headerlink" href="#Interpreting-the-Top-20-Most-Common-Words" title="Link to this heading"></a></h3>
+<p>This bar chart shows the most frequent words that appeared in tweets from April–August 2020, after text cleaning and stopword removal.</p>
+<section id="Observations:">
+<h4>Observations:<a class="headerlink" href="#Observations:" title="Link to this heading"></a></h4>
+<ul class="simple">
+<li><p><strong>“covid19”</strong> dominates the conversation — it appears far more frequently than any other word.</p></li>
+<li><p>Other highly frequent words include:</p>
+<ul>
+<li><p><strong>Health-related terms</strong>: <code class="docutils literal notranslate"><span class="pre">cases</span></code>, <code class="docutils literal notranslate"><span class="pre">people</span></code>, <code class="docutils literal notranslate"><span class="pre">covid</span></code>, <code class="docutils literal notranslate"><span class="pre">coronavirus</span></code>, <code class="docutils literal notranslate"><span class="pre">pandemic</span></code>, <code class="docutils literal notranslate"><span class="pre">deaths</span></code>, <code class="docutils literal notranslate"><span class="pre">health</span></code></p></li>
+<li><p><strong>Time and context words</strong>: <code class="docutils literal notranslate"><span class="pre">new</span></code>, <code class="docutils literal notranslate"><span class="pre">today</span></code>, <code class="docutils literal notranslate"><span class="pre">may</span></code></p></li>
+<li><p><strong>Entities and influence</strong>: <code class="docutils literal notranslate"><span class="pre">trump</span></code>, <code class="docutils literal notranslate"><span class="pre">us</span></code></p></li>
+<li><p><strong>Tone indicators</strong>: <code class="docutils literal notranslate"><span class="pre">positive</span></code>, <code class="docutils literal notranslate"><span class="pre">help</span></code></p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="Interpretation:">
+<h4>Interpretation:<a class="headerlink" href="#Interpretation:" title="Link to this heading"></a></h4>
+<ul class="simple">
+<li><p>The vocabulary reflects the <strong>core themes of the early pandemic</strong>: tracking the virus, public health, government action, and the social or emotional tone of the moment.</p></li>
+<li><p>This kind of frequency analysis gives a <strong>quick snapshot</strong> of dominant topics, but lacks nuance — we’ll use sentiment and deeper analysis to explore emotional content and bias next.</p></li>
+</ul>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[14]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Convert counter output to a DataFrame for easier viewing and sorting</span>
+<span class="n">freq_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">word_freq</span><span class="o">.</span><span class="n">items</span><span class="p">(),</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;word&#39;</span><span class="p">,</span> <span class="s1">&#39;frequency&#39;</span><span class="p">])</span>
+<span class="n">freq_df</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">&#39;frequency&#39;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[14]:
+</pre></div>
+</div>
+<div class="output_area rendered_html docutils container">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>word</th>
+      <th>frequency</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>rt</td>
+      <td>44671</td>
+    </tr>
+    <tr>
+      <th>31</th>
+      <td>covid19</td>
+      <td>39585</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>new</td>
+      <td>4949</td>
+    </tr>
+    <tr>
+      <th>175</th>
+      <td>cases</td>
+      <td>4244</td>
+    </tr>
+    <tr>
+      <th>440</th>
+      <td>people</td>
+      <td>4137</td>
+    </tr>
+    <tr>
+      <th>69</th>
+      <td>covid</td>
+      <td>4114</td>
+    </tr>
+    <tr>
+      <th>53</th>
+      <td>amp</td>
+      <td>3705</td>
+    </tr>
+    <tr>
+      <th>252</th>
+      <td>coronavirus</td>
+      <td>3555</td>
+    </tr>
+    <tr>
+      <th>159</th>
+      <td>us</td>
+      <td>3210</td>
+    </tr>
+    <tr>
+      <th>70</th>
+      <td>19</td>
+      <td>3168</td>
+    </tr>
+  </tbody>
+</table>
+</div></div>
+</div>
+<p>After reviewing the most common words, we noticed that some common Twitter-specific tokens (like “rt”, “amp”, and “https”) still appear in the dataset. These don’t carry much meaning and can clutter our analysis.</p>
+<p>We add these to a custom stopword list, then reapply the stopword removal and tokenization steps.</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[15]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Add additional custom stopwords specific to this dataset</span>
+<span class="c1"># These include common Twitter artifacts and low-value filler words</span>
+
+<span class="n">custom_stopwords</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;rt&#39;</span><span class="p">,</span> <span class="s1">&#39;https&#39;</span><span class="p">,</span> <span class="s1">&#39;http&#39;</span><span class="p">,</span> <span class="s1">&#39;amp&#39;</span><span class="p">,</span> <span class="s1">&#39;co&#39;</span><span class="p">,</span> <span class="s1">&#39;t&#39;</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">,</span> <span class="s1">&#39;www&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;via&#39;</span><span class="p">,</span> <span class="s1">&#39;get&#39;</span><span class="p">,</span> <span class="s1">&#39;could&#39;</span><span class="p">,</span> <span class="s1">&#39;still&#39;</span><span class="p">,</span> <span class="s1">&#39;go&#39;</span><span class="p">,</span> <span class="s1">&#39;let&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span>
+<span class="p">}</span>
+
+<span class="c1"># Update the stop_words set with the custom stopwords</span>
+<span class="n">stop_words</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">custom_stopwords</span><span class="p">)</span>
+
+<span class="c1"># Reapply the stopword removal to the clean_text column</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;clean_text&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;clean_text&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">str</span><span class="p">)</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">remove_stopwords</span><span class="p">)</span>
+
+<span class="c1"># Retokenize the cleaned text</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;tokens&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;clean_text&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">str</span><span class="p">)</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">word_tokenize</span><span class="p">)</span>
+<span class="n">all_words</span> <span class="o">=</span> <span class="p">[</span><span class="n">word</span> <span class="k">for</span> <span class="n">tokens</span> <span class="ow">in</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;tokens&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">tokens</span><span class="p">]</span>
+
+<span class="c1"># View the original, cleaned, and tokenized text side by side</span>
+<span class="n">df</span><span class="p">[[</span><span class="s1">&#39;original_text&#39;</span><span class="p">,</span> <span class="s1">&#39;clean_text&#39;</span><span class="p">,</span> <span class="s1">&#39;tokens&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[15]:
+</pre></div>
+</div>
+<div class="output_area rendered_html docutils container">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>original_text</th>
+      <th>clean_text</th>
+      <th>tokens</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>RT @MasiTweets: Yesterday we held our event and thanks to Dr. Dean Allen it was a success! Head over to our blog&amp;gt;&amp;gt; https://t.co/2wjDVxjT0V…</td>
+      <td>masitweets yesterday held event thanks dr dean allen success head bloggtgt httpstco2wjdvxjt0v</td>
+      <td>[masitweets, yesterday, held, event, thanks, dr, dean, allen, success, head, bloggtgt, httpstco2wjdvxjt0v]</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>RT @NEJM: In this audio interview, the editors are joined by Michele Evans, MD, of the National Institutes of Health to discuss a new study…</td>
+      <td>nejm audio interview editors joined michele evans md national institutes health discuss new study</td>
+      <td>[nejm, audio, interview, editors, joined, michele, evans, md, national, institutes, health, discuss, new, study]</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>. @davidtrnr1 Frankie’s missed out on GCSE’s thanks to Covid-19 but fortunately got the leavers sweatshirt 😝 https://t.co/IznsrUmbj6</td>
+      <td>davidtrnr1 frankies missed gcses thanks covid19 fortunately got leavers sweatshirt httpstcoiznsrumbj6</td>
+      <td>[davidtrnr1, frankies, missed, gcses, thanks, covid19, fortunately, got, leavers, sweatshirt, httpstcoiznsrumbj6]</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>RT @KoochieKinte: LADIES: Would you rather test positive for covid-19 and be put on a ventilator, but you SURVIVE, or test positive for a p…</td>
+      <td>koochiekinte ladies would rather test positive covid19 put ventilator survive test positive p</td>
+      <td>[koochiekinte, ladies, would, rather, test, positive, covid19, put, ventilator, survive, test, positive, p]</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>#CoronaVirusSA, think COVID-19, wash your hands, keep your distance &amp;amp; contact 021 928 4102 (Western Cape) if sympto… https://t.co/hvEUVqzuhd</td>
+      <td>coronavirussa think covid19 wash hands keep distance contact 021 928 4102 western cape sympto httpstcohveuvqzuhd</td>
+      <td>[coronavirussa, think, covid19, wash, hands, keep, distance, contact, 021, 928, 4102, western, cape, sympto, httpstcohveuvqzuhd]</td>
+    </tr>
+  </tbody>
+</table>
+</div></div>
+</div>
+</section>
+</section>
+</section>
+<hr class="docutils" />
+<section id="4.-Word-Cloud">
+<h2>4. Word Cloud<a class="headerlink" href="#4.-Word-Cloud" title="Link to this heading"></a></h2>
+<p>Below are two versions of a word cloud generated from the tweet data. Word clouds provide a quick, intuitive way to visualize the most frequently used words — the <strong>larger the word, the more often it appears</strong> in the dataset.</p>
+<hr class="docutils" />
+<p>The first word cloud is generated by passing a large string of all tweet text into the word cloud generator. While easy to implement, this method:</p>
+<ul class="simple">
+<li><p>May preserve <strong>joined terms</strong> like <code class="docutils literal notranslate"><span class="pre">&quot;covid19&quot;</span></code> or <code class="docutils literal notranslate"><span class="pre">&quot;coronavirus</span> <span class="pre">pandemic&quot;</span></code> if punctuation wasn’t fully removed</p></li>
+<li><p>Treats the entire text as a single body, without counting true word frequency</p></li>
+</ul>
+<p>This can result in some merged or repeated terms and potentially misrepresent the most important individual words.</p>
+<hr class="docutils" />
+<p>The second version is built from a <strong>frequency dictionary of individual tokens</strong> (words), using <code class="docutils literal notranslate"><span class="pre">generate_from_frequencies()</span></code>.</p>
+<ul class="simple">
+<li><p>This approach respects actual word-level counts</p></li>
+<li><p>More accurate for NLP tasks like keyword analysis</p></li>
+<li><p>Less likely to be skewed by formatting artifacts</p></li>
+</ul>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[16]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Generate default word cloud (may show phrases or joined terms)</span>
+<span class="n">wordcloud</span> <span class="o">=</span> <span class="n">WordCloud</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="mi">800</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">400</span><span class="p">,</span> <span class="n">background_color</span><span class="o">=</span><span class="s1">&#39;white&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">generate</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">all_words</span><span class="p">))</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">7</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">wordcloud</span><span class="p">,</span> <span class="n">interpolation</span><span class="o">=</span><span class="s1">&#39;bilinear&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s1">&#39;off&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Word Cloud (joined tokens)&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_Lesson8b_Week4_31_0.png" src="../_images/notebooks_Lesson8b_Week4_31_0.png" />
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[17]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Generate a word cloud using actual token frequencies</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">collections</span><span class="w"> </span><span class="kn">import</span> <span class="n">Counter</span>
+
+<span class="c1"># Count word frequencies</span>
+<span class="n">token_freq</span> <span class="o">=</span> <span class="n">Counter</span><span class="p">(</span><span class="n">all_words</span><span class="p">)</span>
+
+<span class="c1"># Pass the frequency dictionary directly to WordCloud</span>
+<span class="n">wordcloud</span> <span class="o">=</span> <span class="n">WordCloud</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="mi">800</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">400</span><span class="p">,</span> <span class="n">background_color</span><span class="o">=</span><span class="s1">&#39;white&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">generate_from_frequencies</span><span class="p">(</span><span class="n">token_freq</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">7</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">wordcloud</span><span class="p">,</span> <span class="n">interpolation</span><span class="o">=</span><span class="s1">&#39;bilinear&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s1">&#39;off&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Word Cloud (based on individual token frequency)&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<br/></pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_Lesson8b_Week4_32_0.png" src="../_images/notebooks_Lesson8b_Week4_32_0.png" />
+</div>
+</div>
+<section id="🔍-Key-Takeaways:">
+<h3>🔍 Key Takeaways:<a class="headerlink" href="#🔍-Key-Takeaways:" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>Both clouds highlight similar core themes: <strong>covid19</strong>, <strong>cases</strong>, <strong>pandemic</strong>, <strong>people</strong>, <strong>government</strong>, <strong>health</strong>, <strong>deaths</strong></p></li>
+<li><p>The token-based cloud gives you a <strong>cleaner and truer picture</strong> of what terms dominate the discourse</p></li>
+<li><p>Always be mindful of how the input structure affects your visualization output</p></li>
+</ul>
+<p>For real analysis, we recommend using <strong>token frequency-based clouds</strong> — especially after proper cleaning and stopword removal.</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="5.-Basic-Sentiment-Analysis">
+<h2>5. Basic Sentiment Analysis<a class="headerlink" href="#5.-Basic-Sentiment-Analysis" title="Link to this heading"></a></h2>
+<p>Now that we’ve cleaned and tokenized the tweets, let’s explore the <strong>emotional tone</strong> of the text using basic sentiment analysis.</p>
+<p>We’ll use <a class="reference external" href="https://textblob.readthedocs.io/en/dev/">TextBlob</a> — a simple, beginner-friendly NLP library that assigns a <strong>polarity score</strong> between -1 (very negative) and +1 (very positive) to each tweet.</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[18]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Install TextBlob (run this once in your notebook environment)</span>
+<span class="c1">#!pip install textblob</span>
+
+<span class="c1"># Import TextBlob for basic sentiment analysis</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">textblob</span><span class="w"> </span><span class="kn">import</span> <span class="n">TextBlob</span>
+
+<span class="c1"># Apply TextBlob to calculate sentiment polarity for each tweet</span>
+<span class="c1"># Polarity ranges from -1 (negative) to +1 (positive)</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;polarity&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;clean_text&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">str</span><span class="p">)</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">TextBlob</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">.</span><span class="n">sentiment</span><span class="o">.</span><span class="n">polarity</span><span class="p">)</span>
+
+<span class="c1"># Plot the distribution of sentiment polarity scores</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;polarity&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">bins</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Tweet Sentiment Polarity Distribution&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Polarity&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Tweet Count&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<br/></pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_Lesson8b_Week4_35_0.png" src="../_images/notebooks_Lesson8b_Week4_35_0.png" />
+</div>
+</div>
+<ul class="simple">
+<li><p>A sharp spike at <strong>0</strong>, indicating a large number of tweets with <strong>neutral sentiment</strong> — possibly factual updates or minimal emotional content.</p></li>
+<li><p>A long tail toward <strong>positive values</strong>, with many tweets clustering between <strong>0.1 and 0.5</strong>, suggesting a general lean toward <strong>mild positivity</strong>.</p></li>
+<li><p>A smaller but noticeable number of tweets have <strong>negative sentiment</strong> (left side of the chart), with some scoring below -0.5.</p></li>
+</ul>
+<hr class="docutils" />
+<ul class="simple">
+<li><p>Tweets during this period (April–August 2020) likely included a mix of:</p>
+<ul>
+<li><p><strong>Factual news and public updates</strong> (neutral tone)</p></li>
+<li><p><strong>Expressions of support, resilience, or solidarity</strong> (mildly positive)</p></li>
+<li><p><strong>Frustration, fear, or criticism</strong> (negative)</p></li>
+</ul>
+</li>
+<li><p>The prevalence of neutral sentiment is common in large-scale social media datasets — especially when covering news, public health, or event reporting.</p></li>
+</ul>
+<hr class="docutils" />
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[19]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Print polarity score column alongside text</span>
+<span class="n">df</span><span class="p">[[</span><span class="s1">&#39;original_text&#39;</span><span class="p">,</span> <span class="s1">&#39;clean_text&#39;</span><span class="p">,</span> <span class="s1">&#39;tokens&#39;</span><span class="p">,</span> <span class="s1">&#39;polarity&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[19]:
+</pre></div>
+</div>
+<div class="output_area rendered_html docutils container">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>original_text</th>
+      <th>clean_text</th>
+      <th>tokens</th>
+      <th>polarity</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>RT @MasiTweets: Yesterday we held our event and thanks to Dr. Dean Allen it was a success! Head over to our blog&amp;gt;&amp;gt; https://t.co/2wjDVxjT0V…</td>
+      <td>masitweets yesterday held event thanks dr dean allen success head bloggtgt httpstco2wjdvxjt0v</td>
+      <td>[masitweets, yesterday, held, event, thanks, dr, dean, allen, success, head, bloggtgt, httpstco2wjdvxjt0v]</td>
+      <td>0.250000</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>RT @NEJM: In this audio interview, the editors are joined by Michele Evans, MD, of the National Institutes of Health to discuss a new study…</td>
+      <td>nejm audio interview editors joined michele evans md national institutes health discuss new study</td>
+      <td>[nejm, audio, interview, editors, joined, michele, evans, md, national, institutes, health, discuss, new, study]</td>
+      <td>0.136364</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>. @davidtrnr1 Frankie’s missed out on GCSE’s thanks to Covid-19 but fortunately got the leavers sweatshirt 😝 https://t.co/IznsrUmbj6</td>
+      <td>davidtrnr1 frankies missed gcses thanks covid19 fortunately got leavers sweatshirt httpstcoiznsrumbj6</td>
+      <td>[davidtrnr1, frankies, missed, gcses, thanks, covid19, fortunately, got, leavers, sweatshirt, httpstcoiznsrumbj6]</td>
+      <td>0.300000</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>RT @KoochieKinte: LADIES: Would you rather test positive for covid-19 and be put on a ventilator, but you SURVIVE, or test positive for a p…</td>
+      <td>koochiekinte ladies would rather test positive covid19 put ventilator survive test positive p</td>
+      <td>[koochiekinte, ladies, would, rather, test, positive, covid19, put, ventilator, survive, test, positive, p]</td>
+      <td>0.227273</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>#CoronaVirusSA, think COVID-19, wash your hands, keep your distance &amp;amp; contact 021 928 4102 (Western Cape) if sympto… https://t.co/hvEUVqzuhd</td>
+      <td>coronavirussa think covid19 wash hands keep distance contact 021 928 4102 western cape sympto httpstcohveuvqzuhd</td>
+      <td>[coronavirussa, think, covid19, wash, hands, keep, distance, contact, 021, 928, 4102, western, cape, sympto, httpstcohveuvqzuhd]</td>
+      <td>0.000000</td>
+    </tr>
+  </tbody>
+</table>
+</div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[20]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Filter by polarity score == -1 (very negative)</span>
+<span class="c1"># Print first 5 instances</span>
+<span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;polarity&#39;</span><span class="p">]</span><span class="o">==-</span><span class="mi">1</span><span class="p">][[</span><span class="s1">&#39;original_text&#39;</span><span class="p">,</span> <span class="s1">&#39;polarity&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[20]:
+</pre></div>
+</div>
+<div class="output_area rendered_html docutils container">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>original_text</th>
+      <th>polarity</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>145</th>
+      <td>The worst thing about this is the media silence on government failings. No one will be held accountable for thousan… https://t.co/2BgwM6XaiT</td>
+      <td>-1.0</td>
+    </tr>
+    <tr>
+      <th>794</th>
+      <td>RT @60Mins: Five weeks ago, Adrian did catch COVID-19. He doesn’t know where or how he contracted the virus that he says was the worst expe…</td>
+      <td>-1.0</td>
+    </tr>
+    <tr>
+      <th>886</th>
+      <td>@realDonaldTrump Everyone likes to have a look at a comedian once in a while and things are rather boring 🥱 in this COVID-19 era 🙂</td>
+      <td>-1.0</td>
+    </tr>
+    <tr>
+      <th>907</th>
+      <td>RT @MaliNye: If you want to know what the world thinks of our government this makes grim  and embarrassing reading.   ‘Complacent ’ UK draw…</td>
+      <td>-1.0</td>
+    </tr>
+    <tr>
+      <th>1125</th>
+      <td>RT @PTIofficial: Removing the “dependency syndrome” bit by bit. #Covid_19 situation is grim, but as PM Khan says, every adversity must be c…</td>
+      <td>-1.0</td>
+    </tr>
+  </tbody>
+</table>
+</div></div>
+</div>
+<p>✅ What is Subjectivity?</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Polarity = How positive or negative the text is (from -1 to +1)
+
+Subjectivity = How subjective or opinionated the text is (from 0 to 1)
+
+    0 = very objective (factual)
+
+    1 = very subjective (personal opinion, emotion, speculation)
+</pre></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[21]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Apply TextBlob to calculate subjectivity</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;subjectivity&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;clean_text&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">str</span><span class="p">)</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">TextBlob</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">.</span><span class="n">sentiment</span><span class="o">.</span><span class="n">subjectivity</span><span class="p">)</span>
+
+<span class="c1"># Plot the distribution of subjectivity</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;subjectivity&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">bins</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Tweet Subjectivity Distribution&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Subjectivity&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Tweet Count&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/notebooks_Lesson8b_Week4_40_0.png" src="../_images/notebooks_Lesson8b_Week4_40_0.png" />
+</div>
+</div>
+<ul class="simple">
+<li><p>A large spike at or near <strong>0.0</strong>, indicating many tweets are <strong>highly objective</strong> — likely news headlines, factual statements, or automated updates.</p></li>
+<li><p>A more even spread from <strong>0.1 to 0.9</strong>, with peaks around <strong>0.4–0.6</strong>, suggesting a mix of opinions, reactions, and commentary.</p></li>
+<li><p>A smaller cluster of highly <strong>subjective tweets</strong> near <strong>1.0</strong>, which likely contain emotional or personal expressions (e.g., fears, praise, outrage, etc.).</p></li>
+</ul>
+<hr class="docutils" />
+<ul class="simple">
+<li><p>The spike in objectivity is consistent with tweets that share public health information, statistics, or news headlines.</p></li>
+<li><p>The broader spread across the rest of the distribution reflects how social media platforms like Twitter blend factual content with emotional or biased reactions.</p></li>
+<li><p>Subjectivity analysis helps identify tweets that are <strong>more opinion-driven</strong>, which may be more prone to spreading <strong>misinformation, bias, or personal narratives</strong>.</p></li>
+</ul>
+<hr class="docutils" />
+<p>This layer of analysis is particularly useful for misinformation research: highly subjective content may signal opinion-based claims, while objective-sounding tweets could be used to mimic credibility.</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[22]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Print polarity &amp; subjectivity score column alongside text</span>
+<span class="n">df</span><span class="p">[[</span><span class="s1">&#39;original_text&#39;</span><span class="p">,</span> <span class="s1">&#39;clean_text&#39;</span><span class="p">,</span> <span class="s1">&#39;tokens&#39;</span><span class="p">,</span> <span class="s1">&#39;polarity&#39;</span><span class="p">,</span> <span class="s1">&#39;subjectivity&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[22]:
+</pre></div>
+</div>
+<div class="output_area rendered_html docutils container">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>original_text</th>
+      <th>clean_text</th>
+      <th>tokens</th>
+      <th>polarity</th>
+      <th>subjectivity</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>RT @MasiTweets: Yesterday we held our event and thanks to Dr. Dean Allen it was a success! Head over to our blog&amp;gt;&amp;gt; https://t.co/2wjDVxjT0V…</td>
+      <td>masitweets yesterday held event thanks dr dean allen success head bloggtgt httpstco2wjdvxjt0v</td>
+      <td>[masitweets, yesterday, held, event, thanks, dr, dean, allen, success, head, bloggtgt, httpstco2wjdvxjt0v]</td>
+      <td>0.250000</td>
+      <td>0.100000</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>RT @NEJM: In this audio interview, the editors are joined by Michele Evans, MD, of the National Institutes of Health to discuss a new study…</td>
+      <td>nejm audio interview editors joined michele evans md national institutes health discuss new study</td>
+      <td>[nejm, audio, interview, editors, joined, michele, evans, md, national, institutes, health, discuss, new, study]</td>
+      <td>0.136364</td>
+      <td>0.454545</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>. @davidtrnr1 Frankie’s missed out on GCSE’s thanks to Covid-19 but fortunately got the leavers sweatshirt 😝 https://t.co/IznsrUmbj6</td>
+      <td>davidtrnr1 frankies missed gcses thanks covid19 fortunately got leavers sweatshirt httpstcoiznsrumbj6</td>
+      <td>[davidtrnr1, frankies, missed, gcses, thanks, covid19, fortunately, got, leavers, sweatshirt, httpstcoiznsrumbj6]</td>
+      <td>0.300000</td>
+      <td>0.450000</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>RT @KoochieKinte: LADIES: Would you rather test positive for covid-19 and be put on a ventilator, but you SURVIVE, or test positive for a p…</td>
+      <td>koochiekinte ladies would rather test positive covid19 put ventilator survive test positive p</td>
+      <td>[koochiekinte, ladies, would, rather, test, positive, covid19, put, ventilator, survive, test, positive, p]</td>
+      <td>0.227273</td>
+      <td>0.545455</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>#CoronaVirusSA, think COVID-19, wash your hands, keep your distance &amp;amp; contact 021 928 4102 (Western Cape) if sympto… https://t.co/hvEUVqzuhd</td>
+      <td>coronavirussa think covid19 wash hands keep distance contact 021 928 4102 western cape sympto httpstcohveuvqzuhd</td>
+      <td>[coronavirussa, think, covid19, wash, hands, keep, distance, contact, 021, 928, 4102, western, cape, sympto, httpstcohveuvqzuhd]</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+    </tr>
+  </tbody>
+</table>
+</div></div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[23]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Filter to show very negative and very subjective tweets</span>
+<span class="c1"># Show 10 that meet this criteria</span>
+
+<span class="n">df</span><span class="p">[(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;polarity&#39;</span><span class="p">]</span><span class="o">==-</span><span class="mi">1</span><span class="p">)</span><span class="o">&amp;</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;subjectivity&#39;</span><span class="p">]</span><span class="o">==</span><span class="mi">1</span><span class="p">)]</span>\
+<span class="p">[[</span><span class="s1">&#39;original_text&#39;</span><span class="p">,</span> <span class="s1">&#39;tokens&#39;</span><span class="p">,</span> <span class="s1">&#39;polarity&#39;</span><span class="p">,</span> <span class="s1">&#39;subjectivity&#39;</span><span class="p">]]</span>\
+<span class="p">[</span><span class="s1">&#39;original_text&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">to_list</span><span class="p">()[</span><span class="mi">0</span><span class="p">:</span><span class="mi">10</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[23]:
+</pre></div>
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+[&#39;The worst thing about this is the media silence on government failings. No one will be held accountable for thousan… https://t.co/2BgwM6XaiT&#39;,
+ &#39;RT @60Mins: Five weeks ago, Adrian did catch COVID-19. He doesn’t know where or how he contracted the virus that he says was the worst expe…&#39;,
+ &#39;@realDonaldTrump Everyone likes to have a look at a comedian once in a while and things are rather boring 🥱 in this COVID-19 era 🙂&#39;,
+ &#39;RT @MaliNye: If you want to know what the world thinks of our government this makes grim  and embarrassing reading.   ‘Complacent ’ UK draw…&#39;,
+ &#39;RT @PTIofficial: Removing the “dependency syndrome” bit by bit. #Covid_19 situation is grim, but as PM Khan says, every adversity must be c…&#39;,
+ &#39;RT @OpIndia_com: In a shocking turn of events, Kolkata Police registered an FIR against and detained a Kolkata based Oncologist. His crime-…&#39;,
+ &#39;Perhaps it is a momentous opportunity for discussion about the worst pandemic in world history having occurred and… https://t.co/NsWDi3GNoQ&#39;,
+ &#34;RT @stephohanley: COVID-19&#39;s devastating toll on families in Montreal&#39;s poorest neighbourhoods | CBC News https://t.co/vtZG0koaRS&#34;,
+ &#39;RT @chootchyface: DISGUSTING \nRail ticket officer dies from Covid-19 after being spat at on duty, prompting police investigation\nBelly Muji…&#39;,
+ &#39;RT @RickRouan: Ohio has one of the worst COVID-19 testing rates in the nation, according to Johns Hopkins University.&#39;]
+</pre></div></div>
+</div>
+</section>
+<section id="Wrapping-Up:-Optional-NLP-Insights">
+<h2>Wrapping Up: Optional NLP Insights<a class="headerlink" href="#Wrapping-Up:-Optional-NLP-Insights" title="Link to this heading"></a></h2>
+<p>This notebook introduced a basic Natural Language Processing (NLP) workflow using tweet data collected during the early months of the COVID-19 pandemic. You explored how to:</p>
+<ul class="simple">
+<li><p>Clean and preprocess text</p></li>
+<li><p>Tokenize and analyze word frequencies</p></li>
+<li><p>Visualize content with word clouds</p></li>
+<li><p>Measure sentiment and subjectivity using TextBlob</p></li>
+</ul>
+<p>These steps are foundational for understanding how language can shape, reflect, or amplify public perception — especially during periods of crisis or uncertainty.</p>
+<blockquote>
+<div><p>⚠️ <strong>Note</strong>: This walkthrough is provided for informational and exploratory purposes only. It’s meant to help you see how Python can be used to analyze unstructured text data related to public discourse and misinformation.</p>
+</div></blockquote>
+<hr class="docutils" />
+<section id="💡-Want-to-Go-Deeper?">
+<h3>💡 Want to Go Deeper?<a class="headerlink" href="#💡-Want-to-Go-Deeper?" title="Link to this heading"></a></h3>
+<p>If you’re interested in exploring <strong>text data, sentiment trends, or language patterns</strong> as part of your <strong>Final Challenge</strong>, feel free to build on the techniques from this lesson. You might consider:</p>
+<ul class="simple">
+<li><p>Comparing sentiment between different hashtags or time periods</p></li>
+<li><p>Analyzing subjective vs. objective tweets around key events</p></li>
+<li><p>Detecting emotionally charged language in misinformation content</p></li>
+</ul>
+<p>You’re not required to use this workflow — but it’s here if NLP is something you’re excited to dive into!</p>
+<p>Good luck, and feel free to adapt this notebook to suit your curiosity and creativity. 🧠✨</p>
+<p><a class="reference external" href="https://forms.gle/4ZRmNr5rmGCAR1Re6">Provide Anonymous Feedback on this Lesson Here</a></p>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="Lesson8_Week4.html" class="btn btn-neutral float-left" title="📚 NLP and Sentiment Analysis" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Lesson9_Week4.html" class="btn btn-neutral float-right" title="📚 Strategic MDM Interventions" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright Chaminade University.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

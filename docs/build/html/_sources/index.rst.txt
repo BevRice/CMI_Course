@@ -67,10 +67,11 @@ Each week consists of:
    :maxdepth: 2
    :caption: Week 4 Fighting MDM (Available 29 March):
 
-   notebooks/Lesson8
-   notebooks/Lesson9
-   notebooks/Guest_Speaker3
-   notebooks/Assignment6
+   notebooks/Lesson8_Week4
+   notebooks/Lesson8b_Week4
+   notebooks/Lesson9_Week4
+   notebooks/Guest_Speaker3_Week4
+   notebooks/Assignment6_Week4
 
 
 .. toctree::
